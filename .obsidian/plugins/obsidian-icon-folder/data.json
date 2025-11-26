@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "LiRecycle",
       "LiFeather",
       "LiBrain",
       "LiEuro",
-      "LiNotebookPen",
-      "LiBuilding2"
+      "LiNotebookPen"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -42,5 +42,6 @@
   "200 Proyectos/Minecraft/101 Base.md": "LiHouse",
   "200 Proyectos/Minecraft/102 Trading Hall.md": "LiEuro",
   "Mía.md": "LiBrain",
-  "200 Proyectos/Iris/Iris.md": "LiFeather"
+  "200 Proyectos/Iris/Iris.md": "LiFeather",
+  "900 Bin": "LiRecycle"
 }

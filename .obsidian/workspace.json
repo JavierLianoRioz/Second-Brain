@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "200 Proyectos/Bases de datos/00_Indice.md",
+                "file": "200 Proyectos/Proyectos.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "00_Indice"
+              "title": "Proyectos"
             }
           }
         ]
@@ -87,6 +87,7 @@
       {
         "id": "b7681475d77f553b",
         "type": "tabs",
+        "dimension": 22.892441860465116,
         "children": [
           {
             "id": "7b592a7440222c12",
@@ -142,13 +143,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "200 Proyectos/Bases de datos/00_Indice.md",
+                "file": "200 Proyectos/Proyectos.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 00_Indice"
+              "title": "Outline of Proyectos"
             }
           },
           {
@@ -167,6 +168,7 @@
       {
         "id": "fd8593a55104d16f",
         "type": "tabs",
+        "dimension": 77.10755813953489,
         "children": [
           {
             "id": "cd00d58cb953c63d",
@@ -174,7 +176,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "200 Proyectos/Bases de datos/00_Indice.md",
+                "file": "200 Proyectos/Proyectos.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -202,7 +204,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of 00_Indice"
+              "title": "Graph of Proyectos"
             }
           }
         ]
@@ -224,8 +226,15 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "712167e3c33fc024",
+  "active": "41afca2c34a54d95",
   "lastOpenFiles": [
+    "500 Biblioteca/Biblioteca.md",
+    "200 Proyectos/Proyectos.md",
+    "001 Areas/Areas.md",
+    "000 INBOX/Inbox.md",
+    "900 Bin/RecicleBin.md",
+    "200 Proyectos/Bases de datos/00_Indice.md",
+    "900 Bin",
     "200 Proyectos/Bases de datos/06_Algebra_Relacional/06 - Álgebra Relacional.md",
     "200 Proyectos/Bases de datos/05_Transacciones/05 - Transacciones.md",
     "200 Proyectos/Bases de datos/04_Normalizacion/04 - Normalización de Bases de Datos.md",
@@ -236,7 +245,6 @@
     "200 Proyectos/Bases de datos/04_Normalizacion/Dependencia Transitiva.md",
     "200 Proyectos/Bases de datos/04_Normalizacion/Quinta Forma Normal (5FN).md",
     "200 Proyectos/Bases de datos/04_Normalizacion/Segunda Forma Normal (2FN).md",
-    "200 Proyectos/Bases de datos/00_Indice.md",
     "200 Proyectos/Bases de datos/04 - Normalización de Bases de Datos.md",
     "200 Proyectos/Bases de datos/01_Introduccion/01 - Introducción e Historia.md",
     "200 Proyectos/Bases de datos/Primera Forma Normal (1FN).md",
@@ -247,11 +255,6 @@
     "200 Proyectos/Bases de datos/06_Algebra_Relacional/Join (Combinación).md",
     "200 Proyectos/Bases de datos/06_Algebra_Relacional/Intersección.md",
     "200 Proyectos/Bases de datos/06_Algebra_Relacional/Producto Cartesiano.md",
-    "200 Proyectos/Bases de datos/06_Algebra_Relacional/Diferencia (Álgebra Relacional).md",
-    "200 Proyectos/Bases de datos/06_Algebra_Relacional/Unión (Álgebra Relacional).md",
-    "200 Proyectos/Bases de datos/06_Algebra_Relacional/Proyección (Álgebra Relacional).md",
-    "200 Proyectos/Bases de datos/06_Algebra_Relacional/Selección (Álgebra Relacional).md",
-    "200 Proyectos/Bases de datos/06_Algebra_Relacional/Álgebra Relacional.md",
     "200 Proyectos/Bases de datos/06_Algebra_Relacional",
     "200 Proyectos/Bases de datos/05_Transacciones",
     "200 Proyectos/Bases de datos/04_Normalizacion",
@@ -261,7 +264,6 @@
     "500 Biblioteca/BaseDeDatos1-25-26/Clases/tutoria 1",
     "500 Biblioteca/BaseDeDatos1-25-26/Clases/Clase 9",
     "500 Biblioteca/BaseDeDatos1-25-26/Clases/Clase 8",
-    "500 Biblioteca/BaseDeDatos1-25-26/Clases/Clase 6",
     "500 Biblioteca/BaseDeDatos1-25-26/Clases/Clase 4/DER_conceptual_ejercicio_1_clase_4_sin_atributos.png",
     "500 Biblioteca/BaseDeDatos1-25-26/Evaluaciones/images/resolucion_parcial_1/1761554050863.png",
     "500 Biblioteca/BaseDeDatos1-25-26/Clases/Clase 3/DER_conceptual_ejercicio_1_clase_3.png",
