@@ -1,0 +1,46 @@
+{
+  "settings": {
+    "migrated": 6,
+    "iconPacksPath": ".obsidian/icons",
+    "fontSize": 16,
+    "emojiStyle": "native",
+    "iconColor": null,
+    "recentlyUsedIcons": [
+      "LiFeather",
+      "LiBrain",
+      "LiEuro",
+      "LiNotebookPen",
+      "LiBuilding2"
+    ],
+    "recentlyUsedIconsSize": 5,
+    "rules": [],
+    "extraMargin": {
+      "top": 0,
+      "right": 4,
+      "bottom": 0,
+      "left": 0
+    },
+    "iconInTabsEnabled": false,
+    "iconInTitleEnabled": false,
+    "iconInTitlePosition": "above",
+    "iconInFrontmatterEnabled": false,
+    "iconInFrontmatterFieldName": "icon",
+    "iconColorInFrontmatterFieldName": "iconColor",
+    "iconsBackgroundCheckEnabled": true,
+    "iconsInNotesEnabled": true,
+    "iconsInLinksEnabled": true,
+    "iconIdentifier": ":",
+    "lucideIconPackType": "native",
+    "debugMode": false,
+    "useInternalPlugins": false
+  },
+  "000 INBOX": "LiInbox",
+  "500 Biblioteca": "LiLibrary",
+  "200 Proyectos": "LiFiles",
+  "001 Areas": "LiBuilding2",
+  "200 Proyectos/Minecraft/001 Let's Play.md": "LiNotebookPen",
+  "200 Proyectos/Minecraft/101 Base.md": "LiHouse",
+  "200 Proyectos/Minecraft/102 Trading Hall.md": "LiEuro",
+  "Mía.md": "LiBrain",
+  "200 Proyectos/Iris/Iris.md": "LiFeather"
+}

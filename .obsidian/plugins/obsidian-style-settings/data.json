@@ -1,0 +1,15 @@
+{
+  "Appearance-dark@@card-layout-open-dark": true,
+  "Appearance-dark@@theme-dark-style-select": "theme-dark-background-default",
+  "Components@@tab-autohide": true,
+  "Components@@status-bar-autohide": true,
+  "Components@@Ribbon-autohide": true,
+  "Components@@nav-header-autohide": true,
+  "Components@@tab-title-bar-autohide": true,
+  "Components@@vault-profile-autohide": true,
+  "Components@@CTA-BTN-enable": true,
+  "Components@@file-names-untrim": false,
+  "Components@@folder-font-bold": true,
+  "Components@@file-icon-remove": false,
+  "Components@@colorful-folder": true
+}
