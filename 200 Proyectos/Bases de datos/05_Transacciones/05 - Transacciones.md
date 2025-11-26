@@ -10,3 +10,4 @@ Este tema cubre las [[Transacción|Transacciones]], que son unidades de trabajo 
 
 ---
 **Tema Anterior:** [[04 - Normalización de Bases de Datos]]
+**Tema Siguiente:** [[06 - Álgebra Relacional]] 

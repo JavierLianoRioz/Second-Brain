@@ -5,13 +5,14 @@ La [[Normalización]] es un proceso clave en el diseño de bases de datos relaci
 ## Conceptos Clave
 
 *   [[Normalización]]
-*   [[Dependencia Funcional]]
+	*   [[Dependencia Funcional]]
 *   [[Primera Forma Normal (1FN)]]
 *   [[Segunda Forma Normal (2FN)]]
 *   [[Tercera Forma Normal (3FN)]]
+	*  [[Dependencia Transitiva]]
 *   [[Cuarta Forma Normal (4FN)]]
 *   [[Quinta Forma Normal (5FN)]]
-*   [[Dependencia Transitiva]]
+
 
 ---
 **Tema Anterior:** [[03 - Lenguaje SQL]]

@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "200 Proyectos/Bases de datos/04_Normalizacion/Quinta Forma Normal (5FN).md",
+                "file": "200 Proyectos/Bases de datos/00_Indice.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Quinta Forma Normal (5FN)"
+              "title": "00_Indice"
             }
           }
         ]
@@ -142,17 +142,27 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "200 Proyectos/Bases de datos/04_Normalizacion/Quinta Forma Normal (5FN).md",
+                "file": "200 Proyectos/Bases de datos/00_Indice.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Quinta Forma Normal (5FN)"
+              "title": "Outline of 00_Indice"
+            }
+          },
+          {
+            "id": "712167e3c33fc024",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       },
       {
         "id": "fd8593a55104d16f",
@@ -164,7 +174,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "200 Proyectos/Bases de datos/04_Normalizacion/Quinta Forma Normal (5FN).md",
+                "file": "200 Proyectos/Bases de datos/00_Indice.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -192,7 +202,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of Quinta Forma Normal (5FN)"
+              "title": "Graph of 00_Indice"
             }
           }
         ]
@@ -210,18 +220,23 @@
       "canvas:Create new canvas": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "workspaces:Manage workspace layouts": false
+      "workspaces:Manage workspace layouts": false,
+      "obsidian-git:Open Git source control": false
     }
   },
-  "active": "41afca2c34a54d95",
+  "active": "712167e3c33fc024",
   "lastOpenFiles": [
+    "200 Proyectos/Bases de datos/06_Algebra_Relacional/06 - Álgebra Relacional.md",
+    "200 Proyectos/Bases de datos/05_Transacciones/05 - Transacciones.md",
     "200 Proyectos/Bases de datos/04_Normalizacion/04 - Normalización de Bases de Datos.md",
-    "200 Proyectos/Bases de datos/04_Normalizacion/Cuarta Forma Normal (4FN).md",
-    "200 Proyectos/Bases de datos/04_Normalizacion/Tercera Forma Normal (3FN).md",
+    "200 Proyectos/Bases de datos/04_Normalizacion/Normalización.md",
     "200 Proyectos/Bases de datos/04_Normalizacion/Primera Forma Normal (1FN).md",
+    "200 Proyectos/Bases de datos/04_Normalizacion/Tercera Forma Normal (3FN).md",
+    "200 Proyectos/Bases de datos/04_Normalizacion/Cuarta Forma Normal (4FN).md",
+    "200 Proyectos/Bases de datos/04_Normalizacion/Dependencia Transitiva.md",
+    "200 Proyectos/Bases de datos/04_Normalizacion/Quinta Forma Normal (5FN).md",
     "200 Proyectos/Bases de datos/04_Normalizacion/Segunda Forma Normal (2FN).md",
     "200 Proyectos/Bases de datos/00_Indice.md",
-    "200 Proyectos/Bases de datos/05_Transacciones/05 - Transacciones.md",
     "200 Proyectos/Bases de datos/04 - Normalización de Bases de Datos.md",
     "200 Proyectos/Bases de datos/01_Introduccion/01 - Introducción e Historia.md",
     "200 Proyectos/Bases de datos/Primera Forma Normal (1FN).md",
@@ -237,10 +252,6 @@
     "200 Proyectos/Bases de datos/06_Algebra_Relacional/Proyección (Álgebra Relacional).md",
     "200 Proyectos/Bases de datos/06_Algebra_Relacional/Selección (Álgebra Relacional).md",
     "200 Proyectos/Bases de datos/06_Algebra_Relacional/Álgebra Relacional.md",
-    "200 Proyectos/Bases de datos/06_Algebra_Relacional/06 - Álgebra Relacional.md",
-    "200 Proyectos/Bases de datos/02_Diseño/Pasos del Diseño de una BD.md",
-    "200 Proyectos/Bases de datos/02_Diseño/02 - Diseño Conceptual y Relacional.md",
-    "200 Proyectos/Bases de datos/01_Introduccion/Las 12 Reglas de Codd.md",
     "200 Proyectos/Bases de datos/06_Algebra_Relacional",
     "200 Proyectos/Bases de datos/05_Transacciones",
     "200 Proyectos/Bases de datos/04_Normalizacion",
