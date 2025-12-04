@@ -3,7 +3,7 @@
 ## Regla
 Una tabla está en **4FN** si:
 1.  Cumple con [[Tercera_Forma_Normal_3FN]].
-2.  No existen **Dependencias Multivaluadas** independientes.
+2.  No existen **[[Dependencia_Multivaluada]]** independientes.
 
 ## Ejemplo Violación
 Un `Profesor` enseña `Materias` y practica `Deportes`.
