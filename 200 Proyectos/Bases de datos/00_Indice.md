@@ -1,15 +1,25 @@
-# Índice de Apuntes de Base de Datos 1
+# Apuntes de Bases de Datos (Zettelkasten)
 
-Este es el punto de partida para explorar los apuntes de la asignatura de Base de Datos 1, organizados con el método Zettelkasten.
+Bienvenido a los apuntes de Bases de Datos. Este repositorio sigue el método **Zettelkasten**, con notas atómicas interconectadas.
 
-## Temas Principales
+## 🗺️ Mapas de Contenido (MOCs)
 
-1.  [[01 - Introducción e Historia]]
-2.  [[02 - Diseño Conceptual y Relacional]]
-3.  [[03 - Lenguaje SQL]]
-4.  [[04 - Normalización de Bases de Datos]]
-5.  [[05 - Transacciones]]
-6.  [[06 - Álgebra Relacional]]
+Navega por los temas principales a través de sus mapas:
+
+### 1. [[01_Introduccion/00_MOC_Introduccion|Introducción y Fundamentos]]
+*   Historia, Definiciones, SGBD, Arquitectura.
+
+### 2. [[02_Diseño/00_MOC_Diseño|Diseño de Bases de Datos]]
+*   Metodología, Modelo ER, Modelo Relacional, Caso de Estudio.
+
+### 3. [[03_SQL/00_MOC_SQL|Lenguaje SQL]]
+*   DDL, DML, Consultas SELECT.
+
+### 4. [[04_Normalizacion/00_MOC_Normalizacion|Normalización]]
+*   Objetivos, Dependencias, Formas Normales (1FN-5FN).
+
+### 5. [[06_Algebra_Relacional/00_MOC_Algebra_Relacional|Álgebra Relacional]]
+*   Operadores Fundamentales y Derivados.
 
 ---
-*Hecho por Gemini*
+*Generado por Gemini - Antigravity*

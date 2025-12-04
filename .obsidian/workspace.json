@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "200 Proyectos/Proyectos.md",
+                "file": "200 Proyectos/Bases de datos/04_Normalizacion/Segunda_Forma_Normal_2FN.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Proyectos"
+              "title": "Segunda_Forma_Normal_2FN"
             }
           }
         ]
@@ -143,13 +143,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "200 Proyectos/Proyectos.md",
+                "file": "Respuesta_Estructura_BD.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Proyectos"
+              "title": "Outline of Respuesta_Estructura_BD"
             }
           },
           {
@@ -176,7 +176,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "200 Proyectos/Proyectos.md",
+                "file": "200 Proyectos/Bases de datos/04_Normalizacion/Segunda_Forma_Normal_2FN.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -204,7 +204,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of Proyectos"
+              "title": "Graph of Segunda_Forma_Normal_2FN"
             }
           }
         ]
@@ -228,51 +228,51 @@
   },
   "active": "41afca2c34a54d95",
   "lastOpenFiles": [
-    "500 Biblioteca/Biblioteca.md",
-    "200 Proyectos/Proyectos.md",
-    "001 Areas/Areas.md",
-    "000 INBOX/Inbox.md",
-    "900 Bin/RecicleBin.md",
+    "200 Proyectos/Bases de datos/04_Normalizacion/00_MOC_Normalizacion.md",
+    "200 Proyectos/Bases de datos/04_Normalizacion/Primera_Forma_Normal_1FN.md",
     "200 Proyectos/Bases de datos/00_Indice.md",
-    "900 Bin",
-    "200 Proyectos/Bases de datos/06_Algebra_Relacional/06 - Álgebra Relacional.md",
-    "200 Proyectos/Bases de datos/05_Transacciones/05 - Transacciones.md",
-    "200 Proyectos/Bases de datos/04_Normalizacion/04 - Normalización de Bases de Datos.md",
-    "200 Proyectos/Bases de datos/04_Normalizacion/Normalización.md",
-    "200 Proyectos/Bases de datos/04_Normalizacion/Primera Forma Normal (1FN).md",
-    "200 Proyectos/Bases de datos/04_Normalizacion/Tercera Forma Normal (3FN).md",
-    "200 Proyectos/Bases de datos/04_Normalizacion/Cuarta Forma Normal (4FN).md",
-    "200 Proyectos/Bases de datos/04_Normalizacion/Dependencia Transitiva.md",
-    "200 Proyectos/Bases de datos/04_Normalizacion/Quinta Forma Normal (5FN).md",
-    "200 Proyectos/Bases de datos/04_Normalizacion/Segunda Forma Normal (2FN).md",
-    "200 Proyectos/Bases de datos/04 - Normalización de Bases de Datos.md",
-    "200 Proyectos/Bases de datos/01_Introduccion/01 - Introducción e Historia.md",
-    "200 Proyectos/Bases de datos/Primera Forma Normal (1FN).md",
-    "200 Proyectos/Bases de datos/03_SQL/DML (Data Manipulation Language).md",
-    "200 Proyectos/Bases de datos/03_SQL/DDL (Data Definition Language).md",
-    "200 Proyectos/Bases de datos/06_Algebra_Relacional/Renombramiento (Álgebra Relacional).md",
-    "200 Proyectos/Bases de datos/06_Algebra_Relacional/División (Álgebra Relacional).md",
-    "200 Proyectos/Bases de datos/06_Algebra_Relacional/Join (Combinación).md",
-    "200 Proyectos/Bases de datos/06_Algebra_Relacional/Intersección.md",
-    "200 Proyectos/Bases de datos/06_Algebra_Relacional/Producto Cartesiano.md",
-    "200 Proyectos/Bases de datos/06_Algebra_Relacional",
-    "200 Proyectos/Bases de datos/05_Transacciones",
-    "200 Proyectos/Bases de datos/04_Normalizacion",
-    "200 Proyectos/Bases de datos/03_SQL",
-    "200 Proyectos/Bases de datos/02_Diseño",
-    "200 Proyectos/Bases de datos/01_Introduccion",
-    "500 Biblioteca/BaseDeDatos1-25-26/Clases/tutoria 1",
-    "500 Biblioteca/BaseDeDatos1-25-26/Clases/Clase 9",
-    "500 Biblioteca/BaseDeDatos1-25-26/Clases/Clase 8",
-    "500 Biblioteca/BaseDeDatos1-25-26/Clases/Clase 4/DER_conceptual_ejercicio_1_clase_4_sin_atributos.png",
-    "500 Biblioteca/BaseDeDatos1-25-26/Evaluaciones/images/resolucion_parcial_1/1761554050863.png",
-    "500 Biblioteca/BaseDeDatos1-25-26/Clases/Clase 3/DER_conceptual_ejercicio_1_clase_3.png",
-    "500 Biblioteca/BaseDeDatos1-25-26/Clases/Clase 2/images/05_intro_modelo_relacional/1757671989194.png",
-    "500 Biblioteca/BaseDeDatos1-25-26/Clases/Clase 2/images/05_intro_modelo_relacional/1757671896087.png",
-    "500 Biblioteca/BaseDeDatos1-25-26/Clases/Clase 2/images/03_modelo_er_simple/1757671909835.png",
-    "500 Biblioteca/BaseDeDatos1-25-26/Clases/Clase 2/images/04_modelo_er_extendido/1757671833615.png",
-    "500 Biblioteca/BaseDeDatos1-25-26/Clases/Clase 13 (repaso)/images/ejercicios_repaso/1761207385651.png",
-    "500 Biblioteca/BaseDeDatos1-25-26/Clases/Clase 2/diagrama_chen_ejercicio_3.png",
-    "500 Biblioteca/BaseDeDatos1-25-26/Clases/Clase 2/diagrama_chen_ejercicio_2.png"
+    "200 Proyectos/Bases de datos/02_Diseño/02_Modelo_Relacional.md",
+    "200 Proyectos/Bases de datos/06_Algebra_Relacional/Division_Algebra.md",
+    "200 Proyectos/Bases de datos/06_Algebra_Relacional/Join_Algebra.md",
+    "200 Proyectos/Bases de datos/06_Algebra_Relacional/Interseccion_Operador.md",
+    "200 Proyectos/Bases de datos/06_Algebra_Relacional/Renombramiento.md",
+    "200 Proyectos/Bases de datos/06_Algebra_Relacional/Producto_Cartesiano.md",
+    "200 Proyectos/Bases de datos/06_Algebra_Relacional/Diferencia_Operador.md",
+    "200 Proyectos/Bases de datos/06_Algebra_Relacional/Union_Operador.md",
+    "200 Proyectos/Bases de datos/06_Algebra_Relacional/Proyeccion_Operador.md",
+    "200 Proyectos/Bases de datos/06_Algebra_Relacional/Seleccion_Operador.md",
+    "200 Proyectos/Bases de datos/06_Algebra_Relacional/Algebra_Relacional_Concepto.md",
+    "200 Proyectos/Bases de datos/06_Algebra_Relacional/00_MOC_Algebra_Relacional.md",
+    "200 Proyectos/Bases de datos/04_Normalizacion/Quinta_Forma_Normal_5FN.md",
+    "200 Proyectos/Bases de datos/04_Normalizacion/Cuarta_Forma_Normal_4FN.md",
+    "200 Proyectos/Bases de datos/04_Normalizacion/Tercera_Forma_Normal_3FN.md",
+    "200 Proyectos/Bases de datos/04_Normalizacion/Segunda_Forma_Normal_2FN.md",
+    "200 Proyectos/Bases de datos/04_Normalizacion/Dependencia_Funcional.md",
+    "200 Proyectos/Bases de datos/04_Normalizacion/Normalizacion_Objetivos.md",
+    "200 Proyectos/Bases de datos/03_SQL/SQL_GROUP_BY.md",
+    "200 Proyectos/Bases de datos/03_SQL/SQL_JOIN.md",
+    "200 Proyectos/Bases de datos/03_SQL/SQL_WHERE.md",
+    "200 Proyectos/Bases de datos/03_SQL/SELECT_Basico.md",
+    "200 Proyectos/Bases de datos/03_SQL/DELETE.md",
+    "500 Biblioteca/BaseDeDatos1-25-26/Tutorias/tutoria 1",
+    "500 Biblioteca/BaseDeDatos1-25-26/Tutorias",
+    "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 2/Clase 24",
+    "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 2/Clase 23",
+    "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 2/Clase 22",
+    "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 2/Clase 21",
+    "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 2/Clase 20",
+    "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 2/Clase 19",
+    "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 2/Clase 18",
+    "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 2/Clase 17",
+    "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 1/Clase 13 (repaso)/images/ejercicios_repaso/1761207385651.png",
+    "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 1/Clase 02/images/05_intro_modelo_relacional/1757671896087.png",
+    "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 1/Clase 02/images/05_intro_modelo_relacional/1757671989194.png",
+    "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 1/Clase 02/images/04_modelo_er_extendido/1757671833615.png",
+    "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 1/Clase 02/images/03_modelo_er_simple/1757671909835.png",
+    "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 1/Clase 04/DER_conceptual_ejercicio_1_clase_4_sin_atributos.png",
+    "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 1/Clase 03/DER_conceptual_ejercicio_1_clase_3.png",
+    "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 1/Clase 02/diagrama_chen_ejercicio_3.png",
+    "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 1/Clase 02/diagrama_chen_ejercicio_2.png",
+    "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 1/Clase 02/diagrama_chen_ejercicio_1.png"
   ]
 }

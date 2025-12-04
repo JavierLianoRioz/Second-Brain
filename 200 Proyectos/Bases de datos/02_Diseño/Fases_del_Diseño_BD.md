@@ -1,0 +1,20 @@
+# Fases del Diseño de Bases de Datos
+
+El diseño de una base de datos es un proceso estructurado que permite transformar los requerimientos de información en un esquema funcional.
+
+## Las 4 Fases
+
+```mermaid
+graph LR
+    Req[1. Requerimientos] --> Conc[2. Diseño Conceptual]
+    Conc --> Log[3. Diseño Lógico]
+    Log --> Fis[4. Diseño Físico]
+```
+
+1.  **Recolección y Análisis de Requerimientos**: Entender qué datos necesita el sistema.
+2.  **Diseño Conceptual**: Crear un esquema independiente del SGBD. Herramienta principal: [[Modelo_Entidad_Relacion]].
+3.  **Diseño Lógico**: Transformar el esquema conceptual a un modelo de datos específico. Herramienta principal: [[Modelo_Relacional_Conceptos]].
+4.  **Diseño Físico**: Implementar el esquema en un [[SGBD_Definicion]] concreto (MySQL, Oracle).
+
+---
+[[00_MOC_Diseño]]
