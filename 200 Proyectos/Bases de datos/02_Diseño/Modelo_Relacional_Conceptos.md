@@ -13,5 +13,11 @@ Para garantizar la integridad, se usan claves:
 *   [[Clave_Primaria]]
 *   [[Clave_Foranea]]
 
+
+## Relación con otros conceptos
+*   **Implementación**: Este modelo se implementa mediante [[SQL_DDL]] (creación de tablas) y [[SQL_DML]] (manipulación).
+*   **Teoría**: Las operaciones sobre estas tablas se definen en el [[Algebra_Relacional_Concepto]].
+*   **Optimización**: El diseño de las tablas se refina mediante la [[Normalizacion_Objetivos]].
+
 ---
 [[00_MOC_Diseño]]

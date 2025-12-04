@@ -3,5 +3,6 @@
   "alwaysUpdateLinks": true,
   "userIgnoreFilters": [
     "500 Biblioteca/"
-  ]
+  ],
+  "promptDelete": false
 }

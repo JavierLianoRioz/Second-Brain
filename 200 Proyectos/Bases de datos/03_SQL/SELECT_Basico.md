@@ -17,5 +17,11 @@ SELECT nombre, precio FROM producto;
 *   `ORDER BY`: Ordenar.
 *   `LIMIT`: Paginación.
 
+
+## Base Teórica
+Este comando implementa las operaciones del [[Algebra_Relacional_Concepto]]:
+*   `WHERE` implementa la [[Seleccion_Operador]].
+*   La lista de columnas implementa la [[Proyeccion_Operador]].
+
 ---
 [[00_MOC_SQL]]

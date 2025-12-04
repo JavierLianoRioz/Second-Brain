@@ -1,6 +1,6 @@
 # Transacción
 
-Una **transacción** es una secuencia de operaciones ([[DML (Data Manipulation Language)]]) que se ejecutan como una **única unidad lógica de trabajo**.
+Una **transacción** es una secuencia de operaciones ([[SQL_DML]]) que se ejecutan como una **única unidad lógica de trabajo**.
 
 El principio es "todo o nada": o todas las operaciones se completan con éxito y se confirman (`COMMIT`), o si una falla, todas se deshacen (`ROLLBACK`).
 

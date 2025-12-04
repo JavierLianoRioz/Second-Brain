@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "f62887b0fcf057ef",
+        "id": "60b7c8f917ab68a8",
         "type": "tabs",
         "children": [
           {
-            "id": "41afca2c34a54d95",
+            "id": "2aab51c2ec6505fa",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "200 Proyectos/Bases de datos/04_Normalizacion/Segunda_Forma_Normal_2FN.md",
+                "file": "200 Proyectos/Bases de datos/05_Transacciones/Transacción.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Segunda_Forma_Normal_2FN"
+              "title": "Transacción"
             }
           }
         ]
@@ -176,7 +176,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "200 Proyectos/Bases de datos/04_Normalizacion/Segunda_Forma_Normal_2FN.md",
+                "file": "200 Proyectos/Bases de datos/05_Transacciones/Transacción.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -204,7 +204,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of Segunda_Forma_Normal_2FN"
+              "title": "Graph of Transacción"
             }
           }
         ]
@@ -226,34 +226,35 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "41afca2c34a54d95",
+  "active": "2aab51c2ec6505fa",
   "lastOpenFiles": [
-    "200 Proyectos/Bases de datos/04_Normalizacion/00_MOC_Normalizacion.md",
-    "200 Proyectos/Bases de datos/04_Normalizacion/Primera_Forma_Normal_1FN.md",
+    "200 Proyectos/Bases de datos/05_Transacciones/Propiedades ACID.md",
+    "200 Proyectos/Bases de datos/03_SQL/Constraints_SQL.md",
+    "200 Proyectos/Bases de datos/05_Transacciones/Transacción.md",
+    "200 Proyectos/Bases de datos/05_Transacciones/00_MOC_Transacciones.md",
     "200 Proyectos/Bases de datos/00_Indice.md",
-    "200 Proyectos/Bases de datos/02_Diseño/02_Modelo_Relacional.md",
-    "200 Proyectos/Bases de datos/06_Algebra_Relacional/Division_Algebra.md",
-    "200 Proyectos/Bases de datos/06_Algebra_Relacional/Join_Algebra.md",
-    "200 Proyectos/Bases de datos/06_Algebra_Relacional/Interseccion_Operador.md",
-    "200 Proyectos/Bases de datos/06_Algebra_Relacional/Renombramiento.md",
-    "200 Proyectos/Bases de datos/06_Algebra_Relacional/Producto_Cartesiano.md",
-    "200 Proyectos/Bases de datos/06_Algebra_Relacional/Diferencia_Operador.md",
-    "200 Proyectos/Bases de datos/06_Algebra_Relacional/Union_Operador.md",
-    "200 Proyectos/Bases de datos/06_Algebra_Relacional/Proyeccion_Operador.md",
-    "200 Proyectos/Bases de datos/06_Algebra_Relacional/Seleccion_Operador.md",
+    "200 Proyectos/Bases de datos/05_Transacciones/Comandos de Control de Transacciones (TCL).md",
     "200 Proyectos/Bases de datos/06_Algebra_Relacional/Algebra_Relacional_Concepto.md",
-    "200 Proyectos/Bases de datos/06_Algebra_Relacional/00_MOC_Algebra_Relacional.md",
-    "200 Proyectos/Bases de datos/04_Normalizacion/Quinta_Forma_Normal_5FN.md",
-    "200 Proyectos/Bases de datos/04_Normalizacion/Cuarta_Forma_Normal_4FN.md",
-    "200 Proyectos/Bases de datos/04_Normalizacion/Tercera_Forma_Normal_3FN.md",
-    "200 Proyectos/Bases de datos/04_Normalizacion/Segunda_Forma_Normal_2FN.md",
-    "200 Proyectos/Bases de datos/04_Normalizacion/Dependencia_Funcional.md",
-    "200 Proyectos/Bases de datos/04_Normalizacion/Normalizacion_Objetivos.md",
-    "200 Proyectos/Bases de datos/03_SQL/SQL_GROUP_BY.md",
-    "200 Proyectos/Bases de datos/03_SQL/SQL_JOIN.md",
-    "200 Proyectos/Bases de datos/03_SQL/SQL_WHERE.md",
-    "200 Proyectos/Bases de datos/03_SQL/SELECT_Basico.md",
-    "200 Proyectos/Bases de datos/03_SQL/DELETE.md",
+    "200 Proyectos/Bases de datos/03_SQL/SQL_DML.md",
+    "DML (Data Manipulation Language).md",
+    "200 Proyectos/Bases de datos/03_SQL/CREATE_TABLE.md",
+    "200 Proyectos/Bases de datos/_Archive/05 - Transacciones.md",
+    "200 Proyectos/Bases de datos/03_SQL/SQL_DDL.md",
+    "200 Proyectos/Bases de datos/03_SQL/00_MOC_SQL.md",
+    "200 Proyectos/Bases de datos/_Archive/Álgebra Relacional.md",
+    "200 Proyectos/Bases de datos/_Archive/Unión (Álgebra Relacional).md",
+    "200 Proyectos/Bases de datos/_Archive/Selección (Álgebra Relacional).md",
+    "200 Proyectos/Bases de datos/_Archive/Renombramiento (Álgebra Relacional).md",
+    "200 Proyectos/Bases de datos/_Archive/Proyección (Álgebra Relacional).md",
+    "200 Proyectos/Bases de datos/_Archive/Producto Cartesiano.md",
+    "200 Proyectos/Bases de datos/_Archive/Join (Combinación).md",
+    "200 Proyectos/Bases de datos/_Archive/Intersección.md",
+    "200 Proyectos/Bases de datos/_Archive/División (Álgebra Relacional).md",
+    "200 Proyectos/Bases de datos/_Archive/Diferencia (Álgebra Relacional).md",
+    "200 Proyectos/Bases de datos/_Archive/06 - Álgebra Relacional.md",
+    "200 Proyectos/Bases de datos/_Archive/02_Operadores_Derivados.md",
+    "200 Proyectos/Bases de datos/_Archive/01_Fundamentos_Operadores.md",
+    "200 Proyectos/Bases de datos/_Archive",
     "500 Biblioteca/BaseDeDatos1-25-26/Tutorias/tutoria 1",
     "500 Biblioteca/BaseDeDatos1-25-26/Tutorias",
     "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 2/Clase 24",
@@ -263,7 +264,6 @@
     "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 2/Clase 20",
     "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 2/Clase 19",
     "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 2/Clase 18",
-    "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 2/Clase 17",
     "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 1/Clase 13 (repaso)/images/ejercicios_repaso/1761207385651.png",
     "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 1/Clase 02/images/05_intro_modelo_relacional/1757671896087.png",
     "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 1/Clase 02/images/05_intro_modelo_relacional/1757671989194.png",
