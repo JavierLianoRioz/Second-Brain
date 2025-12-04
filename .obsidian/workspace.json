@@ -13,12 +13,82 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "200 Proyectos/Bases de datos/05_Transacciones/Transacción.md",
+                "file": "200 Proyectos/Bases de datos/99_Examenes/Examen_Parcial_2_Ejemplo.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Transacción"
+              "title": "Examen_Parcial_2_Ejemplo"
+            }
+          },
+          {
+            "id": "a8bcfcc3d61efe0c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "200 Proyectos/Bases de datos/04_Normalizacion/Tercera_Forma_Normal_3FN.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Tercera_Forma_Normal_3FN"
+            }
+          },
+          {
+            "id": "c9a9c25c8a4fea95",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "200 Proyectos/Bases de datos/04_Normalizacion/Segunda_Forma_Normal_2FN.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Segunda_Forma_Normal_2FN"
+            }
+          },
+          {
+            "id": "ad871caa12053b97",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "200 Proyectos/Bases de datos/04_Normalizacion/Dependencia_Funcional.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Dependencia_Funcional"
+            }
+          },
+          {
+            "id": "2bf56af7969b6241",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "200 Proyectos/Bases de datos/03_SQL/SQL_GROUP_BY.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "SQL_GROUP_BY"
+            }
+          },
+          {
+            "id": "e15e7ecb1d3af9af",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "200 Proyectos/Bases de datos/03_SQL/SQL_JOIN.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "SQL_JOIN"
             }
           }
         ]
@@ -53,7 +123,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#ID_Cliente",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -176,7 +246,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "200 Proyectos/Bases de datos/05_Transacciones/Transacción.md",
+                "file": "200 Proyectos/Bases de datos/99_Examenes/Examen_Parcial_2_Ejemplo.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -204,7 +274,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of Transacción"
+              "title": "Graph of Examen_Parcial_2_Ejemplo"
             }
           }
         ]
@@ -228,11 +298,21 @@
   },
   "active": "2aab51c2ec6505fa",
   "lastOpenFiles": [
-    "200 Proyectos/Bases de datos/05_Transacciones/Propiedades ACID.md",
+    "200 Proyectos/Bases de datos/04_Normalizacion/Tercera_Forma_Normal_3FN.md",
+    "200 Proyectos/Bases de datos/99_Examenes/Examen_Parcial_2_Ejemplo.md",
+    "200 Proyectos/Bases de datos/04_Normalizacion/Segunda_Forma_Normal_2FN.md",
+    "200 Proyectos/Bases de datos/04_Normalizacion/Dependencia_Funcional.md",
+    "200 Proyectos/Bases de datos/03_SQL/SQL_GROUP_BY.md",
+    "200 Proyectos/Bases de datos/03_SQL/Tipos_de_Datos_SQL.md",
+    "200 Proyectos/Bases de datos/03_SQL/SQL_JOIN.md",
     "200 Proyectos/Bases de datos/03_SQL/Constraints_SQL.md",
-    "200 Proyectos/Bases de datos/05_Transacciones/Transacción.md",
-    "200 Proyectos/Bases de datos/05_Transacciones/00_MOC_Transacciones.md",
+    "200 Proyectos/Bases de datos/06_Algebra_Relacional/Join_Algebra.md",
     "200 Proyectos/Bases de datos/00_Indice.md",
+    "200 Proyectos/Bases de datos/99_Examenes",
+    "200 Proyectos/Bases de datos/06_Algebra_Relacional/00_MOC_Algebra_Relacional.md",
+    "200 Proyectos/Bases de datos/05_Transacciones/Transacción.md",
+    "200 Proyectos/Bases de datos/05_Transacciones/Propiedades ACID.md",
+    "200 Proyectos/Bases de datos/05_Transacciones/00_MOC_Transacciones.md",
     "200 Proyectos/Bases de datos/05_Transacciones/Comandos de Control de Transacciones (TCL).md",
     "200 Proyectos/Bases de datos/06_Algebra_Relacional/Algebra_Relacional_Concepto.md",
     "200 Proyectos/Bases de datos/03_SQL/SQL_DML.md",
@@ -245,15 +325,6 @@
     "200 Proyectos/Bases de datos/_Archive/Unión (Álgebra Relacional).md",
     "200 Proyectos/Bases de datos/_Archive/Selección (Álgebra Relacional).md",
     "200 Proyectos/Bases de datos/_Archive/Renombramiento (Álgebra Relacional).md",
-    "200 Proyectos/Bases de datos/_Archive/Proyección (Álgebra Relacional).md",
-    "200 Proyectos/Bases de datos/_Archive/Producto Cartesiano.md",
-    "200 Proyectos/Bases de datos/_Archive/Join (Combinación).md",
-    "200 Proyectos/Bases de datos/_Archive/Intersección.md",
-    "200 Proyectos/Bases de datos/_Archive/División (Álgebra Relacional).md",
-    "200 Proyectos/Bases de datos/_Archive/Diferencia (Álgebra Relacional).md",
-    "200 Proyectos/Bases de datos/_Archive/06 - Álgebra Relacional.md",
-    "200 Proyectos/Bases de datos/_Archive/02_Operadores_Derivados.md",
-    "200 Proyectos/Bases de datos/_Archive/01_Fundamentos_Operadores.md",
     "200 Proyectos/Bases de datos/_Archive",
     "500 Biblioteca/BaseDeDatos1-25-26/Tutorias/tutoria 1",
     "500 Biblioteca/BaseDeDatos1-25-26/Tutorias",
@@ -263,7 +334,6 @@
     "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 2/Clase 21",
     "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 2/Clase 20",
     "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 2/Clase 19",
-    "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 2/Clase 18",
     "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 1/Clase 13 (repaso)/images/ejercicios_repaso/1761207385651.png",
     "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 1/Clase 02/images/05_intro_modelo_relacional/1757671896087.png",
     "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 1/Clase 02/images/05_intro_modelo_relacional/1757671989194.png",
