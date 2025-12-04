@@ -44,6 +44,7 @@ Sacamos los atributos que dependen del atributo no clave (`ID_Depto`) a su propi
 
 **Tabla 1: EMPLEADOS**
 (Solo guardamos la referencia)
+
 | ID_Empleado | Nombre | ID_Depto |
 | :--- | :--- | :--- |
 | 1 | Juan | D1 |
@@ -52,6 +53,7 @@ Sacamos los atributos que dependen del atributo no clave (`ID_Depto`) a su propi
 
 **Tabla 2: DEPARTAMENTOS**
 (Información única del departamento)
+
 | ID_Depto | Nombre_Depto | Ubicacion_Depto |
 | :--- | :--- | :--- |
 | D1 | Ventas | Madrid |
