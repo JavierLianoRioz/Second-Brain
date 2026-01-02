@@ -1,0 +1,508 @@
+--- PAGE 1 ---
+ 
+1 
+ 
+Grado en Ingeniería Informática 
+Redes de Ordenadores 
+Cuestiones de Redes de Área Local 
+  
+C 4.1 (Stallings 15.3) ¿Qué es la topología de una red? 
+C 4.2 (Stallings 15.4) Enumere cuatro topologías comunes para redes LAN y describa 
+brevemente su principio de funcionamiento. 
+C 4.3 (Stallings 15.9) Enumere algunas funciones básicas que se realicen en la capa MAC. 
+C 4.4 (+- Stallings 15.9) Enumere algunas funciones básicas que se realicen en la capa 
+LLC. 
+C 4.5 (+- Stallings 16.2) Explique las estrategias de reintento que pueden ser usados con 
+CSMA. 
+C 4.6 (Stallings 16.3) ¿Qué es CSMA/CD? 
+C 4.7 (Stallings 16.7) En el contexto de las redes Ethernet, ¿qué es el funcionamiento 
+full-duplex? 
+C 4.8 ¿En qué se diferencia CSMA/CD de CSMA/CA? 
+C 4.9 (Stallings 15.10) ¿Qué funciones lleva a cabo un puente? 
+C 4.10 (Stallings 15.12) ¿Qué diferencias existen entre un concentrador y un conmutador 
+de capa 2? 
+C 4.11 (+- Stallings 15.13) ¿En qué se diferencia un conmutador store and forward y un 
+cut-through? 
+C 4.12 Expón una ventaja y una desventaja de la tecnología de conmutación cut-through. 
+C 4.13 Cuando un switch recibe una trama y realiza el cálculo del CRC para comprobar 
+la integridad de la información recibida, ¿qué bits de los recibidos no se emplean para 
+dicho cálculo? 
+C 4.14 Expón qué es una VLAN y tres motivaciones para su uso. 
+C 4.15 (+- Kurose 6.15) Asumiendo que el switch no impone ninguna limitación adicional. 
+¿Cuál es el número máximo de VLANs que pueden configurarse en un switch que 
+soporte el protocolo 802.1Q? ¿Por qué? 
+ 
+ 
+
+
+--- PAGE 2 ---
+ 
+2 
+ 
+Grado en Ingeniería Informática 
+Redes de Ordenadores 
+Problemas de Redes de Área Local 
+  
+P 4.1 (+-Stallings 15.3) Considere la transferencia de un fichero que contiene un millón 
+de caracteres de 8 bits de una estación a otra. Indique el tiempo consumido y el 
+rendimiento efectivo (velocidad efectiva) para los siguientes casos: 
+a) Una topología en estrella con conmutación de circuitos. Suponga que el tiempo 
+de establecimiento del circuito es despreciable y que la velocidad de 
+transmisión del medio (velocidad nominal) es 64 kbps. 
+b) Una topología en bus con dos estaciones distanciadas 𝐷𝐷, una velocidad de 
+transmisión de 𝐵𝐵 bps y un tamaño de paquete 𝑃𝑃 con 80 bits adicionales. Cada 
+paquete se confirma mediante un paquete de 88 bits antes de que se envíe el 
+siguiente. La velocidad de propagación en el bus es de 200 m/µs. Resuelva para: 
+1. 𝐷𝐷 = 1 km, 𝐵𝐵 = 1 Mbps, 𝑃𝑃 = 256 bits 
+2. 𝐷𝐷 = 1 km, 𝐵𝐵 = 10 Mbps, 𝑃𝑃 = 256 bits 
+3. 𝐷𝐷 = 10 km, 𝐵𝐵 = 1 Mbps, 𝑃𝑃 = 256 bits 
+4. 𝐷𝐷 = 1 km, 𝐵𝐵 = 50 Mbps, 𝑃𝑃 = 10.000 bits 
+P 4.2 (+-Kurose 6.17) Recuerda que en el protocolo CSMA/CD el adaptador espera 
+𝐾𝐾× 512 veces el tiempo de bit después de una colisión, donde K se selecciona 
+aleatoriamente. Asumiendo 𝐾𝐾 =  100, ¿cuánto tiempo tiene que esperar el adaptador 
+antes de volver a escuchar el medio en una red a 10 Mbps? ¿Y en una red de 100 Mbps? 
+P 4.3 (+- Kurose 6.23) Considerando la figura que puede verse a continuación (Fuente: 
+Kurose cap. 6). Suponga que todos los enlaces son de 100 Mbps. ¿Cuál es el rendimiento 
+(throughput) máximo agregado total que puede ser conseguido entre los 9 equipos y los 
+2 servidores presentes en la red? 
+ 
+
+
+--- PAGE 3 ---
+ 
+3 
+ 
+Grado en Ingeniería Informática 
+Redes de Ordenadores 
+P 4.4 (+- Kurose 6.24) Suponiendo que los tres switches departamentales de la figura 
+previa son reemplazados por hubs y que todos los enlaces son de 100 Mbps, conteste a 
+la pregunta realizada en el problema P 4.3. 
+P 4.5 (+- Kurose 6.25) Suponiendo que todos los switches de la figura previa son 
+reemplazados por hubs y que todos los enlaces son de 100 Mbps, conteste a la pregunta 
+realizada en el problema P 4.3. 
+P 4.6 (+- Kurose 6.26) Considerando cómo funciona el aprendizaje de direcciones de un 
+switch en el contexto de una red con 6 equipos etiquetados de la A a la F, conectados 
+en estrella a un único switch Ethernet y usando los puertos del 1 al 6 en orden creciente. 
+Suponga que la tabla de direcciones está inicialmente vacía y que i) B envía una trama a 
+E, ii) E responde con una trama a B, iii) A envía una trama a B y iv) B responde con una 
+trama a A. Muestre el estado de la tabla de direcciones del switch antes y después de 
+cada uno de estos eventos. Además, por cada evento, identifique los enlaces por los que 
+el switch reenvía la trama y justifique su respuesta. 
+P 4.7 (+- Tanenbaum 4.38) Considerando la red mostrada en la siguiente figura (Fuente: 
+Tanenbaum cap. 4) y que las tablas de direccionamiento de los switches (puentes) están 
+inicialmente vacías. Identifique los puertos (use la notación: BX/H1.Puerto) por los que 
+se reenviará cada trama para la siguiente secuencia: i) A envía una trama a C, ii) E envía 
+una trama a F, iii) F responde con una trama a E, iv) G envía una trama a E, v) D envía 
+una trama a A y vi) B envía una trama a F. 
+ 
+
+
+--- PAGE 4 ---
+ 
+4 
+ 
+Grado en Ingeniería Informática 
+Redes de Ordenadores 
+Solución de los problemas  
+ 
+P 4.1 Se nos especifica una transferencia de 1 × 106 × 8 = 8 × 106 𝑏𝑏𝑏𝑏𝑏𝑏𝑏𝑏 y se nos pide el 
+tiempo consumido en realizarla y la velocidad efectiva para los siguientes casos: 
+a) Una vez que el circuito está establecido (siendo despreciable el tiempo de 
+establecimiento del mismo) el canal de comunicación se comporta como un enlace 
+único entre origen y destino de la velocidad indicada. Luego, el tiempo consumido por 
+la transferencia será información / velocidad: 
+𝑇𝑇𝑡𝑡𝑡𝑡= 8 × 106
+64 × 103 = 125 𝑠𝑠 
+Dado que todo el tiempo se está enviado información y no hay ningún overhead ni 
+paradas debido a control de flujo, la velocidad efectiva es igual a la velocidad nominal 
+del enlace: 64 kbps. 
+b) Como nos piden múltiples casos dentro de este apartado, primero vamos a plantear 
+unas fórmulas genéricas que luego aplicaremos. Tenemos que darnos cuenta de que a 
+cada paquete de P bits hay que añadirle 80 bits de cabeceras y que tras enviar cada 
+paquete tenemos que parar de enviar en el transmisor y confirmar desde el receptor 
+(análogo a un control de flujo basado en parada y espera) con un paquete de 88 bits. 
+Esto implica que tendremos que enviar 𝑁𝑁= ቒ
+8×106
+𝑃𝑃
+ቓ𝑝𝑝𝑝𝑝𝑝𝑝𝑝𝑝𝑝𝑝𝑝𝑝𝑝𝑝𝑝𝑝 y por simplicidad, 
+asumiremos que el último paquete, que aun pudiendo ser más pequeño debido 
+fraccionar la información y no haber suficiente para llenar un paquete, tiene el mismo 
+tamaño que los demás. Además, por cada paquete realizamos dos envíos (el paquete 
+con 𝑃𝑃 +  80 bits y la confirmación de 88 bits) totalizando 𝑃𝑃+ 168 bits a la velocidad 
+𝐵𝐵 indicada. Y finalmente, cada uno de estos dos envíos añade un retardo de 
+propagación 𝑅𝑅𝑝𝑝=
+𝐷𝐷
+𝑉𝑉𝑝𝑝, que tendremos que tener en cuenta por cada paquete y por cada 
+confirmación para calcular el tiempo consumido por la transmisión. Entonces, este 
+será: 
+𝑇𝑇𝑡𝑡𝑡𝑡= 𝑁𝑁× ቆ𝑃𝑃+ 168
+𝐵𝐵
++ 2 × 𝐷𝐷
+𝑉𝑉𝑝𝑝
+ቇ 
+𝑉𝑉𝑒𝑒𝑒𝑒= 8 × 106
+𝑇𝑇𝑡𝑡𝑡𝑡
+ 
+1. 𝑁𝑁= ቒ
+8×106
+256 ቓ= 31.250, 𝑇𝑇𝑡𝑡𝑡𝑡= 31.250 × ቆ
+256+168
+1×106 +
+2×103
+200
+1×10−6ቇ= 13,5625 𝑠𝑠, 
+𝑉𝑉𝑒𝑒𝑒𝑒=
+8×106
+13,5625 ≈590 𝑘𝑘𝑘𝑘𝑘𝑘𝑘𝑘 
+2.  𝑇𝑇𝑡𝑡𝑡𝑡= 31.250 × ቆ
+256+168
+10×106 +
+2×103
+200
+1×10−6ቇ= 1,6375 𝑠𝑠, 𝑉𝑉𝑒𝑒𝑒𝑒=
+8×106
+1,6375 ≈4,89 𝑀𝑀𝑀𝑀𝑀𝑀𝑀𝑀 
+3. 𝑇𝑇𝑡𝑡𝑡𝑡= 31.250 × ቆ
+256+168
+1×106 +
+2×104
+200
+1×10−6ቇ= 16,375 𝑠𝑠, 𝑉𝑉𝑒𝑒𝑒𝑒=
+8×106
+16,375 ≈489 𝐾𝐾𝐾𝐾𝐾𝐾𝐾𝐾 
+4. 𝑁𝑁= ቒ
+8×106
+10.000ቓ= 800, 𝑇𝑇𝑡𝑡𝑡𝑡= 800 × ቆ
+10.000+168
+50×106
++
+2×103
+200
+1×10−6ቇ= 0,170688 𝑠𝑠, 
+𝑉𝑉𝑒𝑒𝑒𝑒=
+8×106
+0,170688 ≈46,87 𝑚𝑚𝑚𝑚𝑚𝑚𝑚𝑚 
+ 
+ 
+
+
+--- PAGE 5 ---
+ 
+5 
+ 
+Grado en Ingeniería Informática 
+Redes de Ordenadores 
+P 4.2 
+Asumiendo que 𝐾𝐾= 100, el adaptador tiene que esperar 51.200 veces el tiempo de bit 
+antes de transmitir. Luego, con una velocidad de transmisión de 10 Mbps equivale a una espera 
+de 
+51.200 𝑏𝑏𝑏𝑏𝑏𝑏𝑏𝑏
+10×106 𝑏𝑏𝑏𝑏𝑏𝑏= 5,12 × 10−3𝑠𝑠= 5,12 𝑚𝑚𝑚𝑚. Y con una velocidad de transmisión de 100 Mbps 
+equivale a una espera de 
+51.200
+100×106 = 512 × 10−6 = 512 𝜇𝜇𝜇𝜇. 
+P 4.3 
+En base a la imagen presentada, si los 9 equipos y los 2 servidores, es decir 11 nodos, 
+pueden enviar a su máximo rendimiento (100 Mbps), puede conseguirse un throughput 
+agregado total de 11 × 100 𝑀𝑀𝑀𝑀𝑀𝑀𝑀𝑀= 1.100 𝑀𝑀𝑀𝑀𝑀𝑀𝑀𝑀= 1,1 𝐺𝐺𝐺𝐺𝐺𝐺𝐺𝐺. 
+P 4.4 
+Cada hub departamental es un dominio de colisión aislado con un máximo throughput 
+de 100 Mbps. Entonces, el máximo rendimiento agregado que se puede conseguir es: 
+3 × 100 + 2 × 100 = 500 𝑀𝑀𝑀𝑀𝑀𝑀𝑀𝑀. 
+P 4.5 
+En este ejercicio, es importante darse cuenta que los switches departamentales (ahora 
+hubs) y los servidores están interconectados mediante un switch que, si ahora le convertimos 
+en un hub, implica que los 11 nodos (9 equipos + 2 servidores) están en el mismo dominio de 
+colisión. Entonces, el máximo rendimiento agregado será de 100 Mbps. 
+P 4.6 
+A continuación se muestra una tabla con la información solicitada y una breve 
+justificación. 
+Acción 
+Tabla de 
+direcciones del 
+switch antes 
+Tabla de 
+direcciones del 
+switch después 
+Enlaces 
+por los 
+que se 
+reenvía 
+Explicación 
+B   E 
+MAC Puerto 
+ 
+MAC Puerto 
+B 
+2 
+ 
+1, 3, 4, 5 
+y 6 
+Como la tabla inicialmente está 
+vacía, al no encontrar la MAC de E 
+en la tabla, la trama se reenvía por 
+todos los puertos menos por el que 
+se recibió. La MAC de B se aprende 
+y se asocia al puerto 2. 
+E   B 
+MAC Puerto 
+B 
+2 
+ 
+MAC Puerto 
+B 
+2 
+E 
+5 
+ 
+2 
+La trama se reenvía por el puerto 
+asociado a la MAC de destino que ya 
+se conoce. Además, aprende la MAC 
+de E y la asocia al puerto 5. 
+A   B 
+MAC Puerto 
+B 
+2 
+E 
+5 
+ 
+MAC Puerto 
+B 
+2 
+E 
+5 
+A 
+1 
+ 
+2 
+Igual que antes, el destino de la 
+trama está en la tabla y entonces se 
+reenvía por el puerto asociado a la 
+misma. Además, aprende la MAC de 
+A y la asocia al puerto 1. 
+B   A 
+MAC Puerto 
+B 
+2 
+E 
+5 
+A 
+1 
+ 
+MAC Puerto 
+B 
+2 
+E 
+5 
+A 
+1 
+ 
+1 
+De nuevo, la MAC de destino está en 
+la tabla por lo que la trama se 
+reenvía por el puerto asociado a la 
+misma. En este caso, como la MAC 
+de origen ya estaba en la tabla, no 
+se añade ninguna entrada. 
+ 
+ 
+ 
+
+
+--- PAGE 6 ---
+ 
+6 
+ 
+Grado en Ingeniería Informática 
+Redes de Ordenadores 
+P 4.7 
+A continuación se muestra una tabla con la información solicitada y adicionalmente se 
+muestran las tablas de direcciones de los switches después de la acción (resaltando en rojo el 
+cambio que se ha producido) y una breve explicación por pedagogía. Por supuesto, una 
+solución sin esta información adicional sería totalmente correcta. 
+Acción 
+Tabla de 
+direcciones del 
+switch B1 
+Tabla de 
+direcciones del 
+switch B2 
+Enlaces por 
+los que se 
+reenvía 
+Explicación 
+A   C 
+MAC Puerto 
+A 
+1 
+ 
+MAC Puerto 
+A 
+4 
+ 
+B1.2, B1.3, 
+B1.4, B2.1, 
+B2.2, B2.3, 
+H1.1 y H1.2 
+Como 
+ambas 
+tablas 
+están 
+inicialmente vacías, la trama se 
+reenvía por todos los puertos menos 
+por el que llegó en los dispositivos 
+B1, B2 y H1. Los dos switches 
+aprenden la MAC de A y asocian el 
+puerto por el que se recibió la 
+trama. 
+E   F 
+MAC Puerto 
+A 
+1 
+E 
+4 
+ 
+MAC Puerto 
+A 
+4 
+E 
+2 
+ 
+H1.2, H1.3, 
+B2.1, B2.3, 
+B2.4, B1.1, 
+B1.2 y B1.3 
+El hub manda la trama a F y al 
+switch B2, y como la MAC de E no 
+está en su tabla, éste y por tanto B1, 
+la reenvían por todos los puertos 
+menos por el que la recibieron. 
+Además, ambos switches aprenden 
+la MAC de E y asocian el puerto. 
+F  E 
+MAC Puerto 
+A 
+1 
+E 
+4 
+ 
+MAC Puerto 
+A 
+4 
+E 
+2 
+F 
+2 
+ 
+H1.1, H1.3 
+El hub manda la trama a E y al 
+switch B2, como la MAC de E está en 
+mismo puerto por el que se ha 
+recibido la trama, B2 descarta la 
+trama y no la reenvía pero aprende 
+la MAC de F y le asocia el puerto 2. 
+G  E 
+MAC Puerto 
+A 
+1 
+E 
+4 
+ 
+MAC Puerto 
+A 
+4 
+E 
+2 
+F 
+2 
+G 
+3 
+ 
+B2.2, H1.1 
+y H1.2 
+B2 conoce la MAC de E y reenvía la 
+trama por el puerto asociado a E (el 
+2), cuando llega al hub, este la 
+reenvía por los puertos 1 y 2, por lo 
+que esta llega tanto a E como a F. 
+B2 aprende la MAC de G y la asocia 
+al puerto correspondiente. 
+D  A 
+MAC Puerto 
+A 
+1 
+E 
+4 
+D 
+4 
+ 
+MAC Puerto 
+A 
+4 
+E 
+2 
+F 
+2 
+G 
+3 
+D 
+1 
+B2.4 y B1.1 
+Como la MAC de A se encuentra en 
+las tablas de ambos switches, B2 la 
+reenvía por el puerto 4 y B1 por el 1. 
+Ambos 
+switches 
+aprenden 
+la 
+dirección MAC de D y le asocian el 
+puerto correspondiente. 
+B  F 
+MAC Puerto 
+A 
+1 
+E 
+4 
+D 
+4 
+B 
+2 
+ 
+MAC Puerto 
+A 
+4 
+E 
+2 
+F 
+2 
+G 
+3 
+D 
+1 
+B 
+4 
+ 
+B1.1, B1.3, 
+B1.4, B2.2, 
+H1.1 y H1.2 
+B1 desconoce la MAC de F, por lo 
+que reenvía la trama por todos los 
+puertos menos por el que la recibió. 
+Como B2 ya tiene la MAC de F en su 
+tabla, la reenvía por el puerto 
+correspondiente (el 2) y el hub la 
+reenvía por el 1 y 2. Ambos switches 
+aprenden la MAC de B y le asocian 
+el puerto correspondiente. 
+
+
+--- PAGE 7 ---
+ 
+7 
+ 
+Grado en Ingeniería Informática 
+Redes de Ordenadores 
+ 
+
+

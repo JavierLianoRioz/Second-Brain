@@ -19,5 +19,8 @@ Este es el mapa de contenido para el módulo de Normalización.
 
 [[Resumen_Niveles_Normalizacion]]
 
+## Práctica
+*   [[Ejercicio_Normalizacion_Completo]]
+
 ---
 [[00_Indice]]

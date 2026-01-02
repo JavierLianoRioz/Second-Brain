@@ -1,0 +1,1313 @@
+--- PAGE 1 ---
+ 
+1 
+ 
+Grado en Ingeniería Informática 
+Redes de Ordenadores 
+Cuestiones de Comunicación de datos 
+  
+C 3.1 ¿Cuál es la característica principal del nivel físico sobre la que se fundamenta el 
+nivel de enlace? 
+C 3.2 Describe el problema de la temporización y expón un ejemplo en el que se podría 
+cometer un error de muestreo. 
+C 3.3 (Stallings 6.1) En la transmisión asíncrona, ¿cómo se distingue entre la transmisión 
+de un carácter y el siguiente? 
+C 3.4 ¿Cuál es la mayor ventaja y la mayor desventaja de la transmisión asíncrona? 
+C 3.5 (Stallings 6.3) ¿Cómo se realiza la sincronización en la transmisión síncrona? 
+C 3.6 ¿Qué técnica permite mantener la propiedad de la transparencia en los datos 
+cuando se usa un flag para marcar el final de trama? Expón su funcionamiento con un 
+ejemplo.  
+C 3.7 Ante la presencia de errores aislados durante una transmisión, si la probabilidad 
+de que un bit recibido sea erróneo es 𝑃𝑃𝑏𝑏, ¿la presencia de un error afecta a la 
+probabilidad de error de otro bit? y ¿cuál es la probabilidad de que una trama de 𝐹𝐹 bits 
+llegue sin errores? 
+C 3.8 ¿Qué es un bit de paridad y cuándo obtenemos un falso negativo si usamos un 
+mecanismo de detección de errores basado en este? 
+C 3.9 (Stallings 6.5) ¿Qué es la CRC? 
+C 3.10 (Stallings 6.6) ¿Por qué es de esperar que una CRC detecte más errores que un 
+bit de paridad? 
+C 3.11 En el dominio de los mecanismos de corrección de errores, ¿qué significan las 
+siglas BEC y FEC? 
+C 3.12 En el dominio de la corrección de errores, expón dos situaciones y la razón por la 
+que FEC es más apropiado que BEC. 
+C 3.13 (Stallings 7.2) Defina el control de flujo. 
+C 3.14 Expón una situación en la que una transmisión es fiable en ausencia de control 
+de flujo. 
+C 3.15 (Stallings 7.3) Describa un esquema de control de flujo mediante parada y espera. 
+C 3.16 Describe un esquema de control de flujo mediante ventana deslizante. 
+C 3.17 Describe un ejemplo de uso de la incorporación de confirmación (piggybacking) 
+apoyándote en un diagrama temporal. 
+
+
+--- PAGE 2 ---
+ 
+2 
+ 
+Grado en Ingeniería Informática 
+Redes de Ordenadores 
+C 3.18 ¿Qué ventaja tiene el control de flujo mediante ventana deslizante sobre el 
+basado en parada y espera? 
+C 3.19 En un enlace se emplea un control de flujo basado en parada y espera en el que 
+se envía una confirmación (ACK) tras recibir cada trama correcta y se descarta cada 
+trama incorrecta. Para mejorar su rendimiento se valoran las siguientes alternativas: 
+a) Emplear incorporación de confirmación (piggybacking) y esperar a la siguiente 
+trama de datos que el receptor quiera transmitir para añadir un ACK explícito. 
+b) Emplear tramas de rechazo (REJ) explícitas tras la recepción de una trama 
+incorrecta. 
+Indica cuál de ellas proporcionará una mejor utilización del citado enlace y cuál 
+generará menos mensajes en el mismo. 
+C 3.20 (Stallings 7.10) Describa el procedimiento ARQ. 
+C 3.21 ¿Cuándo es necesario el uso del procedimiento ARQ en un mecanismo de control 
+de errores que emplea FEC? 
+C 3.22 (Stallings 7.11) Enumere y defina brevemente tres variantes de ARQ. 
+C 3.23 Expón una ventaja y un inconveniente de ARQ con rechazo selectivo frente a ARQ 
+con vuelta atrás N. 
+C 3.24 ¿Qué entendemos cuando decimos que una transmisión es fiable? 
+C 3.25 ¿Qué mecanismos estudiados son necesarios para garantizar una transmisión 
+fiable? 
+C 3.26 Razona si Ethernet, TCP y UDP garantizan una transmisión fiable. 
+ 
+ 
+
+
+--- PAGE 3 ---
+ 
+3 
+ 
+Grado en Ingeniería Informática 
+Redes de Ordenadores 
+Problemas de Comunicación de datos 
+ 
+P 3.1 En un sistema que emplea transmisión asíncrona, se desea enviar 500 caracteres 
+ASCII (8 bits por carácter). ¿Cuál es el número mínimo de bits adicionales que se 
+necesitan? ¿Qué porcentaje de los datos enviados en total supone un overhead? 
+P 3.2 (Stallings 6.1) Supóngase que se envía un fichero de 10.000 bytes por una línea a 
+2.400 bps. 
+a) Calcule la redundancia, en términos de los bits suplementarios y tiempos 
+introducidos, si se utiliza transmisión asíncrona. Suponga un bit de comienzo y 
+un bit de parada con longitudes iguales a la de un bit de datos y suponga que 
+por cada carácter se transmiten 8 bits sin paridad. 
+b) Calcule la redundancia, en términos de los bits suplementarios y tiempos 
+introducidos, si se utiliza transmisión síncrona. Suponga que los datos se envían 
+en tramas. Cada trama tiene 1.000 caracteres = 8.000 bits, con una cabecera de 
+48 bits de control por cada trama. 
+c) ¿Cuáles serían las respuestas para los apartados a y b si el fichero tuviera 
+100.000 
+caracteres? 
+d) ¿Cuáles serían las respuestas para los apartados a y b para el fichero original de 
+10.000 bytes pero a 9.600 bps? 
+P 3.3 Se desea diseñar un sistema de comunicaciones empleando transmisión síncrona, 
+en el que cada trama emplea 16 bits en total como delimitadores de trama y 48 bits con 
+información de control. ¿Cuál debe ser la longitud de trama para que el overhead 
+(delimitadores + control) sea igual o inferior al 25%? 
+P 3.4 (Stallings 6.7) Si se incluyera un bit de paridad en cada carácter (8 bits), ¿cambiaría 
+la probabilidad de recibir un mensaje correctamente? 
+P 3.5 (Stallings 6.9) Suponga una trama con dos caracteres de cuatro bits cada uno. Sea 
+la probabilidad de error de bit (independiente para cada bit) igual a 10-3. 
+a) ¿Cuál es la probabilidad de que la trama recibida contenga al menos un bit 
+erróneo? 
+b) Ahora añádase un bit de paridad a cada carácter. ¿Cuál es la probabilidad? 
+P 3.6 Dado el mensaje 𝑀𝑀= 1101010110  y el divisor 𝑃𝑃= 110101 utilizado para 
+calcular una secuencia de comprobación. Responde a las siguientes preguntas: 
+a) ¿Cuál será la longitud de la secuencia completa a transmitir? 
+b) Expresa el divisor 𝑃𝑃 como polinomio generador. 
+c) Calcula dicha secuencia de comprobación CRC. 
+ 
+ 
+
+
+--- PAGE 4 ---
+ 
+4 
+ 
+Grado en Ingeniería Informática 
+Redes de Ordenadores 
+P 3.7 (+- Stallings 6.14) En un esquema de detección de errores que usa CRC, se elige 
+𝑃𝑃(𝑥𝑥) = 𝑥𝑥4 + 𝑥𝑥+ 1. 
+a) Codifique los bits 10010011011. 
+b) Suponga que el canal introduce un patrón de errores 100010000000000 (es 
+decir, invierte el bit 1 y el 5) ¿Qué se recibirá? ¿Puede detectarse este error? 
+c) Repetir el punto b para el patrón de errores 100110000000000. 
+d) Repetir el punto b para el patrón de errores 111100000000000. 
+P 3.8 (Stallings 7.4) En la figura, el nodo 𝐴𝐴 genera tramas que se envían al nodo 𝐶𝐶 a través 
+del nodo 𝐵𝐵. Determine la velocidad de transmisión mínima entre los nodos 𝐵𝐵 y 𝐶𝐶 de 
+manera que la memoria temporal del nodo 𝐵𝐵 no se sature, teniendo en cuenta que: 
+• La velocidad de transmisión entre 𝐴𝐴 y 𝐵𝐵 es 100 kbps. 
+• El retardo de propagación es 5 μs/km para ambas líneas. 
+• Existen líneas full-duplex entre los nodos. 
+• Todas las tramas de datos tienen una longitud de 1.000 bits y se hace uso de 
+tramas ACK independientes de longitud despreciable. 
+• Entre 𝐴𝐴 y 𝐵𝐵 se usa un protocolo de ventana deslizante con tamaño de ventana 
+𝑊𝑊= 3. 
+• Entre 𝐵𝐵 y 𝐶𝐶 se usa un protocolo de parada y espera. 
+• No hay errores. 
+Sugerencia: para no saturar la memoria temporal de B, el número medio de tramas 
+entrantes en dicho nodo debe ser igual, a lo largo de un intervalo grande, al número 
+medio de tramas salientes. (Figura: Stallings cap. 7). 
+ 
+P 3.9 (Stallings 7.9) Dos nodos vecinos (𝐴𝐴 y 𝐵𝐵) usan un protocolo de ventana deslizante 
+de 3 bits para los números de secuencia. Se utiliza como procedimiento ARQ con vueltas 
+atrás N con un tamaño de ventana 𝑊𝑊= 4. Suponiendo que 𝐴𝐴 transmite y 𝐵𝐵 recibe, 
+muestre las distintas posiciones de las ventanas de transmisión de 𝐴𝐴 y recepción de 𝐵𝐵 
+para la siguiente sucesión de eventos: 
+a) Antes de que 𝐴𝐴 envíe ninguna trama. 
+b) Después de que 𝐴𝐴 envíe las tramas 0, 1 y 2 y reciba las confirmaciones de 𝐵𝐵 
+correspondientes a las tramas 0 y 1. 
+c) Después de que 𝐴𝐴 envíe las tramas 3, 4 y 5, 𝐵𝐵 confirme la 4 y la trama ACK 
+correspondiente se reciba en 𝐴𝐴. 
+P 3.10 (Stallings 7.6) En el estudio del esquema ARQ con parada y espera no se ha hecho 
+mención a las tramas de rechazo (REJ). ¿Por qué no es necesario utilizar REJ(0) y REJ(1) 
+en un ARQ con parada y espera? 
+
+
+--- PAGE 5 ---
+ 
+5 
+ 
+Grado en Ingeniería Informática 
+Redes de Ordenadores 
+P 3.11 (+- Stallings 7.7) Supóngase el empleo de un esquema ARQ con vuelta atrás N con 
+tamaño de ventana 𝑊𝑊= 4. Muestre mediante un ejemplo que se necesita una 
+numeración de secuencia de 3 bits. 
+P 3.12 (+- Stallings 7.7) Supóngase el empleo de un esquema ARQ con rechazo selectivo 
+con 𝑊𝑊= 7. Muestre mediante un ejemplo que se necesita una numeración de 
+secuencia de 4 bits. 
+ 
+
+
+--- PAGE 6 ---
+ 
+6 
+ 
+Grado en Ingeniería Informática 
+Redes de Ordenadores 
+Solución de los problemas  
+ 
+P 3.1 Como se puede ver en la diapositiva 7 del tema 3, la transmisión asíncrona 
+emplea bits de start, stop y, de manera opcional, paridad. Como el ejercicio nos solicita 
+el número mínimo, no emplearemos paridad y usaremos la duración mínima de un 
+tiempo de bit por cada uno de los bits requeridos. Luego, serán necesarios 2 bits 
+adicionales por cada carácter a enviar, lo que da un total de 1.000 bits. El overhead es el 
+exceso de información enviado, en este caso, los datos a enviar eran 500 caracteres * 8 
+bits cada uno y los datos adicionales hemos calculado anteriormente que son 1.000 bits. 
+Luego el overhead supone un 
+1.000
+500 ∗ 8 + 1.000 =
+1.000
+5.000 = 0.2 = 20%. 
+P 3.2  
+a) Se emplea 1 bit de start, otro de stop y no se emplea paridad. Luego se emplean 
+2 bits adicionales por cada 8 bits de cada carácter. Entonces, si por cada 8 bits 
+(1 byte) de datos se envían 2 más de sincronización, estamos el 20% del tiempo 
+enviando bits de sincronización y el 80% bits de datos. Si enviamos 10.000 bytes, 
+añadiremos 10.000 ∗2 = 20.000 bits (2.500 bytes) de sincronización, 
+sumando un total de 12.500 bytes (100.000 bits). El tiempo de transmisión total 
+será de 
+100.000
+2.400 = 41,67 𝑠𝑠, de los que el 20%, luego 8,33 segundos, se emplean 
+en la transmisión de bits de sincronización. 
+b) Si cada trama tiene 1.000 bytes y se quieren enviar 10.000, necesitaremos 
+exactamente 10 tramas y dado que cada trama tiene una cabecera de 48 bits, 
+se añadirán 480 bits de control, dando un total de 80.480 bits a enviar. El tiempo 
+total de transmisión será de 
+80.480
+2.400 = 33,53 𝑠𝑠, de los que 
+480
+2.400 = 0,2 𝑠𝑠 se 
+emplean en la transmisión de bits de sincronización. 
+c) Dado que la información a enviar se multiplica por un factor de 10, la 
+información adicional y los tiempos también se ven multiplicados por dicho 
+factor. En transmisión asíncrona, añadiremos una redundancia de 200.000 bits 
+de sincronización que suponen un tiempo adicional de 83,33 segundos al que se 
+tardaría en enviar los datos. En transmisión síncrona, añadiremos un overhead 
+de 4.800 bits y se emplearán 2 segundos en la transmisión de los mismos. 
+d) En este caso, la velocidad ahora es 
+9.600
+2.400 = 4 veces superior, lo que no afecta al 
+overhead en términos de bits que serán los mismos que en los apartados a y b. 
+Sin embargo, el tiempo se ve reducido en este mismo factor como podemos ver 
+a continuación. En el caso de transmisión asíncrona se envían 20.000 bits de 
+sincronización que, a una velocidad de 9.600 bps, requiere que se esté enviando 
+información de sincronización durante 2.08 segundos. En el caso de transmisión 
+síncrona, se enviaban 480 bits adicionales y se requerirán 0,05 segundos. 
+ 
+ 
+
+
+--- PAGE 7 ---
+ 
+7 
+ 
+Grado en Ingeniería Informática 
+Redes de Ordenadores 
+P 3.3 Si se emplean 16 bits como delimitadores de trama y 48 bits con información de 
+control, el tamaño de la trama será 𝐿𝐿= 𝐷𝐷+ 16 + 48 = 𝐷𝐷+ 64 𝑏𝑏𝑏𝑏𝑏𝑏𝑏𝑏, siendo D el 
+tamaño del campo de datos en bits. Se nos pide que el overhead sea igual o inferior al 
+25% y este se calcula como la cantidad de información añadida sobre el total de datos 
+enviados, luego: 
+16 + 48
+𝐷𝐷+ 16 + 48 =
+64
+𝐷𝐷+ 64 ≤0,25 
+64 ≤0,25 ∗𝐷𝐷+ 0,25 ∗64 
+64 ≤0,25 ∗𝐷𝐷+ 16 
+48 ≤0,25 ∗𝐷𝐷 
+192 ≤𝐷𝐷 𝑏𝑏𝑏𝑏𝑏𝑏𝑏𝑏. 
+Luego, con un campo de datos de al menos 192 bits, el tamaño total de la trama 
+será de 𝐿𝐿= 𝐷𝐷+ 64 = 192 + 64 = 256 bits. Nótese que, si el campo de datos es mayor 
+de 192 bits, el overhead será inferior al 25% que se requería. 
+P 3.4 Siendo 𝑃𝑃𝑏𝑏 la probabilidad de error en un bit. La probabilidad de recibir 
+correctamente un carácter es igual a la probabilidad de recibir correctamente sus 8 bits. 
+Dado que 𝑃𝑃𝑏𝑏 es la probabilidad de que un bit sea erróneo, entonces  1 −𝑃𝑃𝑏𝑏 es la 
+probabilidad de que un bit sea correcto. Luego, como la trama tiene 𝐿𝐿 bits, y cada bit 
+tiene una probabilidad de ser correcto de manera independiente, entonces la 
+probabilidad de que todos los bits de la trama sean correctos se obtiene multiplicando la 
+probabilidad de cada bit de ser correcto, que se puede expresar como 𝑃𝑃(𝑇𝑇𝑜𝑜𝑜𝑜) =
+(1 −𝑃𝑃𝑏𝑏)𝐿𝐿. Entonces, si no usamos paridad (𝐿𝐿= 8) y si la usamos tendríamos que recibir 
+correctamente los 8 bits de datos y el bit de paridad, luego 𝐿𝐿= 9. Entonces, dado que 
+(1 −𝑃𝑃𝑏𝑏)9 < (1 −𝑃𝑃𝑏𝑏)8, podemos concluir que el uso de 1 bit de paridad no mejora la 
+probabilidad de recibir correctamente el mensaje, sino que la empeora. Sin embargo, sin 
+paridad es imposible determinar si se ha recibido un carácter con error o no y con 
+paridad, cualquier error simple (en un único bit) se detecta gracias al bit de paridad, 
+luego, la probabilidad de que pase un error inadvertido es mucho menor. 
+P 3.5 Siendo 𝑃𝑃𝑏𝑏= 10−3 = 0,001. 
+a) La probabilidad de que una trama tenga al menos un error es la 
+complementaria a la de que la trama llegue correctamente, por lo que vamos a 
+calcular primero esta. La probabilidad de que una trama de 𝐿𝐿 bits llegue 
+correctamente, cada uno de ellos con probabilidad 1 −𝑃𝑃𝑏𝑏 independiente, es 
+(1 −𝑃𝑃𝑏𝑏)𝐿𝐿. Como estamos enviando una trama con 2 caracteres de 4 bits cada 
+uno, 𝐿𝐿= 8. Entonces, como ya se había dicho previamente, la probabilidad de 
+que haya al menos un error será la complementaria de la expuesta 
+previamente, es decir, 1 −(1 −𝑃𝑃𝑏𝑏)8 = 1 −0,9998 = 0,0079. 
+b) El bit de paridad en cada carácter de 4 bits no modifica la probabilidad de error 
+por bit, pero sí que aumente el número de bits a enviar de 8 a 10. Luego, en este 
+
+
+--- PAGE 8 ---
+ 
+8 
+ 
+Grado en Ingeniería Informática 
+Redes de Ordenadores 
+caso, la probabilidad de que haya al menos un error será de: 1 −(1 −𝑃𝑃𝑏𝑏)10 =
+1 −0,99910 = 0,0099. 
+Como se puede ver, el uso de bits de paridad no reduce la probabilidad de error, de 
+hecho, al contrario, la aumenta. Sin embargo, gracias a ellos es posible detectar gran 
+parte de los errores, algo imposible en el caso a). 
+P 3.6 Siendo 𝑀𝑀= 1101010110 y 𝑃𝑃= 110101. 
+a) El mensaje 𝑀𝑀 tiene una longitud de 10 bits, y el polinomio generador tiene una 
+longitud de 6, por lo que el CRC resultante tendrá una longitud de 5. Luego, la 
+secuencia de la longitud completa a transmitir (incluyendo la suma de 
+comprobación FCS calculada según el mecanismo del CRC) tendrá una longitud 
+de 15 bits. 
+b) El polinomio generador asociado al divisor 𝑃𝑃 dado es: 𝑃𝑃(𝑥𝑥) = 𝑥𝑥5 + 𝑥𝑥4 + 𝑥𝑥2 +
+1. 
+c) El cálculo de la secuencia de comprobación se realiza mediante la división de M 
+extendida con tantos ceros como sea el grado del polinomio generador entre P, 
+como se muestra a continuación. 
+1 
+1 
+0 
+1 
+0 
+1 
+0 
+1 
+1 
+0 
+0 
+0 
+0 
+0 
+0 
+ 
+1 
+1 
+0 
+1 
+0 
+1 
+ 
+ 
+ 
+1 
+1 
+0 
+1 
+0 
+1 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+ 
+1 
+0 
+0 
+0 
+0 
+0 
+0 
+1 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+1 
+1 
+0 
+0 
+0 
+0 
+| 
+| 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+1 
+1 
+0 
+1 
+0 
+1 
+| 
+| 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+0 
+0 
+0 
+1 
+0 
+1 
+0 
+0 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+El FCS 10100 concatenado al mensaje M es divisible por P. El proceso es igual 
+salvo la segunda resta que directamente da 0, lo que indica que el mensaje es correcto. 
+P 3.7  
+a) Nos piden codificar el mensaje 𝑀𝑀= 10010011011, usando 𝑃𝑃(𝑥𝑥) = 𝑥𝑥4 + 𝑥𝑥+
+1, por lo que tendremos que concatenar a M la FCS calculada. Para ello, 
+suponemos tantos 0s como el grado del polinomio como FCS y realizamos la 
+división entre el polinomio generador. 
+1 0 0 1 0 0 1 1 0 1 1 0 0 0 0  
+1 0 0 1 1  
+ 
+ 
+ 
+ 
+1 0 0 1 1 | 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+ 
+1 0 0 0 1 0 1 0 1 0 
+0 0 0 0 1 0 1 1 0 | 
+| 
+| 
+| 
+| 
+| 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+1 0 0 1 1 | 
+| 
+| 
+| 
+| 
+| 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+0 0 1 0 1 1 1 | 
+| 
+| 
+| 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+1 0 0 1 1 | 
+| 
+| 
+| 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+0 0 1 0 0 0 0 | 
+| 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+1 0 0 1 1 | 
+| 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+0 0 0 1 1 0 0  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Entonces, la secuencia enviada será: 100100110111100. 
+b) Se invierte el bit 1 y 5 empezando por la izquierda, luego se recibirá: 
+000110110111100. Para determinar si hay error o no, el receptor calculará el 
+resto de la división de la secuencia recibida entre el polinomio generador. Como 
+se puede ver a continuación, esta división da un resto no nulo, por lo que se 
+concluye correctamente que ha habido un error. 
+
+
+--- PAGE 9 ---
+ 
+9 
+ 
+Grado en Ingeniería Informática 
+Redes de Ordenadores 
+0 0 0 1 1 0 1 1 0 1 1 1 1 0 0  
+1 0 0 1 1  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+1 0 0 1 1 | 
+| 
+| 
+| 
+| 
+| 
+| 
+ 
+0 0 0 1 1 0 0 1 1 1 
+ 
+ 
+ 
+0 1 0 0 0 0 | 
+| 
+| 
+| 
+| 
+| 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+1 0 0 1 1 | 
+| 
+| 
+| 
+| 
+| 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+0 0 0 1 1 1 1 1 | 
+| 
+| 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+1 0 0 1 1 | 
+| 
+| 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+0 1 1 0 0 1 | 
+| 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+1 0 0 1 1 | 
+| 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+0 1 0 1 0 0 | 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+1 0 0 1 1 | 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+0 0 1 1 1 0  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+c) Se invierten los bits 1, 4 y 5, es decir: 000010110111100. 
+0 0 0 0 1 0 1 1 0 1 1 1 1 0 0  
+1 0 0 1 1  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+1 0 0 1 1 | | | | | |  
+0 0 0 0 1 0 1 0 1 0 0 
+ 
+ 
+ 
+ 
+0 0 1 0 1 1 1 | | | |  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+1 0 0 1 1 | | | |  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+0 0 1 0 0 1 1 | |  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+1 0 0 1 1 | |  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+0 0 0 0 0 0 0  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Este error, como el resto es cero, no es detectado por el receptor. 
+d) Se invierte una ráfaga de 4 bits al comienzo del mensaje, es decir: 01100011011. 
+0 1 1 0 0 0 1 1 0 1 1 1 1 0 0  
+1 0 0 1 1  
+ 
+ 
+ 
+ 
+ 
+ 
+1 0 0 1 1 | | | | | | | | |  
+0 1 1 0 1 0 0 0 1 1 1 
+ 
+0 1 0 1 1 1 | | | | | | | |  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+1 0 0 1 1 | | | | | | | |  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+0 0 1 0 0 1 0 | | | | | |  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+1 0 0 1 1 | | | | | |  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+0 0 0 0 1 1 1 1 1 | |  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+1 0 0 1 1 | |  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+0 1 1 0 0 0 |  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+1 0 0 1 1 |  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+0 1 0 1 1 0  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+1 0 0 1 1  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+0 0 1 0 1  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Este error, como es una ráfaga menor o igual al grado del polinomio, se detecta. 
+P3.8 
+Como nos indica la sugerencia, el número de tramas en un intervalo de tiempo 
+que salen de B tiene que ser igual o superior al número de tramas que entran. Número 
+de tramas en un tiempo es una ratio de información / tiempo, luego, es una velocidad. 
+Relacionando esto con que nos piden la velocidad mínima de transmisión en el enlace 
+entre B y C, es importante darse cuenta que la velocidad de transmisión (velocidad 
+nominal) es mayor que la velocidad que percibe el usuario (velocidad efectiva) debido al 
+overhead de cabeceras, control de flujo, etc. En el problema presentado se estudia el 
+efecto del control de flujo y como las diferencias de control de flujo en ambos enlaces 
+afectan a la velocidad de los mismos. Para no desbordar a B, la velocidad efectiva del 
+enlace BC tiene que ser mayor o igual a la del enlace AB. 
+𝑉𝑉𝑒𝑒𝑒𝑒(𝐵𝐵𝐵𝐵) ≥𝑉𝑉𝑒𝑒𝑒𝑒(𝐴𝐴𝐴𝐴) 
+
+
+--- PAGE 10 ---
+ 
+10 
+ 
+Grado en Ingeniería Informática 
+Redes de Ordenadores 
+Realizaremos un diagrama temporal (que puede verse a continuación) del enlace 
+AB sabiendo que se emplea un control de flujo basado en ventana deslizante con un 
+tamaño de ventana de 3 y que dado que el enlace es full-duplex, podremos enviar el ACK 
+de las tramas en cuanto lleguen. Además, el ACK tiene una longitud despreciable, luego 
+podemos asumir que su tiempo de transmisión es 0 y dado que no nos mencionan un 
+tiempo de procesado de trama en el receptor, lo asumimos como 0. Entonces, 
+necesitamos calcular el tiempo de transmisión de las tramas de datos entre A y B y el 
+retardo de propagación en el enlace AB. 
+𝑇𝑇𝑡𝑡𝑡𝑡(𝐴𝐴𝐴𝐴) =
+𝐿𝐿
+𝑉𝑉𝑡𝑡𝑡𝑡(𝐴𝐴𝐴𝐴) = 1.000 𝑏𝑏𝑏𝑏𝑏𝑏𝑏𝑏
+100.000 𝑏𝑏𝑏𝑏𝑏𝑏= 0,01 𝑠𝑠= 10 𝑚𝑚𝑚𝑚 
+𝑅𝑅𝑝𝑝(𝐴𝐴𝐴𝐴) = 4.000 𝑘𝑘𝑘𝑘∗5 µ𝑠𝑠/𝑘𝑘𝑘𝑘 = 0,02 𝑠𝑠 = 20  𝑚𝑚𝑚𝑚 
+A
+B
+Ttx(AB)
+Rp(AB)
+Rp(AB)
+Rp(AB)
+ 
+Como podemos observar, en el intervalo de tiempo  𝑇𝑇𝑡𝑡𝑡𝑡(𝐴𝐴𝐴𝐴) + 2 ∗𝑅𝑅𝑝𝑝(𝐴𝐴𝐴𝐴) =
+10 + 40 = 50 𝑚𝑚𝑚𝑚 se transmiten 3 tramas de 1.000 bits, luego la velocidad efectiva en el 
+enlace AB será: 
+𝑉𝑉𝑒𝑒𝑒𝑒(𝐴𝐴𝐴𝐴) =
+3 ∗1.000 𝑏𝑏𝑏𝑏𝑏𝑏𝑏𝑏
+0.01 + 2 ∗0.02 𝑠𝑠= 3.000
+0.05 𝑠𝑠= 60.000 𝑏𝑏𝑏𝑏𝑏𝑏= 60 𝑘𝑘𝑘𝑘𝑘𝑘𝑘𝑘. 
+Necesitamos calcular la velocidad efectiva del enlace BC en base a que se emplea 
+un control de flujo basado en parada y espera, luego cada vez que se envía una trama, 
+B tiene que esperar a recibir el ACK, luego en 𝑇𝑇𝑡𝑡𝑡𝑡(𝐵𝐵𝐵𝐵) + 2 ∗𝑅𝑅𝑝𝑝(𝐵𝐵𝐵𝐵) se envía una trama 
+de 1.000 bits. Sabemos que 𝑇𝑇𝑡𝑡𝑡𝑡(𝐵𝐵𝐵𝐵) =
+𝐿𝐿
+𝑉𝑉𝑡𝑡𝑡𝑡(𝐵𝐵𝐵𝐵), luego solo nos queda por calcular el 
+𝑅𝑅𝑝𝑝(𝐵𝐵𝐵𝐵) = 1.000 𝑘𝑘𝑘𝑘∗5 µ𝑠𝑠/𝑘𝑘𝑘𝑘 = 0,005 𝑠𝑠 = 5  𝑚𝑚𝑚𝑚. 
+Y 
+como 
+necesitamos 
+que 
+𝑉𝑉𝑒𝑒𝑒𝑒(𝐵𝐵𝐵𝐵) ≥𝑉𝑉𝑒𝑒𝑒𝑒(𝐴𝐴𝐴𝐴), podemos plantear la siguiente inecuación y despejar la velocidad 
+de transmisión del enlace entre B y C: 
+𝑉𝑉𝑒𝑒𝑒𝑒(𝐵𝐵𝐵𝐵) =
+𝐿𝐿
+𝑇𝑇𝑡𝑡𝑡𝑡(𝐵𝐵𝐵𝐵) + 2 ∗𝑅𝑅𝑝𝑝(𝐵𝐵𝐵𝐵) =
+𝐿𝐿
+𝐿𝐿
+𝑉𝑉𝑡𝑡𝑡𝑡(𝐵𝐵𝐵𝐵) + 2 ∗𝑅𝑅𝑝𝑝(𝐵𝐵𝐵𝐵)
+≥𝑉𝑉𝑒𝑒𝑒𝑒(𝐴𝐴𝐴𝐴) = 60 𝑘𝑘𝑘𝑘𝑘𝑘𝑘𝑘 
+𝐿𝐿∗𝑉𝑉𝑡𝑡𝑡𝑡(𝐵𝐵𝐵𝐵)
+𝐿𝐿+ 2 ∗𝑅𝑅𝑝𝑝(𝐵𝐵𝐵𝐵) ∗𝑉𝑉𝑡𝑡𝑡𝑡(𝐵𝐵𝐵𝐵) ≥𝑉𝑉𝑒𝑒𝑒𝑒(𝐴𝐴𝐴𝐴) 
+
+
+--- PAGE 11 ---
+ 
+11 
+ 
+Grado en Ingeniería Informática 
+Redes de Ordenadores 
+𝐿𝐿∗𝑉𝑉𝑡𝑡𝑡𝑡(𝐵𝐵𝐵𝐵) ≥𝑉𝑉𝑒𝑒𝑒𝑒(𝐴𝐴𝐴𝐴) ∗ቀ𝐿𝐿+ 2 ∗𝑅𝑅𝑝𝑝(𝐵𝐵𝐵𝐵) ∗𝑉𝑉𝑡𝑡𝑡𝑡(𝐵𝐵𝐵𝐵)ቁ 
+𝐿𝐿∗𝑉𝑉𝑡𝑡𝑡𝑡(𝐵𝐵𝐵𝐵) ≥𝑉𝑉𝑒𝑒𝑒𝑒(𝐴𝐴𝐴𝐴) ∗𝐿𝐿+ 𝑉𝑉𝑒𝑒𝑒𝑒(𝐴𝐴𝐴𝐴) ∗2 ∗𝑅𝑅𝑝𝑝(𝐵𝐵𝐵𝐵) ∗𝑉𝑉𝑡𝑡𝑡𝑡(𝐵𝐵𝐵𝐵) 
+𝐿𝐿∗𝑉𝑉𝑡𝑡𝑡𝑡(𝐵𝐵𝐵𝐵) −𝑉𝑉𝑒𝑒𝑒𝑒(𝐴𝐴𝐴𝐴) ∗2 ∗𝑅𝑅𝑝𝑝(𝐵𝐵𝐵𝐵) ∗𝑉𝑉𝑡𝑡𝑡𝑡(𝐵𝐵𝐵𝐵) ≥𝑉𝑉𝑒𝑒𝑒𝑒(𝐴𝐴𝐴𝐴) ∗𝐿𝐿 
+𝑉𝑉𝑡𝑡𝑡𝑡(𝐵𝐵𝐵𝐵) ∗ቀ𝐿𝐿−𝑉𝑉𝑒𝑒𝑒𝑒(𝐴𝐴𝐴𝐴) ∗2 ∗𝑅𝑅𝑝𝑝(𝐵𝐵𝐵𝐵)ቁ≥𝑉𝑉𝑒𝑒𝑒𝑒(𝐴𝐴𝐴𝐴) ∗𝐿𝐿 
+𝑉𝑉𝑡𝑡𝑡𝑡(𝐵𝐵𝐵𝐵) ≥
+𝑉𝑉𝑒𝑒𝑒𝑒(𝐴𝐴𝐴𝐴) ∗𝐿𝐿
+𝐿𝐿−𝑉𝑉𝑒𝑒𝑒𝑒(𝐴𝐴𝐴𝐴) ∗2 ∗𝑅𝑅𝑝𝑝(𝐵𝐵𝐵𝐵) =
+60.000 ∗1.000
+1.000 −60.000 ∗2 ∗0,005 = 60.000.000
+400
+ 
+𝑉𝑉𝑡𝑡𝑡𝑡(𝐵𝐵𝐵𝐵) ≥150.000𝑏𝑏𝑏𝑏𝑏𝑏= 150 𝑘𝑘𝑘𝑘𝑘𝑘𝑘𝑘  
+Para que la memoria temporal del nodo B no se sature, la velocidad de transmisión 
+del enlace entre B y C debe ser 150 kbps o superior.  
+P 3.9 Como se emplea un campo de numeración de 3 bits, las tramas se pueden 
+numerar entre 0 y (23 −1) = 7. Usando ARQ con vuelta atrás N con un tamaño de 
+ventana igual a 𝑊𝑊= 4, nos vale con usar 𝑊𝑊+ 1 índices de numeración, por lo que 
+podemos plantear el problema numerando las tramas de la 0 a la 7 o de la 0 a la 4. 
+Optaremos por emplear todo el rango de numeración posible, pero una solución que 
+usase sólo los índices estrictamente necesarios es igualmente válida. Indicaremos las 
+ventanas de transmisión y recepción en A y B como una dupla de índices A/B(p,u), que 
+representa las primera y última trama que se puede enviar en A o recibir en B. 
+a) Antes de que A envíe ninguna trama, este puede enviar 𝑊𝑊= 4 tramas, de la 0 
+a la 3, y B puede recibir esas mismas tramas. Luego, las ventanas en ambos 
+terminales serán A(0,3) y B(0,3). 
+b) Las tres tramas que ha enviado A (0, 1 y 2) reducen su ventana y aumentan el 
+índice de la siguiente trama a enviar. Por otra parte, las dos confirmaciones que 
+ha recibido de B (0 y 1) amplían la ventana y el índice máximo a transmitir. 
+Resultando en que A(3,5) representa la ventana de A en este momento. En el 
+caso de B, dado que el enunciado es algo ambiguo, asumimos la trama 2 ha 
+llegado y que la ha confirmado pero que A todavía no ha recibido dicha 
+confirmación porque está “en vuelo”. En B, cada trama recibida aumenta la 
+siguiente trama a recibir y cada confirmación enviada aumenta el último índice 
+a recibir. En base a la asunción tomada, su ventana es B(3,6). 
+c) Tras enviar las tramas 3, 4 y 5 y recibir la confirmación de la 4 que implica que 
+previamente ha recibido las confirmaciones de la 2 y la 3 aunque el enunciado 
+no lo diga, su ventana será A(6,0). En este caso, analizaremos dos posibles 
+estados en B: 
+1. B no ha confirmado la trama 5 porque todavía no la ha recibido, luego su 
+ventana sería B(5,0). 
+2. B no ha confirmado la trama 5 pero si la ha recibido, luego su ventana 
+sería B(6,0). 
+
+
+--- PAGE 12 ---
+ 
+12 
+ 
+Grado en Ingeniería Informática 
+Redes de Ordenadores 
+P 3.10 En ARQ con rechazo selectivo basado en ventana deslizante, las tramas de 
+rechazo REJ(𝑖𝑖) especifican el índice (𝑖𝑖) de la trama a reenviar porque la trama perdida o 
+corrupta puede ser cualquiera de las tramas enviadas. Sin embargo, en parada y espera 
+solo hay una trama pendiente de confirmación y por tanto una única trama que ha 
+podido recibirse corrupta, por lo que no es necesario incluir su índice. 
+P 3.11 Al igual que se vio en teoría para este mismo ARQ con vuelta atrás N, buscaremos 
+un contraejemplo con el que se pueda ver una ambigüedad por el efecto de limitar el 
+tamaño de la secuencia de numeración. Supongamos entonces que la numeración utiliza 
+2 bits (4 índices, del 0 al 3) para la venta de tamaño W=4. A continuación, se plantean 
+dos casos ambiguos que pueden verse gráficamente tras la explicación. 
+La estación A transmite la trama 0 (color verde) y B se la confirma con un ACK(0) 
+(usando RRs el comportamiento sería análogo). Entonces la estación A transmite las 4 
+tramas que le permite su ventana con índices 1, 2, 3 y 0 (color marrón). De nuevo, la 
+estación B se las confirma con un ACK(0) pero este se pierde. Luego, cuando el 
+temporizador de la estación A expire, ésta retransmite estas cuatro tramas y la estación 
+B, que desconoce que su confirmación se ha perdido, las acepta sin darse cuenta que son 
+tramas duplicadas. 
+La estación A transmite la trama 0 (color verde) y B se la confirma con un RR(1). 
+Entonces la estación A transmite las 4 tramas que le permite su ventana con índices 1, 2, 
+3 y 0 (color marrón) pero estas llegan corruptas por una ráfaga de ruido. Entonces, la 
+estación B notifica de nuevo el RR(1) y cuando la estación A lo recibe, no sabe distinguir 
+si las 4 tramas han llegado correctamente y B se lo ha confirmado de manera 
+acumulativa o si las 4 tramas han llegado corruptas y la estación B está solicitando de 
+nuevo la misma trama que esperaba recibir. 
+A
+B
+A
+B
+ 
+
+
+--- PAGE 13 ---
+ 
+13 
+ 
+Grado en Ingeniería Informática 
+Redes de Ordenadores 
+P 3.12 Al igual que se vio en teoría para el esquema de vuelta atrás N y en el ejercicio 
+anterior, buscaremos un contraejemplo con el que se pueda ver una ambigüedad por 
+efecto de limitar el tamaño de la secuencia de numeración. Casualmente, este ejercicio 
+comprueba las condiciones en las que un esquema de vuelta atrás N si funcionaría con 
+W=7 y 8 índices de numeración.  
+Supongamos que utilizamos 3 bits numerando las tramas de 0 a 7. Tenemos 
+entonces 8 índices para numerar las 7 posibles tramas que podemos enviar antes de 
+recibir una confirmación. A continuación, se muestran dos esquemas para representar el 
+fallo. En la izquierda se envían 7 tramas (color verde), que se confirman de manera 
+acumulativa con un RR(7), y se envían nuevas tramas en color marrón. En la derecha está 
+el mismo caso, pero la confirmación RR(7) se pierde. Luego, el temporizador de la 
+estación A expira y ésta retransmite las 7 tramas enviadas previamente. El problema es 
+que la terminal B, que desconoce que su confirmación se ha perdido, cuando reciba la 
+trama 0, la acepta porque supone que la 7 se ha perdido y que esta 0 no es la anterior 
+duplicada.  
+A
+B
+A
+B
+ 
+  
+
+

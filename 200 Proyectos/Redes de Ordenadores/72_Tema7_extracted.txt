@@ -1,0 +1,984 @@
+--- PAGE 1 ---
+GII – IYA022
+Redes de Ordenadores
+Fundamentos de Seguridad en Redes de Ordenadores
+Mariano Benito
+
+
+--- PAGE 2 ---
+Redes de Ordenadores
+Mariano Benito
+2
+Agenda
+• Introducción
+▪Concepto de seguridad
+▪Características de la información
+▪Conceptos básicos
+• Ataque
+▪Taxonomía
+▪Ejemplos de ataques
+• Seguridad en la red
+▪Seguridad en el diseño de redes
+▪Configuración y actualización de los dispositivos de red
+▪Enrutadores, cortafuegos y servidores proxy
+▪Zona desmilitarizada (DMZ)
+▪Detección y prevención de intrusiones
+▪Seguridad en redes inalámbricas
+• Políticas de seguridad
+▪Gestión y respuesta a incidentes
+▪Cadena de información
+▪Plan de contingencia y continuidad de negocio
+▪Evidencias digitales y cadena de custodia
+
+
+--- PAGE 3 ---
+Redes de Ordenadores
+Mariano Benito
+3
+Objetivos
+• Conocer los principios fundamentales de la seguridad en 
+redes de ordenadores.
+• Comprender el concepto de ataque.
+• Comprender posibles mejoras de la seguridad mediante el 
+diseño de redes.
+• Conocer los principales dispositivos implantables en una 
+red para mejorar su seguridad.
+• Conocer la existencia y el objetivo de políticas de seguridad.
+
+
+--- PAGE 4 ---
+Redes de Ordenadores
+Mariano Benito
+4
+Definición y objetivos de la seguridad
+• La seguridad es el estado de estar libre de peligro y su 
+principal objetivo es la protección frente a adversarios que 
+puedan causar daño, ya sea de manera intencionada o 
+accidental.
+• ISO 27000: La seguridad de la información es la 
+preservación de la confidencialidad, integridad y 
+disponibilidad de la información e implica la aplicación y 
+gestión de controles adecuados con el objetivo de 
+asegurar la continuidad y el éxito sostenido del negocio, 
+así como minimizar las consecuencias de los incidentes.
+
+
+--- PAGE 5 ---
+Redes de Ordenadores
+Mariano Benito
+5
+Áreas de seguridad que protegen las operaciones de una organización:
+Fuente: chatgpt.com
+Protege 
+objetos, 
+elementos y 
+áreas
+Física
+Protege a las 
+personas 
+autorizadas
+Protege los 
+procesos y la 
+continuidad del 
+negocio
+Protege los 
+medios y el 
+contenido 
+transmitido
+Protege los 
+componentes y 
+el contenido 
+que circula
+Protege los 
+activos de 
+información
+Personal
+Operacional
+de las 
+Comunicaciones
+de Red
+de la 
+Información
+Mediante:
+•control de 
+acceso
+•videovigilancia
+•contra 
+desastres 
+naturales
+Mediante:
+•verificación de 
+antecedentes
+•concienciación 
+y formación
+•gestión de 
+privilegios de 
+acceso
+Mediante:
+•procedimiento
+s de trabajo 
+seguros
+•gestión de la 
+información 
+sensible
+Mediante:
+•cortafuegos
+•IDS e IPS
+•diseños 
+seguros
+•monitorización 
+y registro de la 
+actividad
+•control de 
+acceso
+•gestión de 
+credenciales
+•cifrado
+•backups
+•planes de 
+recuperación
+Mediante:
+•cifrado
+•autenticación 
+de los actores
+•integridad de 
+los mensajes
+•protegiendo 
+los canales
+
+
+--- PAGE 6 ---
+Redes de Ordenadores
+Mariano Benito
+6
+Características de la información I
+• Confidencialidad: asegura que la información está protegida 
+frente a la divulgación o exposición a personas, 
+dispositivos o sistemas no autorizados, garantizando que 
+solo quienes tienen los derechos y privilegios necesarios 
+pueden acceder a ella.
+▪Posibles medidas:
+o Autenticación de usuarios (preferiblemente multifactor).
+o Gestión de privilegios basado en roles.
+o Almacenamiento seguro.
+o Cifrado de datos.
+o Clasificación de la información.
+o Formación del personal que custodia la información.
+▪@Redes: asegurar que los datos transmitidos por la red no sean 
+interceptados, alterados ni leídos por terceros no autorizados.
+
+
+--- PAGE 7 ---
+Redes de Ordenadores
+Mariano Benito
+7
+Características de la información II
+• Integridad: asegura que la información está entera, 
+completa y que no ha sido corrompida, garantizando que 
+esta no ha sido modificada de manera no autorizada o 
+indeseable.
+▪Cambio o eliminación de parte o la totalidad de la información:
+o No autorizado 
+o Autorizado, pero no deseable
+▪Posibles medidas:
+o Funciones hash criptográficas.
+o Firmas digitales.
+o Códigos de autenticación de mensajes.
+o Sistemas de control de versiones y auditoría de cambios.
+▪@Redes: asegurar que esta no ha sido corrompida durante su 
+transmisión.
+→tener los medios para evitar cambios no autorizados …
+→… y revertir los que no se tenían que haber realizado.
+
+
+--- PAGE 8 ---
+Redes de Ordenadores
+Mariano Benito
+8
+Características de la información III
+• Disponibilidad: asegura el acceso de los usuarios 
+(personas o dispositivos), a los sistemas e información 
+cuando sea necesario.
+▪Incluye la capacidad de mantener en funcionamiento los servicios incluso 
+ante fallos o ataques. 
+▪Posibles medidas:
+o Redundancia de sistemas y datos.
+o Balanceadores de carga.
+o Planes de recuperación ante desastres.
+o Monitorización continua de los servicios.
+▪@Redes: asegurar la ausencia de interrupciones en cualquier parte de 
+la cadena de comunicaciones que permite la interacción con los 
+sistemas que ofertan la información como un recurso y que dichas 
+comunicaciones no sean denegadas por ausencia de recursos.
+→acuerdos de nivel de servicio (SLA).
+
+
+--- PAGE 9 ---
+Redes de Ordenadores
+Mariano Benito
+9
+Características de la información IV
+• Exactitud: asegura que la información es precisa (está libre 
+de errores o equivocaciones), y posee el valor que el 
+usuario final espera, garantizando que la información no 
+ha sido modificada, ya sea de forma intencionada o 
+accidental.
+• @Redes: esta puede comprometerse cuando la información 
+no puede transmitirse en el formato necesario para 
+preservar el valor exacto que pretende representar.
+
+
+--- PAGE 10 ---
+Redes de Ordenadores
+Mariano Benito
+10
+Características de la información V
+• Autenticidad: asegura que la información es genuina y proviene 
+de la fuente declarada, manteniéndose el mismo estado en el que 
+fue creada, almacenada o transmitida, garantizando la autoría de 
+los datos y evitando que sean falsificados o manipulados por 
+terceros no autorizados.
+▪Se relaciona con el principio de no repudio →impide que una persona 
+niegue haber realizado una acción particular.
+• Posibles medidas:
+▪Firmas y certificados digitales.
+▪Protocolos de autenticación segura.
+• @Redes: esta puede comprometerse mediante técnicas como 
+el spoofing o el phishing, donde se engaña al usuario simulando 
+fuentes legítimas para obtener información confidencial.
+
+
+--- PAGE 11 ---
+Redes de Ordenadores
+Mariano Benito
+11
+Características de la información VI
+• Utilidad: asegura que la información tiene valor para un 
+propósito o finalidad concreta. 
+▪Una información es útil cuando está disponible y en un formato 
+comprensible y relevante para el usuario final. 
+• Posibles medidas:
+▪Empleo de formatos estándar.
+• @Redes: esta puede comprometerse cuando la 
+información transmitida no puede ser procesada 
+correctamente por el receptor, ya sea por incompatibilidad 
+de formatos o codificación incorrecta.
+
+
+--- PAGE 12 ---
+Redes de Ordenadores
+Mariano Benito
+12
+Características de la información VII
+• Posesión: asegura la propiedad o control sobre los datos, 
+independientemente del formato o su contenido.
+▪Una entidad tiene posesión cuando obtiene la información, aunque no 
+necesariamente tenga acceso a su contenido.
+o Por ejemplo: porque el contenido está cifrado y se desconoce la clave de acceso.
+• Una brecha en la confidencialidad siempre implica una 
+brecha en la posesión, pero no siempre al revés.
+• @Redes: comprometer la posesión implica la pérdida de 
+control físico o lógico sobre la información, como el robo 
+de dispositivos o la captura de la información que está 
+siendo transmitida por la red.
+
+
+--- PAGE 13 ---
+Redes de Ordenadores
+Mariano Benito
+13
+Conceptos básicos I
+• Amenaza: es una acción o evento que puede causar un 
+perjuicio a la organización como la violación, interrupción o 
+corrupción de un sistema, aprovechando vulnerabilidades 
+conocidas o desconocidas.
+• Se clasifican en:
+▪Accidentales: eventos naturales (tormentas, inundaciones, cortes de 
+energía, …), fallos inesperados en el HW, errores de SW, errores humanos.
+▪Deliberadas: aquellas que resultan de ataques intencionados.
+• Activo: es cualquier recurso, ya sea informático o no, que es 
+necesario para que una organización pueda alcanzar sus 
+objetivos →todo aquello que posee valor y debe ser protegido.
+▪Por ejemplo: los trabajadores, el software, los datos, los archivos, el hardware 
+y las redes y medios de comunicación de la organización.
+
+
+--- PAGE 14 ---
+Redes de Ordenadores
+Mariano Benito
+14
+Conceptos básicos II
+• Vulnerabilidad (“agujero de seguridad”): es cualquier fallo 
+presente en un activo, sistema, red o proceso que puede ser 
+explotado para comprometer información o el funcionamiento 
+de un sistema informático. Pueden deberse a errores de diseño, 
+fallos en la implementación, configuraciones incorrectas o falta de 
+actualizaciones y representan un punto débil donde una 
+amenaza puede materializarse.
+• Riesgo: es la estimación del grado de exposición que tiene un 
+activo o conjunto de activos frente a la materialización de una 
+amenaza.
+• Impacto: es la consecuencia que sufre una organización cuando 
+se produce un incidente →alcance del daño causado cuando 
+una amenaza se materializa.
+
+
+--- PAGE 15 ---
+Redes de Ordenadores
+Mariano Benito
+15
+Ataque I
+• Es una acción deliberada o accidental que busca explotar 
+una vulnerabilidad en un sistema para comprometer su 
+seguridad, causar daño o tomar control de este.
+▪A diferencia de las amenazas, que son condiciones o factores que 
+siempre están presentes, los ataques se materializan solo cuando se 
+realiza una acción concreta que puede ocasionar un impacto.
+
+
+--- PAGE 16 ---
+Redes de Ordenadores
+Mariano Benito
+16
+Ataque II
+• Taxonomía: clasificar y etiquetar los ataques es fundamental para 
+comprender mejor las amenazas, anticiparse a ellas, y diseñar 
+mecanismos de defensa efectivos. Además, permite organizar los ataques 
+según sus características, objetivos, técnicas empleadas y efectos sobre 
+los sistemas, permitiendo y facilitando:
+▪Mejorar la detección temprana y la respuesta.
+▪Identificar patrones de ataque.
+▪Priorizar recursos para la defensa y mitigación.
+▪Desarrollar planes de respuesta y recuperación.
+▪Facilitar la formación y sensibilización de usuarios.
+▪Promover la colaboración y compartición de información.
+• MITRE ATT&CK permite mapear cada acción del atacante a una táctica
+(objetivo de alto nivel) y una técnica (el método empleado), pudiendo 
+determinar en qué fase se encuentra el ataque detectado y actuar en 
+consecuencia. Asimismo, permite desarrollar reglas para configurar 
+sistemas, ayudar en la respuesta a incidentes y simular escenarios para 
+entrenar y proteger infraestructuras.
+
+
+--- PAGE 17 ---
+Redes de Ordenadores
+Mariano Benito
+17
+Fuente: https://attack.mitre.org
+Tácticas (objetivo de alto nivel)
+Técnicas (método empleado)
+
+
+--- PAGE 18 ---
+Redes de Ordenadores
+Mariano Benito
+18
+Ejemplos de ataques en redes de ordenadores I
+• Sniffing: consiste en la captura y análisis de los datos 
+transmitidos por la red en tiempo real mediante sniffers
+(Wireshark). Tienen aplicaciones legítimas en el diagnóstico 
+de problemas, pero su uso no autorizado es especialmente 
+peligroso porque son prácticamente indetectables.
+▪Los sistemas y usuarios están en riesgo cuando transmiten datos 
+sin cifrar.
+▪Es una técnica frecuente para vulnerar la →confidencialidad.
+
+
+--- PAGE 19 ---
+Redes de Ordenadores
+Mariano Benito
+19
+Ejemplos de ataques en redes de ordenadores II
+• Spoofing: consiste en la suplantación de la identidad de un 
+dispositivo para obtener acceso no autorizado, engañar a usuarios 
+o sistemas o interceptar y manipular comunicaciones. Esta 
+suplantación puede afectar diversas capas y diferentes protocolos, 
+siendo los más comunes:
+▪IP spoofing: consiste en manipular la cabecera IP de los datagramas, ya sea 
+para evadir controles de acceso haciéndose pasar por un equipo confiable, 
+lanzar ataques de denegación de servicio, o redirigir tráfico.
+o Muchos de los routers o firewalls actuales implementan filtro anti-spoofing que 
+verifican la legitimidad de las direcciones IP.
+▪ARP spoofing (ARP poisoning): consiste en enviar mensajes ARP 
+falsificados para asociar la dirección MAC del atacante con la dirección IP de 
+otro equipo (p. ej.: la puerta de enlace) para interceptar, modificar o bloquear 
+el tráfico de la red local convirtiéndose en un man-in-the-middle.
+▪DNS spoofing: consiste en alterar las respuestas del servidor DNS para 
+redirigir a los usuarios a sitios falsos o maliciosos sin que ellos lo sepan.
+
+
+--- PAGE 20 ---
+Redes de Ordenadores
+Mariano Benito
+20
+Ejemplos de ataques en redes de ordenadores III
+• Man-in-the-Middle (MitM): consiste en que un atacante 
+intercepta y manipula las comunicaciones entre dos partes sin 
+que estas lo detecten mediante la captura y posterior 
+modificación o fabricación de nuevos paquetes de red.
+▪Se emplea IP spoofing para suplantar la identidad de uno de los 
+interlocutores en la comunicación.
+▪Ej. peligroso: interceptación de intercambios de claves de cifrado, lo 
+que permite al atacante actual como un hombre invisible en el medio de 
+una comunicación cifrada, logrando descifrar y (modificar) los mensajes 
+sin que los usuarios legítimos se percaten.
+▪Comprometen la confidencialidad, la integridad y la autenticidad de la 
+comunicación.
+
+
+--- PAGE 21 ---
+Redes de Ordenadores
+Mariano Benito
+21
+Ejemplos de ataques en redes de ordenadores IV
+• (Distributed) Denial-of-service ((D)DoS): consiste en la saturación de 
+un sistema mediante el envío de un gran número de solicitudes de 
+conexión o de mensajes especialmente diseñados para que ejecute 
+procesos costosos →provocando que el sistema objetivo se 
+sobrecargue y no pueda responder a las solicitudes legítimas de servicio 
+efectuadas por otros usuarios, desencadenando su caída o la incapacidad 
+para desempeñar sus funciones habituales.
+▪En el ataque distribuido (DDoS), la avalancha de solicitudes coordinadas 
+proviene simultáneamente de múltiples ubicaciones que previamente han sido 
+comprometidas para formar una botnet.
+o Los ataques DDoS son especialmente difíciles de mitigar ya que no existe ninguna medida única 
+que una organización pueda aplicar para bloquearlos →existen servicios especializados y 
+esfuerzos cooperativos entre proveedores de servicios para mitigar este tipo de ataques.
+▪Cualquier sistema conectado a Internet que ofrezca servicios basados en TCP (web, 
+ftp, mail, …) es vulnerable a este tipo de ataques. Además, también pueden dirigirse a 
+dispositivos de red empleando otros protocolos como ICMP para el ataque.
+
+
+--- PAGE 22 ---
+Redes de Ordenadores
+Mariano Benito
+22
+Seguridad en la red
+• La red de una organización puede ser protegida empleando 
+múltiples vías y recursos:
+▪Mediante diseños de red inherentemente seguros y resistentes a 
+ataques o contratiempos técnicos.
+▪Implantando dispositivos en los límites de la red (seguridad perimetral).
+▪Implantando dispositivos dentro de la red para monitorizar y controlar el 
+tráfico.
+▪Implantando dispositivos que detecten comportamientos anómalos o 
+actividades maliciosas (IDS / IPS).
+▪Implementando sistemas de autenticación y cifrado.
+▪Mediante el uso de túneles que permitan transportar la información de 
+forma segura a través de redes inseguras.
+▪Haciendo uso de listas de control de acceso (ACLs).
+▪Configuración y actualización adecuada de los dispositivos.
+
+
+--- PAGE 23 ---
+Redes de Ordenadores
+Mariano Benito
+23
+Seguridad en el diseño de redes
+1.
+Segmentación: la red se divide en múltiples redes más pequeñas, 
+llamadas subredes, permitiendo acotar el espacio potencial de un 
+ataque. El flujo de tráfico entre subredes se puede controlar, 
+permitiéndolo o rechazándolo, en función de una variedad de factores.
+▪Asimismo, su granularidad se puede extender hasta el nivel de cargas de trabajo 
+individuales o por proyectos →microsegmentación.
+▪Además, esta segmentación permite aumentar el rendimiento de la red y ayuda en 
+la localización de problemas técnicos.
+2.
+Canalización del tráfico de la red a través de ciertos dispositivos 
+donde puede ser inspeccionado, filtrado y controlado, como 
+enrutadores, cortafuegos o servidores proxy.
+3.
+Redundancia: cuando un cierto ataque o problema técnico hace 
+inutilizable una parte de la red y/o ciertos dispositivos o componentes, 
+un diseño que haya planificado que algunos dispositivos fallen, permite 
+que la red siga funcionando, aunque no sea al 100% de sus 
+capacidades.
+
+
+--- PAGE 24 ---
+Redes de Ordenadores
+Mariano Benito
+24
+Configuración y actualización adecuada de los dispositivos de red
+• Establecer contraseñas robustas en todos los dispositivos.
+• Actualizar el firmware de los dispositivos, ya que aplicar los 
+parches de seguridad disponibles reduce drásticamente la 
+exposición a vulnerabilidades conocidas.
+• Implementación de un sistema de control de acceso basado en 
+roles (niveles de privilegios) junto con un mínimo nivel de auditoría 
+de accesos.
+▪Cada administrador tiene que contar con credenciales propias y permisos 
+ajustados a sus responsabilidades →principio de privilegio mínimo.
+• La exposición de puertos y servicios debe controlarse, 
+habilitando únicamente los requeridos y en versiones seguras.
+• Restringir el acceso a interfaces de administración mediante 
+ACLs o filtros por dirección IP y/o MAC.
+
+
+--- PAGE 25 ---
+Redes de Ordenadores
+Mariano Benito
+25
+Enrutadores (routers)
+• Los routers pueden cumplir un papel en la seguridad de la red:
+▪Permiten el uso de listas de control de acceso (ACLs) con las que definir 
+reglas explícitas para permitir o denegar paquetes en función de criterios 
+como la dirección IP de origen y/o destino, el protocolo o el puerto. Así, el 
+router puede actuar como un filtro de tráfico que limite la propagación lateral 
+de ataques.
+▪La traducción de direcciones (NAT) permite ocultar las direcciones IP de 
+una red al comunicarse con dispositivos de otra. Habitualmente, esto se 
+emplea para proteger las direcciones IP privadas cuando se comunican con 
+Internet pero puede ser usado entre dos redes privadas.
+• El uso combinado de NAT con ACLs y segmentación permite 
+construir perímetros de seguridad robustos, lo que limita el 
+tráfico entrante no solicitado y refuerza el aislamiento de los 
+sistemas internos frente a amenazas externas.
+
+
+--- PAGE 26 ---
+Redes de Ordenadores
+Mariano Benito
+26
+Cortafuegos (firewalls)
+• Un firewall controla el tráfico entre diferentes zonas de confianza, permitiendo o 
+denegando las comunicaciones según un conjunto de reglas previamente definidas.
+▪Pueden ser dispositivos dedicados, software instalado en un servidor o estar integrados en los routers.
+▪Típicamente se despliegan entre la red privada e Internet, y actúan como primera línea de defensa en la 
+arquitectura de seguridad perimetral, aunque también pueden ser desplegados internamente para 
+segmentar zonas críticas de la red, lo que permite contener movimientos laterales.
+• Tipos:
+▪Filtrado de paquetes sin estado: cada paquete es inspeccionado sin tener en cuenta su contexto dentro 
+de un flujo.
+▪Cortafuegos con inspección de estado: mantienen una tabla de conexiones activas y verifican si un 
+paquete pertenece a una sesión existente o inicia una nueva permitiendo mayor contexto y control para 
+bloquear conexiones inesperadas o no autorizadas.
+▪Cortafuegos con inspección profunda de paquetes (Deep Packet Inspection, DPI): analizan también el 
+contenido de los paquetes. Aunque son muy potentes, estos dispositivos pueden generar problemas de 
+privacidad y rendimiento.
+• Existen dos métodos de configuración de un cortafuegos:
+▪Principio de privilegio mínimo: todo lo que no está explícitamente permitido está prohibido →
+requiere una definición exhaustiva de las comunicaciones legítimas y se sostiene en el uso de reglas 
+restrictivas que proporcionan una mayor seguridad.
+▪Permisivo: todo lo que no está explícitamente prohibido está permitido →facilita la administración 
+inicial, es más flexible y definitivamente menos seguro.
+
+
+--- PAGE 27 ---
+Redes de Ordenadores
+Mariano Benito
+27
+Servidores proxy
+• También  llamados firewalls de aplicación o de capa 7, los 
+proxies actúan como intermediaries entre el origen y el 
+destino de un flujo (mayoritariamente HTTP(S)) analizando 
+el contenido completo de la comunicación en ese nivel. 
+Esto les permite entender la lógica del protocolo utilizado y 
+detectar amenazas específicas del trafico de cada servicio.
+▪No pueden verse como un sustituto del FW perimetral sino como un 
+complemento.
+▪También pueden ser usados como proxy inverso, lo que refuerza la 
+seguridad perimetral de aplicaciones web expuestas a Internet.
+
+
+--- PAGE 28 ---
+Redes de Ordenadores
+Mariano Benito
+28
+Zona desmilitarizada (DMZ)
+• Es una subred diseñada para exponer servicios (web, correo, DNS, …) 
+en redes no confiables como Internet, mientras se protege la red 
+interna de la organización.
+▪El diseño habitual de una DMZ implica el uso de uno o más FW que controlan de 
+forma estricta qué tráfico puede entrar o salir de esta zona, y limita así el riesgo de 
+que un atacante obtenga el acceso a toda la red de la organización tras comprometer 
+un servicio en la DMZ.
+▪La configuración de los servidores en la DMZ se suele controlar para exponer la menor 
+superficie de ataque.
+▪En la práctica, la configuración de una DMZ incluye reglas muy específicas de filtrado: 
+o habilitar solamente los puertos y protocolos necesarios para cada servicio
+o bloquear las conexiones directas no autorizadas previamente desde Internet hacia la red interna
+o el tráfico entre la DMZ y la red internet se controla estrictamente y se permiten únicamente las 
+comunicaciones imprescindibles
+• Esta arquitectura de segmentación y filtrado es fundamental en redes que 
+manejan servicios expuestos a redes inseguras como Internet, ya que 
+equilibra la accesibilidad desde el exterior con la protección de los activos 
+internos.
+
+
+--- PAGE 29 ---
+Redes de Ordenadores
+Mariano Benito
+29
+Fuente: Elaboración propia y rexelusa.com
+Diseño con 1 FW
+Diseño con 2 FWs
+
+
+--- PAGE 30 ---
+Redes de Ordenadores
+Mariano Benito
+30
+Sistemas de detección y prevención de intrusiones (IDS / IPS) I
+• Los sistemas de detección de intrusiones (Intrussion Detection System, IDS) son 
+herramientas especializadas en monitorizar la red, capturando el tráfico que circula 
+por puntos estratégicos, y analizarlo para detectar comportamientos 
+sospechosos y generar alertas para que los administradores de seguridad puedan 
+investigar y responder a posibles incidentes.
+▪Su eficacia depende en parte de su ubicación en la red y del equilibrio entre la cantidad de tráfico 
+procesado y la profundidad del análisis a realizar.
+• Los sistemas de prevención de intrusiones (Intrussion Prevention System, IPS) 
+actúan automáticamente bloqueando el tráfico malicioso o deteniendo 
+conexiones sospechosas en tiempo real.
+• Como complemento a ambos, los sistemas de gestión de eventos e información de 
+seguridad (Security Information and Event Management, SIEM) son una herramienta 
+híbrida que engloba la gestión de la información de seguridad y la gestión de 
+eventos permitiendo tener una visión centralizada del estado de seguridad, facilitar la 
+detección de ataques complejos y mejorar la capacidad de respuesta ante incidentes.
+▪Estos sistemas recopilan, correlacionan y analizan eventos de seguridad generados por los 
+distintos dispositivos presentes en la red como IDSs, IPSs, cortafuegos y servidores.
+
+
+--- PAGE 31 ---
+Redes de Ordenadores
+Mariano Benito
+31
+Sistemas de detección y prevención de intrusiones (IDS / IPS) II
+• Existen dos enfoques comunes para detectar e identificar ataques:
+▪Basado en firmas: utiliza una base de datos con patrones conocidos de ataques 
+(firmas) para comparar el tráfico con ellas permitiendo identificar de manera rápida 
+y eficazmente ataques previamente documentados. Sin embargo, este método es 
+incapaz de identificar ataques nuevos o desconocidos (zero-day) ni aquellos que han 
+sido diseñados deliberadamente para evitar coincidir con firmas existentes.
+o Requieren una actualización constante de su base de datos para mantener efectividad.
+▪Basado en anomalías: se fundamente en el análisis del comportamiento de la red, 
+estableciendo una línea base del tráfico habitual. A partir de ella, el sistema 
+monitoriza continuamente la red y detecta desviaciones significativas que no 
+concuerdan con los patrones previamente observados. Esta estrategia es eficaz para 
+identificar aquellos ataques que la detección basada en firmas no es capaz, 
+aunque presenta un mayor índice de falsos positivos.
+o Para llevar a cabo su análisis, estos sistemas suelen emplear técnicas de inteligencia artificial, 
+redes neuronales y/o algoritmos estadísticos →cambios legítimos en el comportamiento del 
+tráfico (actualizaciones, eventos inusuales o picos de actividad) pueden ser interpretados como 
+amenazas y generar alertas innecesarias. Por ello, requieren un ajuste fino constante y una 
+buena calibración para mantener un equilibrio entre sensibilidad y precisión.
+
+
+--- PAGE 32 ---
+Redes de Ordenadores
+Mariano Benito
+32
+Seguridad en redes inalámbricas I
+• En una red inalámbrica el tráfico se propaga por el aire y puede 
+ser captado por cualquier dispositivo dentro del alcance de la 
+señal →un atacante con herramientas ampliamente disponibles 
+puede interceptar y leer el tráfico que no esté debidamente cifrado.
+• Los puntos de acceso no autorizados pueden suponer una 
+puerta trasera directa a la red interna, que elude los controles 
+perimetrales como FWs y sistemas de autenticación.
+▪Estos dispositivos deben considerarse elementos no legítimos y ser 
+detectados mediante herramientas de monitoreo de redes inalámbricas.
+• El principal mecanismo de defensa para proteger la 
+confidencialidad del tráfico en estas redes es el uso de cifrado.
+WEP
+WPA
+WPA2
+WPA3
+
+
+--- PAGE 33 ---
+Redes de Ordenadores
+Mariano Benito
+33
+Seguridad en redes inalámbricas II
+• Los ataques más comunes en redes inalámbricas se pueden 
+clasificar en:
+▪Pasivos: interceptación de las comunicaciones, el análisis de patrones de 
+tráfico y el reconocimiento de redes disponibles.
+▪Activos: desconexión forzosa de clientes, la generación de un punto de 
+acceso falso, la interceptación y manipulación mediante un ataque MitM y 
+la interferencia electromagnética.
+• Además, existen ataques específicos para cada protocolo de 
+seguridad empleado.
+
+
+--- PAGE 34 ---
+Redes de Ordenadores
+Mariano Benito
+34
+Políticas de seguridad I
+• Las políticas de seguridad establecen las reglas que deben 
+seguir todos los usuarios, sistemas y dispositivos de una 
+organización y deben estar alineadas con los objetivos del 
+negocio, los requisitos normativos y las buenas prácticas del 
+sector.
+• Cada política debe ser documentada, revisada periódicamente y 
+comunicada a todos los miembros de la organización priorizando 
+la formación y concienciación.
+• Su supervisión y definición recaen sobre el Chief Information
+Security Officer (CISO). Asimismo, le corresponde promover la 
+mejora continua de las políticas y los procedimientos definidos, y 
+garantizar que se adoptan las medidas necesarias para proteger 
+la información y reducir el riesgo de la organización ante amenazas.
+
+
+--- PAGE 35 ---
+Redes de Ordenadores
+Mariano Benito
+35
+Políticas de seguridad II
+▪Control de accesos: define quién puede acceder a qué recursos, en qué condiciones y con 
+qué privilegios. Debe incluir principios como el mínimo privilegio, autenticación multifactor y 
+gestión del ciclo de vida de las credenciales.
+▪Uso aceptable: establece cómo pueden emplearse los recursos informáticos de la 
+organización, qué comportamientos están prohibidos y qué consecuencias tiene el 
+incumplimiento.
+▪Gestión de parches y actualizaciones: detalla los procedimientos para mantener los 
+dispositivos actualizados para subsanar vulnerabilidades conocidas.
+▪Cortafuegos y segmentación de red: establece directrices sobre la configuración de los 
+dispositivos de seguridad perimetral y cómo segmentar la red para limitar el movimiento 
+lateral en caso de intrusión.
+▪Copias de seguridad y recuperación: define la frecuencia, ubicación y procedimientos de 
+respaldo, así como los mecanismos para verificar la integridad de las copias y los pasos 
+para su restauración segura.
+▪Respuesta ante incidentes: incluye roles, responsabilidades, cadena de comunicación y 
+los pasos a seguir en caso de un incidente de seguridad. Está estrechamente relacionada 
+con la siguiente.
+▪Plan de contingencia y continuidad de negocio: define cómo la organización continuará 
+operando frente a interrupciones críticas e incluye análisis del impacto, estrategias de 
+recuperación, responsables y recursos necesarios.
+
+
+--- PAGE 36 ---
+Redes de Ordenadores
+Mariano Benito
+36
+Gestión y respuesta a incidentes
+• La gestión de incidentes y eventos de seguridad es un tema 
+crítico en una organización actualmente y debe regirse por 
+protocolos formalizados que garanticen una actuación 
+rápida, coherente y coordinada ante cualquier evento que 
+comprometa sus activos.
+• Las normas más habituales son el ISO/IEC 27035, el NIST 
+800-61 Rev. 2 y la reciente Rev. 3.
+
+
+--- PAGE 37 ---
+Redes de Ordenadores
+Mariano Benito
+37
+Preparación
+Detección y 
+análisis
+Contención, 
+erradicación y 
+recuperación
+Actividades 
+post-incidente
+NIST SP 800-61 Rev. 2
+Planificación 
+y 
+preparación
+Detección y 
+reporte
+Evaluación y 
+decisiones
+Respuesta
+Lecciones 
+aprendidas
+ISO/IEC 27035-1
+Planificar la gestión 
+de incidentes de 
+(ciber)seguridad, 
+incluidas las políticas, 
+los planes y 
+procedimientos, el 
+apoyo técnico, la 
+formación y 
+concienciación, …
+Detectar, analizar, informar y evaluar 
+incidentes de seguridad y 
+vulnerabilidades explotadas en el 
+mismo reconociendo de forma temprana 
+posibles incidentes y confirmando su 
+naturaleza empleando las evidencias y los 
+indicadores de compromiso procedentes 
+de diversas fuentes y clasificando el tipo 
+de incidente mediante un marco de 
+referencia como la matriz MITRE ATT&CK.
+Contener, mitigar y 
+recuperar la
+operativa de la
+organización tras el
+incidente de
+seguridad incluida la
+comunicación del 
+incidente a las partes 
+interesadas.
+Aprender de los 
+incidentes de 
+seguridad y las 
+vulnerabilidades 
+empleadas en el 
+mismo para realizar 
+mejoras en el 
+sistema de gestión 
+de la seguridad de la 
+organización.
+
+
+--- PAGE 38 ---
+Redes de Ordenadores
+Mariano Benito
+38
+Fuente: Incident response recommendations and considerations for cybersecurity risk management. NIST SP 800-61 rev. 3.
+NIST SP 800-61 Rev. 3 (CSF 2.0)
+Gobernar (GV): establece, 
+comunica y supervisa la 
+estrategia de ciberseguridad, 
+alineándola con la gestión de 
+riesgos de la organización. 
+Asimismo, asigna roles y 
+responsabilidades y supervisa 
+que todo se cumpla.
+Identificar (ID): conocer los 
+riesgos actuales 
+comprendiendo sus activos y 
+las relaciones con otras 
+organizaciones e incluye 
+también la identificación de 
+mejoras en políticas, planes, 
+procesos, procedimientos, …
+Proteger (PR): aplica 
+medidas de protección para 
+gestionar los riesgos 
+previamente identificados 
+buscando reducir la 
+probabilidad y el impacto de los 
+incidentes de seguridad 
+incluyendo medidas para 
+aumentar la resiliencia de la 
+infraestructura tecnológica.
+Detectar (DE): descubrir y 
+analizar posibles ataques, 
+activos comprometidos y 
+comportamientos anómalos 
+tratando de reducir el tiempo de 
+descubrimiento y dando 
+información para facilitar el 
+éxito de la recuperación.
+Responder (RS): acciones 
+que se realizan con el 
+objetivo de contener el 
+incidente y reducir su 
+impacto global incluyendo la 
+notificación y la comunicación 
+interna y externa (si procede) y 
+el reporte formal.
+Recuperación (RC): restaura 
+los activos y las operaciones 
+afectadas por el incidente en el 
+menor tiempo posible 
+incluyendo la ejecución del plan 
+de contingencia y continuidad 
+de negocio, restablecer 
+servicios y datos de forma 
+segura, … y nutre la mejora 
+continua del sistema.
+
+
+--- PAGE 39 ---
+Redes de Ordenadores
+Mariano Benito
+39
+Cadena de información
+• La cadena de información ante incidentes de seguridad debe estar 
+claramente definida y documentada dentro del plan de respuesta a 
+incidentes de la organización para garantizar que durante todo el ciclo 
+de vida de un incidente exista un flujo de comunicación estructurado, 
+trazable y alineado con las responsabilidades asignadas.
+• Una vez que los equipos internos de respuesta identifican, categorizan 
+un incidente y aplican medidas de contención inmediatas, le escalan la 
+situación al CISO. Este evalúa el impacto, coordina la respuesta, supervisa 
+las acciones y gestiona la comunicación con agentes externos, como 
+agencias reguladoras, proveedores o centros de respuesta nacionales.
+▪Dependiendo de la gravedad del incidente, el CISO puede notificar el evento a la 
+dirección, al departamento legal y, cuando corresponda, a organismos reguladores o a 
+terceros potencialmente afectados.
+• El registro detallado de las comunicaciones y decisiones tomadas 
+durante el proceso constituye un recurso valioso para auditorías y la 
+aplicación de mejoras en el plan de respuesta a incidentes.
+
+
+--- PAGE 40 ---
+Redes de Ordenadores
+Mariano Benito
+40
+Plan de contingencia y continuidad del negocio
+• Documento unificado que integra las medidas reactivas 
+frente a incidentes con las estrategias destinadas a 
+garantizar la preservación de los procesos esenciales de 
+la organización.
+• Objetivos: mantener un nivel de servicio aceptable, minimizar 
+el periodo de recuperación y restaurar la situación previa al 
+incidente.
+• También asegura la continuidad operativa de las funciones 
+esenciales para minimizar el impacto sobre clientes, 
+proveedores y la reputación institucional.
+
+
+--- PAGE 41 ---
+Redes de Ordenadores
+Mariano Benito
+41
+Evidencias digitales y cadena de custodia I
+• Las evidencias digitales son cualquier dato almacenado o 
+transmitido en formado digital que es susceptible de ser usado en 
+procedimientos legales para probar o refutar hechos. 
+▪Se caracterizan por su volatilidad, su facilidad para ser alteradas, dañadas o 
+eliminadas de forma intencionada o accidental (incluso a distancia) y su 
+posible dispersión entre múltiples sistemas y ubicaciones.
+▪Su obtención y análisis suelen requerir herramientas y metodologías 
+especializadas.
+• Pueden clasificarse según su origen en:
+▪Sistema: registros del O.S o aplicaciones, historial de comandos, 
+configuraciones del sistema, etc.
+▪Red: logs de cortafuegos, capturas de tráfico, registros DNS, tablas NAT, etc.
+▪Almacenamiento: archivos y directorios, bases de datos, metadatos, etc.
+▪Comunicación: correos electrónicos, mensajería instantánea, registros de
+llamadas VoIP, historiales de navegación, etc.
+
+
+--- PAGE 42 ---
+Redes de Ordenadores
+Mariano Benito
+42
+Evidencias digitales y cadena de custodia II
+• Su gestión implica un proceso riguroso que, normalmente, sigue estas fases:
+▪Identificación: localización de fuentes potenciales, evaluación de relevancia, priorización por volatilidad y 
+documentación inicial.
+▪Preservación: creación de copias forenses bit a bit, cálculo de hashes criptográficos, aislamiento de 
+sistemas comprometidos y registro detallado de todas las acciones.
+▪Análisis: examen forense de las copias preservadas, correlación de eventos, reconstrucción de 
+actividades e identificación de artefactos relevantes.
+▪Presentación: elaboración de informes técnicos, documentación de metodologías empleadas, 
+presentación de hallazgos y, si procede, testimonio experto.
+• Durante todo este proceso es esencial mantener una cadena de custodia sólida 
+documentando en todo momento sobre la evidencia: quién la ha tenido, dónde ha 
+estado, cómo ha sido almacenada y qué operaciones se han realizado sobre ella.
+▪Esto implica aplicar una identificación única, documentar todas las transferencias con fechas, horas y 
+responsables, garantizar la seguridad física en almacenamientos controlados con protección frente a 
+alteraciones, y preservar la integridad digital mediante verificación de hashes, diferenciación entre 
+copias de trabajo y originales y registro de accesos.
+▪Cumplir estas prácticas, alineadas con las directrices de la ISO/IEC 27037 y la RFC 3227, asegura la 
+admisibilidad de las evidencias en un proceso judicial y también refuerza la credibilidad técnica de la 
+investigación y la postura global de ciberseguridad de la organización.
+
+
+--- PAGE 43 ---
+GII – IYA022
+Redes de Ordenadores
+Mariano Benito
+
+

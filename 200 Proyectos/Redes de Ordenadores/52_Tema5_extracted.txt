@@ -1,0 +1,1048 @@
+--- PAGE 1 ---
+GII – IYA022
+Redes de Ordenadores
+Interconexión de Redes
+Mariano Benito
+
+
+--- PAGE 2 ---
+Redes de Ordenadores
+Mariano Benito
+2
+Agenda
+• La capa de red
+• Internet Protocol (IP)
+• Protocolos básicos en una red IP
+• Enrutamiento estático
+• Enrutamiento dinámico
+• Distancia administrativa
+
+
+--- PAGE 3 ---
+Redes de Ordenadores
+Mariano Benito
+3
+Objetivos
+• Describir el funcionamiento de la capa de red.
+• Comprender cómo se estructuran las direcciones IP.
+• Desarrollar y comprender el funcionamiento de las 
+subredes.
+• Conocer los protocolos básicos en una red IP.
+• Comprender cómo se inician las comunicaciones a 
+nivel de red.
+• Conocer el funcionamiento de un protocolo de 
+enrutamiento y el de un enrutador.
+Física
+Enlace
+Red
+Transporte
+Aplicación
+
+
+--- PAGE 4 ---
+Redes de Ordenadores
+Mariano Benito
+4
+La capa de red
+• La capa de red (Interred, IP, capa 3) realiza la transferencia de 
+información entre sistemas finales a través de la 
+infraestructura disponible empleando sistemas intermedios 
+que operan en el nivel 3 del modelo OSI, los enrutadores (routers).
+▪Para que un paquete (PDU de red), viaje desde su origen hasta su destino 
+puede atravesar varios routers, por lo que la capa de red debe conocer la 
+topología (conjunto de routers y enlaces) y elegir una ruta.
+• Puede ofrecer multidifusión →minimizando el # de réplicas.
+• El protocolo enrutado más extendido en la capa de red es el 
+Protocolo de Internet (IP).
+▪Convergencia IP: independientemente de la tecnología empleada en capas 
+inferiores, hoy en día, todo el tráfico tiende a ser IP.
+▪Datagrama IP: PDU de IP, datos del nivel superior + cabecera IP.
+▪Ofrece un servicio sin conexión y de mejor esfuerzo (best effort).
+
+
+--- PAGE 5 ---
+Redes de Ordenadores
+Mariano Benito
+5
+La capa de red
+• Internetwork: conjunto de redes individuales que conservan 
+sus características, interconectadas mediante sistemas 
+intermedios, que funcionan como una única gran red.
+• Sistema autónomo (Autonomous System, AS): es un 
+internetwork administrado por una única entidad (actualmente ya no)
+o múltiples entidades con una política de enrutamiento común 
+(un mismo dominio de enrutado). Cada uno tiene un número 
+que le identifica (ASN). Es la unidad básica de enrutamiento 
+interdominio porque hacia afuera se anuncia como un todo y 
+dentro emplea una cierta política de encaminamiento.
+
+
+--- PAGE 6 ---
+Redes de Ordenadores
+Mariano Benito
+6
+Fuente: Stallings (cap. 18)
+Ejemplo de interconexión de 2 LAN mediante una WAN Frame Relay
+
+
+--- PAGE 7 ---
+Redes de Ordenadores
+Mariano Benito
+7
+Cuestiones de diseño de la capa de red I
+• Conmutación de paquetes: técnica de conmutación en la 
+que el flujo de datos del usuario se divide en paquetes (+ 
+cabecera necesaria para su transporte.)
+▪Orientado a conexión →establece una ruta entre el router origen y 
+destino llamada circuito virtual (VC) seguida por todos los pkts. del flujo.
+▪Sin conexión →los paquetes (conocidos como datagramas) se 
+transmiten por separado y se enrutan de manera independiente, es 
+decir, la red no tiene en cuenta la relación entre paquetes del mismo flujo 
+y estos pueden entregarse fuera de orden, perderse o duplicarse.
+Este modo es el característico de IP y se adopta como referencia en este tema y en la asignatura.
+
+
+--- PAGE 8 ---
+Redes de Ordenadores
+Mariano Benito
+8
+Cuestiones de diseño de la capa de red II
+• Enrutamiento: determina por qué camino se trasladan los paquetes desde 
+su origen hasta el destino. Se diseña para:
+▪elegir rutas “buenas” según una métrica definida,
+▪adaptarse a cambios de estado en enlaces y sistemas intermedios,
+▪converger con rapidez ante esos cambios y evitar inestabilidad y bucles.
+• Rellena una tabla de enrutamiento o de rutas (routing table) que, 
+generalmente, asocia a cada red de destino el siguiente dispositivo al que 
+debe enviar un datagrama dirigido a esta.
+▪Si no hay coincidencia para una red de destino específica, puede usarse una ruta por 
+defecto (0.0.0.0/0).
+• Métricas habituales: número de saltos, capacidad, retardo o 
+combinaciones ponderadas. Deben ser comparables y poder sumarse 
+para poder calcular caminos mínimos de forma consistente.
+• La escalabilidad se consigue introduciendo jerarquía: un dominio de 
+enrutamiento se organiza en áreas y cada enrutador conoce el detalle de 
+su propia área, pero desconoce la estructura interna de otras.
+
+
+--- PAGE 9 ---
+Redes de Ordenadores
+Mariano Benito
+9
+Cuestiones de diseño de la capa de red II
+
+
+--- PAGE 10 ---
+Redes de Ordenadores
+Mariano Benito
+10
+Cuestiones de diseño de la capa de red III
+• Tiempo de vida de los datagramas: se emplea un contador de 
+saltos para prevenir que un paquete viaje indefinidamente a través 
+del conjunto de redes. Cada router decrementa el valor y una vez 
+que ha transcurrido su tiempo de vida, el datagrama se descarta y 
+normalmente se notifica con un mensaje ICMP.
+• Fragmentación  y re-ensamblado: cada red fija un tamaño 
+máximo de unidad de transmisión (MTU) y cuando un paquete 
+supera ese límite en el siguiente enlace, el router puede dividirlo en 
+fragmentos que se ajusten a la capacidad de dicho tramo. Esto 
+puede ocurrir múltiples veces y el reensamblado normalmente se 
+realiza en el destino.
+▪Si expira un temporizador o el tiempo de vida, los fragmentos se descartan.
+
+
+--- PAGE 11 ---
+Redes de Ordenadores
+Mariano Benito
+11
+Cuestiones de diseño de la capa de red IV
+• Control de errores: cuando un router descarta un 
+datagrama (agotamiento del tiempo de vida, congestión, fallo 
+en la suma de comprobación de la cabecera, …) debería 
+intentar devolver alguna información al origen para que 
+modifique su estrategia de transmisión.
+• Control de flujo: permite que los sistemas intermedios y/o 
+finales limiten la tasa a la que reciben datos cuando sus 
+recursos (búferes o capacidad de procesamiento) se 
+aproximan a saturación. La aproximación habitual suele ser el 
+envío de un paquete de control de flujo, solicitando una 
+reducción temporal de la tasa de envío a routers previos o a 
+los emisores.
+
+
+--- PAGE 12 ---
+Redes de Ordenadores
+Mariano Benito
+12
+El enrutador (router)
+• Dispositivo de red que opera en el nivel 3 de OSI e interconecta diferentes 
+redes entre sí, tanto en entornos LAN como WAN, permitiendo el 
+intercambio de paquetes entre ellas. Tienen dos funciones principales:
+▪Reenvío (forwarding): mueve un paquete desde el puerto de entrada al puerto de salida 
+apropiado según la tabla de enrutamiento.
+▪Enrutamiento (routing): calcula y actualiza las rutas hacia los destinos para mantener la 
+tabla de enrutamiento mediante el intercambio de información de red con otros routers para 
+construir su visión de la topología.
+• En función del ámbito en el que operan se clasifican en:
+▪Interiores: cuando son responsables del enrutamiento dentro de un mismo dominio 
+utilizando protocolos Interior Gateway Protocols (IGP).
+▪Exteriores: coordinan el enrutamiento entre dominios distintos y emplean protocolos 
+Exterior Gateway Protocols (EGP).
+• Dos familias de protocolos:
+▪Un protocolo de enrutamiento calcula rutas y puebla la tabla de enrutamiento 
+perteneciendo al plano de control del router. Ej: RIP, OSPF, BGP, …
+▪Un protocolo enrutado transporta los datos del usuario de un origen a un destino y se 
+apoya en las rutas que el plano de control ha calculado. Pertenecen al plano de datos, el 
+cual es responsable del reenvío efectivo de los paquetes. Ej: IPv4, IPv6t, IPX, Appletalk, …
+
+
+--- PAGE 13 ---
+Redes de Ordenadores
+Mariano Benito
+13
+Fuente: Kurose (caps. 4, 5 y PPTs)
+
+
+--- PAGE 14 ---
+Redes de Ordenadores
+Mariano Benito
+14
+Clasificación de los mecanismos de enrutamiento
+• Según ¿quién calcula la ruta?:
+▪Enrutamiento fuente: el equipo origen determina toda la secuencia de saltos que 
+seguirá cada paquete.
+▪Enrutamiento centralizado: una entidad de control decide las rutas, algo más habitual 
+en circuitos virtuales o en encaminamiento por flujos.
+▪Enrutamiento distribuido: cada equipo intermedio decide de forma autónoma por 
+dónde reenviar cada datagrama.
+• Según la capacidad de adaptación a cambios en la topología:
+▪Enrutamiento estático: las decisiones no dependen del estado actual de la red. Ej: un 
+router IP cuya tabla de enrutamiento ha sido fijada manualmente.
+▪Enrutamiento dinámico: las rutas se recalculan para reflejar los cambios en la 
+topología, ya sean por fallos o por altas de enlaces o routers.
+• Según la capacidad de adaptación a cambios en el tráfico:
+▪Inconscientes (oblivious): no reaccionan a la ocupación de los enlaces y deciden 
+únicamente según la topología y los costes configurados.
+▪Adaptativos (adaptive): ajustan las rutas en función de la carga observada para 
+equilibrar el uso de la red.
+Lo habitual en redes IP empresariales es emplear enrutamiento distribuido dinámico inconsciente 
+del tráfico, reservando técnicas adaptativas para escenarios muy específicos.
+
+
+--- PAGE 15 ---
+Redes de Ordenadores
+Mariano Benito
+15
+Fuente: Kurose (cap 5. PPTs)
+Distribuido
+Centralizado
+
+
+--- PAGE 16 ---
+Redes de Ordenadores
+Mariano Benito
+16
+Internet Protocolo (IP)
+• Encuadrado en la arquitectura TCP/IP y funcionalmente situado en la capa 
+de red del modelo OSI.
+• Su objetivo es trasladar información entre sistemas finales sobre 
+infraestructuras de comunicación heterogéneas, para ello, encapsula los 
+datos del nivel superior junto con su cabecera formando datagramas IP.
+• IP ofrece un servicio no orientado a conexión de mejor esfuerzo →no 
+fiable:
+▪IP no garantiza entrega ni orden, no establece una conexión previa y únicamente 
+incorpora una suma de comprobación de la cabecera.
+• IPv4: se definió (RFC 791, 1981) para su aplicación en ARPANET.
+• IPv6: RFC 2460 (1998) diseñado ante el agotamiento del espacio de 
+direcciones de IPv4. Aunque su despliegue progresa, IPv4 sigue 
+predominando. Ha sido actualizado en el RFC 8200 de 2017.
+• IP proporciona dos primitivas en su interfaz con la capa superior:
+▪Send: utilizada para enviar un datagrama.
+▪Deliver (o receive): utilizada para notificar su llegada.
+
+
+--- PAGE 17 ---
+Redes de Ordenadores
+Mariano Benito
+17
+Formato de la cabecera I
+Tiene un tamaño de 20 bytes y opcionalmente, puede contener 40 bytes adicionales.
+Fuente: Stallings (cap. 18)
+
+
+--- PAGE 18 ---
+Redes de Ordenadores
+Mariano Benito
+18
+Formato de la cabecera II
+• Versión (4b): indica el número de versión del protocolo (4 o 6).
+• IHL (4b): tamaño de la cabecera en palabras de 32 bits (≥5).
+• DS y ECN (6b y 2b): permite aplicar QoS extremo a extremo y señalizar congestión a lo largo de la 
+ruta de forma explícita.
+• Longitud total (16b): tamaño (B) del datagrama (D + H).
+• Identificación (16b): identificador que, junto con las direcciones de origen y destino y el protocolo, 
+identifica unívocamente el datagrama. Se emplea para agrupar fragmentos del mismo datagrama.
+• Flags (3b): se emplean dos: el DF (don´t fragment) y el MF (more fragments).
+• Fragment offset (13b): indica la posición del fragmento dentro del datagrama original, en bloques 
+de 64 bits →todos los fragmentos (excepto el último) deben contener datos cuya longitud sea 
+múltiplo de 64 bits.
+• TTL (8b): vida máxima del datagrama (actualmente, contador de saltos).
+• Protocol (8b): indica el protocolo de la capa superior al que entregar los datos (registro en IANA).
+• Header checksum: código de detección de errores aplicado solamente a la cabecera, verificado y 
+calculado en cada salto.
+• Source Address (32b): dirección del emisor.
+• Destination Address (32b): dirección del destino.
+• Opciones: codifica las opciones solicitadas por el emisor donde cada opción incluye un campo de 
+tipo que identifica la opción y sus datos asociados.
+• Relleno: la cabecera completa debe quedar alineada a múltiplos de 32 bits →zero padding.
+
+
+--- PAGE 19 ---
+Redes de Ordenadores
+Mariano Benito
+19
+Direccionamiento I
+• En IP el direccionamiento es jerárquico: los equipos se agrupan 
+en redes →1º se envía la información a la red de destino y después 
+se entrega al equipo. Cómo se asignan direcciones en Internet:
+▪IANA: Internet Assigned Numbers Authority. Asigna grandes bloques de 
+direcciones a los diferentes RIRs.
+▪RIR: Regional Internet Registry. Europa: RIPE NCC. Asignan subredes a los 
+LIRs bajo su control.
+▪LIR: Local Internet Registry. Normalmente son ISPs aunque también hay 
+grandes corporaciones e instituciones gubernamentales. Un ISP suele 
+asignar 1 dirección IP a un cliente residencial y una subred a clientes 
+empresariales (grandes).
+▪Los distintos sistemas autónomos de los LIRs se interconectan entre sí para 
+cursar el tráfico hacia cualquier destino.
+• Las direcciones IP, de 32 bits, se suelen representar en notación 
+punto decimal (10.09.77.14).
+Fuente: tecnocrática.net
+
+
+--- PAGE 20 ---
+Redes de Ordenadores
+Mariano Benito
+20
+Fuente: Stallings (cap. 18)
+Clases de direcciones (classful routing)
+Máscara: /8 - Rango: 0.0.0.0 a 127.255.255.255
+Máscara: /16 - Rango: 128.0.0.0 a 191.255.255.255
+Máscara: /24 - Rango: 192.0.0.0 a 223.255.255.255
++ equipos
+- redes
+- equipos
++ redes
+32 bits
+N bits
+32 – N →H bits
+2 direcciones 
+reservadas entre 
+las 𝟐𝑯en cada red:
+•0’s en los H bits: 
+identifica a la red
+•1’s en los H bits: 
+dirección de difusión 
+
+
+--- PAGE 21 ---
+Redes de Ordenadores
+Mariano Benito
+21
+Direccionamiento II - subredes (subnetting)
+• Por motivos operativos es interesante poder dividir una red en 
+subredes más pequeñas →¡segmentación!
+▪Esta división se realiza tomando algunos bits de los 𝐻para indicar subredes.
+▪Es importante establecer el # de subredes y el # de PCs en cada una.
+▪Partiendo de 192.168.186.0/24 y usando 2 bits para subredes (4 subredes):
+Red original
+11000000 10101000 10111010 00000000
+192.168.186.0/24
+Subred 1
+11000000 10101000 10111010 00000000
+192.168.186.0/26
+Subred 2
+11000000 10101000 10111010 01000000
+192.168.186.64/26
+Subred 3
+11000000 10101000 10111010 10000000
+192.168.186.128/26
+Subred 4
+11000000 10101000 10111010 11000000
+192.168.186.192/26
+Máscara
+11111111 11111111 11111111 11000000
+255.255.255.192
+8 bits (𝟐𝟖= 𝟐𝟓𝟔) equipos
+64 equipos
+
+
+--- PAGE 22 ---
+Redes de Ordenadores
+Mariano Benito
+22
+Direccionamiento III
+• El encaminamiento con clases (classful routing) no permitía la división de 
+una red en subredes más pequeñas →esto representa un uso ineficiente de 
+las direcciones y está obsoleto.
+• Classless Inter-Domain Routing (CIDR): encaminamiento no restringido a 
+las clases A, B y C originales. Notifica la máscara de red con la dirección. 
+Introducido en el RFC 1519 (1993), y basado en el uso de máscaras de 
+longitud variable (Variable Length Subnet Masking, VLSM) →un mismo 
+bloque de direcciones puede dividirse en subredes de distintos tamaños, 
+lo que permite asignar bloques ajustados a las necesidades reales.
+▪Se ha de empezar por la subred con mayor número de equipos.
+▪Agregación o resumen de rutas (address summarization): permite que varios prefijos 
+contiguos y alineados en potencias de dos pueden anunciarse como un único prefijo más 
+amplio.
+o 2.2.2.0/24 y 2.2.3.0/24 →se puede anunciar 2.2.2.0/23.
+o Esta agregación se aplica jerárquicamente y disminuye tanto el tamaño de las tablas de enrutamiento 
+como el tráfico de control entre los routers.
+▪Si un destino coincide con varios prefijos de distinta longitud, los routers aplican la regla del 
+prefijo más largo coincidente (longest-prefix match) →eligen la entrada más específica. 
+
+
+--- PAGE 23 ---
+Redes de Ordenadores
+Mariano Benito
+23
+Direccionamiento IV
+• Se distingue entre IPs públicas y privadas.
+• Las privadas están reservadas para su uso en LANs y pueden 
+reutilizarse en múltiples organizaciones →no deben enrutarse en 
+Internet.
+▪La LAN usará un mecanismo de traducción de direcciones para que los 
+equipos privados accedan a Internet (lo vemos más adelante).
+▪Este esquema surgió para ahorrar direcciones IP y porque muchos equipos 
+corporativos necesitan conectividad interna sin exposición directa a Internet.
+• La reserva de rangos privados (RFC 1918) define estos 3 bloques:
+▪10.0.0.0 
+a 10.255.255.255
+▪172.16.0.0 a 172.31.255.255
+▪192.168.0.0 a 192.168.255.255
+
+
+--- PAGE 24 ---
+Redes de Ordenadores
+Mariano Benito
+24
+Direccionamiento V
+• Cuando un equipo de la red quiere comunicarse con otro:
+1.
+Se obtiene la parte de red de la dirección de destino mediante la 
+operación AND entre la IP de destino y la máscara.
+2.
+Se compara la parte de red con la del origen:
+a)
+Si coinciden implica que el destino está en la misma red y puede enviarse el 
+paquete directamente.
+b)
+Si no coinciden, se envía el paquete al router por defecto, para que este se 
+encargue su envío.
+
+
+--- PAGE 25 ---
+Redes de Ordenadores
+Mariano Benito
+25
+
+
+--- PAGE 26 ---
+Redes de Ordenadores
+Mariano Benito
+26
+Fragmentación I
+• Aunque la máxima longitud teórica de un datagrama IP es 64 
+Kbytes, este puede atravesar diversas redes con diferentes 
+tecnologías y diferente MTU (tamaño máximo de datos en capa 2).
+▪MTU en Ethernet: 1.500 bytes.
+▪MTU en 802.11: 2.346 bytes, aunque suele ser 1500 bytes.
+• Cualquier router puede fragmentar, pero solo se reensambla en 
+el sistema final, ya que puede precisar mucha memoria y los 
+datagramas pueden seguir diferentes rutas.
+• Los fragmentos de un datagrama IP se identifican mediante la 4-
+tupla (identificador, dirección origen, dirección destino, protocolo).
+
+
+--- PAGE 27 ---
+Redes de Ordenadores
+Mariano Benito
+27
+Fragmentación II
+IP emplea los siguientes campos en la cabecera 
+para gestionar la fragmentación:
+•
+Identificación: identificador del datagrama que 
+junto con las direcciones y el protocolo identifica 
+unívocamente. Sirve para identificar fragmentos 
+del mismo datagrama que lleguen en desorden.
+•
+More fragments: indica que el datagrama se ha 
+fragmentado y que hay más. Si se fragmenta, 
+vale 1 excepto en el último fragmento.
+•
+Don’t fragment: no se permite fragmentar. Si se 
+necesita, se descarta y se manda un aviso al 
+emisor.
+•
+Fragment offset: si se ha fragmentado, indica 
+en qué posición deben colocarse los datos para 
+recuperar el datagrama. Se indica en bloques 
+de 8 bytes.
+#
+Identificador
+Data Length
+More
+Offset
+0
+7724
+404 B
+0
+0
+1
+7724
+188+20=208 
+1
+0
+2
+7724
+404-208=196
+0
+208/8=26
+Fuente: Stallings (cap. 18)
+
+
+--- PAGE 28 ---
+Redes de Ordenadores
+Mariano Benito
+28
+Traducción de direcciones (NAT) I
+• IPv4 no se diseñó para el servicio de Internet actual, se hizo 
+para redes experimentales/académicas.
+▪Rango de direcciones pequeño: 232direcciones ≈4,3 mil millones.
+▪Asignación ineficiente: la organización jerárquica hace que las 
+direcciones se asignen por subredes y no individualmente.
+• En los 90 ya se conocía el agotamiento de IPs y se propone:
+▪CIDR (1993, RFC 1519): asignación no atada a clases para desperdiciar 
+menos direcciones.
+▪Network Address Translation, NAT (1999, RFC 2663): LAN con rangos 
+privados y una o varios IPs públicas para el acceso a Internet:
+o Reduce el # de direcciones, pero no evita el problema.
+o Rompe la visibilidad extremo a extremo.
+▪IPv6 aumenta el espacio de direcciones a 2128 solucionando el problema.
+
+
+--- PAGE 29 ---
+Redes de Ordenadores
+Mariano Benito
+29
+Traducción de direcciones (NAT) II
+• NAT permite que un router reescriba las direcciones de los paquetes y 
+mantenga los mapeos realizados en una tabla de traducciones.
+• Normalmente, se usa junto con un rango de direcciones privado en la LAN.
+• Usando NAT se distinguen dos zonas:
+▪Interna (inside) es cualquier IP bajo la administración del administrador (incluyendo su IP 
+pública).
+▪Externa (outside) es cualquier IP pública que no está bajo el control del administrador de la 
+red.
+• Además, se emplean los siguientes términos:
+▪Local: una IP de la red a traducir (normalmente la LAN privada).
+▪Global: una IP a la que se traduce (normalmente una IP global enrutable en Internet).
+• Una IP inside local se cambia por la inside global cuando un paquete viaja 
+hacia la red exterior y a la inversa cuando vuelve.
+• 3 variantes generales de NAT:
+▪NAT estática: pre-asigna una IP externa diferente a cada IP interna.
+▪NAT dinámica: comparte un rango de IPs externas (pool) entre un rango (mayor) de IPs
+internas.
+▪NAT dinámica con traducción de puerto (Port Address Translation, PAT): se comparte 
+una IP externa diferenciándose por el puerto y el protocolo de la capa de transporte.
+
+
+--- PAGE 30 ---
+Redes de Ordenadores
+Mariano Benito
+30
+Traducción de direcciones III - NAT estática
+• Se realiza una pre-asignación uno-a-uno entre una IP interna (inside local, privada) 
+y una externa (inside global, pública) →no ahorra direcciones públicas.
+
+
+--- PAGE 31 ---
+Redes de Ordenadores
+Mariano Benito
+31
+Traducción de direcciones IV - NAT dinámica
+• Se asigna dinámicamente una dirección de un pool (grupo de direcciones) 
+a cada cliente que inicia una conexión con un servidor externo.
+
+
+--- PAGE 32 ---
+Redes de Ordenadores
+Mariano Benito
+32
+Traducción de direcciones V – NAT/PAT
+• NAT dinámico donde por cada conexión de un equipo interno se emplea un puerto diferente (hay 
+65.535) de la IP externa. Reduce considerablemente el uso de IPs y se emplea sistemáticamente.
+Fuente: Kurose (cap. 4)
+
+
+--- PAGE 33 ---
+Redes de Ordenadores
+Mariano Benito
+33
+Traducción de direcciones VI – Desventajas de NAT
+• Algunas aplicaciones no funcionan a través de NAT:
+▪Las que abren conexiones en ambos sentidos.
+▪Las que notifican direcciones IP o puertos en el campo de datos.
+• Disminuye la fiabilidad del sistema, añadiendo puntos de fallo:
+▪Desbordamiento de la tabla de traducciones NAT.
+▪Protocolo con estado (NAT dinámico o PAT).
+• Para prestar servicios desde la red a Internet es necesario 
+configurar una redirección de puertos (port forwarding, “abrir el 
+puerto”) en el router:
+▪Estáticos, conociendo el puerto concreto de la aplicación.
+▪Dinámicos con UPnP pero esto introduce problemas de seguridad.
+• Reduce la visibilidad de los equipos dado que los equipos de la 
+red privada no son alcanzables desde el exterior.
+
+
+--- PAGE 34 ---
+Redes de Ordenadores
+Mariano Benito
+34
+IP versión 6 (IPv6) I
+• IPv6 (RFC2460, 1998) se diseñó para sustituir a IPv4 y solventar la falta de direcciones.
+• Las direcciones en IPv6 tienen 128 bits →296veces más direcciones.
+• Notación en hexadecimal en grupos de 4 caracteres (16b) separados por “:”.
+▪Pueden omitirse ceros a la izquierda y un bloque de ceros consecutivos puede abreviarse con “:”.
+o Por ejemplo: 2041:0000:140F:0000:0000:0000:875B:131B
+o Se reduce a: 2041:0000:140F::875B:131B
+o También es posible a: 2041:0:140F::875B:131B
+• El direccionamiento y el enrutamiento son jerárquicos.
+• Se ha acordado asignar a cada organización un prefijo de red /48:
+▪Se suelen emplear 16 bits para numerar subredes internas.
+▪Quedan 64 bits para identificar las interfaces de los hosts.
+▪No existen las direcciones privadas →¡sobran direcciones!
+• Se recupera la conectividad extremo a extremo →no hace falta NAT, a excepción 
+de conversiones IPv4 a IPv6 y viceversa.
+• Cada puerto de un router se conecta a una subred diferente.
+• Equipos de una misma subred se comunican directamente, sin embargo, entre 
+subredes diferentes tienen que comunicarse a través de un router.
+• Los protocolos de enrutamiento disponen de versiones para IPv6 y para reducir el 
+número de redes anunciadas emplean sumarización de rutas.
+• La fragmentación en IPv6 difiere de la de IPv4, ya que solo la realiza el host origen.
+
+
+--- PAGE 35 ---
+Redes de Ordenadores
+Mariano Benito
+35
+IP versión 6 (IPv6) II
+• Hay 3 tipos de direcciones IPv6:
+▪Unicast
+▪Multicast
+▪Anycast
+• Cada interfaz puede emplear múltiples direcciones unicast.
+• Las direcciones multicast IPv6 son análogas a IPv5. Empiezan por FF:
+▪FF02::1 →Todos los hosts de la subred.
+▪FF02::2 →Todos los routers de la subred.
+▪FF02::5 →Mensajes OSPF entre routers.
+• Las direcciones anycast están pensadas para redundar servicios en una 
+red y balancear la carga
+▪Varios hosts emplean la misma dirección.
+▪Un paquete anycast se dirige al host más cercano entre ellos.
+• Para tareas de configuración se definen direcciones unicast locales al 
+enlace (link-local), análogas a direcciones privadas de IPv4.
+▪Todas pertenecen a FE80::/64
+▪Se asignan automáticamente y no precisan configuración.
+
+
+--- PAGE 36 ---
+Redes de Ordenadores
+Mariano Benito
+36
+Protocolos básicos en una red IP
+• Internet Control Message Protocol (ICMP)
+▪Mensajes de control y diagnóstico.
+• Address Resolution Protocol (ARP)
+▪Direcciones IPv4 →Direcciones MAC.
+• Dynamic Host Configuration Protocol (DHCP)
+▪Configuración dinámica de las interfaces.
+• Domain Name System (DNS)
+▪Traduce nombres de dominio a direcciones IP.
+
+
+--- PAGE 37 ---
+Redes de Ordenadores
+Mariano Benito
+37
+Internet Control Message Protocol (ICMP) I
+• ICMP permite enviar mensajes de control entre routers y 
+dispositivos conectados a una red IP.
+▪Su implementación es obligatoria en cualquier dispositivo que implemente IP.
+• Los mensajes ICMP se transportan sobre IP fijando a 1 el campo 
+protocolo de la cabecera IP.
+• ICMP tiene una cabecera de 8B (64b) con los siguientes campos:
+▪Tipo (8b): indica el tipo de mensaje ICMP.
+▪Código (8b): parámetros específicos del tipo de mensaje hasta 8b, el resto 
+en el campo de parámetros.
+▪Checksum (16b): suma de comprobación del mensaje ICMP.
+▪Parámetros (32b): parámetros adicionales dependientes del tipo de 
+mensaje ICMP que se esté enviando.
+• En los mensajes de error se incluye, como mínimo, la cabecera IP 
+original y los primeros 8 bytes de su carga para identificación.
+
+
+--- PAGE 38 ---
+Redes de Ordenadores
+Mariano Benito
+38
+Internet Control Message Protocol (ICMP) II
+• Echo Request y Echo Reply: comprobar conectividad y 
+medir retardo, empleados en la herramienta ping.
+▪El receptor debe responder, pero generalmente está filtrado en los FWs.
+• Destination unreachable: informa de que un datagrama no 
+pudo entregarse e incluye códigos que describen la causa.
+▪Empleado para detectar la MTU de la ruta.
+• Time exceeded: se envía cuando el TTL llega a 0.
+▪Permite a traceroute descubrir los saltos intermedios.
+• Redirect: para indicar a un host una puerta de enlace mejor.
+▪Cuando recibe paquetes destinados a un host en la misma subred.
+▪Cuando hay 2 o más gateways en una red y recibe paquetes destinados a 
+una red que es alcanzable mejor desde otro gateway.
+
+
+--- PAGE 39 ---
+Redes de Ordenadores
+Mariano Benito
+39
+Internet Control Message Protocol (ICMP) III
+• Ejemplo de uso de ping (ICMP Echo) al servidor de la web de 
+la universidad.
+
+
+--- PAGE 40 ---
+Redes de Ordenadores
+Mariano Benito
+40
+Internet Control Message Protocol (ICMP) IV
+• Ejemplo de uso de tracert para descubrir la ruta hasta el 
+servidor de la página web de la universidad.
+
+
+--- PAGE 41 ---
+Redes de Ordenadores
+Mariano Benito
+41
+Address Resolution Protocol (ARP) I
+• ARP (RFC 826) resuelve, dentro de una red en capa 2, la dirección MAC 
+asociada a una dirección IPv4 (en IPv6: Neighbor Discovery Protocol).
+• Cada sistema final e intermedio mantiene una tabla de mapeos IP →
+MAC conocidos, llamada caché ARP.
+• Si un host necesita enviar a una IP de su propia subred y la MAC no está 
+en la caché, emite una solicitud ARP broadcast con la IP que desea 
+traducir, anunciando además su propia IP/MAC.
+• El equipo dueño de la IP solicitada responde con una réplica ARP Reply
+unicast que contiene su MAC. Ambos extremos actualizan su caché ARP.
+• Estas cachés pueden vaciarse y también admiten entradas estáticas 
+cuando se desea fijar asociaciones.
+• Existen anuncios ARP espontáneos o gratuitous ARP cuando un host 
+envía su propia IP y MAC sin haber sido preguntado.
+• ARP es susceptible de suplantación: un host puede inyectar respuestas 
+falsas y con ello consigue desviar tráfico, logrando un Man-In-The-Middle.
+
+
+--- PAGE 42 ---
+Redes de Ordenadores
+Mariano Benito
+42
+Address Resolution Protocol (ARP) II
+• Ejemplo de caché ARP:
+
+
+--- PAGE 43 ---
+Redes de Ordenadores
+Mariano Benito
+43
+Address Resolution Protocol (ARP) III
+• Pasos realizados por un host para enviar un datagrama IP
+
+
+--- PAGE 44 ---
+Redes de Ordenadores
+Mariano Benito
+44
+Fuente: CCNA ICND2 640-816 3rd. Ed. (cap. 4)
+PC1 crea un 
+paquete para ser 
+enviado a PC3
+
+
+--- PAGE 45 ---
+Redes de Ordenadores
+Mariano Benito
+45
+Dynamic Host Configuration Protocol (DHCP) I
+• DHCP se presenta en el RFC 1531 en 1993 
+como una mejora de BOOTP (configuración 
+automática de los parámetros de la red y 
+arranque automático cargando una imagen 
+del S.O por red).
+• Trabaja sobre UDP usando el puerto 67 en 
+el servidor y el 68 en el cliente.
+• Permite asignar de forma dinámica 
+parámetros esenciales como dirección IP, 
+máscara, puerta de enlace por defecto, 
+servidores DNS, …
+• Permite “prestamos” de direcciones (lease): 
+el cliente debe renovar su préstamo 
+periódicamente con una nueva petición.
+Fuente: Kurose (cap. 4)
+
+
+--- PAGE 46 ---
+Redes de Ordenadores
+Mariano Benito
+46
+Domain Name System (DNS) I
+• Los routers emplean las IPs para el encaminamiento del tráfico, pero a las 
+personas nos resulta más cómodo usar nombres para identificar los 
+servicios que direcciones numéricas.
+▪Además, un servicio puede cambiar de IP o tener múltiples.
+▪www.uneatlantico.es →93.90.30.243
+• ¿Cómo convertir un nombre en la IP correspondiente?
+▪Mediante un fichero que guarda las asignaciones
+o /etc/hosts (Linux)
+o C:\Windows\System32\drivers\etc\hosts (Windows)
+▪Mediante una consulta a un servidor DNS usando el protocolo DNS
+• Domain Name System (DNS) se refiere a dos cosas:
+▪Servicio de directorio distribuido en Internet que permite realizar las asignaciones 
+de nombres a direcciones IP.
+▪El protocolo mediante el que se realizan las consultas al previo.
+• Está definido en los RFCs 1034 y 1035.
+• Normalmente emplea el puerto 53 sobre UDP, aunque puede usar TCP.
+
+
+--- PAGE 47 ---
+Redes de Ordenadores
+Mariano Benito
+47
+Domain Name System (DNS) II
+• Dominio: conjunto de equipos que están bajo la gestión administrativa de una misma entidad.
+• Los dominios se organizan de manera jerárquica:
+La organización de nombres de dominio no tiene nada que ver con la organización en 
+subredes IP ni con la localización geográfica de los hosts que comprende.
+Fuente: Tanenbaum (cap. 7)
+
+
+--- PAGE 48 ---
+Redes de Ordenadores
+Mariano Benito
+48
+Domain Name System (DNS) III
+• La información se organiza en zonas, que son porciones del árbol 
+delegadas a servidores autoritativos.
+• La base de datos de DNS se compone de múltiples Resource Records
+(RR) de diferentes tipos.
+• Un RR consta de los siguientes campos:
+▪Nombre de dominio: el elemento a definir.
+▪TTL: tiempo máximo que se puede cachear (en segundos)
+▪Clase: siempre IN (Internet)
+▪Tipo: el tipo de recurso que se está definiendo:
+o A: Address, dirección IPv4 que identifica a un host.
+o AAAA: Address, dirección IPv6 que identifica a un host.
+o CNAME: Canonical Name, permite definir alias entre hosts.
+o MX: Mail eXchange, determina el host que permite recibir correo en un dominio.
+o NS: authoritative Name Server, determina el servidor de nombres de un dominio.
+o SOA: Start Of Authority, indica parámetros para la zona dns.
+▪Valor: el contenido del RR en función de su tipo.
+• www.uneatlantico.es 21571 IN
+CNAME
+uneatlantico.es
+• uneatlantico.es
+21571 IN
+A
+93.90.30.243
+
+
+--- PAGE 49 ---
+Redes de Ordenadores
+Mariano Benito
+49
+Domain Name System (DNS) IV
+• Los equipos conocen la dirección de uno o más servidores DNS.
+• Si un servidor consultado no dispone de la información requerida, la 
+solicita al siguiente nivel y la cachea durante TTL s.
+• Existen 13 servidores raíz, denominados de la A a la M.
+Fuente: Stallings (cap. 23)
+
+
+--- PAGE 50 ---
+Redes de Ordenadores
+Mariano Benito
+50
+Enrutamiento estático I
+• La configuración de rutas estáticas es la forma más simple de routing y 
+con nula sobrecarga de control.
+• Se basa en rutas programadas por el administrador de la red.
+▪Estas permanecen invariables hasta que se modifican manualmente.
+• Carece de tolerancia a fallos y en redes grandes se vuelve compleja.
+• Se configura una correspondencia entre la red de destino y el siguiente 
+salto o interfaz de salida.
+▪En redes IP normalmente se emplea la IP del siguiente router como siguiente salto.
+▪Esta relación no varía con el tiempo salvo que se modifique la ruta.
+▪Resulta útil cuando no existen caminos alternativos hacia el destino.
+▪Ahorra recursos del router y de la red.
+▪Es una configuración segura y fácil de monitorizar.
+• Un caso especialmente útil es la ruta por defecto (0.0.0.0/0 en IPv4 y ::/0 
+en IPv6), empleada cuando no existe una entrada más específica para el 
+destino.
+▪Ayuda a reducir el tamaño de la tabla de enrutamiento.
+▪Garantiza que siempre exista una salida para enviar un datagrama (¡no su entrega!).
+
+
+--- PAGE 51 ---
+Redes de Ordenadores
+Mariano Benito
+51
+Enrutamiento estático II
+• Destino: la red (CIDR) a la que van dirigidos los paquetes.
+• Siguiente salto: dirección IP de la interfaz del próximo router.
+Router Destino 
+Siguiente salto
+A
+172.16.0.0/16
+B
+A
+192.168.125.0/24
+C
+A
+192.168.126.0/24
+C
+Nota: el ejemplo emplea el nombre del router como siguiente salto para 
+simplificar el diagrama. Se emplearía la IP de la interfaz en el segmento 
+entre el router origen y el de siguiente salto. Además, se omiten las entradas 
+de las redes directamente conectadas.
+B
+192.168.125.0/24
+C
+B
+10.0.0.0/8
+A
+B
+192.168.126.0/24
+C
+C
+10.0.0.0/8
+A
+C
+172.16.0.0/16
+B
+C
+192.168.126.0/24
+D
+D
+0.0.0.0/0
+C
+
+
+--- PAGE 52 ---
+Redes de Ordenadores
+Mariano Benito
+52
+Enrutamiento dinámico I
+• Los mecanismos de enrutamiento dinámico recalculan rutas para 
+adaptarse a cambios de la topología.
+▪Aporta flexibilidad ante fallos.
+▪Permite el balanceo de carga enviando el tráfico por distintos caminos para mejorar el 
+rendimiento.
+• El tiempo de convergencia es el retraso entre que ocurre un cambio en la 
+red y el instante temporal en el que todos los routers han actualizado su 
+información de forma coherente.
+• Un protocolo de enrutamiento define cómo los routers intercambian 
+información de enrutamiento entre sí y cómo recalculan las mejores rutas 
+para rellenar sus tablas de enrutamiento.
+• En función del ámbito se distingue entre:
+▪Interior Gateway Protocols (IGP): usados dentro de un mismo dominio y la 
+taxonomía clásica comprende dos familias de protocolos: los vector-distancia y los de
+estado del enlace.
+▪Exterior Gateway Protocols (EGP): usados entre dominios.
+o Exterior Gateway Protocol (EGP) está obsoleto y predomina Border Gateway Protocol (BGP).
+
+
+--- PAGE 53 ---
+Redes de Ordenadores
+Mariano Benito
+53
+Enrutamiento dinámico II – Protocolos vector-distancia
+• Cada router mantiene una entrada por cada destino conocido 
+que contiene el siguiente salto para alcanzarlo (vector) y el 
+coste total de la ruta (distancia).
+• En cada iteración (ya sea periódica o porque hay cambios):
+▪Difunden su vector a los vecinos directos.
+▪Se recalculan las rutas sumando el coste del enlace hasta el vecino y 
+conservando para cada destino la ruta de menor coste.
+• Es una implementación distribuida del algoritmo de Bellman-Ford 
+(rutas de mínimo coste) que no requiere conocer la topología 
+completa y destaca por su sencillez.
+• La métrica es variable, típicamente: el número de saltos (RIP(ng)).
+• Son lentos y pueden generar bucles, aunque su simplicidad y baja 
+sobrecarga los hacen adecuados para redes pequeñas o estables.
+
+
+--- PAGE 54 ---
+Redes de Ordenadores
+Mariano Benito
+54
+Enrutamiento dinámico III – Protocolos estado del enlace
+• Se basan en la difusión del estado de toda la red y el cálculo local del 
+árbol de rutas mínimas (típicamente Dijkstra).
+▪Todos los routers observan el mismo grafo de red, compartido mediante la distribución 
+de Link State Advertisements (LSAs).
+▪Cada router calcula sus rutas mínimas al resto de la red.
+• Fases de funcionamiento:
+1.
+Descubrir a sus vecinos y sus direcciones de red.
+2.
+Asignar a cada enlace un coste, típicamente inverso al ancho de banda.
+3.
+Creación de un paquete (LSA) con lo que acaba de aprender.
+4.
+Difundir este paquete a los demás y recibir LSAs de ellos.
+5.
+Calcular la ruta de menor coste a todos los destinos y rellenar su tabla de 
+enrutamiento con el siguiente salto para cada destino.
+• Se necesita capacidad de computo y memoria en los routers.
+• El consumo de ancho de banda para compartir la información es mayor.
+• El tiempo de convergencia es mucho menor.
+• Ejemplos: OSPF e IS-IS son los principales IGPs, OSPFv2 para IPv4 y 
+OSPFv3 o IS-IS extendido para IPv6.
+
+
+--- PAGE 55 ---
+Redes de Ordenadores
+Mariano Benito
+55
+Distancia administrativa
+• La distancia administrativa es una calificación que determina la 
+fiabilidad de una fuente de información de enrutamiento.
+• Valor numérico de 0 a 255.
+• Cuanto menor es el valor, mayor es la confianza en esa fuente.
+• Una ruta directamente conectada tendrá una distancia 
+administrativa de 0.
+• Una ruta estática tendrá una distancia administrativa de 1.
+• Una ruta con un valor de 255 se considera no fiable, por lo que no 
+se añade a la tabla de enrutamiento.
+• La distancia administrativa es local a un router y se aplica después 
+de la coincidencia de prefijo más larga y antes de comparar 
+métricas entre rutas del mismo protocolo.
+• De forma orientativa: eBGP 20, EIGRP 90, OSPF 110, IS-IS 115, 
+RIP 120, iBGP 200, …
+
+
+--- PAGE 56 ---
+GII – IYA022
+Redes de Ordenadores
+Mariano Benito
+
+

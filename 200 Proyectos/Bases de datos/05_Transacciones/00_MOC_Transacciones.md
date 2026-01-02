@@ -9,5 +9,8 @@ Este es el mapa de contenido para el módulo de Transacciones.
 ## Control
 *   [[Comandos de Control de Transacciones (TCL)]]
 
+## Práctica
+*   [[Ejercicio_Transacciones]]
+
 ---
 [[00_Indice]]
