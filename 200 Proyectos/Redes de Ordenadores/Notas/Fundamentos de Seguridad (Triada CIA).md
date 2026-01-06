@@ -10,6 +10,13 @@ La seguridad de la información se basa en tres pilares fundamentales conocidos 
 3. **Disponibilidad (Availability)**: La info está cuando se necesita.
    - *Analogía*: Una gasolinera 24h. Si llegas y está cerrada, el servicio ha fallado.
 
+## La Tríada Extendida
+Además de CIA, existen otros pilares importantes:
+- **Autenticidad**: Asegura que el emisor es quien dice ser y que el mensaje es genuino.
+- **Exactitud**: La información no tiene errores de formato o representación que cambien su valor.
+- **Utilidad**: La información debe estar en un formato que el receptor pueda entender y usar.
+- **Posesión**: El control físico o lógico sobre el dato (puedes tener la posesión de un archivo cifrado aunque no tengas la confidencialidad porque no puedes leerlo).
+
 ## Otros Conceptos
 - **Autenticidad**: Garantiza la identidad del emisor (no repudio).
 - **Activo**: Recurso a proteger (datos, hardware, personas).

@@ -12,6 +12,13 @@ El control de errores añade redundancia para garantizar la integridad de los da
 - **CRC (Cyclic Redundancy Check)**: El método más robusto.
   - *Analogía*: Como el dígito de control de tu DNI o de una cuenta bancaria. Es una operación matemática que resume todo el mensaje; si un solo bit cambia, el resumen no coincide.
 
+## Transparencia de Datos: Bit Stuffing
+¿Qué pasa si el patrón que indica "Aquí termina la trama" (ej. `01111110`) aparece por casualidad dentro de los datos? El receptor se confundiría y cortaría el mensaje antes de tiempo.
+- **Solución (Bit Stuffing)**: Cada vez que el emisor ve cinco `1` seguidos en los datos, mete un `0` a la fuerza.
+- **Receptor**: Cuando ve cinco `1`, mira el siguiente bit:
+  - Si es `0`, lo quita (era relleno).
+  - Si es `1`, entonces sí es el patrón de final real.
+
 ---
 **Relacionado**: [[Protocolos ARQ]]
 **Fuente**: [[32_Tema3.pdf]]

@@ -12,6 +12,21 @@ La capa de transporte (Capa 4) proporciona una transferencia de datos lógica ex
 - **UDP**: Rápido, sin conexión, no fiable (mejor esfuerzo).
 - **TCP**: Fiable, orientado a conexión, flujo de bytes.
 
+## Interfaz de Programación: Sockets
+Para usar el nivel de transporte, los programadores usan **Sockets**:
+- **Socket**: Punto final de la comunicación (IP + Puerto).
+- **Primitivas comunes**:
+  - `BIND`: Asocia un puerto al socket.
+  - `LISTEN`: El servidor se queda esperando.
+  - `CONNECT`: El cliente inicia el saludo (3-way handshake).
+  - `SEND/RECEIVE`: Envío y recepción de datos.
+
+## El Checksum y la "Pseudo-cabecera"
+TCP y UDP calculan un resumen (checksum) para detectar errores, pero hacen algo "sucio" técnicamente:
+> [!NOTE]
+> Durante el cálculo, incluyen campos de la capa de Red (IP origen y destino). Esto se llama **Pseudo-cabecera**. 
+> *¿Por qué?*: Para asegurar que si la red "se equivoca" y te manda un paquete que no era para ti, el transporte lo detecte y lo tire. Esto rompe la separación estricta entre capas para ganar seguridad.
+
 ---
 **Relacionado**: [[Protocolo TCP - Servicio y Multiplexación]], [[Protocolo UDP]]
 **Fuente**: [[62_Tema6.pdf]]

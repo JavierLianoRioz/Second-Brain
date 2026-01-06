@@ -8,10 +8,14 @@ TCP implementa mecanismos avanzados para garantizar la fiabilidad y eficiencia.
 - **ARQ con Vuelta Atrás N**: Comportamiento por defecto ante pérdidas, aunque puede usar **SACK** (Selective ACK) si se negocia.
 - **Fast Retransmit**: Si el emisor recibe 3 ACKs duplicados, retransmite el segmento perdido sin esperar al temporizador.
 
+## Eficiencia en el Envío
+- **Algoritmo de Nagle**: Para no enviar muchos paquetes diminutos (ej. de 1 byte), TCP espera un poco para agrupar varios caracteres en un solo segmento grande.
+- **ACKs Retardados**: El receptor no contesta inmediatamente a cada mensaje; espera un instante por si tiene datos que enviar él también y así mete el "Gracias" (ACK) dentro de su mensaje de respuesta (**Piggybacking**).
+
 ## Control de Congestión (No saturar la carretera)
 - **Slow Start (Arranque Lento)**: Empiezas enviando 1, luego 2, luego 4, luego 8... duplicando hasta que detectas que la red se queja.
   - *Analogía*: Como entrar en una autopista. Empiezas despacio por el carril de aceleración y vas ganando velocidad según ves que hay hueco.
-- **Congestion Avoidance**: Cuando ya vas rápido y estás cerca del límite, dejas de duplicar y solo sumas de uno en uno (+1) para no causar un choque.
+  - **Umbral**: Cuando llegas a un límite previsto, pasas de duplicar a subir de uno en uno (+1) (**Congestion Avoidance**).
 - **Fast Retransmit**: Si recibes el mismo ACK tres veces seguidas, es que el otro está diciendo: "¡Me falta esto! ¡Me falta esto! ¡Me falta esto!". TCP no espera al tiempo de espera y lo envía ya.
 
 ---

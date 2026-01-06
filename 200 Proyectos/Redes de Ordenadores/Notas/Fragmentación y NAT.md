@@ -3,10 +3,10 @@
 Mecanismos para manejar limitaciones físicas y de direccionamiento.
 
 ## Fragmentación
-Cuando un datagrama IP es mayor que la **MTU** del siguiente enlace:
-- El router divide el paquete en fragmentos.
+- En **IPv4**, si un datagrama es mayor que la **MTU** del siguiente enlace, el router lo divide en fragmentos.
 - Usa los campos **Identification**, **Flags** (MF, DF) y **Fragment Offset**.
 - El reensamblado solo se realiza en el destino final.
+- **Nota**: En **IPv6**, los routers NO fragmentan; si el paquete es muy grande, se descarta y se avisa al origen.
 
 ## NAT (Network Address Translation)
 - **Concepto**: Un "traductor" en la frontera de casa.

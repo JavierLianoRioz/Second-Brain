@@ -4,5 +4,6 @@
   "userIgnoreFilters": [
     "500 Biblioteca/"
   ],
-  "promptDelete": false
+  "promptDelete": false,
+  "defaultViewMode": "preview"
 }

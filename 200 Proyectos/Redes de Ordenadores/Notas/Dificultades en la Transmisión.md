@@ -10,6 +10,14 @@ La señal recibida no es idéntica a la transmitida debido a diversas degradacio
    - *Analogía*: Imagina una carrera donde los corredores (frecuencias) salen juntos pero unos llegan mucho antes que otros, desordenando el mensaje final.
 3. **Ruido**: Señales extrañas que se mezclan con la nuestra.
 
+## Distancia y Regeneración de Señal
+Para alcanzar distancias largas necesitamos dispositivos intermedios:
+- **Amplificador (Transmisión Analógica)**: Aumenta la potencia de la señal, pero **también aumenta el ruido**. La relación señal-ruido (SNR) empeora con cada amplificador.
+- **Repetidor (Transmisión Digital)**: No solo amplifica, sino que **regenera** la señal (vuelve a crear el 0 o el 1 perfecto). No acumula el ruido de tramos anteriores.
+
+> [!TIP]
+> Por esto la transmisión digital es mucho más fiable a largas distancias; podemos "limpiar" la señal en cada salto.
+
 ## Tipos de Ruido
 - **Térmico (Blanco)**: Inevitable, producido por el calor de los componentes.
   - *Analogía*: El siseo de fondo en una radio antigua.

@@ -7,7 +7,9 @@ Protocolos auxiliares esenciales para el funcionamiento de una red IP.
 - **Traceroute**: Usa el campo *TTL* para obligar a cada router del camino a decir "¡Aquí estoy!" cuando el paquete muere.
 
 ## ARP (Address Resolution Protocol)
-- **Analogía**: Estás en una oficina y buscas a alguien pero solo sabes su nombre (IP). Te levantas y gritas: "¡¿Quién es Juan Pérez?! ¡Dime tu número de mesa (MAC)!". Solo Juan Pérez responde.
+- **Función**: Es el "traductor" entre el mundo lógico (IP) y el mundo físico (MAC).
+- **El Problema**: Tu ordenador sabe a qué IP (lógica) enviar el dato, pero la tarjeta de red (hardware) solo sabe enviar tramas a direcciones MAC.
+- **La Solución (Analogía)**: Estás en una oficina y buscas a alguien pero solo sabes su nombre (IP). Te levantas y gritas: "¡¿Quién es Juan Pérez?! ¡Dime tu número de mesa (MAC)!". Solo Juan Pérez responde con su ubicación física.
 
 ## DHCP (Dynamic Host Configuration Protocol)
 Configuración automática de red (IP, Máscara, Gateway, DNS).

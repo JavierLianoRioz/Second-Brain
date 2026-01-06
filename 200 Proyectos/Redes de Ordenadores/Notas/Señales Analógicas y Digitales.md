@@ -2,6 +2,12 @@
 
 En la capa física, los datos se representan mediante señales eléctricas o electromagnéticas.
 
+## Terminología Fundamental
+- **Información**: El mensaje real.
+- **Datos**: Entidades que transportan la información.
+- **Señal**: Representación física (eléctrica/óptica) de los datos.
+- **Transmisión**: El proceso de mover la señal por el medio.
+
 ## Datos vs Señales
 - **Datos Analógicos**: Naturaleza continua (Voz, Video original).
 - **Datos Digitales**: Naturaleza discreta (Texto, Números).
@@ -11,6 +17,9 @@ En la capa física, los datos se representan mediante señales eléctricas o ele
 - **Señal Digital**: Varía en niveles discretos.
   - *Analogía*: Un interruptor de luz (encendido/apagado) o un reloj digital que salta de segundo en segundo.
   - *Ejemplo*: La música en un archivo MP3.
+
+> [!NOTE]
+> Una señal digital no tiene por qué ser siempre "cuadrada" perfecta; lo que importa es que los cambios sean abruptos en intervalos definidos.
 
 ## Conceptos de Señal Periódica
 - **Amplitud de pico ($A$)**: Valor máximo.

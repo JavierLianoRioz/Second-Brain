@@ -4,24 +4,39 @@
     "type": "split",
     "children": [
       {
-        "id": "60b7c8f917ab68a8",
+        "id": "5ccdedbd0d982bd5",
         "type": "tabs",
         "children": [
           {
-            "id": "e15e7ecb1d3af9af",
+            "id": "3bb070ca310c3999",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "200 Proyectos/Redes de Ordenadores/Notas/Transmisión Asíncrona vs Síncrona.md",
+                "file": "200 Proyectos/Redes de Ordenadores/Indice de Redes.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Indice de Redes"
+            }
+          },
+          {
+            "id": "491fab02772a17b4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "200 Proyectos/Redes de Ordenadores/Ejercicios/Ejercicios - Interconexión de Redes.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Transmisión Asíncrona vs Síncrona"
+              "title": "Ejercicios - Interconexión de Redes"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -53,7 +68,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#ID_Cliente",
+                "query": "TTL",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,7 +89,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       },
       {
         "id": "c51556e58feaadf5",
@@ -86,7 +102,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "200 Proyectos/Redes de Ordenadores/Notas/Transmisión Asíncrona vs Síncrona.md",
+                "file": "200 Proyectos/Redes de Ordenadores/Ejercicios/Ejercicios - Interconexión de Redes.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -114,7 +130,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of Transmisión Asíncrona vs Síncrona"
+              "title": "Graph of Ejercicios - Interconexión de Redes"
             }
           }
         ]
@@ -219,7 +235,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "200 Proyectos/Bases de datos/04_Normalizacion/Ejercicio_Normalizacion_Completo.md",
+                "file": "200 Proyectos/Redes de Ordenadores/Ejercicios/Ejercicios - Interconexión de Redes.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -247,15 +263,14 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of Ejercicio_Normalizacion_Completo"
+              "title": "Graph of Ejercicios - Interconexión de Redes"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 248.5,
-    "collapsed": true
+    "width": 248.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -270,36 +285,36 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "44a3fd894606b729",
+  "active": "491fab02772a17b4",
   "lastOpenFiles": [
+    "200 Proyectos/Redes de Ordenadores/Notas/Conceptos de Enrutamiento.md",
+    "200 Proyectos/Redes de Ordenadores/Notas/Protocolos IP (ICMP, ARP, DHCP, DNS).md",
     "200 Proyectos/Redes de Ordenadores/Indice de Redes.md",
+    "200 Proyectos/Redes de Ordenadores/Notas/Fragmentación y NAT.md",
+    "200 Proyectos/Redes de Ordenadores/Notas/Direccionamiento IP y Subredes.md",
+    "200 Proyectos/Redes de Ordenadores/Notas/Protocolo IP (IPv4 e IPv6).md",
+    "200 Proyectos/Redes de Ordenadores/Ejercicios/Ejercicios - Interconexión de Redes.md",
+    "200 Proyectos/Redes de Ordenadores/Notas/Principios de la Capa de Red.md",
+    "200 Proyectos/Redes de Ordenadores/Notas/Protocolos de Acceso Múltiple (ALOHA y CSMA).md",
+    "200 Proyectos/Redes de Ordenadores/Ejercicios/Ejercicios - Redes de Área Local.md",
+    "200 Proyectos/Redes de Ordenadores/Notas/VLAN (Virtual LAN).md",
+    "200 Proyectos/Redes de Ordenadores/Notas/Tipos de Medios de Transmisión.md",
+    "200 Proyectos/Redes de Ordenadores/Notas/Dispositivos de Interconexión (Hubs vs Switches).md",
+    "200 Proyectos/Redes de Ordenadores/Notas/Ethernet (IEEE 802.3).md",
+    "200 Proyectos/Redes de Ordenadores/Notas/Conceptos de LAN y Control de Acceso.md",
+    "200 Proyectos/Redes de Ordenadores/Ejercicios/Ejercicios - Comunicación de Datos.md",
+    "200 Proyectos/Redes de Ordenadores/Notas/Control de Flujo.md",
+    "200 Proyectos/Redes de Ordenadores/Notas/Detección y Corrección de Errores.md",
     "200 Proyectos/Redes de Ordenadores/Notas/Transmisión Asíncrona vs Síncrona.md",
+    "200 Proyectos/Redes de Ordenadores/Notas/Protocolos ARQ.md",
     "200 Proyectos/Redes de Ordenadores/Ejercicios/Ejercicios - Medios de Transmisión.md",
     "200 Proyectos/Redes de Ordenadores/Notas/Cableado Estructurado.md",
-    "200 Proyectos/Redes de Ordenadores/Notas/Tipos de Medios de Transmisión.md",
     "200 Proyectos/Redes de Ordenadores/Notas/Dificultades en la Transmisión.md",
     "200 Proyectos/Redes de Ordenadores/Notas/Dominio del Tiempo y de la Frecuencia.md",
     "200 Proyectos/Redes de Ordenadores/Notas/Señales Analógicas y Digitales.md",
     "200 Proyectos/Redes de Ordenadores/Notas/Arquitectura de Protocolos.md",
-    "200 Proyectos/Redes de Ordenadores/Notas/Modelo TCP-IP.md",
-    "200 Proyectos/Redes de Ordenadores/Notas/Modelo OSI.md",
-    "200 Proyectos/Redes de Ordenadores/Notas/Taxonomía de Redes.md",
-    "200 Proyectos/Redes de Ordenadores/Notas/Modelo General de Comunicaciones.md",
     "500 Biblioteca/Redes De Ordenadores/26_ProblemasTema2.pdf",
-    "200 Proyectos/Redes de Ordenadores/Registro de Lectura.md",
-    "200 Proyectos/Redes de Ordenadores/Notas/Políticas de Seguridad y Gestión de Incidentes.md",
-    "200 Proyectos/Redes de Ordenadores/Notas/Seguridad en Redes Inalámbricas.md",
-    "200 Proyectos/Redes de Ordenadores/Notas/Dispositivos de Seguridad (Firewalls, IDS, IPS).md",
-    "200 Proyectos/Redes de Ordenadores/Notas/Mecanismos de Defensa y Diseño Seguro.md",
-    "200 Proyectos/Redes de Ordenadores/Notas/Tipos de Ataques en Redes.md",
-    "200 Proyectos/Redes de Ordenadores/Notas/Fundamentos de Seguridad (Triada CIA).md",
     "200 Proyectos/Redes de Ordenadores/72_Tema7_extracted.txt",
-    "200 Proyectos/Redes de Ordenadores/Ejercicios/Ejercicios - Capa de Transporte.md",
-    "200 Proyectos/Redes de Ordenadores/Notas/Protocolo UDP.md",
-    "200 Proyectos/Redes de Ordenadores/Notas/Control de Flujo, Errores y Congestión en TCP.md",
-    "200 Proyectos/Redes de Ordenadores/Notas/Cabecera y Ciclo de Vida de TCP.md",
-    "200 Proyectos/Redes de Ordenadores/Notas/Protocolo TCP - Servicio y Multiplexación.md",
-    "200 Proyectos/Redes de Ordenadores/Notas/Conceptos de la Capa de Transporte.md",
     "200 Proyectos/Redes de Ordenadores/64_ProblemasTema6_extracted.txt",
     "200 Proyectos/Redes de Ordenadores/62_Tema6_extracted.txt",
     "200 Proyectos/Redes de Ordenadores/54_ProblemasTema5_extracted.txt",
