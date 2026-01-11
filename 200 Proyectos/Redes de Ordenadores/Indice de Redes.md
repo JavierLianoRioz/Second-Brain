@@ -4,14 +4,14 @@ Este proyecto recopila los conocimientos fundamentales de redes de ordenadores, 
 
 ## Temario
 
-### [[Tema 1 - Introducción]]
+### Tema 1 - Introducción
 - [[Modelo General de Comunicaciones]]
 - [[Taxonomía de Redes]]
 - [[Arquitectura de Protocolos]]
 - [[Modelo OSI]]
 - [[Modelo TCP-IP]]
 
-### [[Tema 2 - Medios de Transmisión]]
+### Tema 2 - Medios de Transmisión
 - [[Señales Analógicas y Digitales]]
 - [[Dominio del Tiempo y de la Frecuencia]]
 - [[Dificultades en la Transmisión]]
@@ -19,14 +19,14 @@ Este proyecto recopila los conocimientos fundamentales de redes de ordenadores, 
 - [[Cableado Estructurado]]
 - [[Ejercicios - Medios de Transmisión]]
 
-### [[Tema 3 - Comunicación de Datos y Enlace]]
+### Tema 3 - Comunicación de Datos y Enlace
 - [[Transmisión Asíncrona vs Síncrona]]
 - [[Detección y Corrección de Errores]]
 - [[Control de Flujo]]
 - [[Protocolos ARQ]]
 - [[Ejercicios - Comunicación de Datos]]
 
-### [[Tema 4 - Redes de Área Local (LAN)]]
+### Tema 4 - Redes de Área Local (LAN)
 - [[Conceptos de LAN y Control de Acceso]]
 - [[Protocolos de Acceso Múltiple (ALOHA y CSMA)]]
 - [[Ethernet (IEEE 802.3)]]
@@ -34,7 +34,7 @@ Este proyecto recopila los conocimientos fundamentales de redes de ordenadores, 
 - [[VLAN (Virtual LAN)]]
 - [[Ejercicios - Redes de Área Local]]
 
-### [[Tema 5 - Interconexión de Redes (Capa de Red)]]
+### Tema 5 - Interconexión de Redes (Capa de Red)
 - [[Principios de la Capa de Red]]
 - [[Protocolo IP (IPv4 e IPv6)]]
 - [[Direccionamiento IP y Subredes]]
@@ -43,7 +43,7 @@ Este proyecto recopila los conocimientos fundamentales de redes de ordenadores, 
 - [[Conceptos de Enrutamiento]]
 - [[Ejercicios - Interconexión de Redes]]
 
-### [[Tema 6 - Capa de Transporte (TCP y UDP)]]
+### Tema 6 - Capa de Transporte (TCP y UDP)
 - [[Conceptos de la Capa de Transporte]]
 - [[Protocolo TCP - Servicio y Multiplexación]]
 - [[Cabecera y Ciclo de Vida de TCP]]
@@ -51,13 +51,16 @@ Este proyecto recopila los conocimientos fundamentales de redes de ordenadores, 
 - [[Protocolo UDP]]
 - [[Ejercicios - Capa de Transporte]]
 
-### [[Tema 7 - Seguridad en Redes de Ordenadores]]
+### Tema 7 - Seguridad en Redes de Ordenadores
 - [[Fundamentos de Seguridad (Triada CIA)]]
 - [[Tipos de Ataques en Redes]]
 - [[Mecanismos de Defensa y Diseño Seguro]]
 - [[Dispositivos de Seguridad (Firewalls, IDS, IPS)]]
 - [[Seguridad en Redes Inalámbricas]]
 - [[Políticas de Seguridad y Gestión de Incidentes]]
+
+---
+### [[Ejercicios_Repaso_Examen|Ejercicios de Repaso (Examen Final)]]
 
 ---
 **Recursos**:

@@ -20,7 +20,16 @@ Estructura del segmento TCP y estados de la conexión.
    - Servidor: "Hola, sí. Yo empiezo en Y. He recibido tu X" (**SYN-ACK**).
    - Cliente: "Perfecto, he recibido tu Y. ¡Empezamos!" (**ACK**).
 2. **Mantenimiento**: Intercambio de datos.
-3. **Cierre**: Se despiden con **FIN**. El estado `TIME_WAIT` es como quedarse un momento en la puerta tras decir adiós "por si se te olvida decir algo último".
+3. **Cierre (Despedida)**: 
+   - **Modelo de 4 pasos (Estándar)**:
+     1. A envía **FIN**.
+     2. B envía **ACK** (A deja de enviar, pero B aún podría mandar restos).
+     3. B envía **FIN**.
+     4. A envía **ACK**.
+   - **Modelo de 3 pasos (Optimizado)**: El paso 2 y 3 se juntan en un solo segmento (**FIN+ACK**). Es lo que suelen mostrar las diapositivas simplificadas.
+   
+> [!NOTE]
+> El estado **TIME_WAIT** ocurre al final del cierre activo para asegurar que el último ACK llegó y que no hay paquetes viejos "perdidos" que puedan interferir con una nueva conexión.
 
 ---
 **Relacionado**: [[Control de Flujo, Errores y Congestión en TCP]]

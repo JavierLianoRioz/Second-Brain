@@ -18,6 +18,14 @@ Sustituyó al antiguo sistema de clases (A, B, C). Permite máscaras de longitud
 ## Agregación de Rutas (Summarization)
 Permite anunciar múltiples redes contiguas como una sola (ej. `2.2.2.0/24` y `2.2.3.0/24` $\to$ `2.2.2.0/23`). Reduce el tamaño de las tablas de enrutamiento.
 
+## La Receta VLSM (Corte de Tarta)
+Para ejercicios donde tienes que dividir una red en trozos de distintos tamaños:
+1. **Ordena**: De la red más grande a la más pequeña (fundamental).
+2. **Bits de Host ($h$)**: Busca el $h$ tal que $2^h \geq \text{Hosts} + 2$.
+   - Ej: Para 50 hosts necesitamos 6 bits ($2^6 = 64$).
+3. **Máscara**: La nueva máscara será $32 - h$.
+4. **Siguiente Salto**: La siguiente subred empieza exactamente después de donde termina el trozo actual ($2^h$).
+
 ---
 **Relacionado**: [[Ejercicios - Interconexión de Redes]]
 **Fuente**: [[52_Tema5.pdf]]
