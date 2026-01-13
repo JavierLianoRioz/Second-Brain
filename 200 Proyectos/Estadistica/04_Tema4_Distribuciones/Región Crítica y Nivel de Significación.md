@@ -5,7 +5,7 @@ Reglas que determinan cuándo rechazar la hipótesis nula.
 ## Región Crítica ($RC_\alpha$) o de Rechazo
 Conjunto de valores del estadístico de contraste para los cuales se rechaza $H_0$ a favor de $H_1$.
 
-## Región de No Rechazo ($RA_\alpha$) or de Aceptación
+## Región de No Rechazo ($RA_\alpha$) o de Aceptación
 Conjunto de valores para los cuales no hay evidencia suficiente para rechazar $H_0$.
 
 ## Nivel de Significación ($\alpha$)

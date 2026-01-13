@@ -39,16 +39,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "200 Proyectos/Estadistica/Simulacro de Examen - Modelo A.md",
+                "file": "200 Proyectos/Estadistica/04_Tema4_Distribuciones/Región Crítica y Nivel de Significación.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Simulacro de Examen - Modelo A"
+              "title": "Región Crítica y Nivel de Significación"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -115,7 +115,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "200 Proyectos/Estadistica/Solucionario - Modelo A.md",
+                "file": "200 Proyectos/Estadistica/04_Tema4_Distribuciones/Región Crítica y Nivel de Significación.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -143,7 +143,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of Solucionario - Modelo A"
+              "title": "Graph of Región Crítica y Nivel de Significación"
             }
           }
         ]
@@ -248,7 +248,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "200 Proyectos/Estadistica/Solucionario - Modelo A.md",
+                "file": "200 Proyectos/Estadistica/04_Tema4_Distribuciones/Región Crítica y Nivel de Significación.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -276,7 +276,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of Solucionario - Modelo A"
+              "title": "Graph of Región Crítica y Nivel de Significación"
             }
           }
         ]
@@ -298,18 +298,22 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "712167e3c33fc024",
+  "active": "5b6f614486c1cb7e",
   "lastOpenFiles": [
+    "200 Proyectos/Estadistica/04_Tema4_Distribuciones/Index.md",
+    "200 Proyectos/Estadistica/04_Tema4_Distribuciones/Tipos de Contrastes.md",
+    "200 Proyectos/Estadistica/04_Tema4_Distribuciones/Hipótesis Nula y Alternativa.md",
+    "200 Proyectos/Estadistica/04_Tema4_Distribuciones/Conceptos de Contraste de Hipótesis.md",
+    "200 Proyectos/Estadistica/Index.md",
     "200 Proyectos/Estadistica/Simulacro de Examen - Modelo A.md",
+    "200 Proyectos/Estadistica/Ejercicios de Examen.md",
     "200 Proyectos/Estadistica/Solucionario - Modelo A.md",
     "500 Biblioteca/Estadistica/Ejercicios/Formulario/FORMULARIO.pdf",
     "500 Biblioteca/Estadistica/Ejercicios/Formulario/Tabla de la Distribución Normal.pdf",
     "200 Proyectos/Estadistica/02_Tema2_Probabilidad/Pruebas Diagnósticas.md",
     "200 Proyectos/Estadistica/04_Tema4_Distribuciones/Test Chi-cuadrado e Independencia.md",
     "200 Proyectos/Estadistica/01_Tema1_Descriptiva/Medidas de Forma.md",
-    "200 Proyectos/Estadistica/Index.md",
     "200 Proyectos/Estadistica/04_Tema4_Distribuciones/Distribuciones Discretas.md",
-    "200 Proyectos/Estadistica/Ejercicios de Examen.md",
     "500 Biblioteca/Estadistica/Ejercicios/Examen Enero 2024-2025/[2425] EXAMEN FINAL_vCV.pdf",
     "200 Proyectos/Estadistica/04_Tema4_Distribuciones/Distribucion Normal.md",
     "200 Proyectos/Estadistica/01_Tema1_Descriptiva/Regresion Lineal.md",
@@ -330,11 +334,8 @@
     "200 Proyectos/Estadistica/Repaso_4.txt",
     "200 Proyectos/Estadistica/Repaso_3.txt",
     "200 Proyectos/Estadistica/Repaso_1_2.txt",
-    "200 Proyectos/Estadistica/04_Tema4_Distribuciones/Tipos de Contrastes.md",
     "200 Proyectos/Estadistica/01_Tema1_Descriptiva/Tablas Cruzadas.md",
     "200 Proyectos/Estadistica/04_Tema4_Distribuciones/Metodología del Contraste de Hipótesis.md",
-    "200 Proyectos/Estadistica/04_Tema4_Distribuciones/Tipos de Error en Contrastes.md",
-    "200 Proyectos/Estadistica/04_Tema4_Distribuciones/p-value (Nivel Crítico).md",
     "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 1/Clase 13 (repaso)/images/ejercicios_repaso/1761207385651.png",
     "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 1/Clase 02/images/05_intro_modelo_relacional/1757671896087.png",
     "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 1/Clase 02/images/05_intro_modelo_relacional/1757671989194.png",

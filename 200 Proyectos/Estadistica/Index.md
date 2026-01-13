@@ -4,7 +4,6 @@ Este es el punto de entrada para los apuntes de Estadística, organizados siguie
 
 ## Temario
 
-- [[00_Intro/Index|00. Presentación Inicial]]
 - [[01_Tema1_Descriptiva/Index|01. Estadística Descriptiva]]
 - [[02_Tema2_Probabilidad/Index|02. Probabilidad]]
 - [[03_Tema3_VariablesAleatorias/Index|03. Variables Aleatorias]]
