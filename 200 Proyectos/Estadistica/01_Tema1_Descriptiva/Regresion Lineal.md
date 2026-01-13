@@ -13,11 +13,20 @@ Donde:
 - **$b$**: Pendiente de la recta (indica cuánto cambia $y$ por cada unidad que aumenta $x$).
 - **$\epsilon$**: Error residual o de estimación ($Y_{observada} - Y_{estimada}$).
 
-## 2. Método de Mínimos Cuadrados
-Es la técnica utilizada para calcular los coeficientes $a$ y $b$ de tal forma que la suma de los cuadrados de los errores residuales sea mínima.
+## 2. Cálculo de Coeficientes (Mínimos Cuadrados)
+Para obtener la recta $y = a + bx$ que mejor ajusta los datos:
+- **Pendiente ($b$):** $b = \frac{S_{xy}}{S_x^2}$
+- **Ordenada en el origen ($a$):** $a = \bar{y} - b\bar{x}$
 
-## 3. Bondad de Ajuste ($R^2$)
-El coeficiente de determinación ($R^2$) indica qué porcentaje de la variabilidad de $y$ es explicada por el modelo de regresión.
+## 3. Correlación de Pearson ($r$)
+Indica la fuerza y dirección de la relación lineal entre las variables.
+$$r = \frac{S_{xy}}{S_x \cdot S_y}$$
+- **$r = 1$ o $-1$**: Correlación perfecta (positiva o negativa).
+- **$r = 0$**: Ausencia de relación lineal.
+- **Relación intensa**: $|r| > 0.7$ (aproximadamente).
+
+## 4. Bondad de Ajuste ($R^2$)
+El coeficiente de determinación ($R^2$) es el cuadrado del coeficiente de Pearson ($R^2 = r^2$). Indica qué porcentaje de la variabilidad de $y$ es explicada por el modelo de regresión.
 - Un $R^2$ cercano a 1 indica un ajuste excelente.
 - Un $R^2$ cercano a 0 indica que el modelo no explica bien la relación.
 

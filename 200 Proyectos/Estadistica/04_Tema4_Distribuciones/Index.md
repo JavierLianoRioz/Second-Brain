@@ -12,6 +12,7 @@
 - [[p-value (Nivel Crítico)]]
 - [[Tipos de Error en Contrastes]]
 - [[Metodología del Contraste de Hipótesis]]
+- [[Test Chi-cuadrado e Independencia]]
 
 ## Aplicaciones
 - [[Contraste para Proporciones]]

@@ -13,6 +13,7 @@ Este es el punto de entrada para los apuntes de Estadística, organizados siguie
 ## Preparación para el Examen
 - [[Ejercicios de Examen|Guía de Ejercicios y Teoría vinculada]]
 - [[Simulacro de Examen - Modelo A|Simulacro de Examen (Estructura de 4 ejercicios)]]
+- [[Solucionario - Modelo A|Soluciones detalladas del Simulacro]]
 
 ## Recursos
 - [Carpeta de Origen (Biblioteca)](file:///c:/Users/symid/Documents/Apuntes/500%20Biblioteca/Estadistica)

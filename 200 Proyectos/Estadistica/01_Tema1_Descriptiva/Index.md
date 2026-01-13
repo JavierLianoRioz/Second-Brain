@@ -14,6 +14,7 @@
 ## Análisis de Datos
 - [[Medidas de Centralización]]
 - [[Medidas de Dispersión]]
+- [[Medidas de Forma]]
 - [[Medidas de Posición (Cuantiles)]]
 - [[Regresion Lineal]]
 

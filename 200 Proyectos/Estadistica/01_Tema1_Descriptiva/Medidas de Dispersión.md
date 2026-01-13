@@ -22,6 +22,17 @@ $$CV = \frac{S}{|\bar{x}|} \cdot 100$$
 ## 4. Rango o Recorrido
 Diferencia entre el valor máximo y el mínimo ($V_{max} - V_{min}$).
 
+## 5. Rango Intercuartílico ($IQR$)
+Mide la dispersión del 50% central de los datos. Es robusto frente a atípicos.
+$$IQR = Q_3 - Q_1$$
+
+## 6. Detección de Atípicos (Criterio de Tukey)
+Permite identificar valores numéricamente distantes del resto de la muestra:
+- **Límite Inferior**: $LI = Q_1 - 1.5 \cdot IQR$
+- **Límite Superior**: $LS = Q_3 + 1.5 \cdot IQR$
+
+*Todo valor fuera del intervalo $[LI, LS]$ se considera un valor atípico (outlier).*
+
 ---
 Enlace: [[Index|Tema 1]]
 Tags: #estadistica #dispersion #varianza

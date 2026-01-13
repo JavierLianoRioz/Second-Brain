@@ -13,27 +13,33 @@ Este documento recopila los tipos de ejercicios que componen el examen final, or
     - [[01_Tema1_Descriptiva/Medidas de Dispersión|Teoría: Dispersión y Varianza]]
 - **Detección de Atípicos**: Uso del criterio de Tukey (IQR).
     - [[01_Tema1_Descriptiva/Medidas de Dispersión|Teoría: Identificación de Atípicos]]
+- **Simetría y Apuntamiento**: 
+    - [[01_Tema1_Descriptiva/Medidas de Forma|Teoría: Medidas de Forma (G1 y G2)]]
 
 ## Ejercicio 2: Modelado Matemático (Regresión o Distribuciones)
 **El Reto:** Predecir valores o modelar la frecuencia de eventos específicos.
 - **Regresión Lineal**: Cálculo de la recta $y=ax+b$, coeficiente de Pearson ($r$) y predicciones.
+    - [[01_Tema1_Descriptiva/Regresion Lineal|Teoría: Fórmulas de Regresión]]
 - **Distribuciones Discretas**: 
     - **Binomial**: Éxitos en $n$ intentos (ej. "3 de 10 alumnos").
     - **Poisson**: Sucesos en intervalos de tiempo/espacio o aproximación de la Binomial.
     - [[04_Tema4_Distribuciones/Distribuciones Discretas|Teoría: Distribuciones Discretas]]
-    - [[01_Tema1_Descriptiva/Regresion Lineal|Teoría: Regresión Lineal]]
+- **Independencia de Cualitativas**:
+    - [[04_Tema4_Distribuciones/Test Chi-cuadrado e Independencia|Teoría: Test Chi-cuadrado]]
 
 ## Ejercicio 3: El Azar (Probabilidad Bayesiana)
 **El Reto:** Resolver problemas de "caminos condicionales" como pruebas diagnósticas.
 - **Probabilidad Total**: Calcular la probabilidad final de un suceso (ej. dar positivo).
 - **Teorema de Bayes**: Calcular probabilidades a posteriori (ej. Valor Predictivo Positivo).
     - [[02_Tema2_Probabilidad/Teorema de la Probabilidad Total y Bayes|Teoría: Bayes y Condicional]]
+- **Pruebas Diagnósticas**: Sensibilidad y Especificidad.
+    - [[02_Tema2_Probabilidad/Pruebas Diagnósticas|Teoría: S, E, VPP y VPN]]
 
 ## Ejercicio 4: La Decisión (Híbrido Inferencia)
 **El Reto:** Validar afirmaciones o comparar grupos usando intervalos y contrastes.
 - **Intervalos de Confianza (IC)**: Para medias, proporciones o **diferencia de proporciones/medias**.
     - [[03_Tema3_VariablesAleatorias/Intervalos de Confianza para Medias y Proporciones|Teoría: Intervalos de Confianza]]
-    - [[03_Tema3_VariablesAleatorias/Inferencia sobre Diferencias|Teoría: Comparación de Grupos]]
+    - [[03_Tema3_VariablesAleatorias/Inferencia sobre Diferencias|Teoría: Comparación de Grupos (Independientes y Apareados)]]
 - **Determinación del Tamaño Muestral**: Calcular el $n$ necesario para un error dado.
     - [[03_Tema3_VariablesAleatorias/Determinación del Tamaño Muestral|Teoría: Cálculo de N]]
 - **Contraste de Hipótesis**: Validar afirmaciones teóricas y usar el p-valor.

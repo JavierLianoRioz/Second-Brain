@@ -8,6 +8,7 @@
 ## Probabilidad Avanzada
 - [[Probabilidad Condicionada e Independencia]]
 - [[Teorema de la Probabilidad Total y Bayes]]
+- [[Pruebas Diagnósticas]]
 
 ---
 Tags: #estadistica #tema2 #moc

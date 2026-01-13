@@ -15,10 +15,11 @@ Visualización de datos según el tipo de variable.
 - **Gráfico de Dispersión**: Puntos $(x,y)$ para ver relación entre dos variables numéricas.
 - **Gráfico de Burbuja**: Dispersión con 3ª y 4ª dimensión (tamaño y color).
 - **Diagrama de Cajas (Box Plot)**: Especialmente útil para visualizar:
-    - Valores mínimo y máximo.
-    - Cuartiles $Q_1$ (0.25), $Q_2$ (Mediana, 0.50) y $Q_3$ (0.75).
-    - Existencia de **valores atípicos** (outliers).
-    - Simetría o asimetría de la distribución.
+    - **Caja**: Definida por $Q_1$ y $Q_3$. Su longitud es el $IQR$.
+    - **Línea Central**: Representa la **Mediana** ($Q_2$).
+    - **Bigotes**: Líneas que se extienden hasta el último dato dentro de los límites de Tukey ($1.5 \cdot IQR$).
+    - **Atípicos**: Se representan como puntos individuales fuera de los bigotes.
+    - Permite evaluar simetría y comparar la dispersión entre varios grupos de forma visual.
 
 ---
 Enlace: [[Index|Tema 1]]
