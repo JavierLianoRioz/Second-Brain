@@ -5,6 +5,8 @@
 - [[Hipótesis Nula y Alternativa]]
 - [[Tipos de Contrastes]]
 - [[Región Crítica y Nivel de Significación]]
+- [[Distribuciones Discretas]]
+- [[Distribucion Normal]]
 
 ## Análisis y Decisión
 - [[p-value (Nivel Crítico)]]

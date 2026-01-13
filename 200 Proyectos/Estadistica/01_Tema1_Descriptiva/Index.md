@@ -15,6 +15,7 @@
 - [[Medidas de Centralización]]
 - [[Medidas de Dispersión]]
 - [[Medidas de Posición (Cuantiles)]]
+- [[Regresion Lineal]]
 
 ---
 Tags: #estadistica #tema1 #moc
