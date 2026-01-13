@@ -38,4 +38,29 @@ Se quiere realizar un estudio sobre los hábitos de estudio de los alumnos de 1�
 3. Compare los datos (n=800, media 3.3) con una muestra de 1200 alumnos de la UC (media 4.1h, $\sigma^2 = 0.8$). Mediante un intervalo de confianza para la diferencia de medias al 95%, valore si existen diferencias significativas.
 
 ---
+
+## Ejercicio 4: Estadística Inferencial - Contraste de Hipótesis (2.5 puntos)
+
+### Parte A: Contraste de Medias
+Según un estudio el tiempo medio que se tarda en resolver cierto cuestionario de valoración nutricional es de 12 minutos. Para conocer la veracidad de esa afirmación o si se tarda más, obtenemos una muestra de 25 individuos resultando una media muestral de 13.5 con $S=2.9$. Nivel de confianza del 95%.
+
+**Se pide:**
+1. Definir el contraste de hipótesis ($H_0$ y $H_1$).
+2. Elegir el valor crítico teórico.
+3. Calcular el estadístico de contraste experimental.
+4. Concluir si se tarda más o no.
+
+### Parte B: Contraste de Proporciones
+Se realiza el mismo cuestionario en dos centros:
+- **Grupo 1 (Nivel Alto):** $n_1=40$, aciertos $x_1=25$.
+- **Grupo 2 (Nivel Bajo):** $n_2=50$, aciertos $x_2=28$.
+Contrastar con $\alpha = 0.01$ si el nivel educativo influye.
+
+**Se pide:**
+1. Definir el contraste de hipótesis ($H_0$ y $H_1$).
+2. Elegir el valor crítico teórico.
+3. Calcular el estadístico de contraste experimental.
+4. Concluir si realmente influye el nivel educativo.
+
+---
 [[Index|Volver al Índice]] | [[Solucionario - Modelo B|Ver Soluciones]]

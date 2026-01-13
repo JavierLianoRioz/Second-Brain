@@ -104,4 +104,49 @@ $P(4 \leq Y \leq 6) = P(Y=4) + P(Y=5) + P(Y=6)$
 > Como el intervalo **NO contiene al 0** (ambos límites son negativos), podemos afirmar que **existente diferencias significativas** entre ambas universidades. Dado que el intervalo es totalmente negativo, concluimos con un 95% de seguridad que los alumnos de la UC estudian más que los de la UNEAT.
 
 ---
+
+## Ejercicio 4: Contraste de Hipótesis (2.5 puntos)
+
+### 4.1 Contraste de Medias (Tiempo de Cuestionario)
+**Objetivo:** ¿Es cierto que se tarda 12 min o se tarda **más**?
+
+1. **Definición de Hipótesis (4.A):**
+   - $H_0: \mu = 12$
+   - $H_1: \mu > 12$ (Contraste unilateral derecho)
+2. **Valor Crítico Teórico (4.B):**
+   - Usamos **t de Student** (n=25 es pequeña y $\sigma$ desconocida).
+   - Grados de libertad: $n-1 = 24$.
+   - $\alpha = 0.05$.
+   - Mirando la tabla de la t: $t_{24; 0.05} = \mathbf{1.711}$.
+3. **Estadístico Experimental (4.C):**
+   $$t_{exp} = \frac{\bar{x} - \mu_0}{S / \sqrt{n}} = \frac{13.5 - 12}{2.9 / 5} = \frac{1.5}{0.58} = \mathbf{2.586}$$
+4. **Conclusión (4.D):**
+   - Como $2.586 > 1.711$, el estadístico cae en la **región crítica**.
+   - **Rechazamos $H_0$** y aceptamos $H_1$.
+   - **Concluyendo:** Sí, se tarda significativamente más de 12 minutos.
+
+---
+
+### 4.2 Contraste de Proporciones (Nivel Educativo)
+**Objetivo:** ¿Influye el nivel educativo en los aciertos?
+
+1. **Definición de Hipótesis (4.E):**
+   - $H_0: P_1 = P_2$ (No influye / Proporciones iguales)
+   - $H_1: P_1 \neq P_2$ (Sí influye / Proporciones distintas)
+2. **Valor Crítico Teórico (4.F):**
+   - Nivel de significancia $\alpha = 0.01$.
+   - Al ser bidireccional, buscamos $1-\alpha/2 = 0.995$.
+   - En la tabla normal: $Z_{0.995} = \mathbf{2.575}$.
+3. **Estadístico Experimental (4.G):**
+   - $p_1 = 25/40 = 0.625 \rightarrow q_1 = 0.375$.
+   - $p_2 = 28/50 = 0.56 \rightarrow q_2 = 0.44$.
+   - Usamos la formula del formulario: 
+   $$Z_{exp} = \frac{p_1 - p_2}{\sqrt{\frac{p_1q_1}{n_1} + \frac{p_2q_2}{n_2}}} = \frac{0.625 - 0.56}{\sqrt{\frac{0.625 \cdot 0.375}{40} + \frac{0.56 \cdot 0.44}{50}}}$$
+   $$Z_{exp} = \frac{0.065}{\sqrt{0.00585 + 0.00493}} = \frac{0.065}{0.1038} = \mathbf{0.626}$$
+4. **Conclusión (4.H):**
+   - Como $0.626 < 2.575$, el estadístico **no cae** en la región crítica.
+   - **No rechazamos $H_0$**.
+   - **Concluyendo:** No hay evidencia suficiente para decir que el nivel educativo influya en los aciertos.
+
+---
 [[Simulacro de Examen - Modelo B|Volver al Examen]] | [[Index|Inicio]]

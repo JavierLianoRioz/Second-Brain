@@ -8,9 +8,11 @@ Se utiliza para comparar dos proporciones de éxito ($P_1$ y $P_2$) de dos pobla
 
 ## 2. Estadístico de Prueba
 Se basa en la distribución **Z** (Normal Estándar):
-$$Z = \frac{p_1 - p_2}{\sqrt{p \cdot q \cdot (\frac{1}{n_1} + \frac{1}{n_2})}}$$
+$$Z_{exp} = \frac{\widehat{P}_1 - \widehat{P}_2 - \Delta}{\sqrt{\frac{\widehat{p}_1 \widehat{q}_1}{n_1} + \frac{\widehat{p}_2 \widehat{q}_2}{n_2}}}$$
 
-Donde **$p$** es la proporción combinada de ambas muestras.
+Este valor se compara con el valor crítico **$Z_{1-\alpha/2}$**.
+- **$\Delta$**: Diferencia esperada (habitualmente 0).
+- **$\widehat{p}, \widehat{q}$**: Proporción de éxitos y fracasos de cada muestra.
 
 ## 3. Decisión
 - **Rechazar H₀** si el **p-valor < $\alpha$**.
