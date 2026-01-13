@@ -16,6 +16,16 @@ Valor que deja el 50% de los datos por debajo y el 50% por arriba.
 Es el valor (o modalidad) con mayor frecuencia absoluta ($n_i$).
 - Puede haber más de una moda (unimodal, bimodal, etc.).
 
+### Moda en Datos Agrupados (Intervalos)
+Se busca el **Intervalo Modal** (el de mayor $n_i$) y se interpola:
+$$Mo = L_i + \frac{d_1}{d_1 + d_2} \cdot c_i$$
+
+Donde:
+- **$d_1$**: Diferencia entre la frecuencia modal y la anterior ($n_i - n_{i-1}$).
+- **$d_2$**: Diferencia entre la frecuencia modal y la siguiente ($n_i - n_{i+1}$).
+- **$L_i$**: Límite inferior del intervalo modal.
+- **$c_i$**: Amplitud del intervalo.
+
 ---
 Enlace: [[Index|Tema 1]]
 Tags: #estadistica #centralizacion #media

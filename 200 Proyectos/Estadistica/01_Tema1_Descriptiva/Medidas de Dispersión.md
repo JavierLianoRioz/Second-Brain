@@ -4,7 +4,10 @@ Indican cuánto se alejan los datos respecto a las medidas de centralización (q
 
 ## 1. Varianza ($S^2$)
 Promedio de los cuadrados de las desviaciones respecto a la media.
-$$S^2 = \frac{\sum (x_i - \bar{x})^2 \cdot n_i}{n}$$
+$$S^2 = \frac{\sum (x_i - \bar{x})^2 \cdot n_i}{n} = \frac{\sum x_i^2 \cdot n_i}{n} - \bar{x}^2$$
+
+> [!NOTE]
+> **Datos agrupados (Intervalos):** Para calcular la varianza en tablas con intervalos, se utiliza la **marca de clase** ($x_i$, el punto medio del intervalo) como valor representativo de cada grupo.
 
 ## 2. Desviación Típica ($S$)
 Es la raíz cuadrada de la varianza. Tiene las mismas unidades que la variable original.

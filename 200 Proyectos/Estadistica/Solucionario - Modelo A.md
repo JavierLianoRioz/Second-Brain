@@ -41,12 +41,42 @@ Este documento contiene la resolución detallada del simulacro de examen, siguie
 ---
 
 ## Ejercicio 3: El Azar (2.5 puntos)
-**Datos:** $P(E)=0.01, P(S)=0.99; S=0.98, E=0.95$.
-1. **Probabilidad Total de Positivo $P(+)$:**
-   - $P(+) = P(E)P(+|E) + P(S)P(+|S) = (0.01 \cdot 0.98) + (0.99 \cdot 0.05) = 0.0098 + 0.0495 = \mathbf{0.0593 \ (5.93\%)}$.
-2. **Probabilidad de estar Sano dado Positivo (FP):**
-   - $P(S|+) = \frac{P(S \cap +)}{P(+)} = \frac{0.0495}{0.0593} = \mathbf{0.8347 \ (83.47\%)}$.
-   - *Nota:* A pesar de la alta sensibilidad, la mayoría de los positivos son falsos debido a la baja prevalencia (paradoja de Bayes).
+**Datos:** 
+- **Prevalencia:** $P(E) = 0.01$ ($1\%$).
+- **Sensibilidad:** $P(+|E) = 0.98$ ($98\%$).
+- **Especificidad:** $P(-|S) = 0.95$ ($95\%$).
+
+### 1. El Árbol de Probabilidades
+Visualización de los caminos posibles:
+
+```mermaid
+graph LR
+    A[Población] --> E[Enfermo 1%]
+    A --> S[Sano 99%]
+    
+    E --> EP[Positivo: 98%]
+    E --> EN[Negativo: 2%]
+    
+    S --> SP[Positivo -Falso+: 5%]
+    S --> SN[Negativo: 95%]
+    
+    style EP fill:#f96,stroke:#333
+    style SP fill:#f96,stroke:#333
+```
+
+### 2. Probabilidad Total de dar Positivo $P(+)$
+Sumamos los dos caminos que terminan en un resultado positivo:
+1. **Verdaderos Positivos (Enfermo y +):** $0.01 \cdot 0.98 = 0.0098$
+2. **Falsos Positivos (Sano y +):** $0.99 \cdot 0.05 = 0.0495$
+
+$$P(+) = 0.0098 + 0.0495 = \mathbf{0.0593 \ (5.93\%)}$$
+
+### 3. Probabilidad de estar Sano dado Positivo $P(S|+)$
+Utilizamos el **Teorema de Bayes** para ver qué peso tienen los sanos sobre el total de positivos:
+$$P(S|+) = \frac{P(S \cap +)}{P(+)} = \frac{0.0495}{0.0593} = \mathbf{0.8347 \ (83.47\%)}$$
+
+> [!IMPORTANT]
+> **Interpretación:** Existe un **83.47%** de probabilidad de que el paciente esté realmente **sano** a pesar de haber dado positivo. Esto ocurre porque la enfermedad es tan rara ($1\%$) que el número de falsos positivos supera con creces al de enfermos reales.
 
 ---
 
@@ -56,10 +86,10 @@ Este documento contiene la resolución detallada del simulacro de examen, siguie
    - $p_A - p_B = 0.202$.
    - $SE = \sqrt{\frac{0.31 \cdot 0.69}{200} + \frac{0.108 \cdot 0.892}{350}} = \sqrt{0.001069 + 0.000275} = 0.0366$.
 2. **IC al 95%:**
-   - $0.202 \pm (1.96 \cdot 0.0366) = 0.202 \pm 0.0718 \rightarrow \mathbf{[0.1302, 0.2738]}$.
+   - $0.202 \pm (Z_{1-\alpha/2} \cdot 0.0366) = 0.202 \pm (1.96 \cdot 0.0366) = 0.202 \pm 0.0718 \rightarrow \mathbf{[0.1302, 0.2738]}$.
 3. **Decisión:** Como el **Cero no está contenido** en el intervalo, rechazamos la igualdad de proporciones. El medicamento A es significativamente mejor que el B.
 4. **Tamaño Muestral ($N$):**
-   - $n = \frac{Z^2 \cdot p \cdot q}{d^2} = \frac{1.96^2 \cdot 0.31 \cdot 0.69}{0.03^2} = \frac{3.8416 \cdot 0.2139}{0.0009} \approx \mathbf{913 \text{ pacientes}}$.
+   - $n = \frac{Z_{1-\alpha/2}^2 \cdot p \cdot q}{d^2} = \frac{1.96^2 \cdot 0.31 \cdot 0.69}{0.03^2} = \frac{3.8416 \cdot 0.2139}{0.0009} \approx \mathbf{913 \text{ pacientes}}$.
 
 ---
 [[Simulacro de Examen - Modelo A|Volver al Examen]] | [[Index|Inicio]]

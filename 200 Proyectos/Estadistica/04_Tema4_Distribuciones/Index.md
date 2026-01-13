@@ -14,8 +14,10 @@
 - [[Metodología del Contraste de Hipótesis]]
 - [[Test Chi-cuadrado e Independencia]]
 
-## Aplicaciones
+## Aplicaciones (Contrastes Paramétricos)
+- [[Contraste para Medias]]
 - [[Contraste para Proporciones]]
+- [[Contraste para Diferencia de Medias]]
 - [[Contraste para Diferencia de Proporciones]]
 
 ---

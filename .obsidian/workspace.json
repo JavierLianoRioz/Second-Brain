@@ -25,12 +25,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "200 Proyectos/Estadistica/Solucionario - Modelo A.md",
+                "file": "200 Proyectos/Estadistica/Solucionario - Modelo B.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Solucionario - Modelo A"
+              "title": "Solucionario - Modelo B"
             }
           },
           {
@@ -39,16 +39,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "200 Proyectos/Estadistica/04_Tema4_Distribuciones/Región Crítica y Nivel de Significación.md",
+                "file": "200 Proyectos/Estadistica/01_Tema1_Descriptiva/Medidas de Centralización.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Región Crítica y Nivel de Significación"
+              "title": "Medidas de Centralización"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -115,7 +115,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "200 Proyectos/Estadistica/04_Tema4_Distribuciones/Región Crítica y Nivel de Significación.md",
+                "file": "200 Proyectos/Estadistica/Solucionario - Modelo B.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -143,7 +143,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of Región Crítica y Nivel de Significación"
+              "title": "Graph of Solucionario - Modelo B"
             }
           }
         ]
@@ -248,7 +248,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "200 Proyectos/Estadistica/04_Tema4_Distribuciones/Región Crítica y Nivel de Significación.md",
+                "file": "200 Proyectos/Estadistica/Solucionario - Modelo B.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -271,12 +271,12 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 0.7132754626224416,
+                  "scale": 0.8673169523683091,
                   "close": true
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of Región Crítica y Nivel de Significación"
+              "title": "Graph of Solucionario - Modelo B"
             }
           }
         ]
@@ -298,44 +298,44 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "5b6f614486c1cb7e",
+  "active": "ac1a19bd3be470b5",
   "lastOpenFiles": [
+    "200 Proyectos/Estadistica/Solucionario - Modelo A.md",
+    "200 Proyectos/Estadistica/Solucionario - Modelo B.md",
+    "200 Proyectos/Estadistica/Simulacro de Examen - Modelo B.md",
+    "200 Proyectos/Estadistica/01_Tema1_Descriptiva/Medidas de Centralización.md",
+    "200 Proyectos/Estadistica/01_Tema1_Descriptiva/Index.md",
+    "200 Proyectos/Estadistica/01_Tema1_Descriptiva/Medidas de Posición (Cuantiles).md",
+    "200 Proyectos/Estadistica/Index.md",
+    "200 Proyectos/Estadistica/04_Tema4_Distribuciones/Contraste para Medias.md",
     "200 Proyectos/Estadistica/04_Tema4_Distribuciones/Index.md",
+    "200 Proyectos/Estadistica/04_Tema4_Distribuciones/Contraste para Diferencia de Proporciones.md",
+    "200 Proyectos/Estadistica/04_Tema4_Distribuciones/Contraste para Diferencia de Medias.md",
+    "200 Proyectos/Estadistica/04_Tema4_Distribuciones/Contraste para Proporciones.md",
+    "200 Proyectos/Estadistica/04_Tema4_Distribuciones/Test Chi-cuadrado e Independencia.md",
+    "200 Proyectos/Estadistica/04_Tema4_Distribuciones/Metodología del Contraste de Hipótesis.md",
+    "200 Proyectos/Estadistica/04_Tema4_Distribuciones/Tipos de Error en Contrastes.md",
+    "200 Proyectos/Estadistica/04_Tema4_Distribuciones/p-value (Nivel Crítico).md",
+    "200 Proyectos/Estadistica/04_Tema4_Distribuciones/Distribucion Normal.md",
+    "200 Proyectos/Estadistica/04_Tema4_Distribuciones/Distribuciones Discretas.md",
+    "200 Proyectos/Estadistica/04_Tema4_Distribuciones/Región Crítica y Nivel de Significación.md",
     "200 Proyectos/Estadistica/04_Tema4_Distribuciones/Tipos de Contrastes.md",
     "200 Proyectos/Estadistica/04_Tema4_Distribuciones/Hipótesis Nula y Alternativa.md",
     "200 Proyectos/Estadistica/04_Tema4_Distribuciones/Conceptos de Contraste de Hipótesis.md",
-    "200 Proyectos/Estadistica/Index.md",
     "200 Proyectos/Estadistica/Simulacro de Examen - Modelo A.md",
     "200 Proyectos/Estadistica/Ejercicios de Examen.md",
-    "200 Proyectos/Estadistica/Solucionario - Modelo A.md",
     "500 Biblioteca/Estadistica/Ejercicios/Formulario/FORMULARIO.pdf",
     "500 Biblioteca/Estadistica/Ejercicios/Formulario/Tabla de la Distribución Normal.pdf",
     "200 Proyectos/Estadistica/02_Tema2_Probabilidad/Pruebas Diagnósticas.md",
-    "200 Proyectos/Estadistica/04_Tema4_Distribuciones/Test Chi-cuadrado e Independencia.md",
     "200 Proyectos/Estadistica/01_Tema1_Descriptiva/Medidas de Forma.md",
-    "200 Proyectos/Estadistica/04_Tema4_Distribuciones/Distribuciones Discretas.md",
     "500 Biblioteca/Estadistica/Ejercicios/Examen Enero 2024-2025/[2425] EXAMEN FINAL_vCV.pdf",
-    "200 Proyectos/Estadistica/04_Tema4_Distribuciones/Distribucion Normal.md",
-    "200 Proyectos/Estadistica/01_Tema1_Descriptiva/Regresion Lineal.md",
-    "200 Proyectos/Estadistica/03_Tema3_VariablesAleatorias/Index.md",
-    "200 Proyectos/Estadistica/03_Tema3_VariablesAleatorias/Intervalos de Confianza para Medias y Proporciones.md",
-    "200 Proyectos/Estadistica/02_Tema2_Probabilidad/Probabilidad Condicionada e Independencia.md",
-    "200 Proyectos/Estadistica/02_Tema2_Probabilidad/Conceptos y Definiciones de Probabilidad.md",
-    "200 Proyectos/Estadistica/01_Tema1_Descriptiva/Medidas de Dispersión.md",
-    "200 Proyectos/Estadistica/01_Tema1_Descriptiva/Medidas de Centralización.md",
-    "200 Proyectos/Estadistica/01_Tema1_Descriptiva/Medidas de Posición (Cuantiles).md",
-    "200 Proyectos/Estadistica/01_Tema1_Descriptiva/Tablas de Frecuencia.md",
-    "200 Proyectos/Estadistica/01_Tema1_Descriptiva/Ejercicio - Exceso de Riesgo Atribuible.md",
     "200 Proyectos/Estadistica/ejercicios_cap_1_2.txt",
     "200 Proyectos/Estadistica/libro_extracto.txt",
     "200 Proyectos/Estadistica/repaso_1_2_raw.txt",
-    "200 Proyectos/Estadistica/01_Tema1_Descriptiva/Index.md",
     "200 Proyectos/Estadistica/Examen_Final_2425.txt",
     "200 Proyectos/Estadistica/Repaso_4.txt",
     "200 Proyectos/Estadistica/Repaso_3.txt",
     "200 Proyectos/Estadistica/Repaso_1_2.txt",
-    "200 Proyectos/Estadistica/01_Tema1_Descriptiva/Tablas Cruzadas.md",
-    "200 Proyectos/Estadistica/04_Tema4_Distribuciones/Metodología del Contraste de Hipótesis.md",
     "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 1/Clase 13 (repaso)/images/ejercicios_repaso/1761207385651.png",
     "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 1/Clase 02/images/05_intro_modelo_relacional/1757671896087.png",
     "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 1/Clase 02/images/05_intro_modelo_relacional/1757671989194.png",
