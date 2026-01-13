@@ -1,0 +1,2185 @@
+
+
+--- Page 1 ---
+
+ESTADISTICA  
+Tema 2 
+ 
+1. Introducción a la Probabilidad 
+
+
+--- Page 2 ---
+
+¿QUÉ VAMOS A VER HOY? 
+ 
+Los Principios de la Probabilidad ayuda a unir los mundos de la 
+Estadística Descriptiva y la Estadística Inferencial 
+► Definición de proporción. 
+► Definición de probabilidad y Axiomas 
+► Espacio muestral y Sucesos 
+► Probabilidad Condicional 
+ 
+ 
+ 
+
+
+--- Page 3 ---
+
+En la vida común y en el contexto del análisis de datos  
+se emplea continuamente el término probabilidad. 
+ 
+ 
+• 1. Clásica (basada en la proporción): Si A es un suceso asociado con 
+un experimento aleatorio, no podemos indicar con certeza si A ocurrirá o 
+no en una prueba en particular. Por lo tanto, puede ser importante tratar 
+de asociar un número al suceso A que mida la probabilidad de que el 
+suceso ocurra.  
+ 
+Este número es el que llamaremos P(A), y lo calculamos como sigue: 
+ 
+ 
+ 
+      Tendencias o Corrientes Principales  
+(3 tipos) 
+
+
+--- Page 4 ---
+
+CLASIFICACION OMS
+469
+46,9%
+467
+46,7%
+64
+6,4%
+1000
+100,0
+NORMAL
+OSTEOPENIA
+OSTEOPOROSIS
+Total
+Válidos
+Frecuencia
+Porcentaje
+• 2. Frecuentista (objetiva): Las probabilidades son los límites a los 
+cuales tiende la frecuencia relativa de un suceso cuando el número de 
+experimentos aleatorios (azar) tiende a infinito. 
+• Ejemplo: Si lanzamos una moneda al aire un número muy elevado de veces 
+la frecuencia relativa con la que saldrán las caras (probabilidad) es del 
+50% (p = 0,5). 
+ 
+ 
+ 
+ 
+ 
+ 
+OSTEOPOROSIS
+OSTEOPENIA
+NORMAL
+0
+10
+20
+30
+40
+50
+Porcentaje
+CLASIFICACION OMS
+      Tendencias o Corrientes Principales 
+
+
+--- Page 5 ---
+
+FRECUENCIAS RELATIVAS Y PROBABILIDADES 
+Ley de la regularidad de las grandes series estadísticas  
+o Ley empírica del azar 
+Por tanto, proporción y probabilidad son conceptos diferentes: 
+ 
+La proporción es un hecho físicamente evaluable contando el número total 
+de individuos y el de los que son + al suceso que se está evaluando. Su 
+cociente nos da la proporción, que se mantiene fija en el tiempo. 
+La probabilidad (P) se refiere a la frecuencia relativa de veces en que sale + 
+cuando el experimento aleatorio de un individuo se repite millones de veces.  
+La P es el valor al que se aproximará la frecuencia relativa a largo 
+plazo. 
+ 
+
+
+--- Page 6 ---
+
+ 
+• 3. Subjetiva (Bayesiana): Grado de certeza o credibilidad (a priori) 
+que se posee sobre un determinado suceso. Es personal y condiciona. 
+ 
+• Ejemplo: ¿Cuál es la probabilidad de aprobar la asignatura de 
+Estadística? -depende de cada persona e incluso, puede ir variando a 
+medida que avanzamos en el conocimiento de la materia. 
+ 
+En todas las definiciones de probabilidad aparece el concepto de suceso.  
+¿Qué son los SUCESOS y cómo podemos operar con ellos? 
+ Tendencias o Corrientes Principales 
+
+
+--- Page 7 ---
+
+Suceso o Evento Estadístico – Espacio Muestral 
+El conjunto que contiene todos los resultados (valores) posibles de una variable 
+aleatoria (experimento hecho al azar, se desconoce el resultado) se denomina 
+Espacio Muestral (E).  
+Un Suceso (A) es un subconjunto de elementos dentro del espacio muestral. 
+Según la definición clásica de probabilidad, la probabilidad de cualquier 
+suceso A dentro del espacio muestral dependerá de la proporción de formas 
+en las cuales puede ocurrir ese suceso (casos favorables, F) en relación al 
+total de sucesos que pueden ocurrir dentro del espacio (casos totales, T):  
+ 
+
+
+--- Page 8 ---
+
+Ejemplo 
+Para una clase de 40 alumnos se ha observado que 17 de ellos ha obtenido una 
+calificación de entre 5 y 7 puntos en una asignatura que se evalúa en base a 10 
+puntos. Determine la probabilidad de que, elegido un estudiante al azar, este 
+haya obtenido una calificación de entre 5 y 7 puntos. 
+Solución: 
+Espacio muestral: Todos los alumnos que han sacado de 0 a 10 puntos 
+Suceso A: Los alumnos que han sacado de 5 a 7 puntos 
+
+
+--- Page 9 ---
+
+El conjunto de todos los resultados posibles se llama espacio muestral (E). 
+• Se llama suceso A a un subconjunto de dichos resultados. 
+• Se llama suceso contrario A´(o complementario) del suceso A, al formado 
+por los elementos que no están en A 
+• Se llama suceso unión de A y B, AUB, al formado por los resultados 
+experimentales que están en A o en B (incluyendo los que están en ambos). 
+• Se llama suceso intersección de A y B, A∩B o simplemente AB, al formado 
+por los elementos que están en A y en B a la vez 
+E espacio muestral 
+A 
+B 
+UNIÓN 
+E espacio muestral 
+E espacio muestral 
+A 
+A’ 
+E espacio muestral 
+A 
+B 
+E espacio muestral 
+A 
+B 
+INTERSECCION 
+Suceso Estadístico – Espacio Muestral 
+
+
+--- Page 10 ---
+
+• Se llaman sucesos excluyentes entre sí cuando los sucesos no presentan 
+puntos muestrales comunes. 
+• Se llaman sucesos exhaustivos, cuando el conjunto de ellos conducen al 
+espacio muestral. 
+• Se llaman sucesos excluyentes Y exhaustivos, al conjunto de eventos 
+mutuamente excluyentes (cuando ocurre un evento, ningún otro puede 
+ocurrir) y exhaustivos (al menos uno de los eventos debe ocurrir cuando se 
+realiza un experimento) definidos todos en el mismo espacio muestral, por 
+tanto conforman el grupo completo de eventos. 
+ 
+ 
+Suceso o Evento Estadístico – Espacio Muestral 
+  B 
+E espacio muestral 
+B 
+E espacio muestral 
+A 
+EXCLUYENTES 
+E espacio muestral 
+A 
+EXHAUSTIVO 
+C 
+D 
+E 
+B 
+E espacio muestral 
+A 
+EXCLUYENTE  
+Y EXHAUSTIVO 
+C 
+D 
+E 
+
+
+--- Page 11 ---
+
+AXIOMAS DE LA PROBABILIDADES 
+ 
+ 
+Podemos considerar la probabilidad como cualquier función, P, que asigna a cada 
+suceso A de un espacio muestral (E) un valor numérico P(A), verificando las 
+siguientes reglas (axiomas) 
+ 
+Primer Axioma 
+La probabilidad de ocurrencia de cualquier suceso A es un número real 
+comprendido en el intervalo [0 , 1]. 
+
+
+--- Page 12 ---
+
+AXIOMAS DE LA PROBABILIDADES 
+ 
+ 
+ 
+Segundo Axioma 
+La probabilidad del evento Seguro (Espacio Muestral, E) es igual a 1. Es 
+decir, un suceso seguro es aquel que ocurre en el 100% de las ocasiones.  
+P(E)=P(A)+P(A´)=1 
+Donde P(A´) es la probabilidad de no ocurrencia de A (suceso complementario) 
+
+
+--- Page 13 ---
+
+AXIOMAS DE LA PROBABILIDADES 
+ 
+ 
+ 
+Tercer Axioma 
+ 
+Dos sucesos A y B son excluyentes, no pueden acontecer simultáneamente, 
+entonces. 
+  
+ Donde A∩B es la probabilidad de la intersección de los dos sucesos 
+
+
+--- Page 14 ---
+
+Propiedades de la Probabilidad (Consecuencia de los 
+Axiomas) 
+1. La probabilidad del suceso complementario es igual a 1 menos la 
+probabilidad del suceso inicial. 
+ 
+2. La probabilidad del suceso imposible es igual a 0. 
+3. Si un suceso A está incluido dentro de otro suceso B, la probabilidad de 
+ocurrencia del primer suceso A ha de ser menor o igual que la 
+probabilidad de ocurrencia del segundo suceso B. 
+ 
+  
+P(A´)=1-P(A) 
+P(A)≤P(B) 
+Propiedades de la Probabilidad 
+Consecuencias de los Axiomas 
+
+
+--- Page 15 ---
+
+Propiedades de la Probabilidad 
+Consecuencias de los Axiomas 
+4. Si dos sucesos son excluyentes, entonces: 
+ 
+ 
+ 
+ 
+5. Si dos sucesos no son exluyentes, entonces: 
+ 
+* Donde:  
+AUB es el suceso unión  
+A∩B ó AB es el suceso intersección 
+
+
+--- Page 16 ---
+
+EJEMPLOS 
+B 
+P(A)=3/9=1/3 
+P(B)=5/9 
+P(AUB)=6/9=2/3 
+P(AB)=2/9 
+P(A’)=6/9=2/3 
+P(B’)=4/9 
+P(A)=3/9=1/3 
+P(B)=2/9 
+P(AUB)=5/9 
+P(AB)=0 
+P(A’)=6/9=2/3 
+P(B’)=7/9 
+P(A)=3/9=1/3 
+P(B)=2/9 
+P(AUB)=3/9=1/3 
+P(AB)=2/9 
+P(A’)=6/9=2/3 
+P(B’)=7/9 
+P(B)=? 
+P(A)=? 
+P(AUB)=? 
+P(AB)=? 
+P(A’)=? 
+P(B’)=? 
+P(B)=? 
+P(A)=? 
+P(AUB)=? 
+P(AB)=? 
+P(A’)=? 
+P(B’)=? 
+P(B)=? 
+P(A)=? 
+P(AUB)=? 
+P(AB)=? 
+P(A’)=? 
+P(B’)=? 
+E espacio muestral 
+A 
+B 
+E espacio muestral 
+A 
+B 
+E espacio muestral 
+A 
+* Donde:  
+AUB es el suceso unión  
+A∩B ó AB es el suceso intersección 
+
+
+--- Page 17 ---
+
+Suponga que el evento B tiene probabilidad de ocurrencia P(B) y ocurre 
+primero. Definamos el evento A y definamos su probabilidad de ocurrencia 
+como P(A). Entonces, la probabilidad condicional de A dado B puede 
+calcularse según: 
+Error frecuente: 
+Confundir probabilidad condicionada con intersección. 
+En ambos medimos la intersección, pero… 
+En P(A∩B) con respecto a P(E)=1 
+En P(A|B) con respecto a P(B) 
+ 
+A 
+E espacio muestral 
+B 
+“tamaño” de uno 
+respecto al otro 
+PROBABILIDAD CONDICIONADA 
+
+
+--- Page 18 ---
+
+INDEPENDENCIA ESTADÍSTICA – PROBABILIDAD CONDICIONAL 
+Suponga que el evento B tiene probabilidad de ocurrencia P(B) y ocurre primero. 
+Definamos el evento A y definamos su probabilidad de ocurrencia como P(A). Se 
+dice que A y B son sucesos independientes si: 
+Análogamente, Se dice que A y B son sucesos dependientes si: 
+
+
+--- Page 19 ---
+
+EJEMPLOS (P condicionada) 
+B 
+E espacio muestral 
+A 
+P(A)=3/9=1/3 
+E espacio muestral 
+A 
+B 
+P(B)=5/9 
+P(AUB)=6/9=2/3 
+P(AB)=2/9 
+P(A’)=6/9=2/3 
+P(B’)=4/9 
+P(A)=3/9=1/3 
+P(B)=2/9 
+P(AUB)=5/9 
+P(AB)=0 
+P(A’)=6/9=2/3 
+P(B’)=7/9 
+P(A)=3/9=1/3 
+E espacio muestral 
+A 
+B 
+P(B)=2/9 
+P(AUB)=3/9=1/3 
+P(AB)=2/9 
+P(A’)=6/9=2/3 
+P(B’)=7/9 
+P(A|B)=2/5 
+P(B|A)=2/3 
+P(A|B)=0 
+P(B|A)=0 
+P(A|B)=1 
+P(B|A)=2/3 
+P(A|B)=? 
+P(B|A)=? 
+P(A|B)=0 
+P(B|A)=0 
+P(A|B)=? 
+P(B|A)=? 
+P(A|B)=? 
+P(B|A)=? 
+
+
+--- Page 20 ---
+
+Independencia Estadística – Probabilidad Condicional 
+Ejemplo  
+En la tabla siguiente se presentan los resultados de un estudio realizado sobre 
+100 alumnos para evaluar la influencia de las horas de dedicación al estudio en 
+el resultado (aprobado o suspenso) de una determinada asignatura.  
+Determine si los resultados se encuentran condicionados a las horas de 
+estudio. 
+ 
+  
+Menos de 6 horas 
+de estudio semanal 
+6 o más horas de 
+estudio semanal 
+Aprobado 
+17 
+50 
+Suspenso 
+20 
+13 
+
+
+--- Page 21 ---
+
+Primeramente definamos, por comodidad, los siguientes eventos: 
+A -> Aprobar la asignatura 
+S -> Suspender la asignatura 
+-6H -> Estudiar menos de 6 horas semanales 
+6+H -> Estudiar 6 o más horas semanales 
+Independencia Estadística – Probabilidad Condicional 
+Ejemplo 
+Solución: 
+  
+-6H 
+6+H 
+A 
+17 
+50 
+S 
+20 
+13 
+
+
+--- Page 22 ---
+
+Independencia Estadística – Probabilidad Condicional 
+Ejemplo 
+Solución: 
+Calculamos las Probabilidades Marginales de cada suceso: 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+-6H 
+6+H 
+Total 
+A 
+17 
+50 
+67 
+S 
+20 
+13 
+33 
+Total 
+37 
+63 
+100 
+
+
+--- Page 23 ---
+
+Independencia Estadística – Probabilidad Condicional 
+Ejemplo  
+Solución: 
+Calculamos las Probabilidades Conjuntas: 
+ 
+ 
+ 
+ 
+  
+-6H 
+6+H 
+Total 
+A 
+17 
+50 
+67 
+S 
+20 
+13 
+33 
+Total 
+37 
+63 
+100 
+
+
+--- Page 24 ---
+
+Independencia Estadística – Probabilidad Condicional 
+Ejemplo 
+Solución. 
+Completamos una Tabla de Frecuencias Conjuntas y Marginales y calculamos 
+las Probabilidades Condicionales: 
+  
+-6H 
+6+H 
+Total 
+A 
+0,17 
+0,50 
+0,67 
+S 
+0,20 
+0,13 
+0,33 
+Total 
+0,37 
+0,63 
+1,00 
+Como ,                                           dichos eventos son dependientes. 
+
+
+--- Page 25 ---
+
+ESTADISTICA  
+CLASE PRACTICA 01 
+ 
+Introducción a la Estadística 
+
+
+--- Page 26 ---
+
+Ejercicio 1 
+ 
+Se conoce que el 67% de los alumnos del Grado de Economía de cierta  
+universidad aprobó la asignatura de Inglés, el 55% aprobó la asignatura de  
+Estadística y el 46% aprobó ambas asignaturas. 
+ 
+Si elegimos un estudiante del grado  al  azar,  ¿Cuál es  la  probabilidad de  
+que no haya aprobado ninguna de las dos asignaturas? 
+ 
+Ejercicio 2 
+ 
+En una empresa formada por 30  trabajadores, 12  de  ellos tienen los  ojos  
+de color marrón y el resto de color azul. 
+ 
+a) Si se elige un trabajador al azar, ¿cuál es la probabilidad de que tenga 
+los ojos marrones? 
+b) Si se conoce que actualmente hay 5 personas de  ojos  azules  
+disfrutando de sus vacaciones, ¿cuál es la probabilidad de que un  
+trabajador elegido al azar tenga los ojos azules? 
+
+
+--- Page 27 ---
+
+ 
+Ejercicio 2 
+ 
+En una empresa formada por 30  trabajadores, 12  de  ellos tienen los  ojos  
+de color marrón y el resto de color azul. 
+ 
+a) Si se elige un trabajador al azar, ¿cuál es la probabilidad de que tenga 
+los ojos marrones? 
+b) Si se conoce que actualmente hay 5 personas de  ojos  azules  
+disfrutando de sus vacaciones, ¿cuál es la probabilidad de que un  
+trabajador elegido al azar tenga los ojos azules? 
+
+
+--- Page 28 ---
+
+Ejercicio 3 
+ 
+Los efectos secundarios de un fármaco se clasifican en A, B y C. Si de 1000  
+enfermos tratados con dicho fármaco, 30 sufrieron  el  efecto  A,  40  el  
+efecto B, 60 el efecto C, 10 sufrieron los efectos B y C,  6 sufrieron los  
+efectos A y C, 3 sufrieron los efectos A y B, y solo 1 sufrió los tres efectos  
+secundarios a la vez. 
+ 
+a) Calcular la probabilidad de tener el efecto A 
+b) Calcular la probabilidad de tener el efecto B 
+c) Calcular la probabilidad de tener el efecto C 
+d) Calcular la probabilidad de tener el efecto A y C a la vez 
+e) Calcular la probabilidad de tener el efecto B y C a la vez 
+f)
+Calcular la probabilidad de tener los efectos A, B y C a la vez 
+g) Calcular la probabilidad de tener al menos uno de los efectos 
+secundarios 
+h) Calcular la probabilidad de no tener efectos secundarios 
+
+
+--- Page 29 ---
+
+Ejercicio 4 
+ 
+A partir de los datos sobre dos grupos de opositores que se presentaron a 
+unas pruebas físicas (tabla abajo), responda a las siguientes cuestiones: 
+Si se selecciona al azar a uno de los opositores, 
+ 
+a) Calcule la probabilidad de elegir a alguien que aprobó el examen. 
+b)Calcule 
+la probabilidad de elegir a alguien del  grupo B o que haya  
+aprobado. 
+c)Calcule 
+la probabilidad de elegir a alguien del grupo A  y que haya  
+aprobado. 
+d) Calcule la probabilidad de elegir a alguien que haya aprobado ya que 
+formaba parte del grupo A. 
+ 
+Si seleccionamos al alzar a dos de los opositores 
+ 
+a) Calcule la probabilidad de que ambos pertenezcan al grupo A. 
+APROBADOS 
+SUSPENSOS   
+GRUPO A 
+10 
+14 
+GRUPO B 
+417 
+145 
+
+
+--- Page 30 ---
+
+Ejercicio 5 
+ 
+A partir de los datos de un estudio sobre la Osteoporosis y la Osteopenia en  
+una muestra de 1000 mujeres, responda a las preguntas: 
+a) ¿Cuál es la probabilidad de que una mujer tenga osteoporosis? 
+b) ¿Cuál es la probabilidad de que una mujer no tenga osteoporosis? 
+c) ¿Probabilidad de tener osteopenia Y/O osteoporosis? 
+d) ¿Probabilidad de tener osteoporosis  Y/O  menopausia? 
+e) ¿Probabilidad de una mujer normal? 
+f)
+Si YA  es menopáusica… ¿probabilidad de osteoporosis? 
+g) ¿Probabilidad de menopausia Y osteoporosis? 
+h) Si YA  tiene osteoporosis… ¿probabilidad de menopausia? 
+i)
+¿Probabilidad de menopausia y no osteoporosis? 
+j)
+¿Son independientes menopausia y osteoporosis? 
+NO MENOPÁUSICA 
+MENOPÁUSICA 
+Clasificación “Normal” 
+189 
+280 
+Osteopenia 
+108 
+359 
+Osteoporosis 
+6 
+58 
+
+
+--- Page 31 ---
+
+Ejercicio 6 
+ 
+Sean A, B y C tres  sucesos mutuamente independientes con probabilidades  
+P(A)=0,3; P(B)=0,2; P(C)=0,4. 
+ 
+Calcule las siguientes probabilidades: 
+ 
+a) 𝑃 
+𝐴 ∩ 𝐵 ∩ 𝐶 
+b)  𝑃 𝐴𝑐 ∩ 𝐵 ∩ 𝐶 
+c) 𝑃 𝐴𝑐   ∩ 𝐵 𝑐   ∩ 𝐶 𝑐 
+
+
+--- Page 32 ---
+
+ESTADISTICA 
+Tema 2 
+2. Probabilidad Total 
+y Teorema de Bayes 
+
+
+--- Page 33 ---
+
+¿QUÉ VAMOS A VER HOY? 
+Teorema de la Probabilidad Total 
+Teorema de Bayes 
+
+
+--- Page 34 ---
+
+Sistema exhaustivo y excluyente de sucesos 
+A1 
+A2 
+A3 
+A4 
+Dada una colección de sucesos 
+ 
+ 
+          A1, A2, A3, A4… 
+ 
+tales que la unión de todos ellos forman 
+ el espacio muestral (E), y sus intersecciones 
+son exhaustivas (disjuntas) 
+ 
+Suceso 
+seguro 
+A1 
+A2 
+A3 
+A4 
+P(E) = P(A1) + P(A2) + P(A3) + P(A4) 
+
+
+--- Page 35 ---
+
+A1 
+A2 
+A3 
+A4 
+B 
+Todo suceso B que se defina a partir de 
+ahora, puede ser descompuesto en 
+subcomponentes de dicho sistema.  
+ 
+B =      (B∩A1)  U (B∩A2 ) U ( B∩A3 )   U ( B∩A4 ) 
+P(B) = P(B∩A1) + P(B∩A2 ) + P( B∩A3 ) + P(B∩A4 ) 
+ 
+Podemos descomponer el problema B en  
+subproblemas más simples.  
+Suceso 
+seguro 
+A1 
+A2 
+A3 
+A4 
+B 
+B 
+B 
+B 
+
+
+--- Page 36 ---
+
+Teorema de la probabilidad total 
+A1 
+A2 
+A3 
+A4 
+B 
+Si conocemos la probabilidad de ocurrencia de B 
+en cada uno de los componentes Ai del sistema 
+exhaustivo y excluyente de sucesos, entonces… 
+… podemos calcular la probabilidad de B TOTAL. 
+ 
+P(B) = P(B∩A1) + P(B∩A2 ) + P( B∩A3 ) + P(B∩A4 ) 
+ 
+P(B) = P(A1) P(B|A1) + P(A2) P(B|A2)+ P(A3) P(B|A3) + P(A4) P(B|A4) 
+ 
+Suceso 
+seguro 
+B 
+B 
+B 
+B 
+A1 
+A2 
+A3 
+A4 
+P(A1) 
+P(A2) 
+P(A3) 
+P(A4) 
+P(B|A1) 
+P(B|A2) 
+P(B|A3) 
+P(B|A4) 
+
+
+--- Page 37 ---
+
+En este aula el 70% de los alumnos son mujeres. De ellas el 10% son fumadoras.  
+De los hombres, son fumadores el 20%. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+¿Probabilidad de que un alumno/a elegido al azar sea fumador? 
+ 
+P(F) = P(M∩F) + P(H∩F)  
+ 
+= P(M)・P(F|M) + P(H) ・P(F|H) 
+ 
+=(0,7 x 0,1) + (0,3 x 0,2)  
+ 
+    P(F) = 0,13 =13%  
+T. Prob. Total: Hombres y mujeres forman un sistema 
+exhaustivo & excluyente de sucesos 
+Estudiante 
+Mujer 
+No fuma 
+Hombre 
+Fuma 
+No fuma 
+Fuma 
+0,7 
+0,1 
+0,2 
+0,3 
+0,8 
+0,9 
+•Los caminos a través de nodos representan 
+un suceso intersección. 
+•Las bifurcaciones representan sucesos 
+excluyentes (uniones disjuntas) 
+EJEMPLO 1 
+ 
+
+
+--- Page 38 ---
+
+ 
+En un centro hay dos quirófanos. El 1º se usa el 75% de veces para 
+operar. En el 1º la frecuencia de infección es del 5% y en el 2º del 10%.  
+ 
+ 
+ 
+  
+ 
+ ¿Qué probabilidad de infección hay? 
+P(I) = P(Q1∩I) + P(Q2∩I)  
+ 
+= P(Q1)P(I|Q1) + P(Q2)P(I|Q2) 
+ 
+=0,75 x 0,05 + 0,25 x 0,1  = 0,0625 
+ 
+T. Prob. Total. 
+Los dos quirófanos forman un sistema 
+exhaustivo & excluyente de sucesos 
+Paciente 
+Q1 
+No infec 
+Q2 
+Infec 
+No infec 
+Infec 
+0,75 
+0,05 
+0,1 
+0,25 
+0,9 
+0,95 
+EJEMPLO 2 
+ 
+
+
+--- Page 39 ---
+
+   El 20% del tiempo que se está en una casa transcurre en la cocina, el 
+10% en el baño y el resto entre el salón y el dormitorio. Por otro lado la 
+probabilidad de tener un accidente doméstico estando en la cocina es de 
+0,30 de tenerlo estando en el baño es de 0,20 y de tenerlo fuera de 
+ambos de 0,10. ¿Cuál es la probabilidad de tener un accidente 
+doméstico? 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Casa 
+Cocina 
+No Acc 
+Acc 
+0,20 
+Baño 
+Resto 
+0,10 
+0,70 
+0,30 
+0,70 
+No Acc 
+Acc 
+0,20 
+0,80 
+No Acc 
+Acc 
+0,10 
+0,90 
+P(A) = P(A∩C) + P(A∩B) + P(A∩R) = 
+P(C)P(A|C) + P(B)P(A|B) + P(R)P(A|R) 
+=0,2 x 0,3 + 0,1 x 0,2 + 0,7 x 0,1 = 0,15 
+= 15%  
+EJEMPLO 3 
+ 
+
+
+--- Page 40 ---
+
+Teorema de Bayes 
+A1 
+A2 
+A3 
+A4 
+B 
+Si conocemos la probabilidad de B en cada uno de los 
+componentes de un sistema exhaustivo y excluyente 
+de sucesos, entonces… 
+ 
+…si ocurre B, podemos calcular la probabilidad (a 
+posteriori) de ocurrencia de cada Ai. 
+ 
+ donde P(B) se puede calcular usando el teorema de la probabilidad total: 
+ 
+P(B)=P(B∩A1) + P(B∩A2 ) + P( B∩A3 ) + ( B∩A4 ) 
+ 
+=P(B|A1) P(A1) + P(B|A2) P(A2) + … 
+
+
+--- Page 41 ---
+
+   En este aula el 70% de los alumnos son mujeres. De ellas el 10% son 
+fumadoras. De los varones, son fumadores el 20%. 
+  ¿Qué porcentaje de fumadores hay? 
+P(F) = =0,7 x 0,1 + 0,3 x 0,2 = 0,13 (Resuelto antes) 
+ 
+Se elije a un individuo al azar y es… fumador 
+¿Probabilidad de que sea un hombre? 
+ 
+ 
+ 
+Estudiante 
+Mujer 
+No fuma 
+Hombre 
+Fuma 
+No fuma 
+Fuma 
+0,7 
+0,1 
+0,2 
+0,3 
+0,8 
+0,9 
+EJEMPLO 1 
+ 
+
+
+--- Page 42 ---
+
+En un centro hay dos quirófanos. El 1º se usa el 75% de veces para operar.  
+En el 1º la frec. de infección es del 5% y en el 2º del 10%.  
+¿Qué probabilidad de infección hay? P(I) = 0,0625 
+Se ha producido una infección.  
+¿Qué probabilidad hay de que sea en el Q1? 
+ 
+ 
+Paciente 
+Q1 
+No infec 
+Q2 
+Infec 
+No infec 
+Infec 
+0,75 
+0,05 
+0,1 
+0,25 
+0,9 
+0,95 
+EJEMPLO 2 
+ 
+
+
+--- Page 43 ---
+
+   El 20% del tiempo que se está en una casa transcurre en la cocina, el 
+10% en el baño y el resto entre el salón y el dormitorio. Por otro lado la 
+probabilidad de tener un accidente doméstico estando en la cocina es de 
+0,30 de tenerlo estando en el baño es de 0,20 y de tenerlo fuera de 
+ambos de 0,10. Se ha producido un accidente, ¿cuál es la probabilidad de 
+que haya sido en la cocina? 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Casa 
+Cocina 
+No Acc 
+Acc 
+0,20 
+Baño 
+Resto 
+0,10 
+0,70 
+0,30 
+0,70 
+No Acc 
+Acc 
+0,20 
+0,80 
+No Acc 
+Acc 
+0,10 
+0,90 
+P(A) = 0,15 (ya calculado) 
+EJEMPLO 3 
+ 
+
+
+--- Page 44 ---
+
+Ejercicio 1. 
+ 
+El 27% de los alumnos del Grado de Psicología de Uneatlantico son hombres. 
+Se conoce que el 47% de los hombres y el 43% de las mujeres han estudiado 
+estadística previamente. Si elegimos  una  persona al azar, ¿cuál es la  
+probabilidad  de elegir a  un  alumno que no haya estudiado estadística previamente? 
+Ejercicio 3 
+ 
+Con los datos del Ejercicio 1. Elegimos una persona  al  azar  y ésta  ha  
+estudiado  estadística  previamente.  ¿Cuál  es  la  probabilidad  de  que  esta 
+persona sea un hombre? 
+ 
+
+
+--- Page 45 ---
+
+
+
+--- Page 46 ---
+
+ 
+Ejercicio 2. 
+ 
+El 73% de los alumnos del Grado de Psicología de Uneatlantico son mujeres.  
+De los hombres se conoce que el 7% ha obtenido unas  calificaciones  
+excelentes, el 20% ha obtenido buenas calificaciones y el 73% ha obtenido  
+calificaciones medias. De las mujeres se conoce que el 5% ha obtenido unas  
+calificaciones excelentes, el 41% ha  obtenido buenas calificaciones y el  54%  
+ha obtenido calificaciones medias. Si elegimos una persona al azar: 
+ 
+a) ¿Cuál es la probabilidad de que haya obtenido notas excelentes? 
+b) ¿Cuál es la probabilidad de que haya obtenido notas buenas? 
+c)
+¿Cuál es la probabilidad de que haya obtenido notas medias? 
+ 
+Ejercicio 4 
+ 
+Con los datos del Ejercicio 2. Elegimos una persona  al  azar  y ésta  ha  
+obtenido buenas calificaciones. ¿Cuál es la probabilidad de que esta persona  
+sea una mujer? 
+
+
+--- Page 47 ---
+
+
+
+--- Page 48 ---
+
+Una prueba diagnóstica ayuda a mejorar una estimación de la probabilidad de que un 
+individuo presente una enfermedad  P(Enfermo). 
+En principio tenemos una idea de P(Enfermo). Nos ayudamos de los valores: 
+Incidencia: Porcentaje de nuevos casos de la  enfermedad en la población. 
+Prevalencia: Porcentaje de la población que ha presentado una enfermedad. 
+ 
+Para confirmar la sospecha, usamos una prueba diagnóstica.  
+Ha sido evaluada con anterioridad sobre dos grupos de individuos: sanos y enfermos.  
+Así de modo frecuentista se conoce: 
+P(+ | Enfermo) = Sensibilidad (verdaderos +) = Tasa de acierto sobre enfermos.  
+ P(- | Sano)     = Especificidad (verdaderos -) = Tasa de acierto sobre sanos. 
+ 
+TEST DIAGNOSTICOS 
+ 
+
+
+--- Page 49 ---
+
+Pruebas diagnósticas: aplicación T. 
+Bayes.  
+Individuo 
+Enfermo 
+T- 
+Sano 
+T+ 
+T- 
+T+ 
+Probabilidad a priori de 
+enfermedad: utilizamos la 
+incidencia o la prevalencia 
+Sensibilidad, 
+ verdaderos + 
+Falsos + 
+Especificidad, 
+Verdaderos - 
+Falsos - 
+A partir de lo anterior y usando el teorema de Bayes, podemos calcular las 
+probabilidades a posteriori (en función de los resultados del test): Índices predictivos 
+P(Enfermo | +) = Índice predictivo positivo 
+     P(Sano |  -) = Índice predictivo negativo 
+
+
+--- Page 50 ---
+
+Pruebas diagnósticas: aplicación T. 
+Bayes.  
+
+
+--- Page 51 ---
+
+ 
+ 
+ 
+Ejemplo: Índices predictivos 
+La Enfermedad de Alzheimer afecta al 7,7% 
+de los individuos mayores de 70 años en 
+España. 
+Para su detección se utilizan los criterios del 
+NINCDS/ADRDA y DSM-IIIR para demencia 
+tipo Alzheimer. 
+Su sensibilidad es de 0,81. 
+La especificidad de 0,70. 
+ 
+ Calcular los índices predictivos. 
+Enfermos 
++ 
+Sanos 
+- 
+Test - 
+Test + 
+Test - 
+Test + 
+0,81 
+0,30 
+0,70 
+0,19 
+0,077 
+0,923 
+Individuo 
+P(Sano |  -) = Índice predictivo negativo 
+P(Enfermo | +) = Índice predictivo positivo 
+
+
+--- Page 52 ---
+
+
+
+--- Page 53 ---
+
+
+
+--- Page 54 ---
+
+
+
+--- Page 55 ---
+
+
+
+--- Page 56 ---
+
+
+
+--- Page 57 ---
+
+ESTADISTICA 
+Tema 2 
+ 
+3. Distribuciones Discretas  
+de Probabilidad 
+
+
+--- Page 58 ---
+
+Lo hemos visto ya 
+Ahora lo llamamos… 
+Variable numérica 
+Variable aleatoria 
+Diagrama de barras 
+Probabilidad 
+Histograma 
+Densidad 
+Frecuencia acumulada 
+Función Distribución 
+Media 
+Esperanza 
+Este tema, “Distribuciones de probabilidad” es como el tema de 
+estadística descriptiva pero adaptado a la PROBABILIDAD 
+
+
+--- Page 59 ---
+
+Variable aleatoria 
+• El resultado de un experimento aleatorio puede ser descrito en 
+ocasiones como una cantidad numérica 
+• En estos casos aparece la noción de variable aleatoria  
+ 
+Experimento aleatorio: Lanzar una moneda 3 veces al aire 
+ 
+Variable aleatoria: nº veces que sale cara 
+ 
+Sucesos: 0, 1, 2 ó 3 
+• Existe una “función” que asigna a cada suceso un número 
+ 
+P=F/T 
+• Las variables aleatorias pueden ser discretas o continuas (como 
+en el primer tema del curso). 
+
+
+--- Page 60 ---
+
+Variables Aleatorias Discretas: Función de probabilidad 
+f(x) 
+ 
+• Asigna a cada posible valor de una variable discreta (suceso) una 
+probabilidad. Recuerda a la frec. relativa y al diagrama de barras 
+• Experimento aleatorio: Lanzar una moneda 3 veces. 
+• Variable aleatoria: Número de caras.  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Probabilidad de 0 caras (1/8 = 0.125) 
+Probabilidad de 1 cara (3/8 = 0.375) 
+Probabilidad de 2 caras? 
+Probabilidad de 3 caras? 
+ 
+C 
+C 
+C 
+C 
+C 
+X 
+C 
+X 
+X 
+C 
+X 
+C 
+X 
+X 
+X 
+X 
+X 
+C 
+X 
+C 
+C 
+X 
+C 
+X 
+
+
+--- Page 61 ---
+
+Variables Aleatorias : Función de distribución F(x) 
+ 
+• Es la función que asocia a cada valor de una variable, la probabilidad 
+acumulada de los valores inferiores o iguales a dicho valor. 
+Recuerda a las frecuencias acumuladas (Fi).  
+ 
+ 
+• En variables aleatorias discretas es un diagrama escalonado 
+Sumatorio desde xi=1 hasta xi=xn=1 
+• En variables aleatorias continuas es un diagrama integral:  
+Area=F(x); Area total=1 
+A los valores extremadamente bajos les corresponden valores  
+de la función de distribución cercanos a cero. 
+A los valores extremadamente altos les corresponden valores           
+de la función de distribución cercanos a uno. 
+ 
+
+
+--- Page 62 ---
+
+Valor esperado y varianza  
+de una variable aleatoria X 
+   Valor esperado ó Esperanza  
+    Se representa mediante μ  
+Es el equivalente a la media 
+ 
+  Varianza 
+Se representa mediante σ2 
+Es el equivalente a la varianza 
+Se llama desviación típica a σ 
+
+
+--- Page 63 ---
+
+• Bernoulli 
+• Binomial 
+• Multinomial 
+• Geométrica 
+• Hipergeométrica 
+• Poisson 
+Discretas 
+• Normal 
+• Exponencial 
+• Chi-cuadrado Χ2 
+• T de Student 
+• F de Ficher-Snedecor 
+Continuas 
+Cálculos de Probabilidad según el tipo de variable 
+
+
+--- Page 64 ---
+
+Modelos de variables aleatorias discretas frecuentes 
+• Hay variables aleatorias discretas que aparecen con frecuencia 
+en las Ciencias del Deporte, Nutrición y Ciencias Sociales… 
+• Experimentos dicotómicos (Éxito vs Fracaso: SI vs No). 
+• Bernoulli 
+• Contar el nº de éxitos en experimentos dicotómicos 
+repetidos: 
+• Binomial 
+• Poisson  (sucesos raros) 
+
+
+--- Page 65 ---
+
+Distribución de Bernoulli VER (1,p)  
+(experimentos dicotómicos X=0 ó X=1) 
+• Tenemos un experimento de Bernoulli si al realizar 1 
+experimento sólo son posibles dos resultados: 
+• X=1 (éxito, con probabilidad p) 
+• X=0 (fracaso, con probabilidad q=1-p) 
+• Lanzar una moneda y que salga cara. 
+• p=1/2=F/T 
+• Elegir una persona de la población y que esté enfermo. 
+• p=1/1000 → prevalencia de la enfermedad 
+• Aplicar un tratamiento a un enfermo y que éste se 
+cure. 
+• p=95%, probabilidad de que el individuo se cure 
+ 
+• Como se aprecia, en experimentos donde el resultado es 
+dicotómico, la variable está determinada conociendo la p. 
+
+
+--- Page 66 ---
+
+Distribución Binomial BIN (n,p) 
+ (experimentos dicotómicos repetidos) 
+• Si un experimento de Bernoulli, con parámetro p definido, se repite un número fijo 
+de veces (n) entonces el número de éxitos seguirá una función de probabilidad 
+dependiente de (n,p), que se define matemáticamente según los valores de n y p, 
+según:  
+• Lanzar una moneda 10 veces y contar las caras. 
+• Binomial (n=10, p=1/2)              p>0,1 
+•
+El número de personas que enfermará (en una población de 500.000 personas) de 
+una enfermedad que desarrolla una de cada 2000 personas. 
+• Poisson (n=500.000, p=1/2000) p<0,1  n>30   
+Difícil hacer cálculos con esas cantidades.  
+• Lanzar una moneda 100 veces y contar las caras. 
+• Normal (n=100, p=1/2)              p>0,1     n>>30 
+Difícil hacer cálculos con esas cantidades.  
+Se usa para calcular v. continuas será más adecuado.  
+
+
+--- Page 67 ---
+
+2.3.1 Distribución de probabilidad Binomial  
+(Variables discretas p>0.1) 
+ 
+  Función de probabilidad     → 
+ 
+p=éxito 
+ 
+q=fracaso=1-p 
+               
+ 
+ 
+ 
+ 
+ 
+ 
+         Surgirán problemas de cálculo si n es muy grande  y/o   P cercano a 0 . 
+ 
+ 
+ 
+Distribución binomial  
+(simétrica y alrededor de la media) 
+Calcular la probabilidad de que X sea exactamente A. 
+Calcular la probabilidad de que X sea Menor que A. 
+Calcular la probabilidad de que X se encuentre entre A y B. 
+Calcular la probabilidad de que X sea Mayor que A. 
+Esperanza (media): μ = n*p 
+Varianza: σ2 = n*p*q 
+
+
+--- Page 68 ---
+
+Cálculo de Probabilidades 
+El 25,1% de los alumnos de primer curso de la Universidad Europea del 
+Atlántico estudian el grado de Psicología y el 6,9% estudia el grado de 
+Ingeniería Informática. Si se sortea un viaje de fin de curso para 32 alumnos 
+entre todos los alumnos de primer curso de la Universidad: 
+a)
+Calcule la probabilidad de que exactamente 5 alumnos de Psicología vayan 
+al viaje P(X=5). 
+ 
+DATOS:  
+n=32 p=0,251 (BINOMIAL)   →  q=1-0,251=0,749 
+ 
+P(X=5) = 32C5 × 0,2515 × 0,74927 
+ 
+P(X=5) = 201376 × 9,96x10-4 × 1,08x10-4  
+ 
+P(X=5) = 0,0212  = 2,12% de posibilidades  
+ 
+
+
+--- Page 69 ---
+
+2.3.1 Distribución de probabilidad Binomial (Variables discretas N<30) 
+ 
+  Función de probabilidad 
+ 
+p=éxito 
+ 
+q=fracaso=1-p 
+               
+ 
+ 
+ 
+ 
+ 
+ 
+         Surgirán problemas de cálculo si n es muy grande  y/o   P cercano a 0 .
+ 
+ 
+ 
+Distribución binomial  
+(simétrica y alrededor de la media) 
+Calcular la probabilidad de que X sea exactamente A. 
+Calcular la probabilidad de que X sea menor que A. 
+Calcular la probabilidad de que X sea mayor que A. 
+Calcular la probabilidad de que X se encuentre entre A y B. 
+Esperanza (media): μ = n*p 
+Varianza: σ2 = n*p*q 
+
+
+--- Page 70 ---
+
+Análisis de una o dos colas 
+ 
+ 
+• Cola Izquierda: Calcular la probabilidad de que X sea menor que A. 
+• Dos Colas: Calcular la probabilidad de que X se encuentre entre A y B. 
+• Cola Derecha: Calcular la probabilidad de que X sea mayor que A. 
+Una Cola IZQ 
+Una Cola DCH 
+Dos Colas 
+
+
+--- Page 71 ---
+
+Cálculo de Probabilidades 
+El 25,1% de los alumnos de primer curso de la Universidad Europea del 
+Atlántico estudian el grado de Psicología y el 6,9% estudia el grado de 
+Ingeniería Informática. Si se sortea un viaje de fin de curso para 32 
+alumnos entre todos los alumnos de primer curso de la Universidad: 
+b)
+Calcule la probabilidad de que menos de 5 alumnos de Psicología 
+vayan al viaje P(X<5). 
+ 
+DATOS:  
+n=32 p=0,251 (BINOMIAL)   →  q=1-0,251=0,749 
+P(X<5): P(X=0)+P(X=1)+P(X=2)+P(X=3)+P(X=4) 
+P(0)=32C0 × 0,2510 × 0,74932 
+P(1)=32C1 × 0,2511 × 0,74931 
+P(2)=32C2 × 0,2512 × 0,74930 
+P(3)=32C3 × 0,2513 × 0,74929 
+P(4)=32C4 × 0,2514 × 0,74928 
+P(X<5)=0,0681 = 6,81% 
+
+
+--- Page 72 ---
+
+Cálculo de Probabilidades 
+El 25,1% de los alumnos de primer curso de la Universidad Europea del 
+Atlántico estudian el grado de Psicología y el 6,9% estudia el grado de 
+Ingeniería Informática. Si se sortea un viaje de fin de curso para 32 
+alumnos entre todos los alumnos de primer curso de la Universidad: 
+c)
+Calcule la probabilidad de que al menos 5 alumnos de Psicología 
+vayan al viaje P(X ≥ 5). 
+ 
+DATOS:  
+n=32 p=0,251 (BINOMIAL)   →  q=1-0,251=0,749 
+P(X ≥ 5) + P(X<5) =1 
+P(X ≥ 5) = 1 - P(X<5) 
+P(X ≥ 5) = 1 - 0,0681 
+P(X ≥ 5) = 0,9319 = 93,19% 
+ 
+
+
+--- Page 73 ---
+
+2.3.2 Distribución de Poisson 
+• Se aplica a eventos que ocurren durante un intervalo específico (la 
+variable aleatoria es el número de veces que ocurre un evento en 
+un intervalo). El intervalo puede ser tiempo, distancia, área, 
+volumen… 
+• También se denomina “sucesos raros”  
+• Se obtiene como aproximación de una distribución binomial con la 
+misma media, para ‘n grande’ (n>30) y ‘p pequeño’ (p<0,1). 
+ 
+ 
+ 
+•
+Queda caracterizada por un único parámetro μ (que es a su vez su 
+media y varianza) 
+ 
+Función de probabilidad: 
+Esperanza (media): μ = n*p 
+Varianza: σ2 = n*p 
+
+
+--- Page 74 ---
+
+Cálculo de Probabilidades 
+El 25,1% de los alumnos de primer curso de la Universidad Europea del 
+Atlántico estudian el grado de Psicología y el 6,9% estudia el grado de 
+Ingeniería Informática. Si se sortea un viaje de fin de curso para 32 
+alumnos entre todos los alumnos de primer curso de la Universidad: 
+b)
+Calcule la probabilidad de que exactamente 3 alumnos de Informática 
+vayan al viaje P(X=3). 
+ 
+DATOS:  
+n=32  p=0,069 (POISSON)   → µ = N x p=2,208 
+ 
+ 
+ 
+P(X=3)=e-2,208•(2,208)3/3!=0,1972 = 19,7% 
+
+
+--- Page 75 ---
+
+Distribución Binomial vs Poisson vs Normal  
+(experimentos dicotómicos repetidos) 
+• Si un experimento de Bernoulli con parámetro p, se repite un  
+número fijo de veces, n, entonces el número de éxitos sigue una  
+distribución de parámetros (n,p) según: 
+• Lanzar una moneda 10 veces y contar las caras. 
+• Binomial (n=10, p=1/2) 
+p>0,1 
+•
+El número de personas que enfermará (en una población de 
+1.personas) de una enfermedad que desarrolla una de  cada 
+2000 personas. 
+• (n=500.000, p=1/2000) n>30 ; p<0,1 
+Difícil hacer cálculos con esas cantidades. 
+• La distribución de Poisson será más adecuado. 
+ 
+• Lanzar una moneda 100 veces y contar las caras. 
+• (n=100, p=1/2) 
+n>>30 ; p>0,1 
+Difícil hacer cálculos con esas cantidades. 
+La distribución normal para v. continuas será más adecuado. 
+
+
+--- Page 76 ---
+
+Distribución de Poisson 
+(no está centrada con respecto a la media) 
+Distribución binomial 
+n= tamaño muestra 
+p= probabilidad del evento  
+q= probabilidad del evento contrario 
+Esperanza (media): μ = n*p 
+Varianza: σ2 = n*p*q 
+n= tamaño muestra 
+p= probabilidad del evento  
+q= probabilidad del evento contrario 
+Esperanza (media): μ = n*p 
+Varianza: σ2 = n*p 
+μ = n*p 
+
+
+--- Page 77 ---
+
+ 
+ 
+
+
+--- Page 78 ---
+
+Ejercicio 3 
+ 
+Si de 250 pacientes que comienzan una dieta, 150 la dejan al cabo de tres semanas, de 8 pacientes 
+que tenemos dieta en nuestra clínica: 
+ 
+a)
+Cuál es la probabilidad de que, a las 3 semanas de iniciar la dieta, la abandonen dos? 
+b)
+¿ Cuál es la probabilidad de que, a las 3 semanas de iniciar la dieta, la abandonen al menos  
+dos? 
+c)
+¿ Cuál es la probabilidad de que, a las 3 semanas de iniciar la dieta, la abandonen menos de 
+tres? 
+d)
+¿ Cuál es la probabilidad de que, a las 3 semanas de iniciar la dieta, la abandonen como  
+mucho la mitad? 
+ 
+Ejercicio 4 
+ 
+Si el 2% de los pacientes operados de obesidad mórbida sufren una complicación en forma de  
+infección, 
+ 
+a)
+¿Cuál es la probabilidad de que, de 100 pacientes operados, ninguno sufra infecciones? 
+b)
+¿Cuál es la probabilidad de que, de 100 pacientes operados, al menos 1 sufra una infección? 
+c)
+¿Cuál es la probabilidad de que sufran una infección no más de dos pacientes? 
+
+
+--- Page 79 ---
+
+Ejercicio 5. 
+ 
+Según la Asociación Española de Cardiología el 39,3% de la población española entre los 25 y  
+los 64 años sufre de sobrepeso. Si se analiza una muestra de 20 personas: 
+ 
+a)
+Calcule la probabilidad de no encontrar más de 6 personas con sobrepeso. 
+b)
+Calcule la probabilidad de encontrar entre 3 y 6 personas con sobrepeso. 
+c)
+Calcule la probabilidad de encontrar exactamente 9 personas con sobrepeso. 
+Ejercicio 6. 
+ 
+La media del peso de 20 personas es de 71,3 kg con una desviación típica de 11,5 kg. Si el 
+peso se distribuye de forma normal: 
+ 
+a) Calcule la probabilidad de pesar 78 kg o más. 
+b) b) Calcule la probabilidad de pesar entre 70 y 80 kg. 
+c) c) ¿Cuantas personas pesan entre 70 y 80 kg? 
+d) d) Calcule la probabilidad de pesar 60 kg o menos. 
+e) e) ¿Qué peso es tal que solo ha sido superado por el 10% de las personas? 
+
+
+--- Page 80 ---
+
+Ejercicio 7. 
+ 
+Estudios previos realizados a chicas adolescentes entre los 12 y 21 años de edad han arrojado 
+que el 2,9% de ellas presentaba Bulimia Nerviosa. Si realiza un estudio sobre 551 chicas: 
+ 
+a)
+Calcule la probabilidad de encontrar al menos 545 chicas que no presenten bulimia. 
+b)
+Calcule la probabilidad de encontrar entre 2 y 4 chicas con bulimia. 
+c)
+Calcule la probabilidad de encontrar solo una chica con bulimia. 
+ 
+ 
+Ejercicio 8. 
+ 
+Juan Manuel Fangio disputó 54 carreras y obtuvo 24 victorias en las 6 temporadas de  
+trayectoria en la Fórmula 1. Si en esa época cada temporada del campeonato estaba compuesto  
+por 9 carreras. 
+ 
+a) Calcule la probabilidad de que Fangio ganase exactamente 3 carreras en una temporada. 
+b) Calcule la probabilidad de que Fangio ganase entre 4 y 6 carreras en una temporada. 
+c) Calcule la probabilidad de que Fangio no ganase más de 2 carreras en una temporada. 
+
+
+--- Page 81 ---
+
+ESTADISTICA 
+Tema 2 
+ 
+4. Distribuciones Continuas  
+de Probabilidad 
+ 
+
+
+--- Page 82 ---
+
+• Bernoulli 
+• Binomial 
+• Multinomial 
+• Geométrica 
+• Hipergeométrica 
+• Poisson 
+Discretas 
+• Normal 
+• Exponencial 
+• Chi-cuadrado Χ2 
+• T de Student 
+• F de Ficher-Snedecor 
+Continuas 
+Distribuciones de Probabilidades 
+
+
+--- Page 83 ---
+
+Lo hemos visto ya 
+Ahora lo llamamos… 
+Variable 
+Variable aleatoria 
+Frecuencia relativa (%)  
+& diagrama de barras 
+Función de distribución de  
+probabilidades 
+Frecuencia relativa (%)  
+& Histograma 
+Función de distribución  
+probabilidades 
+Frecuencia acumulada 
+Función de distribución  
+acumulada (densidad) 
+Media 
+Esperanza 
+Este tema, “Distribuciones de probabilidad” es como el tema de  
+estadística descriptiva pero adaptado a la PROBABILIDAD 
+
+
+--- Page 84 ---
+
+ 
+2.4 Variables Aleatorias Continuas:  
+Distribución de Probabilidad Normal o de Gauss 
+• Aparece de manera natural: 
+• Errores de medida. 
+• Ej. Distancia de frenado, altura, peso… 
+• Distribuciones binomiales (Bernoulli repetido n veces)  
+• Valor de n alto (n>>30) 
+ 
+
+
+--- Page 85 ---
+
+
+
+--- Page 86 ---
+
+ 
+2.4 Variables Aleatorias Continuas: Distribución de 
+Probabilidad  
+“Normal o de Gauss” 
+• Aparece de manera natural: 
+• Errores de medida. 
+• Ej. Distancia de frenado, altura, peso… 
+• Distribuciones binomiales (Bernoulli repetido n veces)  
+• Valor de n alto (n>>30) 
+ 
+• Está caracterizada por dos parámetros:  
+• La media μ, y la desviación típica σ 
+• N(μ, σ) . 
+
+
+--- Page 87 ---
+
+Distribución Normal (μ, σ): Interpretación 
+geométrica 
+• Se interpreta la media como un factor de traslación (normalización).  
+• La media es el centro de la distribución 
+• Y la desviación típica como un factor de escala, grado de dispersión 
+
+
+--- Page 88 ---
+
+1.
+La función de probabilidad es simétrica, mesocúrtica y unimodal. 
+• Media, mediana y moda coinciden. 
+2. Los puntosde inflexión 
+de  la 
+función 
+de 
+densidad 
+están 
+a  distancia σ de μ. 
+3. Si tomamos intervalos centrados en μ, y cuyos extremos están… 
+a distancia σ 
+a distancia 2σ 
+ tenemos probabilidad 68% 
+ tenemos probabilidad 95% 
+a distancia 3σ  
+  tenemos probabilidad 99% 
+Distribución Normal N(μ, σ):  Características 
+
+
+--- Page 89 ---
+
+• Válido para TODAS las distribuciones normales 
+• Entre la media y una desviación típica tenemos siempre la 
+misma probabilidad: 68%  
+ 
+ 
+ 
+Distribución Normal N(μ, σ):  
+Interpretación probabilística 
+
+
+--- Page 90 ---
+
+• Entre la media y dos desviación típica tenemos siempre la misma 
+probabilidad: aprox. 95%  
+• La desviación típica es la unidad que utilizamos para medir la 
+distancia entre una observación y su valor esperado  
+ 
+ 
+ 
+ 
+ 
+ 
+• Entre la media y 2.5 desviaciones típicas tenemos siempre la 
+misma probabilidad: 99%  
+ 
+Distribución Normal N(μ, σ):  
+Interpretación probabilística 
+
+
+--- Page 91 ---
+
+ 
+1. La función de probabilidad es simétrica, mesocúrtica y 
+unimodal. 
+ 
+ 
+Media, mediana y moda coinciden. 
+2. Los puntos de inflexión de la función de densidad están a 
+distancia σ de μ. 
+3. Si tomamos intervalos centrados en μ, y cuyos extremos 
+están… 
+a distancia σ     tenemos probabilidad 68% 
+a distancia 2σ    tenemos probabilidad 95% 
+a distancia 2,5σ  tenemos probabilidad 99% 
+Distribución Normal N(μ, σ):  
+Características 
+
+
+--- Page 92 ---
+
+ 
+• No es posible calcular la probabilidad de un intervalo simplemente 
+integrando y usando la primitiva de la función de densidad, ya que no 
+tiene primitiva expresable en términos de funciones ‘comunes’. 
+• Todas las distribuciones normales N(μ, σ), pueden ajustarse, 
+mediante una traslación μ y un cambio de escala σ, como N(0,1).  
+• Esta distribución especial se llama distribución normal tipificada.  
+• Es decir, utilizamos una distribución normal N(0,1) para calcular 
+cualquier distribución normal. 
+ 
+ 
+ 
+ UTILIZAREMOS TABLAS  
+ 
+Técnica de tipificación 
+Justifica 
+esta 
+técnica 
+de 
+tipificación, 
+cuando 
+intentamos comparar  individuos diferentes obtenidos 
+de sendas poblaciones normales. 
+Distribución Normal N(μ, σ):  
+Características 
+
+
+--- Page 93 ---
+
+Tipificación 
+• Dada una variable aleatoria “normal”, de media μ y desviación típica 
+σ, se denomina valor tipificado “z” de una observación x, a la 
+distancia (con signo) con respecto a la media, medido en 
+desviaciones típicas, es decir 
+ 
+ 
+ 
+• En el caso de una variable X “normal”, la interpretación es clara:  
+Asigna a todo valor de N(μ, σ), un valor de N(0,1) que deja 
+exactamente la misma probabilidad por debajo. 
+ 
+Nos permite así comparar entre dos valores de dos distribuciones 
+normales diferentes, para saber cuál de los dos es más extremo. 
+
+
+--- Page 94 ---
+
+ 
+ 
+
+
+--- Page 95 ---
+
+ 
+ 
+
+
+--- Page 96 ---
+
+ 
+ 
+
+
+--- Page 97 ---
+
+ 
+ 
+
+
+--- Page 98 ---
+
+
+
+--- Page 99 ---
+
+Si Z es la variable tipificada 
+ 
+Calcular P(Z<1,85) 
+Solución: 0,9678 = 96,78%  
+0,9678 
+Tipificación: Tabla N(0,1) 
+ 
+
+
+--- Page 100 ---
+
+Si Z es v. normal tipificada 
+Calcular P(Z<-0.54) 
+Solución: 0,2946 = 29,46%  
+0,2946 
+Tipificación: Tabla N(0,1) 
+ 
+
+
+--- Page 101 ---
+
+Si Z es normal tipificada. 
+ 
+Calcular P(-0,54<Z<1,85]) 
+Solución: 0,9678-0,2946= 0,673 
+Tipificación: Tabla N(0,1) 
+ 
+
+
+--- Page 102 ---
+
+Cálculo con probabilidades normales 
+Ejemplo 
+ 
+El colesterol en la población tiene distribución normal, con media 200 
+y desviación 10. 
+ 
+a). ¿Qué porcentaje de individuos tiene colesterol inferior a 210? 
+ 
+b). ¿Qué valor del colesterol sólo es superado por el 10% de los 
+individuos?. 
+Todas 
+las 
+distribuciones 
+normales 
+son 
+similares salvo traslación y cambio de escala. 
+ 
+ 
+ 
+Tipifiquemos. 
+ 
+
+
+--- Page 103 ---
+
+Un valor de “Z” de 1,00  me lleva a una probabilidad de 0,841 en la 
+tabla de la Distribución Normal Tipificada 
+ 
+Cálculo con probabilidades normales 
+Ejemplo a) 
+
+
+--- Page 104 ---
+
+b) El valor del colesterol que sólo supera el 10% es aquel que deja por 
+debajo al 90% de la población (P=0,9).  
+Un valor de Probabilidad (cuerpo de la tabla) de 0,9, me indica un 
+valor de “Z” de 1,28 
+ 
+Cálculo con probabilidades normales 
+Ejemplo b) 
+
+
+--- Page 105 ---
+
+
+
+--- Page 106 ---
+
+¿Por qué es importante la distribución normal? 
+Teorema del Límite Central 
+• Las propiedades que tiene la distribución normal son 
+interesantes, pero todavía no hemos hablado de por qué es una 
+distribución especialmente importante. 
+• La razón es que aunque una variable aleatoria no posea 
+distribución 
+normal, 
+ciertos 
+estadísticos/estimadores 
+calculados sobre muestras elegidas al azar sí que poseen una 
+distribución normal. 
+• Es decir, tengan las distribución que tengan nuestros datos, 
+los ‘objetos’ que resumen la información de una muestra, 
+posiblemente tengan distribución normal (o asociada). 
+
+
+--- Page 107 ---
+
+Aplic. de la normal: Estimación en muestras 
+Como ilustración, mostramos una variable que presenta valores 
+distribuidos de forma muy asimétrica. Claramente no normal. 
+ 
+Saquemos muestras de diferentes tamaños, y usemos la media 
+de cada muestra para estimar la media de la población.  
+ 
+
+
+--- Page 108 ---
+
+Aplic. de la normal: Estimación en muestras 
+•
+Cada muestra ofrece un resultado diferente 
+•
+La media muestral es variable aleatoria. 
+•
+Su distribución es más parecida a la normal que la original 
+•
+También está menos dispersa. A su dispersión (‘desv. típica del 
+estimador media muestral’) se le suele denominar error típico. 
+ 
+ 
+
+
+--- Page 109 ---
+
+Aplic. de la normal: Estimación en muestras 
+Al aumentar el tamaño, n, de la muestra: 
+La normalidad de las estimaciones mejora 
+El error típico disminuye. 
+ 
+ 
+
+
+--- Page 110 ---
+
+Aplic. de la normal: Estimación en muestras 
+Puedo ‘garantizar’ medias muestrales tan cercanas como quiera a la 
+verdadera media, sin más que tomar ‘n bastante grande’ 
+Se utiliza esta propiedad para dimensionar el tamaño de una 
+muestra antes de empezar una investigación. 
+ 
+ 
+
+
+--- Page 111 ---
+
+Teorema del límite central 
+• Dada una variable aleatoria cualquiera, si extraemos muestras de 
+tamaño n, y calculamos los promedios muestrales, entonces: 
+• dichos promedios tienen distribución aproximadamente normal 
+• La media de los promedios muestrales es la misma que la de la 
+variable original. 
+• La desviación típica de los promedios disminuye en un factor 
+“raíz de n” (error estándar). 
+• Las aproximaciones anteriores se hacen exactas cuando n 
+tiende a infinito. 
+ 
+• Este teorema justifica la importancia de la distribución normal. 
+• Sea lo que sea lo que midamos, cuando se promedie sobre una 
+muestra grande (n>30) nos va a aparecer de manera natural la 
+distribución normal. 
+
+
+--- Page 112 ---
+
+Otras distribuciones asociadas a la normal 
+• Cuando queramos hacer inferencia estadística la distribución normal 
+aparece de forma casi inevitable. 
+• Dependiendo del problema, podemos encontrar otras distribuciones: 
+• X2 (chi cuadrado) 
+• t- Student 
+• F-Snedecor 
+• Estas 
+distribuciones 
+resultan 
+directamente 
+de 
+operar 
+con 
+distribuciones normales. Típicamente aparecen como distribuciones de 
+ciertos estadísticos. 
+• Veamos algunas propiedades que tienen (superficialmente).  
+• Sobre todo nos interesa saber qué valores de dichas distribuciones 
+son “atípicos”. 
+• Significación, p-valores,… 
+
+
+--- Page 113 ---
+
+1. Chi cuadrado 
+• La función de densidad es asimétrica 
+positiva. Sólo tienen densidad los valores 
+positivos 
+• Tiene un sólo parámetro denominado 
+grados de libertad. 
+• La función de densidad se hace más 
+simétrica incluso casi gaussiana cuando 
+aumenta 
+el 
+número 
+de 
+grados 
+de 
+libertad. 
+• Consideraremos anómalos aquellos valores 
+de la variable de la “cola de la derecha”. 
+
+
+--- Page 114 ---
+
+2. t de Student 
+• Tiene un parámetro denominado 
+grados de libertad. 
+•  Cuando aumentan los grados de 
+libertad, más se acerca a N(0,1). 
+• Es simétrica con respecto al cero. 
+• Se consideran valores anómalos 
+los 
+que 
+se 
+alejan 
+de 
+cero 
+(positivos o negativos). 
+
+
+--- Page 115 ---
+
+3. F de Fisher-Snedecor 
+• Tiene dos parámetros denominados 
+grados de libertad. 
+• Sólo toma valores positivos.  
+• Es asimétrica. 
+• Normalmente se consideran valores 
+anómalos los de la cola de la 
+derecha. 

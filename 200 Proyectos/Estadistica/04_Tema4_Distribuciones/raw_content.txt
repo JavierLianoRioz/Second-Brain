@@ -1,0 +1,393 @@
+
+
+--- Page 1 ---
+
+ESTADISTICA
+TEMA 4
+4.1. Contraste de Hipótesis 
+
+
+--- Page 2 ---
+
+Conocer el proceso para contrastar hipótesis 
+y su relación con el método científico
+“Las hipótesis deben ser previas
+a los resultados del estudio”
+¿QUÉ VAMOS A VER HOY?
+•
+Diferenciar entre Hipótesis Nula y Alternativa
+•
+Región crítica y Nivel de Significación
+•
+Tipos de error
+•
+Nivel crítico o p-value
+•
+Toma de decisiones
+
+
+--- Page 3 ---
+
+El Método Científico
+Hasta ahora hemos estudiado cómo a partir de una muestra de una
+población podemos obtener una estimación puntual o bien establecer un
+intervalo más o menos aproximado para encontrar los parámetros que definen 
+una variable aleatoria definida sobre la población
+Pueden presentarse en la práctica, situaciones en las que exista una
+teoría preconcebida relativa a la característica de la población
+
+
+--- Page 4 ---
+
+Hipótesis Estadística
+Se define Hipótesis estadística (H) como una proposición acerca de
+los valores que toma un parámetro de la población objeto de estudio.
+La validez o no de la hipótesis se basará en información de una
+muestra.
+•
+Hipótesis Simple: aquella que especifica un único valor para el
+parámetro. Ej. “H: µ = 0”; “H: µ = 50%”…
+•
+Hipótesis Compuesta: aquella que especifica un intervalo de valores
+para el parámetro. Ej. “H: µ ≥0”, “H: 1 ≤µ ≤4”…
+Hipótesis unilateral: “H: µ ≤6”, “H: µ > 9”….
+Hipótesis bilateral: “H: µ ≠4
+µ < 4 ó µ > 4 ”…
+
+
+--- Page 5 ---
+
+Llamamos hipótesis nula (H0), a la hipótesis que se desea contrastar.
+Es la hipótesis que se plantea en primer lugar y la hipótesis que mantendremos
+como cierta a no ser que los datos indiquen su falsedad.
+•
+Es una idea similar a la presunción de inocencia en un juicio
+•
+La H0 siempre contiene los signos “=”, “≤” o “≥”
+•
+La H0 nunca se acepta: se rechaza o no se rechaza.
+Llamamos hipótesis alternativa (H1), a la negación de la hipótesis nula.
+•
+Es generalmente la hipótesis que se propone como válida (en lo que creemos
+nosotros)
+•
+La hipótesis alternativa nunca contiene los signos “=”, “≤” o “≥”
+•
+La hipótesis alternativa se acepta o no se acepta.
+La hipótesis nula (H0) e hipótesis alternativa (H1)  
+
+
+--- Page 6 ---
+
+EJEMPLO
+1:
+Se
+sospecha
+que
+existe
+contaminación
+en
+un
+río
+(nuestra
+hipótesis). Según los valores de referencia que marca la legislación, si la
+concentración de nitratos en el agua es mayor de 50mg/L habrá contaminación y
+si es menor no. Se toman muestras y se analizan en el laboratorio de química.
+Según los resultados sacaremos una conclusión: rechazar o no rechazar la
+hipótesis nula H0.
+Hipótesis Nula (H0): 
+Afirmación que queremos contrastar 
+hasta ahora el río no se consideraba contaminado
+H0: [NO3
+-] ≤50mg/L
+Hipótesis Alternativa (H1): 
+Hipótesis que creemos, contraria a H0
+El río parece contaminado, pero hay que demostrarlo…
+H1: [NO3
+-] > 50mg/L
+Hipótesis Estadística
+
+
+--- Page 7 ---
+
+Región Crítica y Nivel de Significación
+Un contraste de hipótesis es una regla que determina, a un cierto nivel de
+significación (a), a partir de qué valor crítico teórico (Tteo) de la muestra se
+rechaza o no se rechaza la hipótesis nula.
+Región crítica o de rechazo de H0, RCa
+Región de no rechazo de H0, RAa
+H1
+Tteo
+H0
+
+
+--- Page 8 ---
+
+TIPOS DE CONTRASTES DE HIPOTESIS
+EJEMPLO: Queremos hacer contraste de Ho sobre la media poblacional µ=3.
+Unilateral Izquierdo
+Unilateral Derecho
+Bilateral
+ó
+Contraste Bilateral
+Contraste Unilateral
+Valor crítico teórico
+
+
+--- Page 9 ---
+
+
+
+--- Page 10 ---
+
+
+
+--- Page 11 ---
+
+
+
+--- Page 12 ---
+
+
+
+--- Page 13 ---
+
+
+
+--- Page 14 ---
+
+
+
+--- Page 15 ---
+
+Región Crítica y Nivel de Significación
+El estadístico de contraste, es un estadístico que se construye a partir de
+estimadores del parámetro y cuya distribución bajo H0 es conocida.
+El nivel de significación (a) es la probabilidad de que el estadístico del
+contraste tome valores en la RCa (bajo H1).
+Si TEXP pertenece a RCa: se acepta H1 y se rechaza H0
+T
+H1
+Tteo
+H0
+
+
+--- Page 16 ---
+
+Nivel Crítico, p, ó p-value
+El nivel crítico, p, o simplemente p-value es el nivel de significación
+mas pequeño para el que la muestra obligaría a rechazar la H0.
+Es decir, si T es el estadístico de contraste (Texp):
+En Contrastes Unilaterales derechos
+P value = Probabilidad (Z>Texp) 
+
+
+--- Page 17 ---
+
+Nivel Crítico, p, ó p-value
+El nivel crítico, p , o simplemente p-value es el nivel de significación
+mas pequeño para el que la muestra particular obligaría a rechazar
+Ho.
+Es decir, si T es el estadístico de contraste:
+En Contrastes Unilaterales izquierdos
+P value = Probabilidad (Z<-Texp) 
+
+
+--- Page 18 ---
+
+Nivel Crítico, p, o p-value
+El nivel crítico, p , o simplemente p-value es el nivel de significación
+mas pequeño para el que la muestra particular obtenida obligaría a
+rechazar la hipótesis nula.
+Es decir, si T es el estadístico de contraste:
+En Contrastes Bilaterales 
+P value = Probabilidad (Z<-Texp
+ó
+Z>Texp) 
+
+
+--- Page 19 ---
+
+Editar el estilo de texto del patrón
+
+
+--- Page 20 ---
+
+Editar el estilo de texto del patrón
+
+
+--- Page 21 ---
+
+
+
+--- Page 22 ---
+
+
+
+--- Page 23 ---
+
+
+
+--- Page 24 ---
+
+
+
+--- Page 25 ---
+
+Contrastes de Hipótesis para una proporción
+EJEMPLO: En un experimento sobre percepción extra-sensorial (P.E.S) se
+interroga a un individuo sobre el color (rojo o negro) de cartas, seleccionada de
+una baraja de 50 cartas por otro individuo en una habitación aislada. Si el
+individuo identifica correctamente 32 cartas, determine si el individuo presenta
+(P.E.S) a nivel de significación de 0,05.
+
+
+--- Page 26 ---
+
+X
+_
+EJEMPLO 2
+En cursos pasados el número medio de libros prestados al año por alumnos en la
+biblioteca era de 6. Este año la biblioteca ha hecho una fuerte campaña de
+información, y se quiere saber el efecto que ha tenido en los alumnos. Con un
+nivel de significación de 0.05
+1º Definir la hipótesis nula y la hipótesis alternativa
+H0: µ = 6
+;
+H1: µ > 6
+Contraste Unilateral Dcho
+2º Hemos tomado una m.a.s de 100 alumnos (n) y obtenemos
+= 6,23 ; S = 2,77
+¿cuál será la región crítica para el contraste?
+Región Crítica y Nivel de Significación
+Para un nivel de significación 
+a=0.05
+(Tabla T-Student, ∞,0.05)
+Tteo=1,645 
+Contraste Unilateral Dcho
+
+
+--- Page 27 ---
+
+Región Crítica y Nivel de Significación
+EJEMPLO 2
+En cursos pasados el número medio de libros prestados al año por alumnos en la
+biblioteca era de 6. Este año la biblioteca ha hecho una fuerte campaña de
+información, y se quiere saber el efecto que ha tenido en los alumnos.
+El estadístico de contraste
+Texp = 0,8303  <  Tteo
+El
+estadístico
+de
+contraste
+se
+encuentra en la región de aceptación
+ó RAa (región de no rechazo a Ho).
+Por tanto: no se acepta la Hipótesis
+alternativa.
+
+
+--- Page 28 ---
+
+Nivel Crítico, p, o p-value
+EJEMPLO 2
+En cursos pasados el número medio de libros prestados al año por alumnos en la
+biblioteca era de 6. Este año la biblioteca ha hecho una fuerte campaña de
+información, y se quiere saber el efecto que ha tenido en los alumnos.
+Para los datos del ejemplo n = 100 ;     = 6,23 ; S = 2,77 a un nivel de 
+significación 0.05, no rechazamos la hipótesis nula. 
+3º. ¿cuál es el p-value para esta muestra? Texp=0,8303
+_
+X
+SOL: “La H0 se rechazaría sólo para niveles de significación mayores que 0,2033”
+El P-value es la probabilidad mas pequeña para el que la muestra
+(el estadístico de contraste) obliga a rechazar la H0
+P(Z>0,8303) = 1-P(Z<0,8303) = 0,2033 (Tabla N(0,1))
+
+
+--- Page 29 ---
+
+Contraste de Hipótesis: Metodología
+El contraste es no significativo cuando p>a, no se rechaza H0
+
+
+--- Page 30 ---
+
+
+
+--- Page 31 ---
+
+
+
+--- Page 32 ---
+
+
+
+--- Page 33 ---
+
+
+
+--- Page 34 ---
+
+Contraste de Hipótesis para 
+diferencias de proporciones
+
+
+--- Page 35 ---
+
+EJEMPLO: Se quiere evaluar si en dos clases sociales diferentes se produce
+la misma cantidad de divorcios. Para ello se realizó un muestreo sobre 50
+matrimonios de cada clase, obteniéndose 7 y 13 divorcios. ¿Existe evidencia
+de un comportamiento diferente?
+Contraste de Hipótesis para 
+diferencias de proporciones
+
+
+--- Page 36 ---
+
+
+
+--- Page 37 ---
+
+
+
+--- Page 38 ---
+
+
+
+--- Page 39 ---
+
+
+
+--- Page 40 ---
+
+ESTADISTICA
+CLASES PRACTICAS 12-13
+
+
+--- Page 41 ---
+
+
+
+--- Page 42 ---
+
+
+
+--- Page 43 ---
+
+
+
+--- Page 44 ---
+
+
+
+--- Page 45 ---
+
+
+
+--- Page 46 ---
+
+
+
+--- Page 47 ---
+

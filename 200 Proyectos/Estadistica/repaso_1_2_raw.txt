@@ -1,0 +1,232 @@
+ESTADISTICA I
+Repaso
+Tema I: Estadística Descriptiva
+Ordenar los datos
+(Xi) de menor a mayor
+Calcular el índice i
+i=N, 
+posición del cuantil
+si i es par
+C= (Xi+Xi+1)/2
+si i ≠ entero, 
+redondear i al alta
+C= Xi
+ESTADISTICOS DE POSICIÓN ó CUANTILES: C
+(=orden del cuantil)
+Valor de la variable por debajo del cual se encuentra una Fi% de datos < 
+
+Es decir el valor del Cuantil divide a los datos en 2 grupos 
+➢COMO CALCULAR CUANTILES
+1º. VARIABLES CUANTITATIVAS DISCRETAS
+•
+Cuartiles (Q).  0,25 (Q1); 0,50 (Q2) y 0,75 (Q3).
+•
+Percentiles (P):  cualquier valor (percentil 95: P95  0,95).
+si I es impar
+C= Xi
+DATOS ANÓMALOS
+Para la detección de valores anómalos o atípicos utilizaremos el Diagrama de 
+Tukey, que depende del rango intercuartílico (IQR).
+También se puede utilizar como límite el Promedio ± 2SD
+Atípico 
+(Demasiado Pequeño) 
+Normal
+Atípico 
+(Demasiado Grande)
+Xi < Q1 - 1,5IQR
+Wmin
+Xi ≥ Q1 - 1,5IQR (Wmin)
+Xi ≤ Q3 + 1,5IQR (Wmax)
+Xi > Q3 + 1,5IQR
+Wmax
+X < X - 2*S
+X ≥ X - 2*S
+X ≤ X + 2*S
+X > X - 2*S
+Donde:
+Q1 : Primer Cuartil C0,25
+Q2 : Segundo Cuartil C0,50
+Q3 : Tercer Cuartil C0,75
+IQR : Rango intercuartílico Q3-Q1
+Diagrama de Cajas
+-Q1
+-Q3
+-Q2 
+-Wmax (Q3+1,5IQR)
+-Wmin (Q1-1,5IQR)
+-anómalo (dato<Q1-1,5IQR)
+-anómalo (dato>(Q3+1,5IQR)
+IQR=Q3-Q1
+Rango=Vmax-Vmin
+Rango vs Rango Intercuartílico
+ESTADISTICOS DE POSICIÓN ó CUANTILES: C
+(=orden del cuantil)
+Valor de la variable por debajo del cual se encuentra una Fi% de datos < 
+
+Es decir el valor del Cuantil divide a los datos en 2 grupos 
+➢COMO CALCULAR CUANTILES
+2º. VARIABLES CUANTITATIVAS CONTINUAS
+•
+Cuartiles (Q).  0,25 (Q1); 0,50 (Q2) y 0,75 (Q3).
+•
+Percentiles (P):  cualquier valor (percentil 95: P95  0,95).
+2º. VARIABLES CUANTI. CONTINUAS
+Buscar el intervalo i
+cuya frecuencia
+absoluta acumulada
+supera i (Ni>i) 
+Calcular el índice i
+i=N, 
+posición del cuantil
+Aplicar la fórmula
+TABLAS DE FRECUENCIAS
+Resumen de la información contenida en los datos de una muestra
+xi : modalidades (posibles valores)
+ni : frecuencia absoluta (Nº de repeticiones)
+fi : Frecuencia relativa
+Fi : Frecuencia relativa acumulada
+Ni : Frecuencia absoluta acumulada
+Determinar el 
+número de 
+modalidades
+(usar el rango)
+Determinar el 
+número de 
+repeticiones de 
+cada modalidad
+1º. VARIABLES CUALI.NOMINAL/ORDINAL Y CUANTI. DISCRETAS
+Para datos sin agrupar:
+Para datos agrupados:
+1º. Buscar el intervalo con mayor frec. abs. ni
+2º. Aplicar la fórmula:
+MEDIA ARITMETICA
+ESTADISTICOS DE TENDENCIA CENTRAL
+Resumen la información de la variable mediante un valor numérico que suele situarse en 
+el centro de la distribución de los datos.
+MEDIANA
+Valor del Cuantil C0,50
+MODA
+Valor que mas se repite, 
+modalidad con mayor 
+frec. absoluta ni
+Para datos sin agrupar:
+Para datos agrupados:
+VARIANZA
+Mide la dispersión de cada valor de la media 
+Para datos sin agrupar:
+Para datos agrupados:
+ESTADISTICOS DE DISPERSION
+Coeficiente de Variación CV (%)
+DESVIACIÓN TÍPICA
+ESTADISTICA
+Repaso
+Tema II: Probabilidad
+Propiedades de la Probabilidad
+Consecuencias de los Axiomas
+4. Si dos sucesos son excluyentes, entonces:
+5. Si dos sucesos no son exluyentes, entonces: 
+* Donde: 
+AUB es el suceso unión 
+A∩B ó AB es el suceso intersección
+Suponga que el evento B tiene probabilidad de ocurrencia P(B) y ocurre primero. 
+Definamos el evento A y definamos su probabilidad de ocurrencia como P(A). 
+Entonces, la probabilidad condicional de A dado B puede calcularse según:
+A
+E espacio muestral
+B
+“tamaño” de uno 
+respecto al otro
+)
+(
+)
+(
+)
+|
+(
+B
+P
+B
+A
+P
+B
+A
+P
+
+=
+PROBABILIDAD CONDICIONADA
+A y B son sucesos independientes si
+A y B son sucesos dependientes si
+Pruebas diagnósticas: aplicación T. Bayes
+Individuo
+Enfermo
+T-
+Sano
+T+
+T-
+T+
+Probabilidad a priori de enfermedad:
+incidencia o prevalencia
+Sensibilidad
+ verdaderos +
+Falsos +
+Especificidad
+Verdaderos -
+Falsos -
+La probabiliad de que la variable tome cierto/s valores un número r ó k discreto de 
+veces (<n) se calcula sumando las P individuales según las siguientes distribuciones
+CALCULOS DE PROBABILIDAD UTILIZANDO DISTRIBUCIONES DE PROBABILIDAD
+1º DISTRIBUCIONES DISCRETAS 
+Experimentos dicotómicos repetidos n veces (n pequeña) con p frecuentista conocida
+ 
+ 
+ 
+ 
+Binomial (p>0.1):
+ 
+ 
+Poisson (n>30, p<0.1):
+ 
+    μ = n*p
+ 
+,...
+2,1,0
+  ,
+!
+]
+[
+=
+=
+=
+−
+k
+k
+e
+k
+X
+P
+k
+
+
+Calcular la probabilidad de que X = r. Aplicar la fórmula P(r) 
+Calcular la probabilidad de que X < r : (P0+P1+P2+…+Pr)
+Calcular la probabilidad de que X se encuentre entre A y B: (PA+….+PB)
+Calcular la probabilidad de que X > r: (Pr+Pr+1…+Pn)
+2º. DISTRIBUCIONES CONTINUAS (n>>>30, p>0.1) Exp. Binomiales repetido
+Que se distribuyen de manera que cumplen las características de la Normal (μ, σ)
+
+
+−
+= x
+z
+2º Buscar en la 
+TABLA N(0,1) 
+el X valor 
+tipificado (Z)
+1º Tipificar
+CALCULOS DE PROBABILIDAD UTILIZANDO DISTRIBUCIONES DE PROBABILIDAD
+Calcular la probabilidad de que X = r. Aplicar la fórmula P(r) 
+Calcular la probabilidad de que X < r : (P0+P1+P2+…+Pr)
+Calcular la probabilidad de que X se encuentre entre A y B: (PA+….+PB)
+Calcular la probabilidad de que X > r: (Pr+Pr+1…+Pn)
+➢Se asigna a todo valor X de la N(μ, σ), un valor Z de la N(0,1) que deja 
+exactamente la misma probabilidad por debajo.

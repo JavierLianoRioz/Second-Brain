@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "7254febd70c11812",
+        "id": "5c0325c89dd83dc5",
         "type": "tabs",
         "children": [
           {
-            "id": "c5e0a4757cf5f3ef",
+            "id": "c334af5d862b8abe",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "200 Proyectos/Redes de Ordenadores/Indice de Redes.md",
+                "file": "200 Proyectos/Estadistica/Ejercicios de Examen.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Indice de Redes"
+              "title": "Ejercicios de Examen"
             }
           }
         ]
@@ -88,7 +88,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "200 Proyectos/Redes de Ordenadores/Indice de Redes.md",
+                "file": "200 Proyectos/Estadistica/Ejercicios de Examen.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -116,7 +116,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of Indice de Redes"
+              "title": "Graph of Ejercicios de Examen"
             }
           }
         ]
@@ -132,7 +132,7 @@
       {
         "id": "b7681475d77f553b",
         "type": "tabs",
-        "dimension": 22.892441860465116,
+        "dimension": 44.48529411764705,
         "children": [
           {
             "id": "7b592a7440222c12",
@@ -140,7 +140,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "200 Proyectos/Minecraft/001 Let's Play.md",
+                "file": "200 Proyectos/Estadistica/Ejercicios de Examen.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -150,7 +150,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 001 Let's Play"
+              "title": "Backlinks for Ejercicios de Examen"
             }
           },
           {
@@ -213,7 +213,7 @@
       {
         "id": "fd8593a55104d16f",
         "type": "tabs",
-        "dimension": 77.10755813953489,
+        "dimension": 55.51470588235295,
         "children": [
           {
             "id": "cd00d58cb953c63d",
@@ -221,7 +221,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "200 Proyectos/Redes de Ordenadores/Indice de Redes.md",
+                "file": "200 Proyectos/Estadistica/Ejercicios de Examen.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -249,7 +249,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of Indice de Redes"
+              "title": "Graph of Ejercicios de Examen"
             }
           }
         ]
@@ -271,44 +271,44 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "c5e0a4757cf5f3ef",
+  "active": "c334af5d862b8abe",
   "lastOpenFiles": [
-    "200 Proyectos/Redes de Ordenadores/Ejercicios/Ejercicios_Repaso_Examen.md",
-    "200 Proyectos/Redes de Ordenadores/Ejercicios/Solucionario_Paso_a_Paso.md",
-    "200 Proyectos/Redes de Ordenadores/Indice de Redes.md",
-    "200 Proyectos/Proyectos.md",
-    "200 Proyectos/Redes de Ordenadores/Ejercicios/Ejercicios - Capa de Transporte.md",
-    "200 Proyectos/Redes de Ordenadores/Registro de Lectura.md",
-    "200 Proyectos/Redes de Ordenadores/Notas/Ethernet (IEEE 802.3).md",
-    "200 Proyectos/Redes de Ordenadores/Notas/Control de Flujo.md",
-    "200 Proyectos/Redes de Ordenadores/Notas/Control de Flujo, Errores y Congestión en TCP.md",
-    "200 Proyectos/Redes de Ordenadores/Notas/Protocolo IP (IPv4 e IPv6).md",
-    "200 Proyectos/Redes de Ordenadores/Notas/Cabecera y Ciclo de Vida de TCP.md",
-    "200 Proyectos/Redes de Ordenadores/Notas/Protocolo UDP.md",
-    "200 Proyectos/Redes de Ordenadores/Notas/Conceptos de la Capa de Transporte.md",
-    "200 Proyectos/Redes de Ordenadores/Notas/Protocolo TCP - Servicio y Multiplexación.md",
-    "200 Proyectos/Redes de Ordenadores/Ejercicios/Ejercicios - Interconexión de Redes.md",
-    "200 Proyectos/Redes de Ordenadores/Notas/Conceptos de Enrutamiento.md",
-    "200 Proyectos/Redes de Ordenadores/Notas/Protocolos IP (ICMP, ARP, DHCP, DNS).md",
-    "200 Proyectos/Redes de Ordenadores/Notas/Fragmentación y NAT.md",
-    "200 Proyectos/Redes de Ordenadores/Notas/Direccionamiento IP y Subredes.md",
-    "200 Proyectos/Redes de Ordenadores/Notas/Principios de la Capa de Red.md",
-    "200 Proyectos/Redes de Ordenadores/Notas/Protocolos de Acceso Múltiple (ALOHA y CSMA).md",
-    "200 Proyectos/Redes de Ordenadores/Ejercicios/Ejercicios - Redes de Área Local.md",
-    "200 Proyectos/Redes de Ordenadores/Notas/VLAN (Virtual LAN).md",
-    "200 Proyectos/Redes de Ordenadores/Notas/Tipos de Medios de Transmisión.md",
-    "200 Proyectos/Redes de Ordenadores/Notas/Dispositivos de Interconexión (Hubs vs Switches).md",
-    "200 Proyectos/Redes de Ordenadores/Notas/Conceptos de LAN y Control de Acceso.md",
-    "500 Biblioteca/Redes De Ordenadores/26_ProblemasTema2.pdf",
-    "200 Proyectos/Redes de Ordenadores/72_Tema7_extracted.txt",
-    "200 Proyectos/Redes de Ordenadores/64_ProblemasTema6_extracted.txt",
-    "200 Proyectos/Redes de Ordenadores/62_Tema6_extracted.txt",
-    "200 Proyectos/Redes de Ordenadores/54_ProblemasTema5_extracted.txt",
-    "200 Proyectos/Redes de Ordenadores/52_Tema5_extracted.txt",
-    "200 Proyectos/Redes de Ordenadores/44_ProblemasTema4_extracted.txt",
-    "200 Proyectos/Redes de Ordenadores/42_Tema4_extracted.txt",
-    "200 Proyectos/Redes de Ordenadores/34_ProblemasTema3_extracted.txt",
-    "200 Proyectos/Redes de Ordenadores/32_Tema3_extracted.txt",
+    "200 Proyectos/Estadistica/03_Tema3_VariablesAleatorias/Index.md",
+    "200 Proyectos/Estadistica/03_Tema3_VariablesAleatorias/Intervalos de Confianza para Medias y Proporciones.md",
+    "200 Proyectos/Estadistica/Ejercicios de Examen.md",
+    "200 Proyectos/Estadistica/02_Tema2_Probabilidad/Probabilidad Condicionada e Independencia.md",
+    "200 Proyectos/Estadistica/02_Tema2_Probabilidad/Conceptos y Definiciones de Probabilidad.md",
+    "200 Proyectos/Estadistica/01_Tema1_Descriptiva/Medidas de Dispersión.md",
+    "200 Proyectos/Estadistica/01_Tema1_Descriptiva/Medidas de Centralización.md",
+    "200 Proyectos/Estadistica/01_Tema1_Descriptiva/Medidas de Posición (Cuantiles).md",
+    "200 Proyectos/Estadistica/01_Tema1_Descriptiva/Tablas de Frecuencia.md",
+    "200 Proyectos/Estadistica/Simulacro de Examen - Modelo A.md",
+    "200 Proyectos/Estadistica/01_Tema1_Descriptiva/Ejercicio - Exceso de Riesgo Atribuible.md",
+    "200 Proyectos/Estadistica/ejercicios_cap_1_2.txt",
+    "200 Proyectos/Estadistica/libro_extracto.txt",
+    "200 Proyectos/Estadistica/repaso_1_2_raw.txt",
+    "200 Proyectos/Estadistica/Index.md",
+    "200 Proyectos/Estadistica/01_Tema1_Descriptiva/Index.md",
+    "200 Proyectos/Estadistica/Examen_Final_2425.txt",
+    "200 Proyectos/Estadistica/Repaso_4.txt",
+    "200 Proyectos/Estadistica/Repaso_3.txt",
+    "200 Proyectos/Estadistica/Repaso_1_2.txt",
+    "200 Proyectos/Estadistica/04_Tema4_Distribuciones/Tipos de Contrastes.md",
+    "200 Proyectos/Estadistica/01_Tema1_Descriptiva/Tablas Cruzadas.md",
+    "200 Proyectos/Estadistica/04_Tema4_Distribuciones/Metodología del Contraste de Hipótesis.md",
+    "200 Proyectos/Estadistica/04_Tema4_Distribuciones/Tipos de Error en Contrastes.md",
+    "200 Proyectos/Estadistica/04_Tema4_Distribuciones/p-value (Nivel Crítico).md",
+    "200 Proyectos/Estadistica/04_Tema4_Distribuciones/Región Crítica y Nivel de Significación.md",
+    "200 Proyectos/Estadistica/04_Tema4_Distribuciones/Hipótesis Nula y Alternativa.md",
+    "200 Proyectos/Estadistica/04_Tema4_Distribuciones/Conceptos de Contraste de Hipótesis.md",
+    "200 Proyectos/Estadistica/04_Tema4_Distribuciones/Index.md",
+    "200 Proyectos/Estadistica/03_Tema3_VariablesAleatorias/Inferencia sobre Diferencias.md",
+    "200 Proyectos/Estadistica/03_Tema3_VariablesAleatorias/Determinación del Tamaño Muestral.md",
+    "200 Proyectos/Estadistica/03_Tema3_VariablesAleatorias/Estimación por Intervalos de Confianza.md",
+    "200 Proyectos/Estadistica/03_Tema3_VariablesAleatorias/Estimación Puntual.md",
+    "200 Proyectos/Estadistica/04_Tema4_Distribuciones/raw_content.txt",
+    "200 Proyectos/Estadistica/03_Tema3_VariablesAleatorias/raw_content.txt",
+    "200 Proyectos/Estadistica/02_Tema2_Probabilidad/raw_content.txt",
     "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 1/Clase 13 (repaso)/images/ejercicios_repaso/1761207385651.png",
     "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 1/Clase 02/images/05_intro_modelo_relacional/1757671896087.png",
     "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 1/Clase 02/images/05_intro_modelo_relacional/1757671989194.png",
