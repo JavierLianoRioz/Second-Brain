@@ -5,6 +5,19 @@ A continuación se presentan patrones comunes de scripts SQL para resolver probl
 ## 1. Venta con Control de Stock
 Este patrón asegura que no se venda más de lo que hay disponible mediante el uso de transacciones y bloqueos.
 
+```mermaid
+flowchart TD
+    A[Inicio] --> B[START TRANSACTION]
+    B --> C[SELECT stock FOR UPDATE]
+    C --> D{¿Stock >= Cantidad?}
+    D -- Sí --> E[UPDATE stock]
+    E --> F[COMMIT]
+    D -- No --> G[ROLLBACK]
+    F --> H[Fin]
+    G --> H
+```
+
+
 ```sql
 CREATE PROCEDURE realizar_venta(IN p_id_prod INT, IN p_cantidad INT)
 BEGIN

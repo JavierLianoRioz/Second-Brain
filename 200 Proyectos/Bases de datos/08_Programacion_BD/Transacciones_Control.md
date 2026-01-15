@@ -12,6 +12,18 @@ Una transacción es una unidad lógica de trabajo que debe completarse en su tot
 - **COMMIT**: Guarda permanentemente todos los cambios realizados desde el inicio de la transacción.
 - **ROLLBACK**: Revierte todos los cambios realizados, devolviendo la base de datos al estado anterior al inicio de la transacción.
 
+```mermaid
+stateDiagram-v2
+    [*] --> START_TRANSACTION
+    START_TRANSACTION --> Operations
+    Operations --> Validation: All operations done?
+    Validation --> COMMIT: Success
+    Validation --> ROLLBACK: Failure
+    COMMIT --> [*]
+    ROLLBACK --> [*]
+```
+
+
 ## Puntos de Guardado (SAVEPOINT)
 
 Permiten realizar retrocesos parciales sin cancelar toda la transacción.
