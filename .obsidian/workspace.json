@@ -39,12 +39,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "200 Proyectos/Bases de datos/06_Algebra_Relacional/Diferencia_Operador.md",
+                "file": "200 Proyectos/Bases de datos/08_Programacion_BD/00_MOC_Programacion_BD.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Diferencia_Operador"
+              "title": "00_MOC_Programacion_BD"
             }
           }
         ],
@@ -115,7 +115,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "200 Proyectos/Bases de datos/06_Algebra_Relacional/Diferencia_Operador.md",
+                "file": "200 Proyectos/Bases de datos/08_Programacion_BD/00_MOC_Programacion_BD.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -143,7 +143,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of Diferencia_Operador"
+              "title": "Graph of 00_MOC_Programacion_BD"
             }
           }
         ]
@@ -248,7 +248,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "200 Proyectos/Bases de datos/06_Algebra_Relacional/Diferencia_Operador.md",
+                "file": "200 Proyectos/Bases de datos/08_Programacion_BD/00_MOC_Programacion_BD.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -276,7 +276,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of Diferencia_Operador"
+              "title": "Graph of 00_MOC_Programacion_BD"
             }
           }
         ]
@@ -298,9 +298,16 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "1690522270e966b7",
+  "active": "5b6f614486c1cb7e",
   "lastOpenFiles": [
     "200 Proyectos/Bases de datos/07_Optimizacion/00_MOC_Optimizacion.md",
+    "200 Proyectos/Bases de datos/08_Programacion_BD/Ejemplos_Programacion.md",
+    "200 Proyectos/Bases de datos/08_Programacion_BD/Transacciones_Control.md",
+    "200 Proyectos/Bases de datos/08_Programacion_BD/Control_de_Flujo.md",
+    "200 Proyectos/Bases de datos/08_Programacion_BD/Stored_Procedures_Sintaxis.md",
+    "200 Proyectos/Bases de datos/08_Programacion_BD/00_MOC_Programacion_BD.md",
+    "200 Proyectos/Bases de datos/08_Programacion_BD",
+    "200 Proyectos/Bases de datos/06_Algebra_Relacional/Diferencia_Operador.md",
     "200 Proyectos/Bases de datos/07_Optimizacion/Tablas_Temporales.md",
     "200 Proyectos/Bases de datos/07_Optimizacion/Denormalizacion_Estrategica.md",
     "200 Proyectos/Bases de datos/07_Optimizacion/Indices_Compuestos.md",
@@ -333,13 +340,6 @@
     "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 2/Clase 25/0.2_dml_inicial.md",
     "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 2/Clase 25/0.1_ddl_inicial.md",
     "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 2/Clase 25",
-    "200 Proyectos/Bases de datos/03_SQL/00_MOC_SQL.md",
-    "200 Proyectos/Bases de datos/03_SQL/SQL_DDL.md",
-    "convert_links.py",
-    "200 Proyectos/Bases de datos/00_Indice.md",
-    "200 Proyectos/Estadistica/01_Tema1_Descriptiva/Medidas de Centralización.md",
-    "200 Proyectos/Estadistica/Solucionario - Modelo A.md",
-    "200 Proyectos/Estadistica/Solucionario - Modelo B.md",
     "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 1/Clase 13 (repaso)/images/ejercicios_repaso/1761207385651.png",
     "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 1/Clase 02/images/05_intro_modelo_relacional/1757671896087.png",
     "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 1/Clase 02/images/05_intro_modelo_relacional/1757671989194.png",

@@ -27,5 +27,8 @@ Navega por los temas principales a través de sus mapas:
 ### 7. [Optimización de SQL](07_Optimizacion/00_MOC_Optimizacion.md)
 *   Índices, Query Tuning, Denormalización.
 
+### 8. [Programación en Bases de Datos](08_Programacion_BD/00_MOC_Programacion_BD.md)
+*   Procedimientos, Transacciones, Control de Flujo.
+
 ---
 *Generado por Gemini - Antigravity*
