@@ -1,5 +1,9 @@
 # Control de Transacciones
 
+> [!IMPORTANT]
+> **TEMA CLAVE EXAMEN FINAL (TRANSACCIONES)**
+
+
 Una transacción es una unidad lógica de trabajo que debe completarse en su totalidad o no hacerse en absoluto (Propiedades ACID). En la programación de scripts, el control de transacciones es vital para mantener la integridad de los datos.
 
 ## Comandos Principales

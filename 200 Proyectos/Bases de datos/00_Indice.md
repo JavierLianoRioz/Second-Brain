@@ -1,5 +1,8 @@
 # Apuntes de Bases de Datos (Zettelkasten)
 
+> [!IMPORTANT]
+> 🎓 **[GUÍA ÚLTIMO MINUTO: EXAMEN FINAL](Guia_Examen_Final.md)** - Enfócate en lo práctico.
+
 Bienvenido a los apuntes de Bases de Datos. Este repositorio sigue el método **Zettelkasten**, con notas atómicas interconectadas.
 
 ## 🗺️ Mapas de Contenido (MOCs)

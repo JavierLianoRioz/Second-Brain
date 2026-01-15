@@ -1,5 +1,9 @@
 # CREATE TABLE
 
+> [!WARNING]
+> **NO ENTRA EN EL EXAMEN FINAL (DDL)**
+
+
 Comando [SQL DDL](SQL_DDL.md) para crear una nueva tabla.
 
 ## Sintaxis

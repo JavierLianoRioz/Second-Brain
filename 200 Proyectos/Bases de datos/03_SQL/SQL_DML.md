@@ -1,5 +1,9 @@
 # SQL DML (Data Manipulation Language)
 
+> [!IMPORTANT]
+> **TEMA CLAVE EXAMEN FINAL (DML)**
+
+
 El **DML** permite gestionar los datos almacenados: insertar, modificar y borrar.
 
 ## Comandos Principales
