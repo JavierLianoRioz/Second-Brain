@@ -39,12 +39,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "200 Proyectos/Bases de datos/03_SQL/SQL_DDL.md",
+                "file": "200 Proyectos/Bases de datos/06_Algebra_Relacional/Diferencia_Operador.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "SQL_DDL"
+              "title": "Diferencia_Operador"
             }
           }
         ],
@@ -115,7 +115,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "200 Proyectos/Bases de datos/03_SQL/SQL_DDL.md",
+                "file": "200 Proyectos/Bases de datos/06_Algebra_Relacional/Diferencia_Operador.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -138,12 +138,12 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 0.9999999999999998,
+                  "scale": 0.6763303833950292,
                   "close": true
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of SQL_DDL"
+              "title": "Graph of Diferencia_Operador"
             }
           }
         ]
@@ -248,7 +248,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "200 Proyectos/Bases de datos/03_SQL/SQL_DDL.md",
+                "file": "200 Proyectos/Bases de datos/06_Algebra_Relacional/Diferencia_Operador.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -276,7 +276,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of SQL_DDL"
+              "title": "Graph of Diferencia_Operador"
             }
           }
         ]
@@ -298,53 +298,53 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "5b6f614486c1cb7e",
+  "active": "1690522270e966b7",
   "lastOpenFiles": [
+    "200 Proyectos/Bases de datos/07_Optimizacion/00_MOC_Optimizacion.md",
+    "200 Proyectos/Bases de datos/07_Optimizacion/Tablas_Temporales.md",
+    "200 Proyectos/Bases de datos/07_Optimizacion/Denormalizacion_Estrategica.md",
+    "200 Proyectos/Bases de datos/07_Optimizacion/Indices_Compuestos.md",
+    "200 Proyectos/Bases de datos/07_Optimizacion/Query_Optimization.md",
+    "200 Proyectos/Bases de datos/07_Optimizacion",
+    "500 Biblioteca/BaseDeDatos1-25-26/Evaluaciones/Resolución de Exámen Segundo Parcial Base de Datos 1 2025-2026.docx",
+    "500 Biblioteca/BaseDeDatos1-25-26/Evaluaciones/Exámen Segundo Parcial Base de Datos 1 2025-2026.docx",
+    "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 2/Clase 27/03_tabla_temporal.md",
+    "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 2/Clase 27/02_denormaizacion_estrategica.md",
+    "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 2/Clase 27/01_indices_compuestos.md",
+    "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 2/Clase 27",
+    "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 2/Clase 26/04_query_3_optimizado.md",
+    "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 2/Clase 26/03_query_2_optimizado.md",
+    "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 2/Clase 26/02_query_1_optimizado.md",
+    "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 2/Clase 26/01_query_1.md",
+    "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 2/Clase 26",
+    "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 2/Clase 25/images/04_ejercicio_3/1765535765824.png",
+    "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 2/Clase 25/images/04_ejercicio_3/1765535745122.png",
+    "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 2/Clase 25/images/03_ejercicio_2/1765537763252.png",
+    "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 2/Clase 25/images/03_ejercicio_2/1765537553113.png",
+    "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 2/Clase 25/images/04_ejercicio_3",
+    "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 2/Clase 25/images/03_ejercicio_2",
+    "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 2/Clase 25/images",
+    "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 2/Clase 25/04_ejercicio_3.md",
+    "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 2/Clase 25/03_ejercicio_2.md",
+    "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 2/Clase 25/02_optimizacion_por_rediseño_query.md",
+    "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 2/Clase 25/01_optimizacion_teoria.md",
+    "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 2/Clase 25/0.4_consultas_monstruo.md",
+    "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 2/Clase 25/0.3_stored_procedure_populate.md",
+    "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 2/Clase 25/0.2_dml_inicial.md",
+    "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 2/Clase 25/0.1_ddl_inicial.md",
+    "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 2/Clase 25",
     "200 Proyectos/Bases de datos/03_SQL/00_MOC_SQL.md",
     "200 Proyectos/Bases de datos/03_SQL/SQL_DDL.md",
     "convert_links.py",
-    "Nuevo Documento de texto.txt",
     "200 Proyectos/Bases de datos/00_Indice.md",
     "200 Proyectos/Estadistica/01_Tema1_Descriptiva/Medidas de Centralización.md",
     "200 Proyectos/Estadistica/Solucionario - Modelo A.md",
     "200 Proyectos/Estadistica/Solucionario - Modelo B.md",
-    "200 Proyectos/Estadistica/Simulacro de Examen - Modelo A.md",
-    "200 Proyectos/Estadistica/Simulacro de Examen - Modelo B.md",
-    "200 Proyectos/Estadistica/01_Tema1_Descriptiva/Index.md",
-    "200 Proyectos/Estadistica/01_Tema1_Descriptiva/Medidas de Posición (Cuantiles).md",
-    "200 Proyectos/Estadistica/Index.md",
-    "200 Proyectos/Estadistica/04_Tema4_Distribuciones/Contraste para Medias.md",
-    "200 Proyectos/Estadistica/04_Tema4_Distribuciones/Index.md",
-    "200 Proyectos/Estadistica/04_Tema4_Distribuciones/Contraste para Diferencia de Proporciones.md",
-    "200 Proyectos/Estadistica/04_Tema4_Distribuciones/Contraste para Diferencia de Medias.md",
-    "200 Proyectos/Estadistica/04_Tema4_Distribuciones/Contraste para Proporciones.md",
-    "200 Proyectos/Estadistica/04_Tema4_Distribuciones/Test Chi-cuadrado e Independencia.md",
-    "200 Proyectos/Estadistica/04_Tema4_Distribuciones/Metodología del Contraste de Hipótesis.md",
-    "200 Proyectos/Estadistica/04_Tema4_Distribuciones/Tipos de Error en Contrastes.md",
-    "200 Proyectos/Estadistica/04_Tema4_Distribuciones/p-value (Nivel Crítico).md",
-    "200 Proyectos/Estadistica/04_Tema4_Distribuciones/Distribucion Normal.md",
-    "200 Proyectos/Estadistica/04_Tema4_Distribuciones/Distribuciones Discretas.md",
-    "200 Proyectos/Estadistica/04_Tema4_Distribuciones/Región Crítica y Nivel de Significación.md",
-    "200 Proyectos/Estadistica/04_Tema4_Distribuciones/Tipos de Contrastes.md",
-    "200 Proyectos/Estadistica/04_Tema4_Distribuciones/Hipótesis Nula y Alternativa.md",
-    "200 Proyectos/Estadistica/04_Tema4_Distribuciones/Conceptos de Contraste de Hipótesis.md",
-    "500 Biblioteca/Estadistica/Ejercicios/Formulario/FORMULARIO.pdf",
-    "500 Biblioteca/Estadistica/Ejercicios/Formulario/Tabla de la Distribución Normal.pdf",
-    "500 Biblioteca/Estadistica/Ejercicios/Examen Enero 2024-2025/[2425] EXAMEN FINAL_vCV.pdf",
-    "200 Proyectos/Estadistica/ejercicios_cap_1_2.txt",
-    "200 Proyectos/Estadistica/libro_extracto.txt",
-    "200 Proyectos/Estadistica/repaso_1_2_raw.txt",
-    "200 Proyectos/Estadistica/Examen_Final_2425.txt",
-    "200 Proyectos/Estadistica/Repaso_4.txt",
     "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 1/Clase 13 (repaso)/images/ejercicios_repaso/1761207385651.png",
     "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 1/Clase 02/images/05_intro_modelo_relacional/1757671896087.png",
     "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 1/Clase 02/images/05_intro_modelo_relacional/1757671989194.png",
     "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 1/Clase 02/images/04_modelo_er_extendido/1757671833615.png",
     "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 1/Clase 02/images/03_modelo_er_simple/1757671909835.png",
-    "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 1/Clase 04/DER_conceptual_ejercicio_1_clase_4_sin_atributos.png",
-    "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 1/Clase 03/DER_conceptual_ejercicio_1_clase_3.png",
-    "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 1/Clase 02/diagrama_chen_ejercicio_3.png",
-    "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 1/Clase 02/diagrama_chen_ejercicio_2.png",
-    "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 1/Clase 02/diagrama_chen_ejercicio_1.png"
+    "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 1/Clase 04/DER_conceptual_ejercicio_1_clase_4_sin_atributos.png"
   ]
 }

@@ -24,5 +24,8 @@ Navega por los temas principales a través de sus mapas:
 ### 6. [Álgebra Relacional](06_Algebra_Relacional/00_MOC_Algebra_Relacional.md)
 *   Operadores Fundamentales y Derivados.
 
+### 7. [Optimización de SQL](07_Optimizacion/00_MOC_Optimizacion.md)
+*   Índices, Query Tuning, Denormalización.
+
 ---
 *Generado por Gemini - Antigravity*
