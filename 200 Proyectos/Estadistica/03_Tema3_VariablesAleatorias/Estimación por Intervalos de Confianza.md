@@ -21,5 +21,5 @@ La amplitud del intervalo:
 Es la base de la inferencia; establece que la distribución de las medias muestrales tiende a una Normal incluso si la población original no lo es (para $n$ suficientemente grande).
 
 ---
-Enlace: [[Index|Tema 3]]
+Enlace: [Tema 3](../Index.md)
 Tags: #estadistica #estimacion #confianza

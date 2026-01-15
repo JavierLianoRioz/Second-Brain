@@ -1,6 +1,6 @@
 # CREATE TABLE
 
-Comando [[SQL_DDL]] para crear una nueva tabla.
+Comando [SQL_DDL](SQL_DDL.md) para crear una nueva tabla.
 
 ## Sintaxis
 ```sql
@@ -21,4 +21,4 @@ CREATE TABLE empleado (
 ```
 
 ---
-[[SQL_DDL]]
+[SQL_DDL](SQL_DDL.md)

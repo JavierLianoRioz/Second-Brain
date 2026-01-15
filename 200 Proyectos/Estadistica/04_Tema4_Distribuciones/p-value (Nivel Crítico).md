@@ -12,5 +12,5 @@ Se compara el p-value con el nivel de significación $\alpha$ fijado:
 > Cuanto más pequeño sea el p-value, mayor es la evidencia en contra de la hipótesis nula.
 
 ---
-Enlace: [[Index|Tema 4]]
+Enlace: [Tema 4](../Index.md)
 Tags: #estadistica #contraste #decisiones

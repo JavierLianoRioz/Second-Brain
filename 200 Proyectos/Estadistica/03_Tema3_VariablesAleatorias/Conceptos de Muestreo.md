@@ -22,5 +22,5 @@ Ocurre cuando la muestra no es representativa.
 - **Falta de Respuesta**: Individuos que no responden o mienten.
 
 ---
-Enlace: [[Index|Tema 3]]
+Enlace: [Tema 3](../Index.md)
 Tags: #estadistica #muestreo #conceptos

@@ -22,5 +22,5 @@ Visualización de datos según el tipo de variable.
     - Permite evaluar simetría y comparar la dispersión entre varios grupos de forma visual.
 
 ---
-Enlace: [[Index|Tema 1]]
+Enlace: [Tema 1](../Index.md)
 Tags: #estadistica #graficos #boxplot

@@ -24,5 +24,5 @@ Establece que, para una muestra suficientemente grande ($n > 30$), la distribuci
 - Error típico (desviación de las medias) = $\sigma / \sqrt{n}$
 
 ---
-Enlace: [[Index|Tema 4]]
+Enlace: [Tema 4](../Index.md)
 Tags: #estadistica #probabilidad #normal #tlc

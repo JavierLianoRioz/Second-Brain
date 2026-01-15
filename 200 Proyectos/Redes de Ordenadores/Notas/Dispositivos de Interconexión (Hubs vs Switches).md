@@ -15,5 +15,5 @@ Evolución de los dispositivos para conectar equipos en una LAN.
   3. **Evitación de Bucles**: Protocolo **Spanning Tree (STP)** para evitar tormentas de broadcast.
 
 ---
-**Relacionado**: [[VLAN (Virtual LAN)]]
+**Relacionado**: [VLAN (Virtual LAN)](VLAN%20%28Virtual%20LAN%29.md)
 **Fuente**: [[42_Tema4.pdf]]

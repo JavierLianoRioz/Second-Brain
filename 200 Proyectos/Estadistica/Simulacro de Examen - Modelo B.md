@@ -63,4 +63,4 @@ Contrastar con $\alpha = 0.01$ si el nivel educativo influye.
 4. Concluir si realmente influye el nivel educativo.
 
 ---
-[[Index|Volver al Índice]] | [[Solucionario - Modelo B|Ver Soluciones]]
+[Volver al Índice](Index.md) | [Ver Soluciones](Solucionario%20-%20Modelo%20B.md)

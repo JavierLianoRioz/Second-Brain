@@ -19,5 +19,5 @@ Subconjunto de individuos elegidos mediante técnicas de **muestreo**.
 Conjunto de técnicas para extraer muestras garantizando que las características de la población se mantengan intactas para poder realizar inferencias.
 
 ---
-Enlace: [[Index|Tema 1]]
+Enlace: [Tema 1](../Index.md)
 Tags: #estadistica #muestreo #poblacion

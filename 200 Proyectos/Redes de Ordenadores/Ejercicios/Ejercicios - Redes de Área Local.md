@@ -34,5 +34,5 @@ Problemas resueltos del Tema 4 sobre topologías, Ethernet, switches y VLANs.
 - **Todo con Hubs (P 4.5)**: Todos comparten el mismo "aire". El rendimiento total de la red entera es de **solo 100 Mbps**, sin importar cuántos equipos haya.
 
 ---
-**Relacionado**: [[Conceptos de LAN y Control de Acceso]], [[Dispositivos de Interconexión (Hubs vs Switches)]]
+**Relacionado**: [Conceptos de LAN y Control de Acceso](../Notas/Conceptos%20de%20LAN%20y%20Control%20de%20Acceso.md), [Dispositivos de Interconexión (Hubs vs Switches)](../Notas/Dispositivos%20de%20Interconexi%C3%B3n%20%28Hubs%20vs%20Switches%29.md)
 **Fuente**: [[44_ProblemasTema4.pdf]]

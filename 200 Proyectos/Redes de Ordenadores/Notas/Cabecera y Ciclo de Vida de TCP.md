@@ -32,5 +32,5 @@ Estructura del segmento TCP y estados de la conexión.
 > El estado **TIME_WAIT** ocurre al final del cierre activo para asegurar que el último ACK llegó y que no hay paquetes viejos "perdidos" que puedan interferir con una nueva conexión.
 
 ---
-**Relacionado**: [[Control de Flujo, Errores y Congestión en TCP]]
+**Relacionado**: [Control de Flujo, Errores y Congestión en TCP](Control%20de%20Flujo%2C%20Errores%20y%20Congesti%C3%B3n%20en%20TCP.md)
 **Fuente**: [[62_Tema6.pdf]]

@@ -27,5 +27,5 @@ Donde:
 - **$c_i$**: Amplitud del intervalo.
 
 ---
-Enlace: [[Index|Tema 1]]
+Enlace: [Tema 1](../Index.md)
 Tags: #estadistica #centralizacion #media

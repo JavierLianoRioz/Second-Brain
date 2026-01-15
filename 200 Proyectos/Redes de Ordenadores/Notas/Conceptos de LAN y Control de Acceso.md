@@ -20,5 +20,5 @@ Para entender qué tan eficiente es un protocolo (como Stop & Wait), usamos el p
   - *Analogía*: Una cena de amigos donde se espera a que el otro termine para hablar (o se interrumpe y se pide perdón).
 
 ---
-**Relacionado**: [[Protocolos de Acceso Múltiple (ALOHA y CSMA)]], [[Dispositivos de Interconexión (Hubs vs Switches)]]
+**Relacionado**: [Protocolos de Acceso Múltiple (ALOHA y CSMA)](Protocolos%20de%20Acceso%20M%C3%BAltiple%20%28ALOHA%20y%20CSMA%29.md), [Dispositivos de Interconexión (Hubs vs Switches)](Dispositivos%20de%20Interconexi%C3%B3n%20%28Hubs%20vs%20Switches%29.md)
 **Fuente**: [[42_Tema4.pdf]]

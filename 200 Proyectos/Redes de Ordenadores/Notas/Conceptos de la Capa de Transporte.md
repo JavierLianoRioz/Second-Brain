@@ -28,5 +28,5 @@ TCP y UDP calculan un resumen (checksum) para detectar errores, pero hacen algo 
 > *¿Por qué?*: Para asegurar que si la red "se equivoca" y te manda un paquete que no era para ti, el transporte lo detecte y lo tire. Esto rompe la separación estricta entre capas para ganar seguridad.
 
 ---
-**Relacionado**: [[Protocolo TCP - Servicio y Multiplexación]], [[Protocolo UDP]]
+**Relacionado**: [Protocolo TCP - Servicio y Multiplexación](Protocolo%20TCP%20-%20Servicio%20y%20Multiplexaci%C3%B3n.md), [Protocolo UDP](Protocolo%20UDP.md)
 **Fuente**: [[62_Tema6.pdf]]

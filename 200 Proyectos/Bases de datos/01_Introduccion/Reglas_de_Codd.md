@@ -1,6 +1,6 @@
 # Las 12 Reglas de Codd
 
-Edgar F. Codd definió estas reglas en 1985 para determinar si un [[SGBD_Definicion]] es verdaderamente **Relacional**.
+Edgar F. Codd definió estas reglas en 1985 para determinar si un [SGBD_Definicion](SGBD_Definicion.md) es verdaderamente **Relacional**.
 
 > [!IMPORTANT]
 > **Regla 0 (Fundacional)**: El sistema debe gestionar la base de datos **exclusivamente** a través de sus capacidades relacionales.
@@ -20,4 +20,4 @@ Edgar F. Codd definió estas reglas en 1985 para determinar si un [[SGBD_Definic
 12. **No Subversión**: No saltarse la integridad por vías de bajo nivel.
 
 ---
-[[00_MOC_Introduccion]]
+[00_MOC_Introduccion](00_MOC_Introduccion.md)

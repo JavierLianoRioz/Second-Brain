@@ -31,5 +31,5 @@ Para calcular a qué velocidad máxima puede transmitir TCP según su ventana ($
 - **Fast Retransmit**: Si recibes el mismo ACK tres veces seguidas, es que el otro está diciendo: "¡Me falta esto! ¡Me falta esto! ¡Me falta esto!". TCP no espera al tiempo de espera y lo envía ya.
 
 ---
-**Relacionado**: [[Protocolo TCP - Servicio y Multiplexación]]
+**Relacionado**: [Protocolo TCP - Servicio y Multiplexación](Protocolo%20TCP%20-%20Servicio%20y%20Multiplexaci%C3%B3n.md)
 **Fuente**: [[62_Tema6.pdf]]

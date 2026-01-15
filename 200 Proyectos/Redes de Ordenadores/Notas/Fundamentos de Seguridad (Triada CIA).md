@@ -25,5 +25,5 @@ Además de CIA, existen otros pilares importantes:
 - **Riesgo**: Probabilidad de que una amenaza se materialice.
 
 ---
-**Relacionado**: [[Tipos de Ataques en Redes]], [[Dispositivos de Seguridad (Firewalls, IDS, IPS)]]
+**Relacionado**: [Tipos de Ataques en Redes](Tipos%20de%20Ataques%20en%20Redes.md), [Dispositivos de Seguridad (Firewalls, IDS, IPS)](Dispositivos%20de%20Seguridad%20%28Firewalls%2C%20IDS%2C%20IPS%29.md)
 **Fuente**: [[72_Tema7.pdf]]

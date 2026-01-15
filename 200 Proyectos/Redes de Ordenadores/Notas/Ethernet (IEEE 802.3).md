@@ -30,5 +30,5 @@ Existen dos formatos que coexisten (se distinguen por el valor del campo central
 > **Interframe Gap**: Se dejan 12 bytes de "silencio" entre tramas para que el receptor se recupere.
 
 ---
-**Relacionado**: [[Dispositivos de Interconexión (Hubs vs Switches)]]
+**Relacionado**: [Dispositivos de Interconexión (Hubs vs Switches)](Dispositivos%20de%20Interconexi%C3%B3n%20%28Hubs%20vs%20Switches%29.md)
 **Fuente**: [[42_Tema4.pdf]]

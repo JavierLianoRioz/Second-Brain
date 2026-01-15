@@ -18,5 +18,5 @@ Dependiendo de la hipótesis alternativa ($H_1$), el contraste puede ser de tres
 > La forma de la región crítica siempre "apunta" en la dirección del signo de la hipótesis alternativa.
 
 ---
-Enlace: [[Index|Tema 4]]
+Enlace: [Tema 4](../Index.md)
 Tags: #estadistica #contraste #teoria

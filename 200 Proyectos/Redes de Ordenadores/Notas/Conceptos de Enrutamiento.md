@@ -17,5 +17,5 @@ El enrutamiento es el proceso de construir tablas de rutas para que los paquetes
 - **EGP (Exterior Gateway Protocol)**: Entre diferentes AS. Ej: BGP (el protocolo de Internet).
 
 ---
-**Relacionado**: [[Principios de la Capa de Red]]
+**Relacionado**: [Principios de la Capa de Red](Principios%20de%20la%20Capa%20de%20Red.md)
 **Fuente**: [[52_Tema5.pdf]]

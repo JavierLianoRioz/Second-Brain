@@ -12,8 +12,8 @@ En una tabla de empleados:
 
 ## Tipos
 *   **Total**: La dependencia es con toda la clave primaria.
-*   **Parcial**: La dependencia es solo con una parte de la clave compuesta (viola [[Segunda_Forma_Normal_2FN]]).
-*   **Transitiva**: `A -> B` y `B -> C` (viola [[Tercera_Forma_Normal_3FN]]).
+*   **Parcial**: La dependencia es solo con una parte de la clave compuesta (viola [Segunda_Forma_Normal_2FN](Segunda_Forma_Normal_2FN.md)).
+*   **Transitiva**: `A -> B` y `B -> C` (viola [Tercera_Forma_Normal_3FN](Tercera_Forma_Normal_3FN.md)).
 
 ---
-[[00_MOC_Normalizacion]]
+[00_MOC_Normalizacion](00_MOC_Normalizacion.md)

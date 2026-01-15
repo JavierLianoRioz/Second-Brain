@@ -21,5 +21,5 @@ Donde:
 - La decisión final se basa en si el **p-valor** obtenido es menor que el nivel de significación $\alpha$.
 
 ---
-Enlace: [[Index|Tema 4]]
+Enlace: [Tema 4](../Index.md)
 Tags: #estadistica #contraste #proporciones #z-test

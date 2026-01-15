@@ -12,9 +12,9 @@ graph LR
 ```
 
 1.  **Recolección y Análisis de Requerimientos**: Entender qué datos necesita el sistema.
-2.  **Diseño Conceptual**: Crear un esquema independiente del SGBD. Herramienta principal: [[Modelo_Entidad_Relacion]].
-3.  **Diseño Lógico**: Transformar el esquema conceptual a un modelo de datos específico. Herramienta principal: [[Modelo_Relacional_Conceptos]].
-4.  **Diseño Físico**: Implementar el esquema en un [[SGBD_Definicion]] concreto (MySQL, Oracle).
+2.  **Diseño Conceptual**: Crear un esquema independiente del SGBD. Herramienta principal: [Modelo_Entidad_Relacion](Modelo_Entidad_Relacion.md).
+3.  **Diseño Lógico**: Transformar el esquema conceptual a un modelo de datos específico. Herramienta principal: [Modelo_Relacional_Conceptos](Modelo_Relacional_Conceptos.md).
+4.  **Diseño Físico**: Implementar el esquema en un [SGBD_Definicion](../01_Introduccion/SGBD_Definicion.md) concreto (MySQL, Oracle).
 
 ---
-[[00_MOC_Diseño]]
+[00_MOC_Diseño](00_MOC_Dise%C3%B1o.md)

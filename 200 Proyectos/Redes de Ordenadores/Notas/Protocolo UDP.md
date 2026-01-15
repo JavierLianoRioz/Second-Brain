@@ -18,5 +18,5 @@ UDP (**User Datagram Protocol**) ofrece un servicio mínimo y eficiente sobre IP
 - **Consultas Simples**: DNS, DHCP.
 
 ---
-**Relacionado**: [[Conceptos de la Capa de Transporte]]
+**Relacionado**: [Conceptos de la Capa de Transporte](Conceptos%20de%20la%20Capa%20de%20Transporte.md)
 **Fuente**: [[62_Tema6.pdf]]

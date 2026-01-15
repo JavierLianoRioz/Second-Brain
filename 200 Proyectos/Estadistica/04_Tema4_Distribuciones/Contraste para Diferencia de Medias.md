@@ -17,5 +17,5 @@ Donde **SE** (Error Típico) se calcula a partir de la cuasivarianza ponderada.
 - Si el **0 queda fuera**, rechazamos $H_0$ y afirmamos que existe una diferencia estadísticamente significativa.
 
 ---
-Enlace: [[Index|Tema 4]]
+Enlace: [Tema 4](../Index.md)
 Tags: #estadistica #contraste #medias #comparacion

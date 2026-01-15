@@ -4,7 +4,7 @@ La **Tercera Forma Normal (3FN)** se centra en eliminar las **Dependencias Trans
 
 ## Regla
 Una tabla está en **3FN** si:
-1.  Ya cumple con la [[Segunda_Forma_Normal_2FN]].
+1.  Ya cumple con la [Segunda_Forma_Normal_2FN](Segunda_Forma_Normal_2FN.md).
 2.  **No existen Dependencias Transitivas**: Ningún atributo no clave debe depender de otro atributo que no sea la Clave Primaria.
 
 ### ¿Qué es una Dependencia Transitiva?
@@ -64,4 +64,4 @@ Sacamos los atributos que dependen del atributo no clave (`ID_Depto`) a su propi
 *   **Consistencia**: Si cambiamos el nombre del departamento, cambia automáticamente para todos los empleados.
 
 ---
-[[00_MOC_Normalizacion]]
+[00_MOC_Normalizacion](00_MOC_Normalizacion.md)

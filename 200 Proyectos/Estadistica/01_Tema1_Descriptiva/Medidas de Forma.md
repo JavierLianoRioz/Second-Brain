@@ -15,5 +15,5 @@ Mide qué tan "puntiaguda" o "achatada" es la distribución en comparación con 
 - **Platicúrtica ($g_2 < 0$)**: Distribución más achatada o plana, con datos más dispersos.
 
 ---
-Enlace: [[Index|Tema 1]]
+Enlace: [Tema 1](../Index.md)
 Tags: #estadistica #forma #asimetria #curtosis

@@ -10,8 +10,8 @@ Let's Play es un mundo de minecraft que busca que me divierta haciendo proyectos
 **ToDo**:
 - [ ] Buscar un nombre real para el mundo.
 
-- [ ] [[101 Base]]
-- [ ] [[102 Trading Hall]]
+- [ ] [101 Base](101%20Base.md)
+- [ ] [102 Trading Hall](102%20Trading%20Hall.md)
 
 ## Permisos
 - Voy a usar un mod de chunkloader porque las enderpearls desaparecen y no sé todavía el porqué.

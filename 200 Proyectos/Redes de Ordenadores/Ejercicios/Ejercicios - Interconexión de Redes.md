@@ -106,5 +106,5 @@ Imagina que tienes una tarta de 256 porciones (`.0` a `.255`):
 | Pequeña| 10 | 16 | /28 | .96 - .111 |
 
 ---
-**Relacionado**: [[Direccionamiento IP y Subredes]], [[Fragmentación y NAT]]
+**Relacionado**: [Direccionamiento IP y Subredes](../Notas/Direccionamiento%20IP%20y%20Subredes.md), [Fragmentación y NAT](../Notas/Fragmentaci%C3%B3n%20y%20NAT.md)
 **Fuente**: [[54_ProblemasTema5.pdf]]

@@ -83,4 +83,4 @@ Si falla la energía antes del `COMMIT`, entra en juego la **Atomicidad** y la *
 *   **Saldos:** Ana=1000€, Pedro=500€. (Estado original).
 
 ---
-[[00_MOC_Transacciones]]
+[00_MOC_Transacciones](00_MOC_Transacciones.md)

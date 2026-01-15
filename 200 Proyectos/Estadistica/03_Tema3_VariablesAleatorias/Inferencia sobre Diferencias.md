@@ -23,5 +23,5 @@ Se da cuando medimos al **mismo individuo** en dos momentos distintos (ej: antes
   - $\chi^2 = \frac{(|A - D| - 1)^2}{A + D}$
 
 ---
-Enlace: [[Index|Tema 3]]
+Enlace: [Tema 3](../Index.md)
 Tags: #estadistica #comparativa #inferencia

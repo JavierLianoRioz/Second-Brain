@@ -11,5 +11,5 @@ Los protocolos **ARQ (Automatic Repeat Request)** combinan detección de errores
    - *Ventaja*: Ahorra tiempo, pero el alumno (receptor) tiene que ser más listo (tener buffer de reordenación).
 
 ---
-**Relacionado**: [[Control de Flujo]], [[Detección y Corrección de Errores]]
+**Relacionado**: [Control de Flujo](Control%20de%20Flujo.md), [Detección y Corrección de Errores](Detecci%C3%B3n%20y%20Correcci%C3%B3n%20de%20Errores.md)
 **Fuente**: [[32_Tema3.pdf]]

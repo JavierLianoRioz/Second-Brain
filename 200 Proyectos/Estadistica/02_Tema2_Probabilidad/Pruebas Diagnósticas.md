@@ -22,5 +22,5 @@ Calculados normalmente mediante el **Teorema de Bayes**:
 *Nota: El VPP y VPN dependen fuertemente de la **Prevalencia** (proporción de enfermos en la población). A menor prevalencia, mayor probabilidad de que un positivo sea falso.*
 
 ---
-Enlace: [[Index|Tema 2]]
+Enlace: [Tema 2](../Index.md)
 Tags: #estadistica #diagnostico #sensibilidad #especificidad #bayes

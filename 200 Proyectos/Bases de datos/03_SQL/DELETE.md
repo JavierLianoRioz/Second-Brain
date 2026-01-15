@@ -1,9 +1,9 @@
 # DELETE
 
-Comando [[SQL_DML]] para eliminar filas.
+Comando [SQL_DML](SQL_DML.md) para eliminar filas.
 
 > [!CAUTION]
-> Siempre usa [[SQL_WHERE]]. Si lo olvidas, borrarás **todos** los datos.
+> Siempre usa [SQL_WHERE](SQL_WHERE.md). Si lo olvidas, borrarás **todos** los datos.
 
 ## Sintaxis
 ```sql
@@ -16,4 +16,4 @@ DELETE FROM cliente WHERE id = 1;
 ```
 
 ---
-[[SQL_DML]]
+[SQL_DML](SQL_DML.md)

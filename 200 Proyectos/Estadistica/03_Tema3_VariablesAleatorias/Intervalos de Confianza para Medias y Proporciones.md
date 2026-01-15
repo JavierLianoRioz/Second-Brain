@@ -15,5 +15,5 @@ $$P = p \pm Z_{1-\alpha/2} \sqrt{\frac{pq}{n}}$$
 Donde $q = 1-p$. El error cometido es la parte de la derecha de la fórmula.
 
 ---
-Enlace: [[Index|Tema 3]]
+Enlace: [Tema 3](../Index.md)
 Tags: #estadistica #formulas #confianza

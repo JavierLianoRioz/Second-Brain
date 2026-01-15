@@ -17,5 +17,5 @@ Dígitos exactos de un número, excluyendo ceros usados solo para posicionar el 
 - **Regla general**: Usar una cifra significativa extra en cálculos intermedios.
 
 ---
-Enlace: [[Index|Tema 1]]
+Enlace: [Tema 1](../Index.md)
 Tags: #estadistica #matematicas

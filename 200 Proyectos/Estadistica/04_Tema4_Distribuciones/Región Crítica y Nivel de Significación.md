@@ -15,5 +15,5 @@ Es la probabilidad (fijada de antemano) de rechazar $H_0$ cuando esta es en real
 Es el valor (de tablas tipo $Z$ o $t$) que separa la región crítica de la de no rechazo.
 
 ---
-Enlace: [[Index|Tema 4]]
+Enlace: [Tema 4](../Index.md)
 Tags: #estadistica #contraste #probabilidad

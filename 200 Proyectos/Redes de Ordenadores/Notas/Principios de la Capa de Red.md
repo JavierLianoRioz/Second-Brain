@@ -13,5 +13,5 @@ La capa de red (Capa 3) es responsable del transporte de paquetes extremo a extr
 - **Datagramas**: Como el correo postal. Cada carta (paquete) puede ir por una ruta distinta si el cartero ve que hay atasco en una calle.
 
 ---
-**Relacionado**: [[Conceptos de Enrutamiento]], [[Protocolo IP (IPv4 e IPv6)]]
+**Relacionado**: [Conceptos de Enrutamiento](Conceptos%20de%20Enrutamiento.md), [Protocolo IP (IPv4 e IPv6)](Protocolo%20IP%20%28IPv4%20e%20IPv6%29.md)
 **Fuente**: [[52_Tema5.pdf]]

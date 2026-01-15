@@ -12,4 +12,4 @@ Elegir el tipo correcto es vital para la integridad y el rendimiento.
 | **BOOLEAN** | Verdadero o Falso. | `activo BOOLEAN` |
 
 ---
-[[SQL_DDL]]
+[SQL_DDL](SQL_DDL.md)

@@ -25,12 +25,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "200 Proyectos/Estadistica/Solucionario - Modelo B.md",
+                "file": "200 Proyectos/Estadistica/Solucionario - Modelo A.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Solucionario - Modelo B"
+              "title": "Solucionario - Modelo A"
             }
           },
           {
@@ -39,16 +39,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "200 Proyectos/Estadistica/01_Tema1_Descriptiva/Medidas de Centralización.md",
+                "file": "200 Proyectos/Bases de datos/03_SQL/00_MOC_SQL.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Medidas de Centralización"
+              "title": "00_MOC_SQL"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -115,7 +115,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "200 Proyectos/Estadistica/Solucionario - Modelo B.md",
+                "file": "200 Proyectos/Bases de datos/03_SQL/00_MOC_SQL.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -143,7 +143,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of Solucionario - Modelo B"
+              "title": "Graph of 00_MOC_SQL"
             }
           }
         ]
@@ -248,7 +248,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "200 Proyectos/Estadistica/Solucionario - Modelo B.md",
+                "file": "200 Proyectos/Bases de datos/03_SQL/00_MOC_SQL.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -276,7 +276,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of Solucionario - Modelo B"
+              "title": "Graph of 00_MOC_SQL"
             }
           }
         ]
@@ -298,12 +298,16 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "ac1a19bd3be470b5",
+  "active": "712167e3c33fc024",
   "lastOpenFiles": [
+    "convert_links.py",
+    "Nuevo Documento de texto.txt",
+    "200 Proyectos/Bases de datos/00_Indice.md",
+    "200 Proyectos/Estadistica/01_Tema1_Descriptiva/Medidas de Centralización.md",
     "200 Proyectos/Estadistica/Solucionario - Modelo A.md",
     "200 Proyectos/Estadistica/Solucionario - Modelo B.md",
+    "200 Proyectos/Estadistica/Simulacro de Examen - Modelo A.md",
     "200 Proyectos/Estadistica/Simulacro de Examen - Modelo B.md",
-    "200 Proyectos/Estadistica/01_Tema1_Descriptiva/Medidas de Centralización.md",
     "200 Proyectos/Estadistica/01_Tema1_Descriptiva/Index.md",
     "200 Proyectos/Estadistica/01_Tema1_Descriptiva/Medidas de Posición (Cuantiles).md",
     "200 Proyectos/Estadistica/Index.md",
@@ -322,12 +326,9 @@
     "200 Proyectos/Estadistica/04_Tema4_Distribuciones/Tipos de Contrastes.md",
     "200 Proyectos/Estadistica/04_Tema4_Distribuciones/Hipótesis Nula y Alternativa.md",
     "200 Proyectos/Estadistica/04_Tema4_Distribuciones/Conceptos de Contraste de Hipótesis.md",
-    "200 Proyectos/Estadistica/Simulacro de Examen - Modelo A.md",
     "200 Proyectos/Estadistica/Ejercicios de Examen.md",
     "500 Biblioteca/Estadistica/Ejercicios/Formulario/FORMULARIO.pdf",
     "500 Biblioteca/Estadistica/Ejercicios/Formulario/Tabla de la Distribución Normal.pdf",
-    "200 Proyectos/Estadistica/02_Tema2_Probabilidad/Pruebas Diagnósticas.md",
-    "200 Proyectos/Estadistica/01_Tema1_Descriptiva/Medidas de Forma.md",
     "500 Biblioteca/Estadistica/Ejercicios/Examen Enero 2024-2025/[2425] EXAMEN FINAL_vCV.pdf",
     "200 Proyectos/Estadistica/ejercicios_cap_1_2.txt",
     "200 Proyectos/Estadistica/libro_extracto.txt",
@@ -335,7 +336,6 @@
     "200 Proyectos/Estadistica/Examen_Final_2425.txt",
     "200 Proyectos/Estadistica/Repaso_4.txt",
     "200 Proyectos/Estadistica/Repaso_3.txt",
-    "200 Proyectos/Estadistica/Repaso_1_2.txt",
     "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 1/Clase 13 (repaso)/images/ejercicios_repaso/1761207385651.png",
     "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 1/Clase 02/images/05_intro_modelo_relacional/1757671896087.png",
     "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 1/Clase 02/images/05_intro_modelo_relacional/1757671989194.png",

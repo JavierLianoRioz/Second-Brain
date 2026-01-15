@@ -23,5 +23,5 @@ Aunque parezca redundante, cumplen funciones distintas:
 **Sobre la seguridad (Spoofing)**: La MAC no se diseñó para ser segura, sino para ser eficiente. Que sea "simulable" es un riesgo de seguridad, pero técnicamente sigue siendo necesaria para que el hardware sepa a quién "escuchar" en el cable.
 
 ---
-**Relacionado**: [[Modelo TCP-IP]], [[Arquitectura de Protocolos]]
+**Relacionado**: [Modelo TCP-IP](Modelo%20TCP-IP.md), [Arquitectura de Protocolos](Arquitectura%20de%20Protocolos.md)
 **Fuente**: [[12_Tema1.pdf]]

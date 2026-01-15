@@ -37,5 +37,5 @@ El coeficiente de determinación ($R^2$) es el cuadrado del coeficiente de Pears
 - **No lineal**: La función sigue otra forma (curva, exponencial, etc.).
 
 ---
-Enlace: [[Index|Tema 1]]
+Enlace: [Tema 1](../Index.md)
 Tags: #estadistica #regresion #modelado

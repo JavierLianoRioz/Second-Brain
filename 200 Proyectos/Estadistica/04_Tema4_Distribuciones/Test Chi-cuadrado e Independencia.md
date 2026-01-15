@@ -20,5 +20,5 @@ $$\chi^2 = \sum \frac{(O_{ij} - E_{ij})^2}{E_{ij}}$$
 - Si el p-valor $< \alpha$ (normalmente 0.05), rechazamos $H_0$ y concluimos que hay una relación significativa.
 
 ---
-Enlace: [[Index|Tema 4]]
+Enlace: [Tema 4](../Index.md)
 Tags: #estadistica #chi-cuadrado #independencia #contingencia

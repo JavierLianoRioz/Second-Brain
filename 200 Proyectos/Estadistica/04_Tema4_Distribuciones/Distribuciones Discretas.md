@@ -24,5 +24,5 @@ Se aplica a eventos que ocurren en un intervalo específico (tiempo, área, etc.
 - **Aproximación**: Se usa como aproximación de la Binomial cuando $n > 30$ y $p < 0.1$ ($\mu = n \cdot p$).
 
 ---
-Enlace: [[Index|Tema 4]]
+Enlace: [Tema 4](../Index.md)
 Tags: #estadistica #probabilidad #binomial #poisson

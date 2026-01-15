@@ -14,5 +14,5 @@ Sistema de cableado estandarizado para dotar de flexibilidad a las instalaciones
 - **ANSI/TIA-568**: Estándar americano muy extendido (Conectorización RJ45).
 
 ---
-**Relacionado**: [[Tipos de Medios de Transmisión]]
+**Relacionado**: [Tipos de Medios de Transmisión](Tipos%20de%20Medios%20de%20Transmisi%C3%B3n.md)
 **Fuente**: [[22_Tema2.pdf]]

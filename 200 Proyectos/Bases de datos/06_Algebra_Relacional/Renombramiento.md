@@ -6,4 +6,4 @@ Cambia el nombre de una relación o de sus atributos. Útil para auto-joins o cl
 `ρ S (R)` (Renombra R como S)
 
 ---
-[[00_MOC_Algebra_Relacional]]
+[00_MOC_Algebra_Relacional](00_MOC_Algebra_Relacional.md)

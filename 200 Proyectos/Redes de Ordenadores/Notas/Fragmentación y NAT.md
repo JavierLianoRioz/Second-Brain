@@ -25,5 +25,5 @@ Cuando te den un datagrama de tamaño $X$ y un un MTU de $M$:
 4. **MF (More Fragments)**: Poner un `1` si siguen más fragmentos, y un `0` solo en el último.
 
 ---
-**Relacionado**: [[Protocolo IP (IPv4 e IPv6)]], [[Ejercicios - Interconexión de Redes]]
+**Relacionado**: [Protocolo IP (IPv4 e IPv6)](Protocolo%20IP%20%28IPv4%20e%20IPv6%29.md), [Ejercicios - Interconexión de Redes](../Ejercicios/Ejercicios%20-%20Interconexi%C3%B3n%20de%20Redes.md)
 **Fuente**: [[52_Tema5.pdf]]

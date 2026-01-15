@@ -14,4 +14,4 @@ Define cuántas instancias de una entidad pueden relacionarse con instancias de 
 | **N:M (Muchos a Muchos)** | Ambas entidades pueden relacionarse con múltiples instancias de la otra. | `Estudiante` cursa muchas `Asignaturas`. |
 
 ---
-[[Modelo_Entidad_Relacion]]
+[Modelo_Entidad_Relacion](Modelo_Entidad_Relacion.md)

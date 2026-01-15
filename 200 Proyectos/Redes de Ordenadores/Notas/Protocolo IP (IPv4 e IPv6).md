@@ -22,5 +22,5 @@ El Protocolo de Internet (IP) es el pilar de la capa de red en el modelo TCP/IP.
   - *Path MTU Discovery*: El host origen averigua el tamaño máximo permitido en todo el camino antes de enviar.
 
 ---
-**Relacionado**: [[Direccionamiento IP y Subredes]], [[Fragmentación y NAT]]
+**Relacionado**: [Direccionamiento IP y Subredes](Direccionamiento%20IP%20y%20Subredes.md), [Fragmentación y NAT](Fragmentaci%C3%B3n%20y%20NAT.md)
 **Fuente**: [[52_Tema5.pdf]]

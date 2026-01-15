@@ -7,7 +7,7 @@ Las bases de datos se pueden clasificar según diversos criterios:
 *   **Analíticas (OLAP)**: Optimizadas para consultas complejas y análisis histórico (ej. Business Intelligence).
 
 ## Por Modelo de Datos
-*   **Relacional**: Datos en tablas relacionadas. Estándar de la industria. Ver [[Modelo_Relacional_Conceptos]].
+*   **Relacional**: Datos en tablas relacionadas. Estándar de la industria. Ver [Modelo_Relacional_Conceptos](../02_Dise%C3%B1o/Modelo_Relacional_Conceptos.md).
 *   **NoSQL**:
     *   **Documental**: JSON/BSON (MongoDB).
     *   **Clave-Valor**: Alta velocidad (Redis).
@@ -21,4 +21,4 @@ Las bases de datos se pueden clasificar según diversos criterios:
 *   **Cloud**: Alojadas y gestionadas por proveedores (AWS RDS, Azure SQL).
 
 ---
-[[00_MOC_Introduccion]]
+[00_MOC_Introduccion](00_MOC_Introduccion.md)

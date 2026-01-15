@@ -9,4 +9,4 @@ Combina las tuplas de dos relaciones compatibles. Elimina duplicados.
 Las relaciones deben ser **unión-compatibles** (mismo número y tipo de atributos).
 
 ---
-[[00_MOC_Algebra_Relacional]]
+[00_MOC_Algebra_Relacional](00_MOC_Algebra_Relacional.md)

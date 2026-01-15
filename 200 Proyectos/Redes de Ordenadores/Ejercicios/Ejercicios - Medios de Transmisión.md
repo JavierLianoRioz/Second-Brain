@@ -27,5 +27,5 @@ Piénsalo como una carretera de sentido único. Si quieres ir y volver (comunica
 **La Polaridad**: Es vital conectar el "emisor" de un lado con el "receptor" del otro. Si conectas TX con TX, es como si dos personas intentaran hablar por el mismo tubo a la vez sin que nadie escuche en el otro extremo: no hay comunicación.
 
 ---
-**Relacionado**: [[Señales Analógicas y Digitales]], [[Tipos de Medios de Transmisión]]
+**Relacionado**: [Señales Analógicas y Digitales](../Notas/Se%C3%B1ales%20Anal%C3%B3gicas%20y%20Digitales.md), [Tipos de Medios de Transmisión](../Notas/Tipos%20de%20Medios%20de%20Transmisi%C3%B3n.md)
 **Fuente**: [[26_ProblemasTema2.pdf]]

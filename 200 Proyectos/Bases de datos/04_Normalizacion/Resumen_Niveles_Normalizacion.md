@@ -6,11 +6,11 @@ La normalización es un proceso progresivo. Cada nivel (Forma Normal) implica qu
 
 | Forma Normal                     | Objetivo Principal    | Problema que Elimina                                                 | Regla Clave                                                                         |
 | :------------------------------- | :-------------------- | :------------------------------------------------------------------- | :---------------------------------------------------------------------------------- |
-| **[[Primera_Forma_Normal_1FN]]** | **Atomicidad**        | Grupos repetitivos y atributos compuestos.                           | Cada celda debe tener un solo valor.                                                |
-| **[[Segunda_Forma_Normal_2FN]]** | **Dependencia Total** | Dependencia Parcial (Atributo no clave depende de *parte* de la PK). | Todo atributo no clave depende de *toda* la PK.                                     |
-| **[[Tercera_Forma_Normal_3FN]]** | **Independencia**     | Dependencia Transitiva (Atributo no clave depende de otro no clave). | Ningún atributo no clave depende de otro atributo no clave.                         |
-| **[[Cuarta_Forma_Normal_4FN]]**  | **Desacoplamiento**   | Dependencia Multivaluada (MVD) independiente.                        | Separar hechos independientes que ocurren sobre la misma entidad.                   |
-| **[[Quinta_Forma_Normal_5FN]]**  | **Reconstrucción**    | Dependencia de Join (JD).                                            | Evitar pérdidas de información o tuplas espurias al descomponer relaciones N-arias. |
+| **[Primera_Forma_Normal_1FN](Primera_Forma_Normal_1FN.md)** | **Atomicidad**        | Grupos repetitivos y atributos compuestos.                           | Cada celda debe tener un solo valor.                                                |
+| **[Segunda_Forma_Normal_2FN](Segunda_Forma_Normal_2FN.md)** | **Dependencia Total** | Dependencia Parcial (Atributo no clave depende de *parte* de la PK). | Todo atributo no clave depende de *toda* la PK.                                     |
+| **[Tercera_Forma_Normal_3FN](Tercera_Forma_Normal_3FN.md)** | **Independencia**     | Dependencia Transitiva (Atributo no clave depende de otro no clave). | Ningún atributo no clave depende de otro atributo no clave.                         |
+| **[Cuarta_Forma_Normal_4FN](Cuarta_Forma_Normal_4FN.md)**  | **Desacoplamiento**   | Dependencia Multivaluada (MVD) independiente.                        | Separar hechos independientes que ocurren sobre la misma entidad.                   |
+| **[Quinta_Forma_Normal_5FN](Quinta_Forma_Normal_5FN.md)**  | **Reconstrucción**    | Dependencia de Join (JD).                                            | Evitar pérdidas de información o tuplas espurias al descomponer relaciones N-arias. |
 
 ## Resumen Visual
 
@@ -28,4 +28,4 @@ graph TD
 *   **4FN y 5FN** son necesarias en casos complejos de diseño lógico donde existen relaciones multivaluadas independientes o dependencias cíclicas complejas.
 
 ---
-[[00_MOC_Normalizacion]]
+[00_MOC_Normalizacion](00_MOC_Normalizacion.md)

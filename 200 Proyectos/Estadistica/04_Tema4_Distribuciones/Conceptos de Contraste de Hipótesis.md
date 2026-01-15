@@ -10,5 +10,5 @@ Es una proposición sobre los valores que toma un parámetro poblacional.
     - **Bilateral**: El rango excluye un valor central (ej: $\mu \neq 4$).
 
 ---
-Enlace: [[Index|Tema 4]]
+Enlace: [Tema 4](../Index.md)
 Tags: #estadistica #contraste

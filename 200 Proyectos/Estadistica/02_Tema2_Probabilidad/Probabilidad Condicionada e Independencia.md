@@ -19,5 +19,5 @@ $$P(A|B) = P(A) \quad \text{o bien} \quad P(A \cap B) = P(A) \cdot P(B)$$
 Si $P(A|B) \neq P(A)$, entonces los sucesos están condicionados o son dependientes.
 
 ---
-Enlace: [[Index|Tema 2]]
+Enlace: [Tema 2](../Index.md)
 Tags: #estadistica #probabilidad #condicionada

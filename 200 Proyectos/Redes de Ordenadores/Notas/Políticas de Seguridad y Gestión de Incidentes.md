@@ -14,5 +14,5 @@ Marco organizativo para mantener la seguridad a largo plazo.
 4. **Post-incidente**: Lecciones aprendidas para mejorar el sistema.
 
 ---
-**Relacionado**: [[Fundamentos de Seguridad (Triada CIA)]]
+**Relacionado**: [Fundamentos de Seguridad (Triada CIA)](Fundamentos%20de%20Seguridad%20%28Triada%20CIA%29.md)
 **Fuente**: [[72_Tema7.pdf]]

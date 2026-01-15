@@ -12,5 +12,5 @@ Al tomar una decisión basada en una muestra, siempre existe la posibilidad de e
 - **Potencia del Contraste ($1-\beta$)**: Probabilidad de rechazar $H_0$ cuando es falsa (acierto al detectar el efecto).
 
 ---
-Enlace: [[Index|Tema 4]]
+Enlace: [Tema 4](../Index.md)
 Tags: #estadistica #contraste #error

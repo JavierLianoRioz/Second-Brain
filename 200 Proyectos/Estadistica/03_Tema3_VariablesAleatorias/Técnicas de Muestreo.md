@@ -16,5 +16,5 @@ Se conoce la probabilidad de que un individuo sea elegido.
 No se conoce la probabilidad de selección. Suelen esconder sesgos y no permiten generalizar con rigor estadístico.
 
 ---
-Enlace: [[Index|Tema 3]]
+Enlace: [Tema 3](../Index.md)
 Tags: #estadistica #muestreo #tecnicas

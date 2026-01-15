@@ -28,5 +28,5 @@ En la capa física, los datos se representan mediante señales eléctricas o ele
 - **Longitud de onda ($\lambda$)**: Distancia de un ciclo ($\lambda = v / f$).
 
 ---
-**Relacionado**: [[Dominio del Tiempo y de la Frecuencia]], [[Dificultades en la Transmisión]]
+**Relacionado**: [Dominio del Tiempo y de la Frecuencia](Dominio%20del%20Tiempo%20y%20de%20la%20Frecuencia.md), [Dificultades en la Transmisión](Dificultades%20en%20la%20Transmisi%C3%B3n.md)
 **Fuente**: [[22_Tema2.pdf]]

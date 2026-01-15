@@ -56,5 +56,5 @@ b) Tras enviar tramas 0, 1 y 2 y recibir ACKs de 0 y 1.
    - Resulta que la línea B-C necesita ser más rápida que la A-B porque Parada y Espera pierde mucho tiempo esperando el ACK, mientras que Ventana Deslizante aprovecha mejor el tiempo.
 
 ---
-**Relacionado**: [[Transmisión Asíncrona vs Síncrona]], [[Protocolos ARQ]]
+**Relacionado**: [Transmisión Asíncrona vs Síncrona](../Notas/Transmisi%C3%B3n%20As%C3%ADncrona%20vs%20S%C3%ADncrona.md), [Protocolos ARQ](../Notas/Protocolos%20ARQ.md)
 **Fuente**: [[34_ProblemasTema3.pdf]]

@@ -19,5 +19,5 @@ Cuando hay infinitos valores, se agrupan en intervalos $(L_{i-1}, L_i)$.
     - **Criterio Propio**: Según la naturaleza de los datos.
 
 ---
-Enlace: [[Index|Tema 1]]
+Enlace: [Tema 1](../Index.md)
 Tags: #estadistica #tablas

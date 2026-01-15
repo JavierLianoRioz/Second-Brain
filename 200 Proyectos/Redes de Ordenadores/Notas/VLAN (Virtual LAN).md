@@ -16,5 +16,5 @@ Cuando una trama pasa por un *Trunk*, se le añaden **4 bytes** extra a la cabec
 > Añadir estos 4 bytes cambia la trama, por lo que el **CRC (FCS)** debe recalcularse por completo en cada paso.
 
 ---
-**Relacionado**: [[Dispositivos de Interconexión (Hubs vs Switches)]]
+**Relacionado**: [Dispositivos de Interconexión (Hubs vs Switches)](Dispositivos%20de%20Interconexi%C3%B3n%20%28Hubs%20vs%20Switches%29.md)
 **Fuente**: [[42_Tema4.pdf]]

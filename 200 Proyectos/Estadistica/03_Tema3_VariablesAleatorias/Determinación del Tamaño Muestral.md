@@ -15,5 +15,5 @@ $$n \geq \frac{Z_{1-\alpha/2}^2 \cdot p \cdot q}{d^2}$$
 *Nota: Si no se conoce $p$, se puede usar el caso más desfavorable ($p=0,5$, $q=0,5$) para maximizar el tamaño de la muestra.*
 
 ---
-Enlace: [[Index|Tema 3]]
+Enlace: [Tema 3](../Index.md)
 Tags: #estadistica #muestreo #formulas

@@ -19,5 +19,5 @@ Configuración automática de red (IP, Máscara, Gateway, DNS).
 Traduce nombres legibles (ej. `google.com`) a direcciones IP numéricas.
 
 ---
-**Relacionado**: [[Principios de la Capa de Red]]
+**Relacionado**: [Principios de la Capa de Red](Principios%20de%20la%20Capa%20de%20Red.md)
 **Fuente**: [[52_Tema5.pdf]]

@@ -2,8 +2,8 @@
 
 ## Regla
 Una tabla está en **4FN** si:
-1.  Cumple con [[Tercera_Forma_Normal_3FN]].
-2.  No existen **[[Dependencia_Multivaluada]]** independientes.
+1.  Cumple con [Tercera_Forma_Normal_3FN](Tercera_Forma_Normal_3FN.md).
+2.  No existen **[Dependencia_Multivaluada](Dependencia_Multivaluada.md)** independientes.
 
 ## Ejemplo Violación
 Un `Profesor` enseña `Materias` y practica `Deportes`.
@@ -15,4 +15,4 @@ Separar en dos tablas independientes:
 2.  `Aficiones (Profesor, Deporte)`
 
 ---
-[[00_MOC_Normalizacion]]
+[00_MOC_Normalizacion](00_MOC_Normalizacion.md)

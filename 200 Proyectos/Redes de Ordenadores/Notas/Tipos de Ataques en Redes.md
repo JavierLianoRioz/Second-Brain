@@ -13,5 +13,5 @@ Clasificación de las acciones maliciosas más comunes en redes.
   - *Analogía*: Cien personas intentando entrar por una puerta estrecha a la vez; nadie logra pasar y el negocio se para.
 
 ---
-**Relacionado**: [[Mecanismos de Defensa y Diseño Seguro]]
+**Relacionado**: [Mecanismos de Defensa y Diseño Seguro](Mecanismos%20de%20Defensa%20y%20Dise%C3%B1o%20Seguro.md)
 **Fuente**: [[72_Tema7.pdf]]

@@ -31,5 +31,5 @@ Problemas resueltos del Tema 6 sobre TCP, UDP y ventanas de transmisión.
 - **Conclusión**: En redes de "tubo largo" (alto retardo), necesitas ventanas gigantes ($W$ muy grande) para mantener el tubo lleno y que la velocidad no caiga drásticamente.
 
 ---
-**Relacionado**: [[Control de Flujo, Errores y Congestión en TCP]]
+**Relacionado**: [Control de Flujo, Errores y Congestión en TCP](../Notas/Control%20de%20Flujo%2C%20Errores%20y%20Congesti%C3%B3n%20en%20TCP.md)
 **Fuente**: [[64_ProblemasTema6.pdf]]

@@ -20,5 +20,5 @@ El control de errores añade redundancia para garantizar la integridad de los da
   - Si es `1`, entonces sí es el patrón de final real.
 
 ---
-**Relacionado**: [[Protocolos ARQ]]
+**Relacionado**: [Protocolos ARQ](Protocolos%20ARQ.md)
 **Fuente**: [[32_Tema3.pdf]]

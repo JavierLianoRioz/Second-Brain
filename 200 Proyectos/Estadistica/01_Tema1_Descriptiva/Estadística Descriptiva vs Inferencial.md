@@ -15,5 +15,5 @@ Se encarga de:
 - Cuantificar la "confianza" de la inferencia.
 
 ---
-Enlace: [[Index|Tema 1]]
+Enlace: [Tema 1](../Index.md)
 Tags: #estadistica #conceptos

@@ -18,5 +18,5 @@ Los medios se dividen en guiados (cable físico) y no guiados (espacio libre).
 - **Dificultades específicas**: Reflexión, Difracción (rodear obstáculos), Dispersión y Atenuación por lluvia/humedad.
 
 ---
-**Relacionado**: [[Cableado Estructurado]]
+**Relacionado**: [Cableado Estructurado](Cableado%20Estructurado.md)
 **Fuente**: [[22_Tema2.pdf]]

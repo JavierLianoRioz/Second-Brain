@@ -16,5 +16,5 @@ Las señales pueden representarse de dos formas complementarias.
   - *Importante*: Una señal "cuadrada" perfecta requeriría un ancho de banda infinito. En la práctica, filtramos las frecuencias altas y nos quedamos con una aproximación aceptable.
 
 ---
-**Relacionado**: [[Señales Analógicas y Digitales]]
+**Relacionado**: [Señales Analógicas y Digitales](Se%C3%B1ales%20Anal%C3%B3gicas%20y%20Digitales.md)
 **Fuente**: [[22_Tema2.pdf]]

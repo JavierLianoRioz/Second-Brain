@@ -1,6 +1,6 @@
 # Comandos de Control de Transacciones (TCL)
 
-Estos son los comandos principales del [[Comandos de Control de Transacciones (TCL)]] para gestionar una [[Transacción]]:
+Estos son los comandos principales del [Comandos de Control de Transacciones (TCL)](Comandos%20de%20Control%20de%20Transacciones%20%28TCL%29.md) para gestionar una [Transacción](Transacci%C3%B3n.md):
 
 *   **`START TRANSACTION`** o **`BEGIN`**: Inicia una nueva transacción.
 *   **`COMMIT`**: Guarda de forma permanente todos los cambios realizados en la transacción actual.
@@ -9,4 +9,4 @@ Estos son los comandos principales del [[Comandos de Control de Transacciones (T
 *   **`ROLLBACK TO nombre_punto`**: Revierte la transacción hasta el `SAVEPOINT` especificado, sin anular la transacción completa.
 
 ---
-**Relacionado:** [[Transacción]], [[Comandos de Control de Transacciones (TCL)]], [[Propiedades ACID]]
+**Relacionado:** [Transacción](Transacci%C3%B3n.md), [Comandos de Control de Transacciones (TCL)](Comandos%20de%20Control%20de%20Transacciones%20%28TCL%29.md), [Propiedades ACID](Propiedades%20ACID.md)

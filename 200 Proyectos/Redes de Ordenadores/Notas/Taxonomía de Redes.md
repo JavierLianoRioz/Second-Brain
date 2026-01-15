@@ -37,5 +37,5 @@ Modelan cómo están conectados los dispositivos físicamente:
 - **Malla (Mesh)**: Múltiples conexiones entre nodos (redundancia).
 
 ---
-**Relacionado**: [[Modelo General de Comunicaciones]], [[Arquitectura de Protocolos]]
+**Relacionado**: [Modelo General de Comunicaciones](Modelo%20General%20de%20Comunicaciones.md), [Arquitectura de Protocolos](Arquitectura%20de%20Protocolos.md)
 **Fuente**: [[12_Tema1.pdf]]

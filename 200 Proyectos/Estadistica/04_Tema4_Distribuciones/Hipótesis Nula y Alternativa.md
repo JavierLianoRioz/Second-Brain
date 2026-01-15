@@ -14,5 +14,5 @@ Es la negación de $H_0$ y generalmente lo que el investigador intenta demostrar
 - **Decisión**: Se acepta o no se acepta.
 
 ---
-Enlace: [[Index|Tema 4]]
+Enlace: [Tema 4](../Index.md)
 Tags: #estadistica #contraste #metodologia

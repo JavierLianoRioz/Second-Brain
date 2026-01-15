@@ -14,5 +14,5 @@ La sincronización es fundamental para que el receptor sepa exactamente cuándo 
   - *Ejemplo*: Si la señal de "PARAN" es cinco '1's seguidos, el emisor mete un '0' falso cada vez que ve cinco '1's para que no se malinterprete como el final. El receptor quita ese '0' sobrante.
 
 ---
-**Relacionado**: [[Detección y Corrección de Errores]], [[Control de Flujo]]
+**Relacionado**: [Detección y Corrección de Errores](Detecci%C3%B3n%20y%20Correcci%C3%B3n%20de%20Errores.md), [Control de Flujo](Control%20de%20Flujo.md)
 **Fuente**: [[32_Tema3.pdf]]

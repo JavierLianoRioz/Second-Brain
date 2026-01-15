@@ -14,5 +14,5 @@ Estrategias para proteger la red desde su arquitectura.
 - **Actualización y Parcheado**: Mantener el firmware y software al día para eliminar vulnerabilidades conocidas.
 
 ---
-**Relacionado**: [[Dispositivos de Seguridad (Firewalls, IDS, IPS)]], [[Zona desmilitarizada (DMZ)]]
+**Relacionado**: [Dispositivos de Seguridad (Firewalls, IDS, IPS)](Dispositivos%20de%20Seguridad%20%28Firewalls%2C%20IDS%2C%20IPS%29.md), [[Zona desmilitarizada (DMZ)]]
 **Fuente**: [[72_Tema7.pdf]]

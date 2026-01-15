@@ -54,5 +54,5 @@ Sí, pero es difícil. Los puertos son un número de 16 bits, por lo que el máx
 > Para que un usuario normal "llene" los puertos, tendría que abrir miles de conexiones simultáneas. Solo es un problema real en servidores masivos (como los de Google) o balanceadores de carga.
 
 ---
-**Relacionado**: [[Cabecera y Ciclo de Vida de TCP]]
+**Relacionado**: [Cabecera y Ciclo de Vida de TCP](Cabecera%20y%20Ciclo%20de%20Vida%20de%20TCP.md)
 **Fuente**: [[62_Tema6.pdf]]

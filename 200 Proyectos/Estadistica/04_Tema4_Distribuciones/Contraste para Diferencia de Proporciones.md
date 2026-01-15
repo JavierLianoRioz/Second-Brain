@@ -19,5 +19,5 @@ Este valor se compara con el valor crítico **$Z_{1-\alpha/2}$**.
 - Si el p-valor es mayor que $\alpha$, concluimos que no hay evidencia suficiente para decir que las proporciones son distintas.
 
 ---
-Enlace: [[Index|Tema 4]]
+Enlace: [Tema 4](../Index.md)
 Tags: #estadistica #contraste #proporciones #comparacion

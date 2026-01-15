@@ -20,5 +20,5 @@ La comunicación se divide en "capas" o niveles de abstracción:
 - **Desencapsulamiento**: Proceso inverso al recibir los datos (abrir el saco, abrir el sobre, leer la carta).
 
 ---
-**Relacionado**: [[Modelo OSI]], [[Modelo TCP-IP]]
+**Relacionado**: [Modelo OSI](Modelo%20OSI.md), [Modelo TCP-IP](Modelo%20TCP-IP.md)
 **Fuente**: [[12_Tema1.pdf]]

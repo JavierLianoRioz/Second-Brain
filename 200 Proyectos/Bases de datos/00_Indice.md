@@ -6,22 +6,22 @@ Bienvenido a los apuntes de Bases de Datos. Este repositorio sigue el método **
 
 Navega por los temas principales a través de sus mapas:
 
-### 1. [[00_MOC_Introduccion|Introducción y Fundamentos]]
+### 1. [Introducción y Fundamentos](01_Introduccion/00_MOC_Introduccion.md)
 *   Historia, Definiciones, SGBD, Arquitectura.
 
-### 2. [[00_MOC_Diseño|Diseño de Bases de Datos]]
+### 2. [Diseño de Bases de Datos](02_Dise%C3%B1o/00_MOC_Dise%C3%B1o.md)
 *   Metodología, Modelo ER, Modelo Relacional, Caso de Estudio.
 
-### 3. [[00_MOC_SQL|Lenguaje SQL]]
+### 3. [Lenguaje SQL](03_SQL/00_MOC_SQL.md)
 *   DDL, DML, Consultas SELECT.
 
-### 4. [[00_MOC_Normalizacion|Normalización]]
+### 4. [Normalización](04_Normalizacion/00_MOC_Normalizacion.md)
 *   Objetivos, Dependencias, Formas Normales (1FN-5FN).
 
-### 5. [[00_MOC_Transacciones|Transacciones]]
+### 5. [Transacciones](05_Transacciones/00_MOC_Transacciones.md)
 *   Concepto, ACID, Control (COMMIT, ROLLBACK).
 
-### 6. [[00_MOC_Algebra_Relacional|Álgebra Relacional]]
+### 6. [Álgebra Relacional](06_Algebra_Relacional/00_MOC_Algebra_Relacional.md)
 *   Operadores Fundamentales y Derivados.
 
 ---

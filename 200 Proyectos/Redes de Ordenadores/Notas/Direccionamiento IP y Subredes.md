@@ -27,5 +27,5 @@ Para ejercicios donde tienes que dividir una red en trozos de distintos tamaños
 4. **Siguiente Salto**: La siguiente subred empieza exactamente después de donde termina el trozo actual ($2^h$).
 
 ---
-**Relacionado**: [[Ejercicios - Interconexión de Redes]]
+**Relacionado**: [Ejercicios - Interconexión de Redes](../Ejercicios/Ejercicios%20-%20Interconexi%C3%B3n%20de%20Redes.md)
 **Fuente**: [[52_Tema5.pdf]]

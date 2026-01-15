@@ -14,5 +14,5 @@ Consiste en obtener un único valor numérico para aproximar un parámetro pobla
 4. **Suficiencia**: Aprovecha toda la información de la muestra.
 
 ---
-Enlace: [[Index|Tema 3]]
+Enlace: [Tema 3](../Index.md)
 Tags: #estadistica #estimacion

@@ -14,5 +14,5 @@ La probabilidad es el límite al que tiende la frecuencia relativa de un suceso 
 Grado de certeza o credibilidad personal que se posee sobre un suceso a priori. Depende de la información previa y puede variar.
 
 ---
-Enlace: [[Index|Tema 2]]
+Enlace: [Tema 2](../Index.md)
 Tags: #estadistica #probabilidad

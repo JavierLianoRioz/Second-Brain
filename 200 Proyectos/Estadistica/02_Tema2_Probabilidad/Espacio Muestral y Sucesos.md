@@ -21,5 +21,5 @@ Subconjunto del espacio muestral.
 - **Sistema Exhaustivo y Excluyente**: Conjunto de sucesos que son mutuamente excluyentes y cuya unión es el espacio muestral. Conforman el grupo completo de eventos.
 
 ---
-Enlace: [[Index|Tema 2]]
+Enlace: [Tema 2](../Index.md)
 Tags: #estadistica #probabilidad #sucesos

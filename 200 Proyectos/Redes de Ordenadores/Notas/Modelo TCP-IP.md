@@ -15,5 +15,5 @@ A diferencia del modelo OSI, el modelo TCP/IP es la arquitectura real sobre la q
 - **Puerto**: Identifica a una aplicación específica dentro de un host (Capa de Transporte). El conjunto (IP:Puerto) se denomina a veces **Socket**.
 
 ---
-**Relacionado**: [[Modelo OSI]], [[Arquitectura de Protocolos]]
+**Relacionado**: [Modelo OSI](Modelo%20OSI.md), [Arquitectura de Protocolos](Arquitectura%20de%20Protocolos.md)
 **Fuente**: [[12_Tema1.pdf]]

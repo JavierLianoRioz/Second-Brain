@@ -10,9 +10,9 @@ Este es el punto de entrada para los apuntes de Estadística, organizados siguie
 - [[04_Tema4_Distribuciones/Index|04. Distribuciones de Probabilidad]]
 
 ## Preparación para el Examen
-- [[Ejercicios de Examen|Guía de Ejercicios y Teoría vinculada]]
-- **Modelo A**: [[Simulacro de Examen - Modelo A|Examen]] | [[Solucionario - Modelo A|Soluciones]]
-- **Modelo B**: [[Simulacro de Examen - Modelo B|Examen]] | [[Solucionario - Modelo B|Soluciones]]
+- [Guía de Ejercicios y Teoría vinculada](Ejercicios%20de%20Examen.md)
+- **Modelo A**: [Examen](Simulacro%20de%20Examen%20-%20Modelo%20A.md) | [Soluciones](Solucionario%20-%20Modelo%20A.md)
+- **Modelo B**: [Examen](Simulacro%20de%20Examen%20-%20Modelo%20B.md) | [Soluciones](Solucionario%20-%20Modelo%20B.md)
 
 ## Recursos
 - [Carpeta de Origen (Biblioteca)](file:///c:/Users/symid/Documents/Apuntes/500%20Biblioteca/Estadistica)

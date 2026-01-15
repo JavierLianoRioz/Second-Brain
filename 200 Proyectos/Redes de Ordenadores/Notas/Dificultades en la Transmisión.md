@@ -27,5 +27,5 @@ Para alcanzar distancias largas necesitamos dispositivos intermedios:
   - *Analogía*: Un portazo ruidoso que te impide oír una palabra suelta en una frase. Es el más peligroso para los errores de bits.
 
 ---
-**Relacionado**: [[Señales Analógicas y Digitales]]
+**Relacionado**: [Señales Analógicas y Digitales](Se%C3%B1ales%20Anal%C3%B3gicas%20y%20Digitales.md)
 **Fuente**: [[22_Tema2.pdf]]

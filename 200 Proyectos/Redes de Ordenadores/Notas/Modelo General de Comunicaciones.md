@@ -21,5 +21,5 @@ El modelo general de comunicaciones describe los componentes necesarios para que
 - **Destino**: El cerebro de tu amigo leyendo el mensaje.
 
 ---
-**Relacionado**: [[Taxonomía de Redes]], [[Arquitectura de Protocolos]]
+**Relacionado**: [Taxonomía de Redes](Taxonom%C3%ADa%20de%20Redes.md), [Arquitectura de Protocolos](Arquitectura%20de%20Protocolos.md)
 **Fuente**: [[12_Tema1.pdf]]

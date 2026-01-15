@@ -17,5 +17,5 @@ Pasos para realizar un contraste de forma rigurosa:
 > El contraste se considera "no significativo" cuando $p > \alpha$.
 
 ---
-Enlace: [[Index|Tema 4]]
+Enlace: [Tema 4](../Index.md)
 Tags: #estadistica #contraste #metodologia

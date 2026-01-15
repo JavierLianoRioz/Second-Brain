@@ -15,5 +15,5 @@ Cualquier función de probabilidad $P$ que asigne un valor $P(A)$ a un suceso $A
 - **Unión General (No Excluyentes)**: $P(A \cup B) = P(A) + P(B) - P(A \cap B)$.
 
 ---
-Enlace: [[Index|Tema 2]]
+Enlace: [Tema 2](../Index.md)
 Tags: #estadistica #probabilidad #axiomas

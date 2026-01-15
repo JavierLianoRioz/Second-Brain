@@ -9,5 +9,5 @@ Mecanismo para evitar que un emisor rápido sature a un receptor lento.
    - *Analogía*: Malabarismos. Mientras una pelota (trama) vuela por el aire, lanzas la siguiente. Mantienes el canal ocupado y eficiente.
 
 ---
-**Relacionado**: [[Protocolos ARQ]]
+**Relacionado**: [Protocolos ARQ](Protocolos%20ARQ.md)
 **Fuente**: [[32_Tema3.pdf]]

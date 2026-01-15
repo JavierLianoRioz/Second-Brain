@@ -19,5 +19,5 @@ Para que un sistema de categorías sea válido, debe ser:
 2. **Excluyente**: Un individuo no puede presentar dos valores simultáneos.
 
 ---
-Enlace: [[Index|Tema 1]]
+Enlace: [Tema 1](../Index.md)
 Tags: #estadistica #variables

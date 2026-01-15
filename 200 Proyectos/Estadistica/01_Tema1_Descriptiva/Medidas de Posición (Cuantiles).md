@@ -45,5 +45,5 @@ $$IQR = Q_3 - Q_1$$
 Mide la dispersión del 50% central de los datos y se usa para detectar **valores atípicos** (outliers).
 
 ---
-Enlace: [[Index|Tema 1]]
+Enlace: [Tema 1](../Index.md)
 Tags: #estadistica #posicion #cuantiles

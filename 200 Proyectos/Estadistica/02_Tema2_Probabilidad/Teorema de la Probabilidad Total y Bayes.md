@@ -13,5 +13,5 @@ $$P(A_i|B) = \frac{P(A_i) \cdot P(B|A_i)}{P(B)}$$
 Donde $P(B)$ se calcula usualmente mediante el Teorema de la Probabilidad Total.
 
 ---
-Enlace: [[Index|Tema 2]]
+Enlace: [Tema 2](../Index.md)
 Tags: #estadistica #probabilidad #bayes

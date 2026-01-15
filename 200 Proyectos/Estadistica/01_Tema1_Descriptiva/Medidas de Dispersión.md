@@ -37,5 +37,5 @@ Permite identificar valores numéricamente distantes del resto de la muestra:
 *Todo valor fuera del intervalo $[LI, LS]$ se considera un valor atípico (outlier).*
 
 ---
-Enlace: [[Index|Tema 1]]
+Enlace: [Tema 1](../Index.md)
 Tags: #estadistica #dispersion #varianza

@@ -14,5 +14,5 @@ Evolución de la seguridad en 802.11:
 4. **WPA3**: Última versión, corrige vulnerabilidades de WPA2 y mejora el intercambio de claves.
 
 ---
-**Relacionado**: [[Tipos de Ataques en Redes]]
+**Relacionado**: [Tipos de Ataques en Redes](Tipos%20de%20Ataques%20en%20Redes.md)
 **Fuente**: [[72_Tema7.pdf]]

@@ -5,7 +5,7 @@ Una **Base de Datos (BD)** es un conjunto **organizado de datos** que permite gu
 A diferencia de un sistema de archivos tradicional, una BD impone **estructuras y reglas** que garantizan la integridad y consistencia de los datos.
 
 ## Estructura Básica
-En el modelo más común ([[Modelo_Relacional_Conceptos]]), la estructura se jerarquiza así:
+En el modelo más común ([Modelo_Relacional_Conceptos](../02_Dise%C3%B1o/Modelo_Relacional_Conceptos.md)), la estructura se jerarquiza así:
 
 ```mermaid
 graph TD
@@ -16,9 +16,9 @@ graph TD
 ```
 
 ## Relacionado
-*   Gestionado por: [[SGBD_Definicion]]
-*   Tipos: [[Tipos_de_Bases_de_Datos]]
-*   Historia: [[Historia_Bases_de_Datos]]
+*   Gestionado por: [SGBD_Definicion](SGBD_Definicion.md)
+*   Tipos: [Tipos_de_Bases_de_Datos](Tipos_de_Bases_de_Datos.md)
+*   Historia: [Historia_Bases_de_Datos](Historia_Bases_de_Datos.md)
 
 ---
-[[00_MOC_Introduccion]]
+[00_MOC_Introduccion](00_MOC_Introduccion.md)

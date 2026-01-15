@@ -11,5 +11,5 @@ Una **tabulación cruzada** es un resumen tabular de la relación entre los dato
 - Permite visualizar cómo se distribuyen las frecuencias de una variable en función de otra (ej: Sexo vs Nivel Educativo).
 
 ---
-Enlace: [[Index|Tema 1]]
+Enlace: [Tema 1](../Index.md)
 Tags: #estadistica #tablas #relaciones

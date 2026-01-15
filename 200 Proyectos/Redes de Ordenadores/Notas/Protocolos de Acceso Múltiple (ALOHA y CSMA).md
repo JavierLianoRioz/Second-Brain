@@ -19,5 +19,5 @@ Estrategias para resolver la contienda en medios compartidos.
 - **p-persistente**: Transmite con probabilidad $p$ si está libre.
 
 ---
-**Relacionado**: [[Ethernet (IEEE 802.3)]]
+**Relacionado**: [Ethernet (IEEE 802.3)](Ethernet%20%28IEEE%20802.3%29.md)
 **Fuente**: [[42_Tema4.pdf]]

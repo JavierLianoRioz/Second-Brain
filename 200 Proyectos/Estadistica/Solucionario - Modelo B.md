@@ -149,4 +149,4 @@ $P(4 \leq Y \leq 6) = P(Y=4) + P(Y=5) + P(Y=6)$
    - **Concluyendo:** No hay evidencia suficiente para decir que el nivel educativo influya en los aciertos.
 
 ---
-[[Simulacro de Examen - Modelo B|Volver al Examen]] | [[Index|Inicio]]
+[Volver al Examen](Simulacro%20de%20Examen%20-%20Modelo%20B.md) | [Inicio](Index.md)

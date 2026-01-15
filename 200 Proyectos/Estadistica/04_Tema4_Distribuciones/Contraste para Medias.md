@@ -32,5 +32,5 @@ $$t = \frac{\bar{x} - \mu_0}{\hat{s} / \sqrt{n}}$$
 - Si el estadístico cae en la **región crítica** (definida por el nivel de significación $\alpha$), rechazamos $H_0$.
 
 ---
-Enlace: [[Index|Tema 4]]
+Enlace: [Tema 4](../Index.md)
 Tags: #estadistica #contraste #medias #t-student
