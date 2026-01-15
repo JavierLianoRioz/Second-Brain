@@ -6,9 +6,9 @@ El diseño de una base de datos es un proceso estructurado que permite transform
 
 ```mermaid
 graph LR
-    Req[1. Requerimientos] --> Conc[2. Diseño Conceptual]
-    Conc --> Log[3. Diseño Lógico]
-    Log --> Fis[4. Diseño Físico]
+    Req[Requerimientos] --> Conc[Diseño Conceptual]
+    Conc --> Log[Diseño Lógico]
+    Log --> Fis[Diseño Físico]
 ```
 
 1.  **Recolección y Análisis de Requerimientos**: Entender qué datos necesita el sistema.
