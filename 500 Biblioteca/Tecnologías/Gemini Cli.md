@@ -1,1 +1,0 @@
-- [ ] Tengo que implementar que siempre antes de realizar una propuesta que cree los test para esa propuesta.
