@@ -4,10 +4,33 @@ Un índice compuesto (o multinivel) es un índice que se construye sobre dos o m
 
 ## Regla de Izquierda a Derecha
 
-MySQL recorre los índices compuestos estrictamente de izquierda a derecha. Para que un índice sea efectivo:
+MySQL recorre los índices compuestos estrictamente de izquierda a derecha. Para entenderlo, piensa en una **Guía Telefónica** ordenada por: `Apellido` > `Nombre` > `Dirección`.
+
+- **Puedes buscar** a alguien si sabes el `Apellido`.
+- **Puedes ser más veloz** si sabes `Apellido` y `Nombre`.
+- **NO puedes buscar** nada si solo sabes el `Nombre` (tendrías que leer toda la guía).
+
+```mermaid
+graph TD
+    A[Índice: Apellido + Nombre]
+    A --> G[García]
+    A --> L[López]
+    
+    G --> GA[Ana]
+    G --> GB[Bernardo]
+    
+    L --> LA[Alberto]
+    L --> LB[Zulema]
+    
+    style G fill:#f9f,stroke:#333
+    style GA fill:#f9f,stroke:#333
+```
+
+### Reglas Clave:
 1. Las columnas buscadas con `=` deben aparecer primero.
 2. El índice se puede usar hasta que se encuentra una columna con una condición de **rango** (`> < BETWEEN LIKE 'x%'`).
 3. Después de un rango, las columnas posteriores del índice ya no pueden usarse para filtrar ni para ordenar.
+
 
 ## El Caso Ideal (Perfect Match)
 Para una consulta con:
