@@ -1,6 +1,6 @@
 # Arquitectura SGBD
 
-La arquitectura de un [SGBD_Definicion](SGBD_Definicion.md) define cómo procesa las consultas y gestiona los datos.
+La arquitectura de un [SGBD Definicion](SGBD_Definicion.md) define cómo procesa las consultas y gestiona los datos.
 
 ```mermaid
 graph TD
@@ -22,4 +22,4 @@ graph TD
 *   **Diccionario de Datos**: Metadatos sobre la estructura de la BD (tablas, columnas, usuarios).
 
 ---
-[00_MOC_Introduccion](00_MOC_Introduccion.md)
+[00 MOC Introduccion](00_MOC_Introduccion.md)

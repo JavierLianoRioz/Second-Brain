@@ -7,4 +7,4 @@ Operación inversa al producto cartesiano. Útil para consultas de "todos".
 `R ÷ S`
 
 ---
-[00_MOC_Algebra_Relacional](00_MOC_Algebra_Relacional.md)
+[00 MOC Algebra Relacional](00_MOC_Algebra_Relacional.md)

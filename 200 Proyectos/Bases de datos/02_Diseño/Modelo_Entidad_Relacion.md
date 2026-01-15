@@ -1,10 +1,10 @@
 # Modelo Entidad-Relación (ER)
 
-El Modelo ER es la herramienta estándar para el diseño conceptual ([Fases_del_Diseño_BD](Fases_del_Dise%C3%B1o_BD.md)). Permite representar la realidad mediante tres elementos básicos:
+El Modelo ER es la herramienta estándar para el diseño conceptual ([Fases del Diseño BD](Fases_del_Dise%C3%B1o_BD.md)). Permite representar la realidad mediante tres elementos básicos:
 
 *   [Entidad](Entidad.md)
 *   [Atributo](Atributo.md)
-*   [Relacion_ER](Relacion_ER.md)
+*   [Relacion ER](Relacion_ER.md)
 
 ## Diagrama ER Simple
 
@@ -22,4 +22,4 @@ erDiagram
 ```
 
 ---
-[00_MOC_Diseño](00_MOC_Dise%C3%B1o.md)
+[00 MOC Diseño](00_MOC_Dise%C3%B1o.md)

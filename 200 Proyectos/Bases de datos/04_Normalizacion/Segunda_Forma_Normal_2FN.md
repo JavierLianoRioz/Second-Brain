@@ -2,7 +2,7 @@
 
 ## Regla
 Una tabla está en **2FN** si:
-1.  Cumple con la [Primera_Forma_Normal_1FN](Primera_Forma_Normal_1FN.md).
+1.  Cumple con la [Primera Forma Normal 1FN](Primera_Forma_Normal_1FN.md).
 2.  **No existen Dependencias Parciales**.
 
 Esto significa que si una tabla tiene una **Clave Primaria Compuesta** (formada por varios campos), los atributos que no son clave deben depender de **toda** la clave, no solo de una parte.
@@ -47,4 +47,4 @@ Separar los datos del producto en su propia tabla.
 Ahora `Nombre_Producto` depende totalmente de la clave de su nueva tabla (`ID_Producto`).
 
 ---
-[00_MOC_Normalizacion](00_MOC_Normalizacion.md)
+[00 MOC Normalizacion](00_MOC_Normalizacion.md)

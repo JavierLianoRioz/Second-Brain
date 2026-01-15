@@ -1,6 +1,6 @@
 # INSERT
 
-Comando [SQL_DML](SQL_DML.md) para añadir nuevas filas.
+Comando [SQL DML](SQL_DML.md) para añadir nuevas filas.
 
 ## Sintaxis
 ```sql
@@ -13,4 +13,4 @@ INSERT INTO cliente (id, nombre) VALUES (1, 'Ana');
 ```
 
 ---
-[SQL_DML](SQL_DML.md)
+[SQL DML](SQL_DML.md)

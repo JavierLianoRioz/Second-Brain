@@ -24,4 +24,4 @@ La optimización de consultas es el proceso de ajustar las sentencias SQL para q
 
 ---
 - **Fuente**: Clase 25 y 26 - Optimización
-- **Relacionado**: [[03_SQL/00_MOC_SQL]], [[Modelo_Relacional_Conceptos]]
+- **Relacionado**: [[03_SQL/00_MOC_SQL]], [Modelo Relacional Conceptos](../02_Dise%C3%B1o/Modelo_Relacional_Conceptos.md)

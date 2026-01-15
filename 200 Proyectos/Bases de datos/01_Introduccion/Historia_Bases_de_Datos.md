@@ -5,11 +5,11 @@ La evolución de las bases de datos ha sido impulsada por la necesidad de maneja
 | Era | Hito Principal | Características |
 | :--- | :--- | :--- |
 | **1960s** | **Modelos Jerárquicos y de Red** | Sistemas rígidos (IMS, CODASYL). Acceso complejo mediante punteros. |
-| **1970s** | **Modelo Relacional** | **E.F. Codd** propone el [Modelo_Relacional_Conceptos](../02_Dise%C3%B1o/Modelo_Relacional_Conceptos.md) basado en tablas. Nace el concepto de independencia de datos. Ver [Reglas_de_Codd](Reglas_de_Codd.md). |
-| **1980s** | **Dominio Relacional (SQL)** | Estandarización de [SQL_DDL](../03_SQL/SQL_DDL.md). Aparición de los grandes SGBD comerciales (Oracle, DB2). |
+| **1970s** | **Modelo Relacional** | **E.F. Codd** propone el [Modelo Relacional Conceptos](../02_Dise%C3%B1o/Modelo_Relacional_Conceptos.md) basado en tablas. Nace el concepto de independencia de datos. Ver [Reglas de Codd](Reglas_de_Codd.md). |
+| **1980s** | **Dominio Relacional (SQL)** | Estandarización de [SQL DDL](../03_SQL/SQL_DDL.md). Aparición de los grandes SGBD comerciales (Oracle, DB2). |
 | **1990s** | **OODB y Data Warehousing** | Bases de datos orientadas a objetos y sistemas para análisis de datos (OLAP). |
 | **2000s** | **Web y Big Data** | Explosión de datos por internet. Necesidad de escalabilidad horizontal. |
 | **Actualidad** | **NoSQL y Cloud** | Bases flexibles (MongoDB, Redis), NewSQL y servicios gestionados en la nube. |
 
 ---
-[00_MOC_Introduccion](00_MOC_Introduccion.md)
+[00 MOC Introduccion](00_MOC_Introduccion.md)

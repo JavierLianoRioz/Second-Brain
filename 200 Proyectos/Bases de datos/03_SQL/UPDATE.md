@@ -1,9 +1,9 @@
 # UPDATE
 
-Comando [SQL_DML](SQL_DML.md) para modificar datos existentes.
+Comando [SQL DML](SQL_DML.md) para modificar datos existentes.
 
 > [!IMPORTANT]
-> Siempre usa [SQL_WHERE](SQL_WHERE.md). Si lo olvidas, actualizarás **todas** las filas.
+> Siempre usa [SQL WHERE](SQL_WHERE.md). Si lo olvidas, actualizarás **todas** las filas.
 
 ## Sintaxis
 ```sql
@@ -16,4 +16,4 @@ UPDATE producto SET precio = 20 WHERE id = 5;
 ```
 
 ---
-[SQL_DML](SQL_DML.md)
+[SQL DML](SQL_DML.md)

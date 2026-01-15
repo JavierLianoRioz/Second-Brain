@@ -39,12 +39,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "200 Proyectos/Bases de datos/08_Programacion_BD/00_MOC_Programacion_BD.md",
+                "file": "200 Proyectos/Bases de datos/07_Optimizacion/00_MOC_Optimizacion.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "00_MOC_Programacion_BD"
+              "title": "00_MOC_Optimizacion"
             }
           }
         ],
@@ -115,7 +115,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "200 Proyectos/Bases de datos/08_Programacion_BD/00_MOC_Programacion_BD.md",
+                "file": "200 Proyectos/Bases de datos/07_Optimizacion/00_MOC_Optimizacion.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -143,7 +143,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of 00_MOC_Programacion_BD"
+              "title": "Graph of 00_MOC_Optimizacion"
             }
           }
         ]
@@ -248,7 +248,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "200 Proyectos/Bases de datos/08_Programacion_BD/00_MOC_Programacion_BD.md",
+                "file": "200 Proyectos/Bases de datos/07_Optimizacion/00_MOC_Optimizacion.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -276,7 +276,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of 00_MOC_Programacion_BD"
+              "title": "Graph of 00_MOC_Optimizacion"
             }
           }
         ]
@@ -300,12 +300,13 @@
   },
   "active": "5b6f614486c1cb7e",
   "lastOpenFiles": [
+    "fix_aliases.py",
+    "200 Proyectos/Bases de datos/08_Programacion_BD/00_MOC_Programacion_BD.md",
     "200 Proyectos/Bases de datos/07_Optimizacion/00_MOC_Optimizacion.md",
     "200 Proyectos/Bases de datos/08_Programacion_BD/Ejemplos_Programacion.md",
     "200 Proyectos/Bases de datos/08_Programacion_BD/Transacciones_Control.md",
     "200 Proyectos/Bases de datos/08_Programacion_BD/Control_de_Flujo.md",
     "200 Proyectos/Bases de datos/08_Programacion_BD/Stored_Procedures_Sintaxis.md",
-    "200 Proyectos/Bases de datos/08_Programacion_BD/00_MOC_Programacion_BD.md",
     "200 Proyectos/Bases de datos/08_Programacion_BD",
     "200 Proyectos/Bases de datos/06_Algebra_Relacional/Diferencia_Operador.md",
     "200 Proyectos/Bases de datos/07_Optimizacion/Tablas_Temporales.md",
@@ -338,7 +339,6 @@
     "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 2/Clase 25/0.4_consultas_monstruo.md",
     "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 2/Clase 25/0.3_stored_procedure_populate.md",
     "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 2/Clase 25/0.2_dml_inicial.md",
-    "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 2/Clase 25/0.1_ddl_inicial.md",
     "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 2/Clase 25",
     "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 1/Clase 13 (repaso)/images/ejercicios_repaso/1761207385651.png",
     "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 1/Clase 02/images/05_intro_modelo_relacional/1757671896087.png",

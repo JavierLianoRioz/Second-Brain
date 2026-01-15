@@ -17,4 +17,4 @@ HAVING COUNT(*) > 5;
 ```
 
 ---
-[SELECT_Basico](SELECT_Basico.md)
+[SELECT Basico](SELECT_Basico.md)

@@ -6,7 +6,7 @@ Una **Entidad** es un objeto del mundo real (físico o abstracto) sobre el cual 
 *   **Físicos**: `Cliente`, `Producto`, `Empleado`.
 *   **Abstractos**: `Pedido`, `Reserva`, `Curso`.
 
-En el [Modelo_Relacional_Conceptos](Modelo_Relacional_Conceptos.md), una entidad se convierte generalmente en una **Tabla**.
+En el [Modelo Relacional Conceptos](Modelo_Relacional_Conceptos.md), una entidad se convierte generalmente en una **Tabla**.
 
 ---
-[Modelo_Entidad_Relacion](Modelo_Entidad_Relacion.md)
+[Modelo Entidad Relacion](Modelo_Entidad_Relacion.md)

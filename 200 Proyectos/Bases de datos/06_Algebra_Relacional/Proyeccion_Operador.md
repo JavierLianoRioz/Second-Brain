@@ -1,7 +1,7 @@
 # Proyección (π)
 
 Operador unario que selecciona **columnas** (atributos).
-Equivale al [SELECT_Basico](../03_SQL/SELECT_Basico.md) (lista de columnas).
+Equivale al [SELECT Basico](../03_SQL/SELECT_Basico.md) (lista de columnas).
 
 ## Notación
 `π col1, col2 (R)`
@@ -10,4 +10,4 @@ Equivale al [SELECT_Basico](../03_SQL/SELECT_Basico.md) (lista de columnas).
 `π nombre, precio (Producto)`
 
 ---
-[00_MOC_Algebra_Relacional](00_MOC_Algebra_Relacional.md)
+[00 MOC Algebra Relacional](00_MOC_Algebra_Relacional.md)

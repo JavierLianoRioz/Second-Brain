@@ -28,4 +28,4 @@ WHERE pais = 'ES' AND tipo_usuario = 'Premium' ORDER BY fecha_pedido DESC
 - **Rango prematuro**: Poner una columna de rango al principio del índice inhabilita el resto de las columnas para filtrado eficiente.
 
 ---
-- **Relacionado**: [[Query_Optimization]], [[03_SQL/Constraints_SQL]]
+- **Relacionado**: [Query Optimization](Query_Optimization.md), [[03_SQL/Constraints_SQL]]

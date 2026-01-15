@@ -31,7 +31,7 @@ Aquí:
 *   `Curso ->> Profesor`
 *   `Curso ->> Libro`
 
-La existencia de estas dependencias en la misma tabla genera redundancia (filas repetidas). La [Cuarta_Forma_Normal_4FN](Cuarta_Forma_Normal_4FN.md) obliga a separarlas.
+La existencia de estas dependencias en la misma tabla genera redundancia (filas repetidas). La [Cuarta Forma Normal 4FN](Cuarta_Forma_Normal_4FN.md) obliga a separarlas.
 
 ---
-[00_MOC_Normalizacion](00_MOC_Normalizacion.md)
+[00 MOC Normalizacion](00_MOC_Normalizacion.md)

@@ -1,6 +1,6 @@
 # SQL WHERE
 
-Cláusula para filtrar filas en [SELECT_Basico](SELECT_Basico.md), [UPDATE](UPDATE.md) y [DELETE](DELETE.md).
+Cláusula para filtrar filas en [SELECT Basico](SELECT_Basico.md), [UPDATE](UPDATE.md) y [DELETE](DELETE.md).
 
 ## Operadores
 *   `=`, `<>`, `>`, `<`
@@ -15,4 +15,4 @@ SELECT * FROM producto WHERE precio > 50 AND categoria = 'Hogar';
 ```
 
 ---
-[SELECT_Basico](SELECT_Basico.md)
+[SELECT Basico](SELECT_Basico.md)

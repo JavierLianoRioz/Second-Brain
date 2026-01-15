@@ -8,4 +8,4 @@ La **Clave Primaria (PK - Primary Key)** es uno o más atributos que identifican
 3.  **Inmutabilidad**: Se recomienda que no cambie con el tiempo (ej. usar un ID numérico en lugar del nombre).
 
 ---
-[Modelo_Relacional_Conceptos](Modelo_Relacional_Conceptos.md)
+[Modelo Relacional Conceptos](Modelo_Relacional_Conceptos.md)

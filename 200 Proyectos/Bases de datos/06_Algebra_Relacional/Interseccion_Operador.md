@@ -9,4 +9,4 @@ Devuelve las tuplas que están en R **y** en S.
 `R ∩ S = R - (R - S)`
 
 ---
-[00_MOC_Algebra_Relacional](00_MOC_Algebra_Relacional.md)
+[00 MOC Algebra Relacional](00_MOC_Algebra_Relacional.md)

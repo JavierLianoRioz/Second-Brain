@@ -19,4 +19,4 @@ Separar en filas distintas o crear nueva tabla.
 | Ana | 555-999 |
 
 ---
-[00_MOC_Normalizacion](00_MOC_Normalizacion.md)
+[00 MOC Normalizacion](00_MOC_Normalizacion.md)

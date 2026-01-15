@@ -15,4 +15,4 @@ INNER JOIN pedido p ON c.id = p.id_cliente;
 ```
 
 ---
-[SELECT_Basico](SELECT_Basico.md)
+[SELECT Basico](SELECT_Basico.md)

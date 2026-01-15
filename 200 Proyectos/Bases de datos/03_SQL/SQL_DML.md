@@ -6,7 +6,7 @@ El **DML** permite gestionar los datos almacenados: insertar, modificar y borrar
 *   [INSERT](INSERT.md): Añadir filas.
 *   [UPDATE](UPDATE.md): Modificar filas.
 *   [DELETE](DELETE.md): Borrar filas.
-*   [SELECT_Basico](SELECT_Basico.md): Consultar filas.
+*   [SELECT Basico](SELECT_Basico.md): Consultar filas.
 
 ---
-[00_MOC_SQL](00_MOC_SQL.md)
+[00 MOC SQL](00_MOC_SQL.md)

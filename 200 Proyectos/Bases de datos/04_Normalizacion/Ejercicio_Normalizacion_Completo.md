@@ -89,4 +89,4 @@ Miramos la tabla `ORDENES` que creamos en el paso anterior:
 Este diseño elimina redundancias (si Juan cambia de ciudad, solo toco la tabla CLIENTES) y anomalías.
 
 ---
-[00_MOC_Normalizacion](00_MOC_Normalizacion.md)
+[00 MOC Normalizacion](00_MOC_Normalizacion.md)

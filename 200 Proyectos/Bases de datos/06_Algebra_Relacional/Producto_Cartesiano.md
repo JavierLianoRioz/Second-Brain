@@ -9,4 +9,4 @@ Combina cada tupla de R con cada tupla de S.
 Si R tiene N filas y S tiene M filas, el resultado tiene N*M filas.
 
 ---
-[00_MOC_Algebra_Relacional](00_MOC_Algebra_Relacional.md)
+[00 MOC Algebra Relacional](00_MOC_Algebra_Relacional.md)

@@ -1,10 +1,10 @@
 # SGBD: Definición y Funciones
 
-Un **Sistema de Gestión de Bases de Datos (SGBD)** o *DBMS (Database Management System)* es el software que actúa como intermediario entre los usuarios/aplicaciones y los datos físicos ([Definicion_Base_de_Datos](Definicion_Base_de_Datos.md)).
+Un **Sistema de Gestión de Bases de Datos (SGBD)** o *DBMS (Database Management System)* es el software que actúa como intermediario entre los usuarios/aplicaciones y los datos físicos ([Definicion Base de Datos](Definicion_Base_de_Datos.md)).
 
 ## Funciones Principales
-1.  **Definición de Datos (DDL)**: Crear y modificar estructuras. Ver [SQL_DDL](../03_SQL/SQL_DDL.md).
-2.  **Manipulación de Datos (DML)**: Consultar, insertar, actualizar y borrar datos. Ver [SQL_DML](../03_SQL/SQL_DML.md).
+1.  **Definición de Datos (DDL)**: Crear y modificar estructuras. Ver [SQL DDL](../03_SQL/SQL_DDL.md).
+2.  **Manipulación de Datos (DML)**: Consultar, insertar, actualizar y borrar datos. Ver [SQL DML](../03_SQL/SQL_DML.md).
 3.  **Control de Acceso (DCL)**: Gestión de usuarios y permisos.
 4.  **Integridad y Consistencia**: Asegurar que los datos cumplan las reglas definidas.
 5.  **Control de Concurrencia**: Permitir acceso simultáneo sin errores.
@@ -16,4 +16,4 @@ Un **Sistema de Gestión de Bases de Datos (SGBD)** o *DBMS (Database Management
 *   **NoSQL**: MongoDB, Redis.
 
 ---
-[00_MOC_Introduccion](00_MOC_Introduccion.md)
+[00 MOC Introduccion](00_MOC_Introduccion.md)
