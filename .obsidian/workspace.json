@@ -8,32 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "316e2174603575e6",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "500 Biblioteca/Estadistica/Ejercicios/Formulario/FORMULARIO.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "FORMULARIO"
-            }
-          },
-          {
-            "id": "ac1a19bd3be470b5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "200 Proyectos/Estadistica/Solucionario - Modelo A.md",
-                "mode": "preview",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Solucionario - Modelo A"
-            }
-          },
-          {
             "id": "5b6f614486c1cb7e",
             "type": "leaf",
             "state": {
@@ -47,8 +21,7 @@
               "title": "Guia_Examen_Final"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -300,8 +273,16 @@
   },
   "active": "5b6f614486c1cb7e",
   "lastOpenFiles": [
-    "200 Proyectos/Bases de datos/07_Optimizacion/Denormalizacion_Estrategica.md",
+    "200 Proyectos/Bases de datos/06_Algebra_Relacional/Algebra_Relacional_Ejercicios.md",
+    "200 Proyectos/Bases de datos/01_Introduccion/Reglas_de_Codd.md",
     "200 Proyectos/Bases de datos/Guia_Examen_Final.md",
+    "200 Proyectos/Bases de datos/04_Normalizacion/00_MOC_Normalizacion.md",
+    "200 Proyectos/Bases de datos/03_SQL/SQL_GROUP_BY.md",
+    "200 Proyectos/Bases de datos/03_SQL/SQL_JOIN.md",
+    "200 Proyectos/Bases de datos/03_SQL/SELECT_Basico.md",
+    "200 Proyectos/Bases de datos/02_Diseño/Relacion_ER.md",
+    "200 Proyectos/Bases de datos/02_Diseño/Modelo_Relacional_Conceptos.md",
+    "200 Proyectos/Bases de datos/07_Optimizacion/Denormalizacion_Estrategica.md",
     "200 Proyectos/Bases de datos/00_Indice.md",
     "200 Proyectos/Bases de datos/08_Programacion_BD/00_MOC_Programacion_BD.md",
     "200 Proyectos/Bases de datos/08_Programacion_BD/Transacciones_Control.md",
@@ -311,28 +292,20 @@
     "200 Proyectos/Bases de datos/05_Transacciones/Propiedades ACID.md",
     "200 Proyectos/Bases de datos/05_Transacciones/Transacción.md",
     "200 Proyectos/Bases de datos/07_Optimizacion/Indices_Compuestos.md",
-    "200 Proyectos/Bases de datos/02_Diseño/Modelo_Relacional_Conceptos.md",
-    "200 Proyectos/Bases de datos/02_Diseño/Relacion_ER.md",
-    "200 Proyectos/Bases de datos/03_SQL/SQL_JOIN.md",
     "200 Proyectos/Bases de datos/03_SQL/SQL_DML.md",
     "200 Proyectos/Bases de datos/07_Optimizacion/Query_Optimization.md",
     "200 Proyectos/Bases de datos/08_Programacion_BD/Ejemplos_Programacion.md",
     "200 Proyectos/Bases de datos/08_Programacion_BD/Control_de_Flujo.md",
-    "200 Proyectos/Bases de datos/03_SQL/SELECT_Basico.md",
     "200 Proyectos/Bases de datos/03_SQL/SQL_DDL.md",
-    "200 Proyectos/Bases de datos/04_Normalizacion/00_MOC_Normalizacion.md",
     "mermaid-mcp/Dockerfile",
     "mermaid-mcp",
     "200 Proyectos/Bases de datos/07_Optimizacion/00_MOC_Optimizacion.md",
     "fix_aliases.py",
     "200 Proyectos/Bases de datos/08_Programacion_BD/Stored_Procedures_Sintaxis.md",
     "200 Proyectos/Bases de datos/08_Programacion_BD",
-    "200 Proyectos/Bases de datos/06_Algebra_Relacional/Diferencia_Operador.md",
-    "200 Proyectos/Bases de datos/07_Optimizacion/Tablas_Temporales.md",
     "200 Proyectos/Bases de datos/07_Optimizacion",
     "500 Biblioteca/BaseDeDatos1-25-26/Evaluaciones/Resolución de Exámen Segundo Parcial Base de Datos 1 2025-2026.docx",
     "500 Biblioteca/BaseDeDatos1-25-26/Evaluaciones/Exámen Segundo Parcial Base de Datos 1 2025-2026.docx",
-    "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 2/Clase 27/03_tabla_temporal.md",
     "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 2/Clase 27",
     "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 2/Clase 26",
     "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 2/Clase 25/images/04_ejercicio_3/1765535765824.png",

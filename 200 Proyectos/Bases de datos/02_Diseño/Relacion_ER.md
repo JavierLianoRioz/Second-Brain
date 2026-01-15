@@ -22,4 +22,14 @@ erDiagram
 
 
 ---
+## 📝 Ejercicios de Práctica
+
+1.  **Gimnasio**: Un `Socio` puede asistir a muchas `Clases`, y una `Clase` puede tener muchos `Socios`.
+    *   *Solución*: **N:M**. Requiere tabla intermedia.
+2.  **Coche**: Un `Coche` tiene un único `Motor`, y un `Motor` pertenece a un único `Coche`.
+    *   *Solución*: **1:1**.
+3.  **Hospital**: un `Médico` atiende a muchos `Pacientes`, pero cada `Paciente` tiene un único médico asignado.
+    *   *Solución*: **1:N**.
+
+---
 [Modelo Entidad Relacion](Modelo_Entidad_Relacion.md)

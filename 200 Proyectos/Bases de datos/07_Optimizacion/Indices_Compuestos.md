@@ -51,4 +51,18 @@ WHERE pais = 'ES' AND tipo_usuario = 'Premium' ORDER BY fecha_pedido DESC
 - **Rango prematuro**: Poner una columna de rango al principio del índice inhabilita el resto de las columnas para filtrado eficiente.
 
 ---
+## 📝 Ejercicios de Práctica
+
+Dado el índice: `INDEX (apellido, nombre, edad)`
+
+1.  **Consulta**: `SELECT * FROM personas WHERE apellido = 'Ruiz' AND nombre = 'Ana';`
+    *   *¿Usa el índice?*: **Sí**, usa las dos primeras columnas.
+2.  **Consulta**: `SELECT * FROM personas WHERE nombre = 'Ana';`
+    *   *¿Usa el índice?*: **No**, se salta la primera columna (`apellido`).
+3.  **Consulta**: `SELECT * FROM personas WHERE apellido = 'Ruiz' AND edad = 25;`
+    *   *¿Usa el índice?*: **Parcialmente**. Solo filtra por `apellido`. No puede usar `edad` porque falta `nombre` en medio.
+4.  **Consulta**: `SELECT * FROM personas WHERE apellido = 'Ruiz' AND nombre LIKE 'A%' AND edad = 25;`
+    *   *¿Usa el índice?*: **Parcialmente**. Filtra por `apellido` y el rango en `nombre`. La `edad` se ignora por estar después del rango.
+
+---
 - **Relacionado**: [Query Optimization](Query_Optimization.md), [[03_SQL/Constraints_SQL]]

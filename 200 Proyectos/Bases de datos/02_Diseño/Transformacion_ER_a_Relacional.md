@@ -20,4 +20,17 @@ Se crea una **Nueva Tabla Intermedia**.
 Se propaga la clave de una tabla a la otra (preferiblemente a la que tenga participación total).
 
 ---
+## 📝 Ejercicios de Práctica
+
+**Caso: Sistema de Videoclub**
+1.  **Entidades**: `Pelicula` (id, titulo) y `Socio` (id, nombre).
+2.  **Relación**: Un `Socio` alquila muchas `Peliculas`. Una `Pelicula` es alquilada por un `Socio` a la vez.
+
+**Pregunta**: ¿Cómo transformarías esta relación 1:N al modelo relacional?
+*   *Solución*: Añadir `id_socio` como FK en la tabla `Pelicula`.
+
+**Pregunta**: Si fuera N:M (un socio alquila muchas películas a lo largo del tiempo y una película es alquilada por muchos socios), ¿qué harías?
+*   *Solución*: Crear una tabla `Alquiler` con `id_socio` e `id_pelicula` como FKs (y juntas como PK).
+
+---
 [00 MOC Diseño](00_MOC_Dise%C3%B1o.md)

@@ -49,4 +49,27 @@ FOR UPDATE;
 ```
 
 ---
+## 📝 Ejercicios de Práctica
+
+**Completa el Script**: Queremos restar 50€ de la `cuenta_1` y sumarlos a la `cuenta_2`. Si la `cuenta_1` se queda en negativo, debemos cancelar todo.
+
+```sql
+__________ TRANSACTION;
+
+UPDATE cuentas SET saldo = saldo - 50 WHERE id = 1;
+UPDATE cuentas SET saldo = saldo + 50 WHERE id = 2;
+
+IF (SELECT saldo FROM cuentas WHERE id = 1) < 0 THEN
+    __________;
+ELSE
+    __________;
+END IF;
+```
+
+**Solución**:
+1. `START`
+2. `ROLLBACK`
+3. `COMMIT`
+
+---
 - **Relacionado**: [[05_Transacciones/Propiedades ACID]], [Ejemplos](Ejemplos_Programacion.md)

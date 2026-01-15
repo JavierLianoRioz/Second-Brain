@@ -4,6 +4,7 @@ Este es el mapa de contenido para el módulo de Álgebra Relacional.
 
 ## Conceptos
 *   [Algebra Relacional Concepto](Algebra_Relacional_Concepto.md)
+*   [Ejercicios Prácticos](Algebra_Relacional_Ejercicios.md)
 
 ## Operadores Fundamentales
 *   [Seleccion Operador](Seleccion_Operador.md) (σ)
