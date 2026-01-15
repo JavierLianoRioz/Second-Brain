@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "200 Proyectos/Bases de datos/00_Indice.md",
-                "mode": "preview",
+                "file": "200 Proyectos/Bases de datos/06_Algebra_Relacional/Algebra_Relacional_Ejercicios.md",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "00_Indice"
+              "title": "Algebra_Relacional_Ejercicios"
             }
           }
         ]
@@ -88,7 +88,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "200 Proyectos/Bases de datos/00_Indice.md",
+                "file": "200 Proyectos/Bases de datos/06_Algebra_Relacional/Algebra_Relacional_Ejercicios.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -116,7 +116,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of 00_Indice"
+              "title": "Graph of Algebra_Relacional_Ejercicios"
             }
           }
         ]
@@ -221,7 +221,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "200 Proyectos/Bases de datos/00_Indice.md",
+                "file": "200 Proyectos/Bases de datos/06_Algebra_Relacional/Algebra_Relacional_Ejercicios.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -249,7 +249,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of 00_Indice"
+              "title": "Graph of Algebra_Relacional_Ejercicios"
             }
           }
         ]
@@ -273,10 +273,12 @@
   },
   "active": "5b6f614486c1cb7e",
   "lastOpenFiles": [
-    "200 Proyectos/Bases de datos/06_Algebra_Relacional/00_MOC_Algebra_Relacional.md",
-    "200 Proyectos/Bases de datos/00_Indice.md",
     "200 Proyectos/Bases de datos/Guia_Examen_Final.md",
     "200 Proyectos/Bases de datos/06_Algebra_Relacional/Algebra_Relacional_Ejercicios.md",
+    "200 Proyectos/Proyectos.md",
+    "200 Proyectos/Bases de datos/05_Transacciones/00_MOC_Transacciones.md",
+    "200 Proyectos/Bases de datos/00_Indice.md",
+    "200 Proyectos/Bases de datos/06_Algebra_Relacional/00_MOC_Algebra_Relacional.md",
     "200 Proyectos/Bases de datos/01_Introduccion/Reglas_de_Codd.md",
     "200 Proyectos/Bases de datos/04_Normalizacion/00_MOC_Normalizacion.md",
     "200 Proyectos/Bases de datos/03_SQL/SQL_GROUP_BY.md",
@@ -288,7 +290,6 @@
     "200 Proyectos/Bases de datos/08_Programacion_BD/00_MOC_Programacion_BD.md",
     "200 Proyectos/Bases de datos/08_Programacion_BD/Transacciones_Control.md",
     "200 Proyectos/Bases de datos/05_Transacciones/Ejercicio_Transacciones.md",
-    "200 Proyectos/Bases de datos/05_Transacciones/00_MOC_Transacciones.md",
     "200 Proyectos/Bases de datos/05_Transacciones/Comandos de Control de Transacciones (TCL).md",
     "200 Proyectos/Bases de datos/05_Transacciones/Propiedades ACID.md",
     "200 Proyectos/Bases de datos/05_Transacciones/Transacción.md",
@@ -300,7 +301,6 @@
     "200 Proyectos/Bases de datos/03_SQL/SQL_DDL.md",
     "mermaid-mcp/Dockerfile",
     "mermaid-mcp",
-    "200 Proyectos/Bases de datos/07_Optimizacion/00_MOC_Optimizacion.md",
     "fix_aliases.py",
     "200 Proyectos/Bases de datos/08_Programacion_BD",
     "200 Proyectos/Bases de datos/07_Optimizacion",
