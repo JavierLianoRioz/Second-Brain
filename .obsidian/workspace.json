@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 2/Clase 19/03_ejercicio_3fn.md",
-                "mode": "source",
+                "file": "200 Proyectos/Bases de datos/07_Optimizacion/Tablas_Temporales.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "03_ejercicio_3fn"
+              "title": "Tablas_Temporales"
             }
           }
         ]
@@ -88,7 +88,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 2/Clase 19/03_ejercicio_3fn.md",
+                "file": "200 Proyectos/Bases de datos/07_Optimizacion/Tablas_Temporales.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -116,7 +116,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of 03_ejercicio_3fn"
+              "title": "Graph of Tablas_Temporales"
             }
           }
         ]
@@ -221,7 +221,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 2/Clase 19/03_ejercicio_3fn.md",
+                "file": "200 Proyectos/Bases de datos/07_Optimizacion/Tablas_Temporales.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -249,7 +249,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of 03_ejercicio_3fn"
+              "title": "Graph of Tablas_Temporales"
             }
           }
         ]
@@ -271,10 +271,17 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "712167e3c33fc024",
+  "active": "5b6f614486c1cb7e",
   "lastOpenFiles": [
-    "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 2/Clase 19/04_ejercicio_4fn.md",
+    "200 Proyectos/Bases de datos/07_Optimizacion/Query_Optimization.md",
+    "200 Proyectos/Bases de datos/07_Optimizacion/Denormalizacion_Estrategica.md",
+    "200 Proyectos/Bases de datos/07_Optimizacion/Indices_Compuestos.md",
+    "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 2/Clase 17/02_selects.md",
+    "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 2/Clase 17/00_ddl.md",
+    "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 2/Clase 17/01_inserts.md",
+    "200 Proyectos/Bases de datos/07_Optimizacion/00_MOC_Optimizacion.md",
     "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 2/Clase 19/03_ejercicio_3fn.md",
+    "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 2/Clase 19/04_ejercicio_4fn.md",
     "200 Proyectos/Bases de datos/Guia_Examen_Final.md",
     "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 2/Clase 18/04_ejercicio_2fn.md",
     "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 2/Clase 18/03_ejercicio_1fn.md",
@@ -292,13 +299,6 @@
     "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 2/Clase 22/01_transacciones.md",
     "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 2/Clase 23/01_transacciones_multiples_DML.md",
     "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 2/Clase 25/0.4_consultas_monstruo.md",
-    "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 2/Clase 25/01_optimizacion_teoria.md",
-    "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 2/Clase 25/02_optimizacion_por_rediseño_query.md",
-    "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 2/Clase 26/01_query_1.md",
-    "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 2/Clase 26/02_query_1_optimizado.md",
-    "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 2/Clase 24/02_resolucion_taller.md",
-    "200 Proyectos/Bases de datos/08_Programacion_BD/00_MOC_Programacion_BD.md",
-    "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 2/Clase 25/0.3_stored_procedure_populate.md",
     "500 Biblioteca/BaseDeDatos1-25-26/Evaluaciones/images/resolucion_parcial_1/1761554050863.png",
     "999 Plantillas",
     "mermaid-mcp/Dockerfile",
