@@ -13,8 +13,8 @@ difficulty: intermediate
 El **Modelo Relacional** organiza la información en colecciones de tablas (relaciones) bidimensionales, basándose en la teoría matemática de conjuntos.
 
 *   **Estructura:** Los datos se guardan en **Tuplas** (filas) y **Atributos** (columnas) dentro de **Tablas**.
-*   **Identificación:** Cada fila es única gracias a la [Clave Primaria](Clave_Primaria.md).
-*   **Relación:** Las tablas se vinculan mediante [Claves Foráneas](Clave_Foranea.md), permitiendo la navegación de datos sin duplicidad innecesaria.
+*   **Identificación:** Cada fila es única gracias a la [[Clave_Primaria]].
+*   **Relación:** Las tablas se vinculan mediante [[Clave_Foranea]], permitiendo la navegación de datos sin duplicidad innecesaria.
 
 ---
 

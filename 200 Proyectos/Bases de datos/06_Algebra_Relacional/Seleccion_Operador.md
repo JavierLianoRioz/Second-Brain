@@ -1,13 +1,40 @@
+---
+tags: [algebra-relacional, operator, theory]
+moc: [[00_MOC_Algebra_Relacional]]
+status: refined
+difficulty: basic
+---
+
 # Selección (σ)
 
-Operador unario que filtra **filas** (tuplas) que cumplen una condición.
-Equivale al [SQL WHERE](../03_SQL/SQL_WHERE.md).
+---
 
-## Notación
-$\sigma\{condicion\}(R)$
+## 🧠 Núcleo del Concepto
 
-## Ejemplo
-$\sigma\{precio > 100\}(Producto)$
+El operador de **Selección** (σ) es una operación unaria que permite filtrar tuplas (filas) de una relación basándose en un predicado lógico.
+
+*   **Entrada y Salida**: Toma una relación $R$ y devuelve otra relación con el mismo esquema, pero solo con las filas que cumplen la condición.
+*   **Equivalencia SQL**: Se traduce directamente como la cláusula [[SQL_WHERE]].
+*   **Conmutatividad**: $\sigma_a(\sigma_b(R)) = \sigma_b(\sigma_a(R)) = \sigma_{a \land b}(R)$.
 
 ---
-[00 MOC Algebra Relacional](00_MOC_Algebra_Relacional.md)
+
+## 🗺️ Representación
+
+> [!abstract] Notación y Uso
+> **Sintaxis**: $\sigma_{condición}(R)$
+> 
+> **Ejemplo**: Filtrar productos caros.
+> $$\sigma_{precio > 100}(Productos)$$
+
+---
+
+## 🔗 Conexiones y Contexto
+
+*   **Se relaciona con:** [[SQL_WHERE]], [[Algebra_Relacional_Concepto]].
+*   **Diferencia clave con:** [[Proyeccion_Operador]], que filtra columnas en lugar de filas.
+
+---
+
+> [!tip] Idea Fuerza (Cierre)
+> La selección es el "filtro vertical": te quedas con menos filas, pero con todas sus columnas intactas.

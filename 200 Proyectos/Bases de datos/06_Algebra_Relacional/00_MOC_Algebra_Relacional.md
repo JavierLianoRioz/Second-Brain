@@ -3,21 +3,21 @@
 Este es el mapa de contenido para el módulo de Álgebra Relacional.
 
 ## Conceptos
-*   [Algebra Relacional Concepto](Algebra_Relacional_Concepto.md)
-*   [Ejercicios Prácticos](Algebra_Relacional_Ejercicios.md)
+*   [[Algebra_Relacional_Concepto]]
+*   [[Algebra_Relacional_Ejercicios]]
 
 ## Operadores Fundamentales
-*   [Seleccion Operador](Seleccion_Operador.md) (σ)
-*   [Proyeccion Operador](Proyeccion_Operador.md) (π)
-*   [Union Operador](Union_Operador.md) (∪)
-*   [Diferencia Operador](Diferencia_Operador.md) (-)
-*   [Producto Cartesiano](Producto_Cartesiano.md) (×)
-*   [Renombramiento](Renombramiento.md) (ρ)
+*   [[Seleccion_Operador]] (σ)
+*   [[Proyeccion_Operador]] (π)
+*   [[Union_Operador]] (∪)
+*   [[Diferencia_Operador]] (–)
+*   [[Producto_Cartesiano]] (×)
+*   [[Renombramiento]] (ρ)
 
 ## Operadores Derivados
-*   [Interseccion Operador](Interseccion_Operador.md) (∩)
-*   [Join Algebra](Join_Algebra.md) (⨝)
-*   [Division Algebra](Division_Algebra.md) (÷)
+*   [[Interseccion_Operador]] (∩)
+*   [[Join_Algebra]] (⨝)
+*   [[Division_Algebra]] (÷)
 
 ---
-[00 Indice](../00_Indice.md)
+[[00_Indice]]
