@@ -1,20 +1,41 @@
+---
+tags: [concept, neuro-efficiency, db-design]
+moc: [[00_MOC_Diseño]]
+status: refactored
+difficulty: easy
+---
+
 # Fases del Diseño de Bases de Datos
 
-El diseño de una base de datos es un proceso estructurado que permite transformar los requerimientos de información en un esquema funcional.
+---
 
-## Las 4 Fases
+## 🧠 Núcleo del Concepto
+El diseño de una base de datos es un flujo estructurado que garantiza que la implementación técnica responda exactamente a la necesidad del negocio.
 
-```mermaid
-graph LR
-    Req[Requerimientos] --> Conc[Diseño Conceptual]
-    Conc --> Log[Diseño Lógico]
-    Log --> Fis[Diseño Físico]
-```
-
-1.  **Recolección y Análisis de Requerimientos**: Entender qué datos necesita el sistema.
-2.  **Diseño Conceptual**: Crear un esquema independiente del SGBD. Herramienta principal: [Modelo Entidad Relacion](Modelo_Entidad_Relacion.md).
-3.  **Diseño Lógico**: Transformar el esquema conceptual a un modelo de datos específico. Herramienta principal: [Modelo Relacional Conceptos](Modelo_Relacional_Conceptos.md).
-4.  **Diseño Físico**: Implementar el esquema en un [SGBD Definicion](../01_Introduccion/SGBD_Definicion.md) concreto (MySQL, Oracle).
+*   **Fase Conceptual:** Abstracción de la realidad mediante diagramas independientes de la tecnología (Herramienta: [[Modelo_Entidad_Relacion]]).
+*   **Fase Lógica:** Traducción del diagrama conceptual a un modelo de datos específico (Herramienta: [[Modelo_Relacional_Conceptos]]).
+*   **Fase Física:** Implementación real en un motor de base de datos concreto (MySQL, Oracle, etc.).
 
 ---
-[00 MOC Diseño](00_MOC_Dise%C3%B1o.md)
+
+## 🗺️ Anclaje Visual (Dual Coding)
+> [!abstract] El Embudo del Diseño
+> ```mermaid
+> graph TD
+>     A[Requerimientos] --> B[Diseño Conceptual]
+>     B --> C[Diseño Lógico]
+>     C --> D[Diseño Físico]
+>     style A fill:#f9f,stroke:#333
+>     style D fill:#bbf,stroke:#333
+> ```
+
+---
+
+## 🔗 Conexiones y Contexto
+*   **Se relaciona con:** [[SQL_DDL]] (donde se ejecuta la fase física) y [[Normalizacion_Objetivos]] (parte de la fase de refinamiento lógico).
+*   **Punto Crítico:** Un error en la fase conceptual suele costar 10 veces más de corregir si se detecta en la fase física.
+
+---
+
+> [!tip] Idea Fuerza (Cierre)
+> No se construye una casa sin planos; no se genera una base de datos sin diseño conceptual y lógico previo.

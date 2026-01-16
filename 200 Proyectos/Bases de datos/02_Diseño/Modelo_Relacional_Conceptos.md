@@ -1,23 +1,39 @@
+---
+tags: [concept, neuro-efficiency, db-design]
+moc: [[00_MOC_Diseño]]
+status: refactored
+difficulty: intermediate
+---
+
 # Modelo Relacional: Conceptos
 
-El **Modelo Relacional** se basa en la teoría matemática de conjuntos. Todos los datos se representan en **Tablas** (relaciones).
+---
 
-## Elementos
-*   **Tabla (Relación)**: Conjunto de datos organizados en filas y columnas. Corresponde a una [Entidad](Entidad.md).
-*   **Tupla (Fila)**: Representa un registro único.
-*   **Atributo (Columna)**: Representa una propiedad. Corresponde a un [Atributo](Atributo.md).
-*   **Dominio**: Conjunto de valores válidos para un atributo (ej. enteros, fechas).
+## 🧠 Núcleo del Concepto
+El **Modelo Relacional** organiza la información en colecciones de tablas (relaciones) bidimensionales, basándose en la teoría matemática de conjuntos.
 
-## Claves
-Para garantizar la integridad, se usan claves:
-*   [Clave Primaria](Clave_Primaria.md)
-*   [Clave Foranea](Clave_Foranea.md)
-
-
-## Relación con otros conceptos
-*   **Implementación**: Este modelo se implementa mediante [SQL DDL](../03_SQL/SQL_DDL.md) (creación de tablas) y [SQL DML](../03_SQL/SQL_DML.md) (manipulación).
-*   **Teoría**: Las operaciones sobre estas tablas se definen en el [Algebra Relacional Concepto](../06_Algebra_Relacional/Algebra_Relacional_Concepto.md).
-*   **Optimización**: El diseño de las tablas se refina mediante la [Normalizacion Objetivos](../04_Normalizacion/Normalizacion_Objetivos.md).
+*   **Estructura:** Los datos se guardan en **Tuplas** (filas) y **Atributos** (columnas) dentro de **Tablas**.
+*   **Identificación:** Cada fila es única gracias a la [Clave Primaria](Clave_Primaria.md).
+*   **Relación:** Las tablas se vinculan mediante [Claves Foráneas](Clave_Foranea.md), permitiendo la navegación de datos sin duplicidad innecesaria.
 
 ---
-[00 MOC Diseño](00_MOC_Dise%C3%B1o.md)
+
+## 🗺️ Anclaje Visual (Dual Coding)
+> [!abstract] Correspondencia Conceptual
+> ```mermaid
+> graph LR
+>     A[Entidad ER] --> B[Tabla Relacional]
+>     C[Atributo ER] --> D[Columna Relacional]
+>     E[Identificador ER] --> F[Clave Primaria PK]
+> ```
+
+---
+
+## 🔗 Conexiones y Contexto
+*   **Se relaciona con:** [[Transformacion_ER_a_Relacional]] (su origen) y [[Normalizacion_Objetivos]] (su refinamiento).
+*   **Diferencia clave con:** **SGBD**, que es el software que gestiona el modelo; el Modelo Relacional es la estructura lógica en sí.
+
+---
+
+> [!tip] Idea Fuerza (Cierre)
+> En el modelo relacional, la potencia reside en la sencillez: todo es una tabla y toda tabla tiene su clave.

@@ -1,45 +1,51 @@
+---
+tags: [concept, neuro-efficiency, db-programming]
+moc: [[00_MOC_Programacion_BD]]
+status: refactored
+difficulty: intermediate
+---
+
 # Variables y Control de Flujo
 
-La programación en bases de datos permite el uso de lógica procedimental similar a los lenguajes de programación tradicionales.
+---
 
-## Variables
+## 🧠 Núcleo del Concepto
+La programación en base de datos permite implementar lógica de negocio compleja directamente en el servidor, reduciendo el tráfico de red y mejorando la integridad.
 
-### Locales
-Se declaran dentro de un bloque `BEGIN ... END` y desaparecen al finalizar.
-```sql
-DECLARE nombre_variable TIPO [DEFAULT valor];
-SET nombre_variable = valor;
--- O asignar desde una consulta
-SELECT columna INTO nombre_variable FROM tabla WHERE ...;
-```
-
-### De Usuario
-Persisten durante la sesión actual (prefijadas con `@`).
-```sql
-SET @mi_variable = 10;
-```
-
-## Estructuras de Control
-
-### Condicionales (IF)
-```sql
-IF condicion THEN
-    -- acciones
-ELSEIF otra_condicion THEN
-    -- acciones
-ELSE
-    -- acciones
-END IF;
-```
-
-### Bucles (WHILE)
-```sql
-WHILE condicion DO
-    -- acciones
-    -- IMPORTANTE: Asegurar que la condición cambie para evitar bucles infinitos
-END WHILE;
-```
+*   **Variables:** Espacios de memoria temporales para almacenar cálculos intermedios (Locales con `DECLARE` o de Usuario con `@`).
+*   **Decisión (IF):** Permite bifurcar la ejecución del código basándose en condiciones booleanas.
+*   **Iteración (WHILE):** Automatiza tareas repetitivas mediante bucles controlados por una condición.
 
 ---
-- **Relacionado**: [Sintaxis de Stored Procedures](Stored_Procedures_Sintaxis.md)
-- **Ejemplo**: Ver [Script de Poblado](Ejemplos_Programacion.md#poblado-masivo-de-datos)
+
+## 🗺️ Anclaje Visual (Dual Coding)
+> [!abstract] Estructura de Decisión y Bucle
+> ```mermaid
+> graph TD
+>     A[Inicio] --> B{¿Condición?}
+>     B -- TRUE --> C[Acción Bucle]
+>     C --> B
+>     B -- FALSE --> D[Fin]
+> ```
+
+---
+
+## 🔗 Conexiones y Contexto
+*   **Se relaciona con:** [[Stored_Procedures_Sintaxis]] (donde se suele escribir este código) y [[Ejemplos_Programacion]] (aplicaciones prácticas).
+*   **Diferencia clave con:** SQL Declarativo (SELECT/INSERT), que dice QUÉ hacer, mientras que el control de flujo dice CÓMO y en qué ORDEN.
+
+---
+
+## 💡 Aplicación Práctica: Poblado Masivo
+> [!example] Generador de Datos
+> ```sql
+> WHILE i < total_objetivo DO
+>     INSERT INTO tabla (columna) VALUES (CONCAT('dato_', i));
+>     SET i = i + 1;
+> END WHILE;
+> ```
+
+---
+
+> [!tip] Idea Fuerza (Cierre)
+> Las estructuras de control transforman una base de datos pasiva en un motor de reglas activo e inteligente.

@@ -1,18 +1,15 @@
-# Map of Content: Programación en Bases de Datos
+# Programación en Bases de Datos
 
-Este mapa organiza los conceptos de programación procedimental dentro del sistema gestor de bases de datos (específicamente MySQL/MariaDB).
+Este módulo cubre la lógica procedimental y el control transaccional avanzado, optimizando el rendimiento y la integridad en el servidor.
 
-## 🧩 Fundamentos
-- [Sintaxis de Stored Procedures](Stored_Procedures_Sintaxis.md)
-- [Variables y Control de Flujo](Control_de_Flujo.md)
+## 🧠 Conceptos Nucleares (Teoría Neuro-Eficiente)
+- [[Control_de_Flujo]]: Variables, condicionales IF y bucles WHILE.
+- [[Stored_Procedures_Sintaxis]]: Encapsulamiento, parámetros (IN/OUT) y modularización.
+- [[Transacciones_Control]]: Atomicidad, SAVEPOINTs y bloqueos selectivos.
 
-## 🛡 Robustez y Transacciones
-- [Control de Transacciones](Transacciones_Control.md)
-- Manejo de Errores y SAVEPOINTs
-
-## ⚡ Aplicaciones Prácticas
-- [Ejemplos de Scripts y Procedimientos](Ejemplos_Programacion.md)
-- Automatización de tareas y mantenimiento.
+## 🚀 Entrenamiento Activo (Ejercicios de Recuperación)
+- [[Ejercicio_Venta_Stock]]: Reto de concurrencia y control de inventario.
+- [[Ejercicio_Transferencia_Bancaria]]: Reto de integridad financiera y atomicidad.
 
 ---
-- **Raíz**: [Índice Principal](../00_Indice.md)
+- **Raíz**: [[00_Indice|Índice Principal de Bases de Datos]]

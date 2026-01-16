@@ -1,75 +1,63 @@
+---
+tags: [concept, neuro-efficiency, db-programming]
+moc: [[00_MOC_Programacion_BD]]
+status: refactored
+difficulty: intermediate
+---
+
 # Control de Transacciones
 
+---
 
-Una transacción es una unidad lógica de trabajo que debe completarse en su totalidad o no hacerse en absoluto (Propiedades ACID). En la programación de scripts, el control de transacciones es vital para mantener la integridad de los datos.
+## 🧠 Núcleo del Concepto
+Una **Transacción** es una unidad de trabajo indivisible que garantiza que un conjunto de operaciones se ejecute por completo o no se ejecute en absoluto (ACID).
 
-## Comandos Principales
-
-- **START TRANSACTION**: Inicia un nuevo bloque transaccional.
-- **COMMIT**: Guarda permanentemente todos los cambios realizados desde el inicio de la transacción.
-- **ROLLBACK**: Revierte todos los cambios realizados, devolviendo la base de datos al estado anterior al inicio de la transacción.
-
-```mermaid
-stateDiagram-v2
-    [*] --> START_TRANSACTION
-    START_TRANSACTION --> Operations
-    Operations --> Validation: All operations done?
-    Validation --> COMMIT: Success
-    Validation --> ROLLBACK: Failure
-    COMMIT --> [*]
-    ROLLBACK --> [*]
-```
-
-
-## Puntos de Guardado (SAVEPOINT)
-
-Permiten realizar retrocesos parciales sin cancelar toda la transacción.
-
-```sql
-START TRANSACTION;
--- Operación A
-SAVEPOINT punto_1;
-
--- Operación B
-SAVEPOINT punto_2;
-
--- Si B falla pero quiero mantener A:
-ROLLBACK TO punto_1;
-
-COMMIT; -- Confirma solo las operaciones hasta el punto_1
-```
-
-## Bloqueo de Filas (FOR UPDATE)
-Dentro de una transacción, se puede bloquear una fila para evitar que otros procesos la modifiquen mientras se decide si confirmar o revertir.
-```sql
-SELECT stock INTO stock_actual 
-FROM producto 
-WHERE id_producto = 1 
-FOR UPDATE;
-```
+*   **Atomicidad:** "Todo o nada". El `COMMIT` confirma, el `ROLLBACK` deshace.
+*   **Puntos de Guardado:** `SAVEPOINT` permite retrocesos parciales sin invalidar toda la transacción.
+*   **Aislamiento y Bloqueo:** El uso de `FOR UPDATE` previene interferencias de otros procesos en las filas que estamos procesando.
 
 ---
-## 📝 Ejercicios de Práctica
 
-**Completa el Script**: Queremos restar 50€ de la `cuenta_1` y sumarlos a la `cuenta_2`. Si la `cuenta_1` se queda en negativo, debemos cancelar todo.
-
-```sql
-__________ TRANSACTION;
-
-UPDATE cuentas SET saldo = saldo - 50 WHERE id = 1;
-UPDATE cuentas SET saldo = saldo + 50 WHERE id = 2;
-
-IF (SELECT saldo FROM cuentas WHERE id = 1) < 0 THEN
-    __________;
-ELSE
-    __________;
-END IF;
-```
-
-**Solución**:
-1. `START`
-2. `ROLLBACK`
-3. `COMMIT`
+## 🗺️ Anclaje Visual (Dual Coding)
+> [!abstract] Ciclo de Vida de una Transacción
+> ```mermaid
+> stateDiagram-v2
+>     [*] --> START_TRANSACTION
+>     START_TRANSACTION --> Operations
+>     Operations --> Validation: ¿Todo OK?
+>     Validation --> COMMIT: Sí
+>     Validation --> ROLLBACK: Fallo / Error
+>     COMMIT --> [*]
+>     ROLLBACK --> [*]
+> ```
 
 ---
-- **Relacionado**: [[05_Transacciones/Propiedades ACID]], [Ejemplos](Ejemplos_Programacion.md)
+
+## 🔗 Conexiones y Contexto
+*   **Se relaciona con:** [[Ejemplos_Programacion]] (patrones de diseño transaccional) y [[Propiedades_ACID]] (fundamento teórico).
+*   **Diferencia clave con:** Operaciones Atómicas Individuales. Una transacción agrupa múltiples operaciones que dependen lógicamente entre sí.
+
+---
+
+## 💡 Práctica de Recuperación
+> [!success]- Reto: Transferencia Segura
+> **Escenario**: Restar 50€ de `cuenta_1` y sumarlos a `cuenta_2`. Si `cuenta_1` queda en negativo (< 0), cancelar todo.
+> 
+> **Código a completar**:
+> ```sql
+> __________ TRANSACTION;
+> UPDATE cuentas SET saldo = saldo - 50 WHERE id = 1;
+> UPDATE cuentas SET saldo = saldo + 50 WHERE id = 2;
+> IF (SELECT saldo FROM cuentas WHERE id = 1) < 0 THEN
+>     __________;
+> ELSE
+>     __________;
+> END IF;
+> ```
+> 
+> **Solución**: 1. `START`, 2. `ROLLBACK`, 3. `COMMIT`.
+
+---
+
+> [!tip] Idea Fuerza (Cierre)
+> Las transacciones no son solo sobre "guardar datos", son sobre garantizar la verdad absoluta del sistema ante cualquier error.

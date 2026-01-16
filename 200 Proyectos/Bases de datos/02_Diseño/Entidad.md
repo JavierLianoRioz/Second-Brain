@@ -1,12 +1,40 @@
+---
+tags: [concept, neuro-efficiency, db-design]
+moc: [[00_MOC_Diseño]]
+status: refactored
+difficulty: easy
+---
+
 # Entidad
 
-Una **Entidad** es un objeto del mundo real (físico o abstracto) sobre el cual queremos guardar información en la base de datos.
+---
 
-## Ejemplos
-*   **Físicos**: `Cliente`, `Producto`, `Empleado`.
-*   **Abstractos**: `Pedido`, `Reserva`, `Curso`.
+## 🧠 Núcleo del Concepto
+Una **Entidad** representa cualquier objeto, persona o evento del mundo real (ya sea físico o conceptual) con existencia independiente y del cual interesa almacenar información específica.
 
-En el [Modelo Relacional Conceptos](Modelo_Relacional_Conceptos.md), una entidad se convierte generalmente en una **Tabla**.
+*   **Existencia Autónoma:** No depende de otra cosa para ser identificada (ej. un `Cliente` existe por sí mismo).
+*   **Tipología:** Pueden ser tangibles (físicas como `Vehículo`) o intangibles (abstractas como `Venta`).
+*   **Representación:** En la implementación física, cada instancia de una entidad se convertirá en una fila de una **Tabla**.
 
 ---
-[Modelo Entidad Relacion](Modelo_Entidad_Relacion.md)
+
+## 🗺️ Anclaje Visual (Dual Coding)
+> [!abstract] Representación en Diagrama ER
+> ```mermaid
+> erDiagram
+>     ENTIDAD {
+>         string atributo_1
+>         string atributo_2
+>     }
+> ```
+
+---
+
+## 🔗 Conexiones y Contexto
+*   **Se relaciona con:** [[Atributo]] (las propiedades que describen a la entidad) y [[Relacion_ER]] (cómo interactúan las entidades).
+*   **Diferencia clave con:** El **Atributo**, que es una propiedad atómica y no tiene existencia independiente fuera de la entidad.
+
+---
+
+> [!tip] Idea Fuerza (Cierre)
+> Las entidades son los "sustantivos" del ecosistema de datos; definen el QUÉ antes de preocuparnos por el CÓMO.

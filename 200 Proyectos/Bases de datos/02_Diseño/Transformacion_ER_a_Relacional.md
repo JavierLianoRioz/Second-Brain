@@ -1,36 +1,47 @@
+---
+tags: [concept, neuro-efficiency, db-design]
+moc: [[00_MOC_Diseño]]
+status: refactored
+difficulty: hard
+---
+
 # Transformación: De ER a Relacional
 
-El paso del Diseño Conceptual ([Modelo Entidad Relacion](Modelo_Entidad_Relacion.md)) al Lógico ([Modelo Relacional Conceptos](Modelo_Relacional_Conceptos.md)) sigue reglas precisas:
+---
 
-## Reglas de Transformación
+## 🧠 Núcleo del Concepto
+El paso del Diseño Conceptual al Lógico sigue un algoritmo determinista para asegurar que no se pierda semántica ni integridad en el proceso.
 
-### 1. Entidades Fuertes
-Cada entidad fuerte se convierte en una **Tabla**. Su identificador pasa a ser la [Clave Primaria](Clave_Primaria.md).
-
-### 2. Relaciones 1:N
-Se propaga la clave. La PK del lado "1" pasa como [Clave Foranea](Clave_Foranea.md) a la tabla del lado "N".
-*   *Ejemplo*: `Cliente (1) -- (N) Pedido`. En `Pedido` agregamos `id_cliente`.
-
-### 3. Relaciones N:M
-Se crea una **Nueva Tabla Intermedia**.
-*   Esta tabla tendrá como FKs las PKs de las dos entidades.
-*   La PK de la nueva tabla suele ser la composición de ambas FKs.
-
-### 4. Relaciones 1:1
-Se propaga la clave de una tabla a la otra (preferiblemente a la que tenga participación total).
+*   **Entidades a Tablas:** Cada entidad fuerte se convierte en una tabla; su identificador es la PK.
+*   **Relaciones 1:1 y 1:N:** Se resuelven mediante la **propagación de clave** (la PK del lado "uno" viaja como FK al lado opuesto).
+*   **Relaciones N:M:** Generan obligatoriamente una **Tabla Intermedia** cuyas FKs son las PKs de las entidades originales.
 
 ---
-## 📝 Ejercicios de Práctica
 
-**Caso: Sistema de Videoclub**
-1.  **Entidades**: `Pelicula` (id, titulo) y `Socio` (id, nombre).
-2.  **Relación**: Un `Socio` alquila muchas `Peliculas`. Una `Pelicula` es alquilada por un `Socio` a la vez.
-
-**Pregunta**: ¿Cómo transformarías esta relación 1:N al modelo relacional?
-*   *Solución*: Añadir `id_socio` como FK en la tabla `Pelicula`.
-
-**Pregunta**: Si fuera N:M (un socio alquila muchas películas a lo largo del tiempo y una película es alquilada por muchos socios), ¿qué harías?
-*   *Solución*: Crear una tabla `Alquiler` con `id_socio` e `id_pelicula` como FKs (y juntas como PK).
+## 🗺️ Anclaje Visual (Dual Coding)
+> [!abstract] Reglas Clave de Mapeo
+> ```mermaid
+> graph TD
+>     ER_Entidad --> T_Tabla
+>     ER_1_N --> T_FK[Propagar FK]
+>     ER_N_M --> T_TableNew[Nueva Tabla Intermedia]
+> ```
 
 ---
-[00 MOC Diseño](00_MOC_Dise%C3%B1o.md)
+
+## 💡 Práctica de Recuperación
+> [!success]- Reto: Aplica la Transformación
+> **Caso Videoclub**: Un `Socio` alquila muchas `Peliculas`, pero una `Pelicula` solo puede ser alquilada por un `Socio` a la vez (1:N).
+> 
+> **Puntos a resolver:**
+> 1. ¿A qué tabla le añades una Clave Foránea?
+> 2. Si cambiamos a N:M (histórico de alquileres), ¿qué estructura surge?
+> 
+> **Soluciones**:
+> 1. Añadir `id_socio` (FK) a la tabla `Pelicula`.
+> 2. Crear una tabla `Alquiler` con {`id_socio`, `id_pelicula`} como PK/FKs.
+
+---
+
+> [!tip] Idea Fuerza (Cierre)
+> La transformación no es creativa, es algorítmica: si el diagrama ER es correcto, el modelo relacional surge por sí solo.

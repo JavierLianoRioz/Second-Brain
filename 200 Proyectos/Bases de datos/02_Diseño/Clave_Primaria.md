@@ -1,11 +1,40 @@
+---
+tags: [concept, neuro-efficiency, db-design]
+moc: [[00_MOC_Diseño]]
+status: refactored
+difficulty: easy
+---
+
 # Clave Primaria (PK)
 
-La **Clave Primaria (PK - Primary Key)** es uno o más atributos que identifican de forma **única** a cada tupla en una tabla.
+---
 
-## Reglas
-1.  **Unicidad**: No pueden existir dos filas con la misma PK.
-2.  **No Nulo**: Ninguna parte de la PK puede ser `NULL`.
-3.  **Inmutabilidad**: Se recomienda que no cambie con el tiempo (ej. usar un ID numérico en lugar del nombre).
+## 🧠 Núcleo del Concepto
+La **Clave Primaria (PK)** es el atributo (o conjunto de ellos) que identifica de forma **única e inequívoca** a cada registro dentro de una tabla.
+
+*   **Unicidad y No Nulo:** No pueden existir duplicados y ningún componente de la PK puede ser `NULL`.
+*   **Minimalidad:** Debe estar compuesta por el menor número de atributos posibles para garantizar la identificación.
+*   **Estabilidad:** Se recomienda el uso de claves subrogadas (IDs numéricos autoincrementales) frente a claves naturales (ej. DNI) para evitar cambios estructurales.
 
 ---
-[Modelo Relacional Conceptos](Modelo_Relacional_Conceptos.md)
+
+## 🗺️ Anclaje Visual (Dual Coding)
+> [!abstract] Identificación Única
+> ```mermaid
+> graph LR
+>     PK[ID_1] --> F1(Fila 1)
+>     PK2[ID_2] --> F2(Fila 2)
+>     style PK fill:#f9f,stroke:#333
+>     style PK2 fill:#f9f,stroke:#333
+> ```
+
+---
+
+## 🔗 Conexiones y Contexto
+*   **Se relaciona con:** [[Clave_Foranea]] (que apunta a una PK) y [[Entidad]] (el identificador ER se convierte en PK).
+*   **Diferencia clave con:** **Clave Única**, que permite nulos y no es el identificador principal de la fila.
+
+---
+
+> [!tip] Idea Fuerza (Cierre)
+> La PK es el "ancla" de la integridad: sin ella, los datos son una masa amorfa sin identidad.

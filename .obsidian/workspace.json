@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 1/Clase 02/07_ejercicio_1.md",
-                "mode": "preview",
+                "file": "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 2/Clase 19/03_ejercicio_3fn.md",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "07_ejercicio_1"
+              "title": "03_ejercicio_3fn"
             }
           }
         ]
@@ -33,7 +33,7 @@
       {
         "id": "6912485e0f1d088d",
         "type": "tabs",
-        "dimension": 62.335526315789465,
+        "dimension": 71.10266159695817,
         "children": [
           {
             "id": "1690522270e966b7",
@@ -80,7 +80,7 @@
       {
         "id": "c51556e58feaadf5",
         "type": "tabs",
-        "dimension": 37.66447368421053,
+        "dimension": 28.89733840304182,
         "children": [
           {
             "id": "44a3fd894606b729",
@@ -88,7 +88,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 1/Clase 02/07_ejercicio_1.md",
+                "file": "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 2/Clase 19/03_ejercicio_3fn.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -116,7 +116,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of 07_ejercicio_1"
+              "title": "Graph of 03_ejercicio_3fn"
             }
           }
         ]
@@ -221,7 +221,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 1/Clase 02/07_ejercicio_1.md",
+                "file": "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 2/Clase 19/03_ejercicio_3fn.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -249,7 +249,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of 07_ejercicio_1"
+              "title": "Graph of 03_ejercicio_3fn"
             }
           }
         ]
@@ -273,32 +273,34 @@
   },
   "active": "5b6f614486c1cb7e",
   "lastOpenFiles": [
-    "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 1/Clase 02/01_pasos_diseno.md",
-    "200 Proyectos/Bases de datos/02_Diseño/00_MOC_Diseño.md",
-    "200 Proyectos/Bases de datos/02_Diseño/Fases_del_Diseño_BD.md",
-    "200 Proyectos/Bases de datos/00_Indice.md",
+    "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 2/Clase 19/04_ejercicio_4fn.md",
+    "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 2/Clase 19/03_ejercicio_3fn.md",
     "200 Proyectos/Bases de datos/Guia_Examen_Final.md",
-    "200 Proyectos/Bases de datos/06_Algebra_Relacional/Algebra_Relacional_Ejercicios.md",
-    "200 Proyectos/Proyectos.md",
-    "200 Proyectos/Bases de datos/05_Transacciones/00_MOC_Transacciones.md",
-    "200 Proyectos/Bases de datos/06_Algebra_Relacional/00_MOC_Algebra_Relacional.md",
-    "200 Proyectos/Bases de datos/01_Introduccion/Reglas_de_Codd.md",
+    "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 2/Clase 18/04_ejercicio_2fn.md",
+    "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 2/Clase 18/03_ejercicio_1fn.md",
     "200 Proyectos/Bases de datos/04_Normalizacion/00_MOC_Normalizacion.md",
-    "200 Proyectos/Bases de datos/03_SQL/SQL_GROUP_BY.md",
-    "200 Proyectos/Bases de datos/03_SQL/SQL_JOIN.md",
-    "200 Proyectos/Bases de datos/03_SQL/SELECT_Basico.md",
-    "200 Proyectos/Bases de datos/02_Diseño/Relacion_ER.md",
-    "200 Proyectos/Bases de datos/02_Diseño/Modelo_Relacional_Conceptos.md",
-    "200 Proyectos/Bases de datos/07_Optimizacion/Denormalizacion_Estrategica.md",
+    "200 Proyectos/Bases de datos/04_Normalizacion/Quinta_Forma_Normal_5FN.md",
+    "200 Proyectos/Bases de datos/04_Normalizacion/Cuarta_Forma_Normal_4FN.md",
+    "200 Proyectos/Bases de datos/04_Normalizacion/Dependencia_Multivaluada.md",
+    "200 Proyectos/Bases de datos/04_Normalizacion/Tercera_Forma_Normal_3FN.md",
+    "200 Proyectos/Bases de datos/04_Normalizacion/Segunda_Forma_Normal_2FN.md",
+    "200 Proyectos/Bases de datos/04_Normalizacion/Primera_Forma_Normal_1FN.md",
+    "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 2/Clase 21/01_taller_normalizacion.md",
+    "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 2/Clase 23/02_ejercicios.md",
+    "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 2/Clase 22/03_aislamiento.md",
+    "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 2/Clase 22/02_ejemplos_transacciones.md",
+    "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 2/Clase 22/01_transacciones.md",
+    "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 2/Clase 23/01_transacciones_multiples_DML.md",
+    "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 2/Clase 25/0.4_consultas_monstruo.md",
+    "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 2/Clase 25/01_optimizacion_teoria.md",
+    "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 2/Clase 25/02_optimizacion_por_rediseño_query.md",
+    "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 2/Clase 26/01_query_1.md",
+    "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 2/Clase 26/02_query_1_optimizado.md",
+    "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 2/Clase 24/02_resolucion_taller.md",
     "200 Proyectos/Bases de datos/08_Programacion_BD/00_MOC_Programacion_BD.md",
-    "200 Proyectos/Bases de datos/08_Programacion_BD/Transacciones_Control.md",
-    "200 Proyectos/Bases de datos/05_Transacciones/Ejercicio_Transacciones.md",
-    "200 Proyectos/Bases de datos/05_Transacciones/Comandos de Control de Transacciones (TCL).md",
-    "200 Proyectos/Bases de datos/05_Transacciones/Propiedades ACID.md",
-    "200 Proyectos/Bases de datos/05_Transacciones/Transacción.md",
-    "200 Proyectos/Bases de datos/07_Optimizacion/Indices_Compuestos.md",
-    "200 Proyectos/Bases de datos/03_SQL/SQL_DML.md",
-    "200 Proyectos/Bases de datos/07_Optimizacion/Query_Optimization.md",
+    "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 2/Clase 25/0.3_stored_procedure_populate.md",
+    "500 Biblioteca/BaseDeDatos1-25-26/Evaluaciones/images/resolucion_parcial_1/1761554050863.png",
+    "999 Plantillas",
     "mermaid-mcp/Dockerfile",
     "mermaid-mcp",
     "fix_aliases.py",
@@ -312,12 +314,10 @@
     "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 2/Clase 25/images/04_ejercicio_3/1765535745122.png",
     "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 2/Clase 25/images/03_ejercicio_2/1765537763252.png",
     "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 2/Clase 25/images/03_ejercicio_2/1765537553113.png",
-    "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 2/Clase 25/images/04_ejercicio_3",
     "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 1/Clase 13 (repaso)/images/ejercicios_repaso/1761207385651.png",
     "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 1/Clase 02/images/05_intro_modelo_relacional/1757671896087.png",
     "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 1/Clase 02/images/05_intro_modelo_relacional/1757671989194.png",
     "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 1/Clase 02/images/04_modelo_er_extendido/1757671833615.png",
-    "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 1/Clase 02/images/03_modelo_er_simple/1757671909835.png",
-    "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 1/Clase 04/DER_conceptual_ejercicio_1_clase_4_sin_atributos.png"
+    "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 1/Clase 02/images/03_modelo_er_simple/1757671909835.png"
   ]
 }

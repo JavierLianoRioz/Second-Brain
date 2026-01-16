@@ -1,25 +1,45 @@
+---
+tags: [concept, neuro-efficiency, db-design]
+moc: [[00_MOC_Diseño]]
+status: refactored
+difficulty: intermediate
+---
+
 # Modelo Entidad-Relación (ER)
 
-El Modelo ER es la herramienta estándar para el diseño conceptual ([Fases del Diseño BD](Fases_del_Dise%C3%B1o_BD.md)). Permite representar la realidad mediante tres elementos básicos:
+---
 
-*   [Entidad](Entidad.md)
-*   [Atributo](Atributo.md)
-*   [Relacion ER](Relacion_ER.md)
+## 🧠 Núcleo del Concepto
+El **Modelo Entidad-Relación (ER)** es el estándar para el diseño conceptual de bases de datos, permitiendo abstraer la realidad sin preocuparse por la implementación técnica.
 
-## Diagrama ER Simple
-
-```mermaid
-erDiagram
-    CLIENTE ||--o{ PEDIDO : realiza
-    PEDIDO {
-        int id_pedido
-        date fecha
-    }
-    CLIENTE {
-        int id_cliente
-        string nombre
-    }
-```
+*   **Entidades:** Objetos u conceptos del mundo real con existencia independiente.
+*   **Atributos:** Propiedades que describen a las entidades.
+*   **Relaciones:** Vínculos lógicos entre las entidades, definidos por su cardinalidad.
 
 ---
-[00 MOC Diseño](00_MOC_Dise%C3%B1o.md)
+
+## 🗺️ Anclaje Visual (Dual Coding)
+> [!abstract] Diagrama ER Básico
+> ```mermaid
+> erDiagram
+>     CLIENTE ||--o{ PEDIDO : realiza
+>     CLIENTE {
+>         int id_cliente PK
+>         string nombre
+>     }
+>     PEDIDO {
+>         int id_pedido PK
+>         date fecha
+>     }
+> ```
+
+---
+
+## 🔗 Conexiones y Contexto
+*   **Se relaciona con:** [[Fases_del_Diseño_BD]] (es la herramienta de la fase conceptual) y [[Transformacion_ER_a_Relacional]] (su paso siguiente).
+*   **Diferencia clave con:** **Modelo Relacional**, que es un modelo lógico basado en tablas, mientras que el ER es conceptual basado en diagramas.
+
+---
+
+> [!tip] Idea Fuerza (Cierre)
+> El Modelo ER es el puente entre el lenguaje del negocio y la estructura técnica de los datos.
