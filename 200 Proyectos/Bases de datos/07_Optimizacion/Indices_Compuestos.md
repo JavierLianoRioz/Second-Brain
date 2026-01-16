@@ -1,10 +1,9 @@
 ---
 tags: [optimization, indexes, database]
-moc: [[Query_Optimization]]
+moc: [[00_MOC_Optimizacion]]
 status: refined
 difficulty: intermediate
 ---
-
 # Índices Compuestos
 
 ---
@@ -102,7 +101,7 @@ WHERE fecha_pedido = '2023-10-10';
 
 ## 🔗 Conexiones y Contexto
 
-*   **Se relaciona con:** [[Query_Optimization]], [[03_SQL/Constraints_SQL]].
+*   **Se relaciona con:** [Query Optimization](Query_Optimization.md), [SQL Constraints](../03_SQL/Constraints_SQL.md).
 *   **Diferencia clave con:** Un **Índice Simple** solo acelera búsquedas sobre una única columna; el compuesto permite resolver `WHERE` multi-columna sin cruzar múltiples índices.
 
 ---

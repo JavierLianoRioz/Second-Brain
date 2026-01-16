@@ -28,17 +28,17 @@ El **DML** (Data Manipulation Language) es el subconjunto de SQL responsable de 
 > 
 > | Operación CRUD | Comando SQL | Descripción |
 > | :--- | :--- | :--- |
-> | **C**reate | [[INSERT]] | Añade nuevas filas a una tabla. |
-> | **R**ead | [[SELECT_Basico]] | Recupera y visualiza información. |
-> | **U**pdate | [[UPDATE]] | Modifica valores existentes. |
-> | **D**elete | [[DELETE]] | Elimina filas de forma permanente. |
+> | **C**reate | [INSERT](INSERT.md) | Añade nuevas filas a una tabla. |
+| **R**ead | [SELECT Basico](SELECT_Basico.md) | Recupera y visualiza información. |
+| **U**pdate | [UPDATE](UPDATE.md) | Modifica valores existentes. |
+| **D**elete | [DELETE](DELETE.md) | Elimina filas de forma permanente. |
 
 ---
 
 ## 🔗 Conexiones y Contexto
 
-*   **Se basa en:** [[Algebra_Relacional_Concepto]] (la teoría detrás de la selección y manipulación).
-*   **Diferencia clave con:** [[SQL_DDL]], que define las tablas; DML solo las "rellena" o modifica.
+*   **Se basa en:** [Algebra Relacional Concepto](../06_Algebra_Relacional/Algebra_Relacional_Concepto.md) (la teoría detrás de la selección y manipulación).
+*   **Diferencia clave con:** [SQL DDL](SQL_DDL.md), que define las tablas; DML solo las "rellena" o modifica.
 
 ---
 
@@ -48,4 +48,4 @@ El **DML** (Data Manipulation Language) es el subconjunto de SQL responsable de 
 ---
 
 ## 🗺️ Mapa de Contenido
-*   Para explorar cada comando: [[00_MOC_SQL]].
+*   Para explorar cada comando: [00 MOC SQL](00_MOC_SQL.md).

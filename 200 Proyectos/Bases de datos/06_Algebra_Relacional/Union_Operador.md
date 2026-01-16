@@ -1,12 +1,35 @@
+---
+tags: [algebra-relacional, operator, theory]
+moc: [[00_MOC_Algebra_Relacional]]
+status: refined
+difficulty: basic
+---
+
 # Unión (∪)
 
-Combina las tuplas de dos relaciones compatibles. Elimina duplicados.
+---
 
-## Notación
-`R ∪ S`
+## 🧠 Núcleo del Concepto
 
-## Requisito
-Las relaciones deben ser **unión-compatibles** (mismo número y tipo de atributos).
+La **Unión** (∪) es una operación binaria que combina las tuplas de dos relaciones compatibles en una única relación resultante.
+
+*   **Compatibilidad de Esquema**: Ambas relaciones deben tener el mismo número de atributos y dominios compatibles (tipos de datos idénticos en el mismo orden).
+*   **Eliminación de Duplicados**: Al ser una operación de conjuntos, los duplicados se eliminan automáticamente.
+*   **Equivalencia SQL**: Se corresponde con el comando `UNION`.
 
 ---
-[00 MOC Algebra Relacional](00_MOC_Algebra_Relacional.md)
+
+## 🔗 Conexiones y Contexto
+
+*   **Se relaciona con:** [Interseccion Operador](Interseccion_Operador.md), [Diferencia Operador](Diferencia_Operador.md).
+*   **Requisito técnico:** Solo se puede aplicar si las relaciones son "unión-compatibles".
+
+---
+
+> [!tip] Idea Fuerza (Cierre)
+> La unión suma mundos: junta dos tablas para crear una lista maestra sin repeticiones.
+
+---
+
+## 🗺️ Mapa de Contenido
+*   Volver a: [00 MOC Algebra Relacional](00_MOC_Algebra_Relacional.md).

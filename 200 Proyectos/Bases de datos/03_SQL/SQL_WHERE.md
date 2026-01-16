@@ -14,7 +14,7 @@ difficulty: basic
 La cláusula **WHERE** se utiliza para filtrar los registros de una consulta basándose en una o más condiciones específicas. Solo las filas que cumplen la condición son procesadas por el comando principal.
 
 *   **Ubicación**: Se aplica después del `FROM` y antes del `GROUP BY` u `ORDER BY`.
-*   **Versatilidad**: Funciona con [[SELECT_Basico]], [[UPDATE]] y [[DELETE]].
+*   **Versatilidad**: Funciona con [SELECT Basico](SELECT_Basico.md), [UPDATE](UPDATE.md) y [DELETE](DELETE.md).
 *   **Lógica Booleana**: Permite combinar múltiples filtros usando `AND`, `OR` y `NOT`.
 
 ---
@@ -48,8 +48,8 @@ La cláusula **WHERE** se utiliza para filtrar los registros de una consulta bas
 
 ## 🔗 Conexiones y Contexto
 
-*   **Equivalencia Teórica:** Es la implementación directa del operador de **Selección (σ)** del [[Algebra_Relacional_Concepto]].
-*   **Optimizador:** El uso de índices en columnas dentro del `WHERE` es crítico para la [[Query_Optimization]].
+*   **Equivalencia Teórica:** Es la implementación directa del operador de **Selección (σ)** del [Algebra Relacional Concepto](../06_Algebra_Relacional/Algebra_Relacional_Concepto.md).
+*   **Optimizador:** El uso de índices en columnas dentro del `WHERE` es crítico para la [Query Optimization](../07_Optimizacion/Query_Optimization.md).
 
 ---
 
@@ -59,4 +59,4 @@ La cláusula **WHERE** se utiliza para filtrar los registros de una consulta bas
 ---
 
 ## 🗺️ Mapa de Contenido
-*   Volver a: [[SELECT_Basico]] o [[00_MOC_SQL]].
+*   Volver a: [SELECT Basico](SELECT_Basico.md) o [00 MOC SQL](00_MOC_SQL.md).

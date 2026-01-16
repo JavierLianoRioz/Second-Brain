@@ -1,29 +1,55 @@
+---
+tags: [exercises, relational-algebra, theory]
+moc: [[00_MOC_Algebra_Relacional]]
+status: refined
+difficulty: intermediate
+---
+
 # Ejercicios: Álgebra Relacional
 
-Practica la conversión de consultas naturales a expresiones algebraicas.
+---
 
-## Esquema de Datos
-- **Alumnos** (DNI, Nombre, Edad)
-- **Matricula** (DNI_A, Cod_C, Nota)
-- **Cursos** (Cod_C, Nombre_C, Creditos)
+## 🧠 Núcleo de la Práctica
+
+La resolución de ejercicios de Álgebra Relacional requiere traducir requisitos en lenguaje natural a operaciones matemáticas sobre conjuntos de datos.
+
+*   **Identificar Origen**: Determinar qué relaciones (tablas) contienen los datos necesarios.
+*   **Filtrar Primero**: Aplicar [Seleccion Operador](Seleccion_Operador.md) lo antes posible para reducir el volumen de datos.
+*   **Reducir Esquema**: Usar [Proyeccion Operador](Proyeccion_Operador.md) para quedarte solo con las columnas solicitadas.
 
 ---
 
-### Ejercicio 1: Selección y Proyección
-**Enunciado**: Obtener el Nombre de todos los alumnos que tienen más de 20 años.
-- **Expresión**: $\pi\{Nombre\}(\sigma\{Edad > 20\}(Alumnos))$
+## 📝 Casos Prácticos
 
-### Ejercicio 2: Join Natural
+### 1. Selección y Proyección
+**Enunciado**: Obtener el nombre de todos los alumnos que tienen más de 20 años.
+> $$\pi\{Nombre\}(\sigma\{Edad > 20\}(Alumnos))$$
+
+### 2. Reunión (Join)
 **Enunciado**: Obtener el nombre de los alumnos y el código de los cursos en los que están matriculados.
-- **Expresión**: $\pi\{Nombre, Cod\_C\}(Alumnos \bowtie Matricula)$
+> $$\pi\{Nombre, Cod\_C\}(Alumnos \bowtie Matricula)$$
 
-### Ejercicio 3: Diferencia (Resto)
+### 3. Diferencia (Conjuntos Complementarios)
 **Enunciado**: Obtener los DNI de los alumnos que NO se han matriculado en ningún curso.
-- **Expresión**: $\pi\{DNI\}(Alumnos) - \pi\{DNI\_A\}(Matricula)$
+> $$\pi\{DNI\}(Alumnos) - \pi\{DNI\_A\}(Matricula)$$
 
-### Ejercicio 4: Intersección (Usuarios en común)
+### 4. Intersección (Coincidencias)
 **Enunciado**: Obtener los DNI de alumnos que están en el curso 'C1' y también en el 'C2'.
-- **Expresión**: $\pi\{DNI\_A\}(\sigma\{Cod\_C='C1'\}(Matricula)) \cap \pi\{DNI\_A\}(\sigma\{Cod\_C='C2'\}(Matricula))$
+> $$\pi\{DNI\_A\}(\sigma\{Cod\_C='C1'\}(Matricula)) \cap \pi\{DNI\_A\}(\sigma\{Cod\_C='C2'\}(Matricula))$$
 
 ---
-[MOC Algebra Relacional](00_MOC_Algebra_Relacional.md)
+
+## 🔗 Conexiones y Contexto
+
+*   **Teoría base:** [Algebra Relacional Concepto](Algebra_Relacional_Concepto.md).
+*   **Siguiente paso:** [SQL DML](../03_SQL/SQL_DML.md) para implementar estas consultas en una base de datos real.
+
+---
+
+> [!tip] Idea Fuerza (Cierre)
+> Dominar el álgebra relacional te permite diseñar cualquier consulta compleja sin perderte en la sintaxis de SQL.
+
+---
+
+## 🗺️ Mapa de Contenido
+*   Volver al: [00 MOC Algebra Relacional](00_MOC_Algebra_Relacional.md).
