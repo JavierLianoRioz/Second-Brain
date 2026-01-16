@@ -1,8 +1,8 @@
 ---
-tags: [theory, relational-algebra, database]
-moc: [[00_MOC_Algebra_Relacional]]
+tags: [concept, neuro-efficiency, relational-algebra]
+moc: "[00_MOC_Algebra_Relacional](00_MOC_Algebra_Relacional.md)"
 status: refined
-difficulty: advanced
+difficulty: intermediate
 ---
 
 # Álgebra Relacional
@@ -43,7 +43,7 @@ El **Álgebra Relacional** es un lenguaje de consulta **procedural** que define 
 
 ## 🔗 Conexiones y Contexto
 
-*   **Se relaciona con:** [Modelo Relacional Conceptos](../02_Dise%C3%B1o/Modelo_Relacional_Conceptos.md), [SQL SELECT](../03_SQL/SELECT_Basico.md).
+*   **Se relaciona con:** [SQL SELECT](../03_SQL/SELECT_Basico.md) (su implementación física) y [Optimización Algebraica](../07_Optimizacion/Optimizacion_Algebraica.md).
 *   **Equivalencias SQL:**
     *   **Selección (σ)** ↔ [SQL WHERE](../03_SQL/SQL_WHERE.md)
     *   **Proyección (π)** ↔ [SQL SELECT](../03_SQL/SELECT_Basico.md) (selección de columnas)

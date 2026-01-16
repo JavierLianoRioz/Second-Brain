@@ -1,6 +1,6 @@
 ---
 tags: [exercise, case-study, db-design]
-topic: [[00_MOC_Diseño]]
+topic: "[00_MOC_Diseño](00_MOC_Diseño.md)"
 level: intermediate
 time_estimate: 20 min
 ---

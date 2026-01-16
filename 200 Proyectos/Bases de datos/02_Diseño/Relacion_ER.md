@@ -1,7 +1,7 @@
 ---
 tags: [concept, neuro-efficiency, db-design]
-moc: [[00_MOC_Diseño]]
-status: refactored
+moc: "[00_MOC_Diseño](00_MOC_Diseño.md)"
+status: refined
 difficulty: intermediate
 ---
 

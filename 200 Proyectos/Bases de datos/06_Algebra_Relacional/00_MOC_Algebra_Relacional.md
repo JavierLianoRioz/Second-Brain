@@ -1,23 +1,31 @@
+---
+tags: [moc, relational-algebra, database]
+status: refined
+---
+
 # 🗺️ MOC: Álgebra Relacional
 
-Este es el mapa de contenido para el módulo de Álgebra Relacional.
+Este es el mapa de contenido para el módulo de Álgebra Relacional, la base matemática de las consultas en bases de datos.
 
-## Conceptos
-*   [[Algebra_Relacional_Concepto]]
-*   [[Algebra_Relacional_Ejercicios]]
+## Conceptos y Ejercicios
+*   [Álgebra Relacional Concepto](Algebra_Relacional_Concepto.md)
+*   [Ejercicio Selección y Proyección](Ejercicio_AR_Seleccion_Proyeccion.md)
+*   [Ejercicio Join](Ejercicio_AR_Join.md)
+*   [Ejercicio Diferencia](Ejercicio_AR_Diferencia.md)
+*   [Ejercicio Intersección](Ejercicio_AR_Interseccion.md)
 
 ## Operadores Fundamentales
-*   [[Seleccion_Operador]] (σ)
-*   [[Proyeccion_Operador]] (π)
-*   [[Union_Operador]] (∪)
-*   [[Diferencia_Operador]] (–)
-*   [[Producto_Cartesiano]] (×)
-*   [[Renombramiento]] (ρ)
+*   [Selección Operador](Seleccion_Operador.md) (σ)
+*   [Proyección Operador](Proyeccion_Operador.md) (π)
+*   [Unión Operador](Union_Operador.md) (∪)
+*   [Diferencia Operador](Diferencia_Operador.md) (–)
+*   [Producto Cartesiano](Producto_Cartesiano.md) (×)
+*   [Renombramiento](Renombramiento.md) (ρ)
 
 ## Operadores Derivados
-*   [[Interseccion_Operador]] (∩)
-*   [[Join_Algebra]] (⨝)
-*   [[Division_Algebra]] (÷)
+*   [Intersección Operador](Interseccion_Operador.md) (∩)
+*   [Join Álgebra](Join_Algebra.md) (⨝)
+*   [División Álgebra](Division_Algebra.md) (÷)
 
 ---
-[[00_Indice]]
+*   Volver al: [Índice](../00_Indice.md)

@@ -1,8 +1,8 @@
 ---
 tags: [concept, neuro-efficiency, db-design]
-moc: [[00_MOC_Diseño]]
-status: refactored
-difficulty: easy
+moc: "[00_MOC_Diseño](00_MOC_Diseño.md)"
+status: refined
+difficulty: intermediate
 ---
 
 # Entidad
@@ -31,7 +31,7 @@ Una **Entidad** representa cualquier objeto, persona o evento del mundo real (ya
 ---
 
 ## 🔗 Conexiones y Contexto
-*   **Se relaciona con:** [[Atributo]] (las propiedades que describen a la entidad) y [[Relacion_ER]] (cómo interactúan las entidades).
+*   **Se relaciona con:** [Atributo](Atributo.md) (las propiedades que describen a la entidad) y [Relación ER](Relacion_ER.md) (cómo interactúan las entidades).
 *   **Diferencia clave con:** El **Atributo**, que es una propiedad atómica y no tiene existencia independiente fuera de la entidad.
 
 ---

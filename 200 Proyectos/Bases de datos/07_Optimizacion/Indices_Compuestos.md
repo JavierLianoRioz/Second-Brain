@@ -1,6 +1,6 @@
 ---
-tags: [optimization, indexes, database]
-moc: [[00_MOC_Optimizacion]]
+tags: [optimization, relational-algebra, theory]
+moc: "[00_MOC_Optimizacion](00_MOC_Optimizacion.md)"
 status: refined
 difficulty: intermediate
 ---

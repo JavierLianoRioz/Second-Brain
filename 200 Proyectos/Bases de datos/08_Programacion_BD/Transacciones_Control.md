@@ -1,7 +1,7 @@
 ---
 tags: [concept, neuro-efficiency, db-programming]
-moc: [[00_MOC_Programacion_BD]]
-status: refactored
+moc: "[00_MOC_Programacion_BD](00_MOC_Programacion_BD.md)"
+status: refined
 difficulty: intermediate
 ---
 
@@ -34,7 +34,7 @@ Una **Transacción** es una unidad de trabajo indivisible que garantiza que un c
 ---
 
 ## 🔗 Conexiones y Contexto
-*   **Se relaciona con:** [[Ejemplos_Programacion]] (patrones de diseño transaccional) y [[Propiedades_ACID]] (fundamento teórico).
+*   **Se relaciona con:** [Ejemplos Programación](Ejemplos_Programacion.md) (patrones de diseño transaccional) y [Propiedades ACID](../05_Transacciones/Propiedades_ACID.md) (fundamento teórico).
 *   **Diferencia clave con:** Operaciones Atómicas Individuales. Una transacción agrupa múltiples operaciones que dependen lógicamente entre sí.
 
 ---

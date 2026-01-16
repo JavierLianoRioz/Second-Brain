@@ -23,4 +23,4 @@ En tablas con millones de registros, un JOIN indexado puede ser lento no por fal
 - **Escrituras más lentas**: Las actualizaciones en el padre ahora disparan actualizaciones en los hijos.
 
 ---
-- **Relacionado**: [[02_Diseño/Modelo_Relacional_Conceptos]], [Query Optimization](Query_Optimization.md)
+- **Relacionado**: [Modelo Relacional Conceptos](../02_Diseño/Modelo_Relacional_Conceptos.md), [Query Optimization](Query_Optimization.md)

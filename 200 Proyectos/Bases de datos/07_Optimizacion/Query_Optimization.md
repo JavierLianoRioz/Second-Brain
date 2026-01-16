@@ -1,8 +1,8 @@
 ---
-tags: [optimization, sql, performance]
-moc: [[00_MOC_Optimizacion]]
+tags: [optimization, denormalization, database]
+moc: "[00_MOC_Optimizacion](00_MOC_Optimizacion.md)"
 status: refined
-difficulty: intermediate
+difficulty: hard
 ---
 
 # Optimización de Consultas SQL
@@ -33,7 +33,7 @@ La **optimización de consultas** es el proceso de ajustar las sentencias SQL pa
 ## 🛠️ Estrategias Proactivas
 
 1.  **Selección Mínima**: No usar `SELECT *`. Solicita solo las columnas necesarias.
-2.  **Índices Inteligentes**: Implementación de [[Indices_Compuestos]] basados en los patrones de búsqueda.
+2.  **Índices Inteligentes**: Implementación de [Índices Compuestos](Indices_Compuestos.md) basados en los patrones de búsqueda.
 3.  **Rediseño**: [Denormalizacion Estratégica](Denormalizacion_Estrategica.md) o uso de [Tablas Temporales](Tablas_Temporales.md) en casos de alta carga.
 
 ---

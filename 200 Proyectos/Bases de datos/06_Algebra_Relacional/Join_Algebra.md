@@ -1,6 +1,7 @@
+```
 ---
-tags: [algebra-relacional, operator, theory]
-moc: [[00_MOC_Algebra_Relacional]]
+tags: [theory, relational-algebra, database]
+moc: "[00_MOC_Algebra_Relacional](00_MOC_Algebra_Relacional.md)"
 status: refined
 difficulty: advanced
 ---

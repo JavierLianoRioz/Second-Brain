@@ -1,22 +1,56 @@
+---
+tags: [concept, neuro-efficiency, optimization]
+moc: "[00_MOC_Optimizacion](00_MOC_Optimizacion.md)"
+status: refined
+difficulty: intermediate
+---
+
 # Tablas Temporales y Resúmenes
 
-Cuando una consulta requiere cálculos complejos (agregaciones sobre millones de filas) que no pueden ser indexados directamente, la solución es cambiar el enfoque hacia un diseño orientado a la consulta.
+---
 
-## El Problema de las Consultas no Indexables
-Ciertos cálculos como `SUM(unidades * precio)` o `COUNT(DISTINCT ide_pedido)` sobre grandes volúmenes no existen físicamente en la tabla y, por tanto, no pueden ser indexados. Estos generan en EXPLAIN señales de `Using temporary` y `Using filesort` sobre millones de registros.
+## 🧠 Núcleo del Concepto
 
-## Tablas de Resumen Materializadas
-En lugar de calcular en tiempo real para cada reporte, se crea una tabla física (materializada) que contiene los datos ya procesados.
+Las **Tablas Temporales y Resúmenes** son estrategias de optimización que consisten en pre-calcular y materializar resultados de consultas costosas para evitar el procesamiento repetitivo de grandes volúmenes de datos.
 
-### Ventajas
-- **Dataset Reducido**: Una consulta sobre 8 millones de items puede convertirse en una tabla de resumen con solo unos pocos miles de filas (ej. ventas por país y día).
-- **Sin JOINs**: La tabla resumen contiene toda la información necesaria.
-- **Indexable**: Se pueden crear índices sobre las columnas ya calculadas.
-
-## Flujo de Trabajo
-1. **Poblado**: Se ejecuta una consulta pesada fuera de horas pico para llenar la tabla resumen.
-2. **Consulta en Caliente**: Los usuarios consultan la tabla resumen de forma casi instantánea.
-3. **Actualización**: Se programa un proceso (script o evento) para actualizar la tabla periódicamente (diario, por hora).
+*   **Poblamiento Pesado**: Se ejecuta una consulta compleja (ej. agregaciones sobre millones de filas) en horas de baja demanda.
+*   **Consulta Ligera**: El usuario final consulta la tabla de resumen, obteniendo resultados de forma casi instantánea.
+*   **Materialización**: A diferencia de una vista simple, los datos están físicamente escritos en disco, permitiendo su indexación directa.
 
 ---
-- **Relacionado**: [Optimización de Consultas SQL](Query_Optimization.md), [Denormalización Estratégica](Denormalizacion_Estrategica.md)
+
+## 🗺️ Anclaje Visual (Dual Coding)
+
+> [!abstract] El Flujo de Materialización
+>
+> ```mermaid
+> graph TD
+>     D[(Big Data: 8M filas)] -- "Cálculo Programado" --> R[(Tabla Resumen: 10K filas)]
+>     R -- "JOIN Indexable" --> U[Usuario / Reporte]
+>     
+>     style R fill:#dfd,stroke:#333
+> ```
+
+---
+
+## 🔗 Conexiones y Contexto
+
+*   **Soluciona**: Problemas de agregaciones no indexables como `SUM(unidades * precio)`.
+*   **Relacionado con**: [Query Optimization](Query_Optimization.md) y [Denormalización Estratégica](Denormalizacion_Estrategica.md).
+
+---
+
+## 💻 Flujo de Trabajo
+
+1.  **Diagnóstico**: Detectar señales de `Using temporary` o `Using filesort` en el [Query_Optimization](Query_Optimization.md).
+2.  **Mantenimiento**: Programar un proceso (script o evento) para actualizar la tabla periódicamente.
+
+---
+
+> [!tip] Idea Fuerza (Cierre)
+> Las tablas resumen son el "caché de disco" de tu lógica de negocio: sacrifica sincronía inmediata por velocidad absoluta.
+
+---
+
+## 🗺️ Mapa de Contenido
+*   Volver a: [00 MOC Optimización](00_MOC_Optimizacion.md).

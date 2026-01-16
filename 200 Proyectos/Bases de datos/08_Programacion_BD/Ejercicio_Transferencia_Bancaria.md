@@ -1,8 +1,8 @@
 ---
 tags: [exercise, practice, db-programming]
-topic: [[Transacciones_Control]]
-level: beginner
-time_estimate: 10 min
+topic: "[Transacciones_Control](Transacciones_Control.md)"
+level: hard
+time_estimate: 20 min
 ---
 
 # Ejercicio: Transferencia Bancaria Segura

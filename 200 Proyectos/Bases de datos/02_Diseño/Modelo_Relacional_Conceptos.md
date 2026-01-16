@@ -1,7 +1,7 @@
 ---
 tags: [concept, neuro-efficiency, db-design]
-moc: [[00_MOC_Diseño]]
-status: refactored
+moc: "[00_MOC_Diseño](00_MOC_Diseño.md)"
+status: refined
 difficulty: intermediate
 ---
 
@@ -13,8 +13,8 @@ difficulty: intermediate
 El **Modelo Relacional** organiza la información en colecciones de tablas (relaciones) bidimensionales, basándose en la teoría matemática de conjuntos.
 
 *   **Estructura:** Los datos se guardan en **Tuplas** (filas) y **Atributos** (columnas) dentro de **Tablas**.
-*   **Identificación:** Cada fila es única gracias a la [[Clave_Primaria]].
-*   **Relación:** Las tablas se vinculan mediante [[Clave_Foranea]], permitiendo la navegación de datos sin duplicidad innecesaria.
+*   **Identificación:** Cada fila es única gracias a la [Clave Primaria](Clave_Primaria.md).
+*   **Relación:** Las tablas se vinculan mediante [Clave Foránea](Clave_Foranea.md), permitiendo la navegación de datos sin duplicidad innecesaria.
 
 ---
 
@@ -30,7 +30,7 @@ El **Modelo Relacional** organiza la información en colecciones de tablas (rela
 ---
 
 ## 🔗 Conexiones y Contexto
-*   **Se relaciona con:** [[Transformacion_ER_a_Relacional]] (su origen) y [[Normalizacion_Objetivos]] (su refinamiento).
+*   **Se relaciona con:** [Transformación ER a Relacional](Transformacion_ER_a_Relacional.md) (su origen) y [Normalización Objetivos](../04_Normalizacion/Normalizacion_Objetivos.md) (su refinamiento).
 *   **Diferencia clave con:** **SGBD**, que es el software que gestiona el modelo; el Modelo Relacional es la estructura lógica en sí.
 
 ---

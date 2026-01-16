@@ -1,19 +1,24 @@
+---
+tags: [moc, optimization, database]
+status: refined
+---
+
 # 🗺️ MOC: Optimización de SQL
 
-Este mapa organiza los conceptos y estrategias para mejorar el rendimiento de las bases de datos relacionales.
+Este mapa organiza los conceptos y estrategias para mejorar el rendimiento de las bases de datos relacionales, reduciendo tiempos de respuesta y carga de servidor.
 
 ## 🚀 Conceptos Fundamentales
-- [[Query_Optimization]]
-- [[Optimizacion_Algebraica]] (Pushing Selections Down)
+*   [Query Optimization](Query_Optimization.md)
+*   [Optimización Algebraica](Optimizacion_Algebraica.md) (Pushing Selections Down)
 
-## 🛠️ Entidades y Estrategias
-- [[Indices_Compuestos]]
-- [[Denormalizacion_Estrategica]]
-- [[Tablas_Temporales]]
+## 🛠️ Herramientas y Estrategias
+*   [Índices Compuestos](Indices_Compuestos.md)
+*   [Denormalización Estratégica](Denormalizacion_Estrategica.md)
+*   [Tablas Temporales](Tablas_Temporales.md)
 
-## 📖 Casos Prácticos
-- Optimización de JOINS masivos.
-- Agregaciones pesadas en analítica.
+## 📖 Aplicaciones Prácticas
+*   Optimización de JOINS masivos.
+*   Agregaciones pesadas en analítica.
 
 ---
-[[00_Indice]]
+*   Volver al: [Índice](../00_Indice.md)

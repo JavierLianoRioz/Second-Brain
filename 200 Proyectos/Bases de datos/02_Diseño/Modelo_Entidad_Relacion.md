@@ -1,7 +1,7 @@
 ---
 tags: [concept, neuro-efficiency, db-design]
-moc: [[00_MOC_Diseño]]
-status: refactored
+moc: "[00_MOC_Diseño](00_MOC_Diseño.md)"
+status: refined
 difficulty: intermediate
 ---
 
@@ -36,7 +36,7 @@ El **Modelo Entidad-Relación (ER)** es el estándar para el diseño conceptual 
 ---
 
 ## 🔗 Conexiones y Contexto
-*   **Se relaciona con:** [[Fases_del_Diseño_BD]] (es la herramienta de la fase conceptual) y [[Transformacion_ER_a_Relacional]] (su paso siguiente).
+*   **Se relaciona con:** [Fases del Diseño BD](Fases_del_Diseño_BD.md) (es la herramienta de la fase conceptual) y [Transformación ER a Relacional](Transformacion_ER_a_Relacional.md) (su paso siguiente).
 *   **Diferencia clave con:** **Modelo Relacional**, que es un modelo lógico basado en tablas, mientras que el ER es conceptual basado en diagramas.
 
 ---

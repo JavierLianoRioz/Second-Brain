@@ -1,7 +1,7 @@
 ---
 tags: [concept, neuro-efficiency, db-design]
-moc: [[00_MOC_Diseño]]
-status: refactored
+moc: "[00_MOC_Diseño](00_MOC_Diseño.md)"
+status: refined
 difficulty: easy
 ---
 
@@ -28,7 +28,7 @@ La **Clave Foránea (FK)** es un atributo en una tabla que apunta a la [Clave Pr
 ---
 
 ## 🔗 Conexiones y Contexto
-*   **Se relaciona con:** [[Clave_Primaria]] (su destino) y [[Relacion_ER]] (la FK es la implementación física de una relación).
+*   **Se relaciona con:** [Clave Primaria](Clave_Primaria.md) (su destino) y [Relación ER](Relacion_ER.md) (la FK es la implementación física de una relación).
 *   **Diferencia clave con:** **Clave Primaria**, que identifica a la fila local, mientras que la FK vincula con una fila externa.
 
 ---

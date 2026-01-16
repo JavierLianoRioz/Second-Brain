@@ -1,7 +1,7 @@
 ---
 tags: [concept, neuro-efficiency, db-design]
-moc: [[00_MOC_Diseño]]
-status: refactored
+moc: "[00_MOC_Diseño](00_MOC_Diseño.md)"
+status: refined
 difficulty: easy
 ---
 
@@ -12,8 +12,8 @@ difficulty: easy
 ## 🧠 Núcleo del Concepto
 El diseño de una base de datos es un flujo estructurado que garantiza que la implementación técnica responda exactamente a la necesidad del negocio.
 
-*   **Fase Conceptual:** Abstracción de la realidad mediante diagramas independientes de la tecnología (Herramienta: [[Modelo_Entidad_Relacion]]).
-*   **Fase Lógica:** Traducción del diagrama conceptual a un modelo de datos específico (Herramienta: [[Modelo_Relacional_Conceptos]]).
+*   **Fase Conceptual:** Abstracción de la realidad mediante diagramas independientes de la tecnología (Herramienta: [Modelo Entidad-Relación](Modelo_Entidad_Relacion.md)).
+*   **Fase Lógica:** Traducción del diagrama conceptual a un modelo de datos específico (Herramienta: [Modelo Relacional Conceptos](Modelo_Relacional_Conceptos.md)).
 *   **Fase Física:** Implementación real en un motor de base de datos concreto (MySQL, Oracle, etc.).
 
 ---
@@ -32,7 +32,7 @@ El diseño de una base de datos es un flujo estructurado que garantiza que la im
 ---
 
 ## 🔗 Conexiones y Contexto
-*   **Se relaciona con:** [[SQL_DDL]] (donde se ejecuta la fase física) y [[Normalizacion_Objetivos]] (parte de la fase de refinamiento lógico).
+*   **Se relaciona con:** [SQL DDL](../03_SQL/SQL_DDL.md) (donde se ejecuta la fase física) y [Normalización Objetivos](../04_Normalizacion/Normalizacion_Objetivos.md) (parte de la fase de refinamiento lógico).
 *   **Punto Crítico:** Un error en la fase conceptual suele costar 10 veces más de corregir si se detecta en la fase física.
 
 ---

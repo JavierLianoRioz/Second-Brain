@@ -1,9 +1,14 @@
+---
+tags: [index, databases, university]
+status: refined
+---
+
 # Apuntes de Bases de Datos (Zettelkasten)
 
 > [!IMPORTANT]
 > 🎓 **[GUÍA ÚLTIMO MINUTO: EXAMEN FINAL](Guia_Examen_Final.md)** - Enfócate en lo práctico.
 
-Bienvenido a los apuntes de Bases de Datos. Este repositorio sigue el método **Zettelkasten**, con notas atómicas interconectadas.
+Bienvenido a los apuntes de Bases de Datos. Este repositorio sigue el método **Zettelkasten**, con notas atómicas interconectadas diseñadas para la eficiencia cognitiva.
 
 ## 🗺️ Mapas de Contenido (MOCs)
 
@@ -12,7 +17,7 @@ Navega por los temas principales a través de sus mapas:
 ### 1. [Introducción y Fundamentos](01_Introduccion/00_MOC_Introduccion.md)
 *   Historia, Definiciones, SGBD, Arquitectura.
 
-### 2. [Diseño de Bases de Datos](02_Dise%C3%B1o/00_MOC_Dise%C3%B1o.md)
+### 2. [Diseño de Bases de Datos](02_Diseño/00_MOC_Diseño.md)
 *   Metodología, Modelo ER, Modelo Relacional, Caso de Estudio.
 
 ### 3. [Lenguaje SQL](03_SQL/00_MOC_SQL.md)

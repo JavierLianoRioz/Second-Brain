@@ -1,7 +1,7 @@
 ---
 tags: [concept, neuro-efficiency, db-design]
-moc: [[00_MOC_Diseño]]
-status: refactored
+moc: "[00_MOC_Diseño](00_MOC_Diseño.md)"
+status: refined
 difficulty: easy
 ---
 
@@ -31,7 +31,7 @@ Un **Atributo** es una propiedad atómica o característica que describe una [En
 ---
 
 ## 🔗 Conexiones y Contexto
-*   **Se relaciona con:** [[Entidad]] (a la que describe) y [[Clave_Primaria]] (el rol que asume el identificador).
+*   **Se relaciona con:** [Entidad](Entidad.md) (a la que describe) y [Clave Primaria](Clave_Primaria.md) (el rol que asume el identificador).
 *   **Diferencia clave con:** La **Entidad**, que tiene existencia autónoma; el atributo solo existe como parte de una entidad.
 
 ---

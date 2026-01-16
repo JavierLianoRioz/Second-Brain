@@ -1,6 +1,11 @@
+---
+tags: [moc, sql, database]
+status: refined
+---
+
 # 🗺️ MOC: Lenguaje SQL
 
-Este es el mapa de contenido para el módulo de SQL.
+Este es el mapa de contenido para el módulo de SQL, el lenguaje estándar para la gestión de bases de datos relacionales.
 
 ## Definición de Datos (DDL)
 *   [SQL DDL](SQL_DDL.md)
@@ -15,10 +20,10 @@ Este es el mapa de contenido para el módulo de SQL.
 *   [DELETE](DELETE.md)
 
 ## Consultas (SELECT)
-*   [SELECT Basico](SELECT_Basico.md)
+*   [SELECT Básico](SELECT_Basico.md)
 *   [SQL WHERE](SQL_WHERE.md)
 *   [SQL JOIN](SQL_JOIN.md)
 *   [SQL GROUP BY](SQL_GROUP_BY.md)
 
 ---
-[00 Indice](../00_Indice.md)
+*   Volver al: [Índice](../00_Indice.md)

@@ -1,8 +1,8 @@
 ---
-tags: [sql, filtering, database]
-moc: [[00_MOC_SQL]]
+tags: [sql, dml, database]
+moc: "[00_MOC_SQL](00_MOC_SQL.md)"
 status: refined
-difficulty: basic
+difficulty: intermediate
 ---
 
 # SQL WHERE: Filtrado de Datos

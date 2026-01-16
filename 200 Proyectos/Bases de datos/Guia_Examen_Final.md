@@ -1,3 +1,9 @@
+---
+tags: [guide, exam, databases]
+status: refined
+difficulty: hard
+---
+
 # 🎓 Guía de Supervivencia: Examen Final Bases de Datos
 
 Basada en los "leaks" definitivos. El enfoque es **100% práctico** y de **completar código** (vienen a medias).
@@ -11,15 +17,15 @@ Basada en los "leaks" definitivos. El enfoque es **100% práctico** y de **compl
 
 ### 1. Diseño Conceptual (Completar)
 Identificar relaciones y escribir el **orden correcto de cardinalidades**.
-- [Relaciones ER](02_Diseño/Relacion_ER.md)
+- [Relación ER](02_Diseño/Relacion_ER.md)
 
 ### 2. Álgebra Relacional ⭐ (VALE MUCHO)
 Los Joins ya suelen venir hechos. Enfócate en: **UNIÓN, INTERSECCIÓN y DIFERENCIA**.
-- [Ejercicios Á. Relacional](06_Algebra_Relacional/Algebra_Relacional_Ejercicios.md)
+- [MOC Álgebra Relacional (Ejercicios)](06_Algebra_Relacional/00_MOC_Algebra_Relacional.md)
 
 ### 3. DML y Consultas
 Sentencias `SELECT` usando: `HAVING`, `GROUP BY`, `ORDER BY`.
-- [Consultas SELECT Básico](03_SQL/SELECT_Basico.md)
+- [SELECT Básico](03_SQL/SELECT_Basico.md)
 
 ### 4. Normalización ⭐ (VALE MUCHO - El más largo)
 Ejercicio de **completar** hasta la **4FN**.
@@ -27,7 +33,7 @@ Ejercicio de **completar** hasta la **4FN**.
 
 ### 5. Transacciones
 Viene el Stored Procedure ya escrito, hay que completar los comandos: `COMMIT`, `ROLLBACK`, `IF`.
-- [Control de Transacciones](08_Programacion_BD/Transacciones_Control.md)
+- [Transacciones Control](08_Programacion_BD/Transacciones_Control.md)
 
 ### 6. Optimización (La más "rentable")
 Es más conceptual. Argumentar qué campos desnormalizar y proponer mejoras.

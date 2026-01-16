@@ -1,15 +1,20 @@
-# Programación en Bases de Datos
+---
+tags: [moc, db-programming, database]
+status: refined
+---
 
-Este módulo cubre la lógica procedimental y el control transaccional avanzado, optimizando el rendimiento y la integridad en el servidor.
+# 🗺️ MOC: Programación en Bases de Datos
+
+Este módulo cubre la lógica procedimental y el control transaccional avanzado, permitiendo ejecutar lógica de negocio directamente en el motor de base de datos.
 
 ## 🧠 Conceptos Nucleares (Teoría Neuro-Eficiente)
-- [[Control_de_Flujo]]: Variables, condicionales IF y bucles WHILE.
-- [[Stored_Procedures_Sintaxis]]: Encapsulamiento, parámetros (IN/OUT) y modularización.
-- [[Transacciones_Control]]: Atomicidad, SAVEPOINTs y bloqueos selectivos.
+*   [Control de Flujo](Control_de_Flujo.md): Variables, condicionales IF y bucles WHILE.
+*   [Stored Procedures Sintaxis](Stored_Procedures_Sintaxis.md): Encapsulamiento, parámetros (IN/OUT) y modularización.
+*   [Transacciones Control](Transacciones_Control.md): Atomicidad, SAVEPOINTs y bloqueos selectivos.
 
 ## 🚀 Entrenamiento Activo (Ejercicios de Recuperación)
-- [[Ejercicio_Venta_Stock]]: Reto de concurrencia y control de inventario.
-- [[Ejercicio_Transferencia_Bancaria]]: Reto de integridad financiera y atomicidad.
+*   [Ejercicio Venta Stock](Ejercicio_Venta_Stock.md): Reto de concurrencia y control de inventario.
+*   [Ejercicio Transferencia Bancaria](Ejercicio_Transferencia_Bancaria.md): Reto de integridad financiera y atomicidad.
 
 ---
-- **Raíz**: [[00_Indice|Índice Principal de Bases de Datos]]
+*   Volver al: [Índice](../00_Indice.md)

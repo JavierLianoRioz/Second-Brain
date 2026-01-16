@@ -1,7 +1,7 @@
 ---
 tags: [concept, neuro-efficiency, db-design]
-moc: [[00_MOC_Diseño]]
-status: refactored
+moc: "[00_MOC_Diseño](00_MOC_Diseño.md)"
+status: refined
 difficulty: easy
 ---
 
@@ -31,7 +31,7 @@ La **Clave Primaria (PK)** es el atributo (o conjunto de ellos) que identifica d
 ---
 
 ## 🔗 Conexiones y Contexto
-*   **Se relaciona con:** [[Clave_Foranea]] (que apunta a una PK) y [[Entidad]] (el identificador ER se convierte en PK).
+*   **Se relaciona con:** [Clave Foránea](Clave_Foranea.md) (que apunta a una PK) y [Entidad](Entidad.md) (el identificador ER se convierte en PK).
 *   **Diferencia clave con:** **Clave Única**, que permite nulos y no es el identificador principal de la fila.
 
 ---

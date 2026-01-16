@@ -1,6 +1,6 @@
 ---
 tags: [exercise, practice, db-programming]
-topic: [[Stored_Procedures_Sintaxis]]
+topic: "[Stored_Procedures_Sintaxis](Stored_Procedures_Sintaxis.md)"
 level: intermediate
 time_estimate: 15 min
 ---

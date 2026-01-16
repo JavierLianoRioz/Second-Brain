@@ -1,26 +1,27 @@
-# 🗺️ MOC: Normalización
+---
+tags: [moc, normalization, database]
+status: refined
+---
 
-Este es el mapa de contenido para el módulo de Normalización.
+# 🗺️ MOC: Normalización de Datos
 
-## Conceptos
-*   [Normalizacion Objetivos](Normalizacion_Objetivos.md)
-*   [Resumen Niveles Normalizacion](Resumen_Niveles_Normalizacion.md)
+Este mapa de contenido organiza el proceso de refinamiento de esquemas relacionales para evitar redundancias y anomalías.
+
+## Conceptos Fundamentales
+*   [Normalización Objetivos](Normalizacion_Objetivos.md)
 *   [Dependencia Funcional](Dependencia_Funcional.md)
 *   [Dependencia Multivaluada](Dependencia_Multivaluada.md)
 
-## Formas Normales Básicas
-*   [Primera Forma Normal 1FN](Primera_Forma_Normal_1FN.md)
-*   [Segunda Forma Normal 2FN](Segunda_Forma_Normal_2FN.md)
-*   [Tercera Forma Normal 3FN](Tercera_Forma_Normal_3FN.md)
+## Formas Normales (Niveles)
+*   [Primera Forma Normal (1FN)](Primera_Forma_Normal_1FN.md)
+*   [Segunda Forma Normal (2FN)](Segunda_Forma_Normal_2FN.md)
+*   [Tercera Forma Normal (3FN)](Tercera_Forma_Normal_3FN.md)
+*   [Cuarta Forma Normal (4FN)](Cuarta_Forma_Normal_4FN.md)
+*   [Quinta Forma Normal (5FN)](Quinta_Forma_Normal_5FN.md)
 
-## Formas Normales Avanzadas
-*   [Cuarta Forma Normal 4FN](Cuarta_Forma_Normal_4FN.md)
-*   [Quinta Forma Normal 5FN](Quinta_Forma_Normal_5FN.md)
-
-[Resumen Niveles Normalizacion](Resumen_Niveles_Normalizacion.md)
-
-## Práctica
-*   [Ejercicio Normalizacion Completo](Ejercicio_Normalizacion_Completo.md)
+## Recursos de Repaso
+*   [Resumen Niveles Normalización](Resumen_Niveles_Normalizacion.md)
+*   [Ejercicio Normalización Completo](Ejercicio_Normalizacion_Completo.md)
 
 ---
-[00 Indice](../00_Indice.md)
+*   Volver al: [Índice](../00_Indice.md)

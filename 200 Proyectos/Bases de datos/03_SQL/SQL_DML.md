@@ -1,6 +1,6 @@
 ---
 tags: [sql, dml, exam-prep]
-moc: [[00_MOC_SQL]]
+moc: "[00_MOC_SQL](00_MOC_SQL.md)"
 status: refined
 difficulty: basic
 ---

@@ -1,7 +1,7 @@
 ---
 tags: [concept, neuro-efficiency, db-programming]
-moc: [[00_MOC_Programacion_BD]]
-status: refactored
+moc: "[00_MOC_Programacion_BD](00_MOC_Programacion_BD.md)"
+status: refined
 difficulty: intermediate
 ---
 
@@ -34,7 +34,7 @@ Un **Stored Procedure** es un bloque de código SQL precompilado que reside en e
 ---
 
 ## 🔗 Conexiones y Contexto
-*   **Se relaciona con:** [[Control_de_Flujo]] (la lógica interna) y [[Transacciones_Control]] (para asegurar atomicidad en el procedimiento).
+*   **Se relaciona con:** [Control de Flujo](Control_de_Flujo.md) (la lógica interna) y [Transacciones Control](Transacciones_Control.md) (para asegurar atomicidad en el procedimiento).
 *   **Diferencia clave con:** **Funciones (UDF)**, las cuales deben devolver un valor y se usan dentro de expresiones SQL, mientras que los procedimientos se ejecutan con `CALL`.
 
 ---

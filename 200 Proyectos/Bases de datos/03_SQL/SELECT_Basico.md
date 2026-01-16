@@ -1,27 +1,68 @@
+---
+tags: [sql, select, database]
+moc: "[00_MOC_SQL](00_MOC_SQL.md)"
+status: refined
+difficulty: easy
+---
+
 # SELECT Básico
 
-Comando para recuperar datos.
+---
 
-## Estructura
+## 🧠 Núcleo del Concepto
+
+El comando **SELECT** es la herramienta fundamental de SQL DML para recuperar y consultar datos almacenados en una base de datos relacional.
+
+*   **Proyección de Datos**: Permite elegir qué columnas específicas queremos ver del conjunto total.
+*   **Origen**: La cláusula `FROM` especifica la tabla o conjunto de tablas de donde extraeremos la información.
+*   **Clausura**: El resultado de una consulta `SELECT` es siempre otra relación (tabla), permitiendo consultas anidadas.
+
+---
+
+## 🗺️ Anclaje Visual (Dual Coding)
+
+> [!abstract] Estructura de la Consulta
+>
+> ```mermaid
+> graph LR
+>     S[SELECT] --> C[Columnas]
+>     F[FROM] --> T[Tabla]
+>     
+>     style S fill:#f9f,stroke:#333
+>     style F fill:#dfd,stroke:#333
+> ```
+
+---
+
+## 🔗 Conexiones y Contexto
+
+*   **Base Teórica**: Este comando implementa las operaciones del [Algebra Relacional Concepto](../06_Algebra_Relacional/Algebra_Relacional_Concepto.md).
+*   **Operaciones**: 
+    *   La lista de columnas implementa la [Proyeccion Operador](../06_Algebra_Relacional/Proyeccion_Operador.md).
+    *   La cláusula [SQL WHERE](SQL_WHERE.md) implementa la [Seleccion Operador](../06_Algebra_Relacional/Seleccion_Operador.md).
+
+---
+
+## 💻 Ejemplos de Implementación
+
+### 1. Consulta Total
 ```sql
-SELECT columnas FROM tabla;
+-- Recupera todas las columnas y filas
+SELECT * FROM producto;
 ```
 
-## Ejemplo
+### 2. Proyección Específica
 ```sql
+-- Filtra solo las columnas de interés
 SELECT nombre, precio FROM producto;
 ```
 
-## Clausulas
-*   [SQL WHERE](SQL_WHERE.md): Filtrar filas.
-*   `ORDER BY`: Ordenar.
-*   `LIMIT`: Paginación.
+---
 
-
-## Base Teórica
-Este comando implementa las operaciones del [Algebra Relacional Concepto](../06_Algebra_Relacional/Algebra_Relacional_Concepto.md):
-*   `WHERE` implementa la [Seleccion Operador](../06_Algebra_Relacional/Seleccion_Operador.md).
-*   La lista de columnas implementa la [Proyeccion Operador](../06_Algebra_Relacional/Proyeccion_Operador.md).
+> [!tip] Idea Fuerza (Cierre)
+> Si la base de datos es una biblioteca, el `SELECT` es el bibliotecario que te trae exactamente el libro y la página que pediste.
 
 ---
-[00 MOC SQL](00_MOC_SQL.md)
+
+## 🗺️ Mapa de Contenido
+*   Volver a: [00 MOC SQL](00_MOC_SQL.md).

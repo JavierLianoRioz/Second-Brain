@@ -1,7 +1,7 @@
 ---
 tags: [concept, neuro-efficiency, db-programming]
-moc: [[00_MOC_Programacion_BD]]
-status: refactored
+moc: "[00_MOC_Programacion_BD](00_MOC_Programacion_BD.md)"
+status: refined
 difficulty: intermediate
 ---
 
@@ -31,7 +31,7 @@ La programación en base de datos permite implementar lógica de negocio complej
 ---
 
 ## 🔗 Conexiones y Contexto
-*   **Se relaciona con:** [[Stored_Procedures_Sintaxis]] (donde se suele escribir este código) y [[Ejemplos_Programacion]] (aplicaciones prácticas).
+*   **Se relaciona con:** [Stored Procedures Sintaxis](Stored_Procedures_Sintaxis.md) (donde se suele escribir este código) y [Ejemplos Programación](Ejemplos_Programacion.md) (aplicaciones prácticas).
 *   **Diferencia clave con:** SQL Declarativo (SELECT/INSERT), que dice QUÉ hacer, mientras que el control de flujo dice CÓMO y en qué ORDEN.
 
 ---
