@@ -6,6 +6,8 @@
     "date": "date",
     "difficulty": "multitext",
     "status": "multitext",
-    "moc": "unknown"
+    "moc": "unknown",
+    "type": "multitext",
+    "category": "multitext"
   }
 }
