@@ -14,6 +14,7 @@ Bienvenidos al sistema de notas de **Matemáticas Numéricas**, basado en la met
 - [Revisión de Cálculo](01_Preliminares_Error/Revisión_Cálculo.md)
 - [Aritmética de Punto Flotante](01_Preliminares_Error/Aritmética_Punto_Flotante.md)
 - [Errores de Redondeo y Truncamiento](01_Preliminares_Error/Errores_Redondeo_Truncamiento.md)
+- [Notación Big O y Velocidad de Convergencia](01_Preliminares_Error/Notación_Big_O.md)
 
 ### 02. Soluciones de Ecuaciones de una Variable
 - [Método de Bisección](02_Ecuaciones_Una_Variable/Bisección.md)

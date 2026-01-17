@@ -17,7 +17,7 @@ Donde:
 $$T^{(n)}(t, w) = f(t, w) + \frac{h}{2} f'(t, w) + \dots + \frac{h^{n-1}}{n!} f^{(n-1)}(t, w)$$
 
 ### 2. Error
-Un método de Taylor de orden $n$ tiene un error de truncamiento local de $O(h^{n+1})$ y un error global de $O(h^n)$.
+Un método de Taylor de orden $n$ tiene un error de truncamiento local de [O(h^{n+1})](../01_Preliminares_Error/Notación_Big_O.md) y un error global de [O(h^n)](../01_Preliminares_Error/Notación_Big_O.md).
 
 ### 3. El Desafío de las Derivadas
 Para usar un método de Taylor de orden 4, por ejemplo, necesitamos $f', f'', f'''$. Esto requiere usar la regla de la cadena para derivadas totales:

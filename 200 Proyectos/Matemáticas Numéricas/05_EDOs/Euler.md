@@ -23,8 +23,8 @@ Donde:
 - $w_i$ es la aproximación de $y(t_i)$.
 
 ### 3. Error
-- **Error de truncamiento local**: $O(h^2)$.
-- **Error de truncamiento global**: $O(h)$.
+- **Error de truncamiento local**: [O(h^2)](../01_Preliminares_Error/Notación_Big_O.md).
+- **Error de truncamiento global**: [O(h)](../01_Preliminares_Error/Notación_Big_O.md).
 Es un método de **primer orden**.
 
 ## 📊 Geometría del Método (Mermaid)

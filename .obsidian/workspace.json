@@ -153,7 +153,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "200 Proyectos/Estadistica/Ejercicios de Examen.md",
+                "file": "200 Proyectos/Matemáticas Numéricas/02_Ecuaciones_Una_Variable/Secante_Posicion_Falsa.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -163,7 +163,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Ejercicios de Examen"
+              "title": "Backlinks for Secante_Posicion_Falsa"
             }
           },
           {
@@ -172,12 +172,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "200 Proyectos/Minecraft/001 Let's Play.md",
+                "file": "200 Proyectos/Matemáticas Numéricas/02_Ecuaciones_Una_Variable/Secante_Posicion_Falsa.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from 001 Let's Play"
+              "title": "Outgoing links from Secante_Posicion_Falsa"
             }
           },
           {
@@ -201,13 +201,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Respuesta_Estructura_BD.md",
+                "file": "200 Proyectos/Matemáticas Numéricas/02_Ecuaciones_Una_Variable/Secante_Posicion_Falsa.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Respuesta_Estructura_BD"
+              "title": "Outline of Secante_Posicion_Falsa"
             }
           },
           {
@@ -284,13 +284,15 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "271e4d0b8a7aab1c",
+  "active": "712167e3c33fc024",
   "lastOpenFiles": [
-    "200 Proyectos/Matemáticas Numéricas/Matemáticas Numéricas.md",
-    "200 Proyectos/Matemáticas Numéricas/02_Ecuaciones_Una_Variable/Newton_Raphson.md",
     "200 Proyectos/Matemáticas Numéricas/02_Ecuaciones_Una_Variable/Punto_Fijo.md",
+    "200 Proyectos/Matemáticas Numéricas/02_Ecuaciones_Una_Variable/Secante_Posicion_Falsa.md",
     "200 Proyectos/Matemáticas Numéricas/02_Ecuaciones_Una_Variable/Bisección.md",
     "200 Proyectos/Matemáticas Numéricas/01_Preliminares_Error/Revisión_Cálculo.md",
+    "200 Proyectos/Matemáticas Numéricas/01_Preliminares_Error/Notación_Big_O.md",
+    "200 Proyectos/Matemáticas Numéricas/Matemáticas Numéricas.md",
+    "200 Proyectos/Matemáticas Numéricas/02_Ecuaciones_Una_Variable/Newton_Raphson.md",
     "200 Proyectos/Matemáticas Numéricas/01_Preliminares_Error/Errores_Redondeo_Truncamiento.md",
     "200 Proyectos/Matemáticas Numéricas/01_Preliminares_Error/Aritmética_Punto_Flotante.md",
     "200 Proyectos/Matemáticas Numéricas/05_EDOs/Runge_Kutta.md",
@@ -307,7 +309,6 @@
     "200 Proyectos/Matemáticas Numéricas/03_Interpolación/Diferencias_Divididas.md",
     "200 Proyectos/Matemáticas Numéricas/03_Interpolación/Lagrange.md",
     "200 Proyectos/Matemáticas Numéricas/03_Interpolación",
-    "200 Proyectos/Matemáticas Numéricas/02_Ecuaciones_Una_Variable/Secante_Posicion_Falsa.md",
     "200 Proyectos/Matemáticas Numéricas/02_Ecuaciones_Una_Variable",
     "500 Biblioteca/Matemáticas/Exámenes/Clave Calificación Parcial 1.pdf",
     "200 Proyectos/Matemáticas Numéricas/000_Template_MN.md",
@@ -321,7 +322,6 @@
     "000 INBOX/Ownership-Rust.md",
     "999 Plantillas/Neuro-Ejercicio.md",
     "999 Plantillas/MOC-Sesion.md",
-    "200 Proyectos/Bases de datos/04_Normalizacion/Segunda_Forma_Normal_2FN.md",
     "500 Biblioteca/BaseDeDatos1-25-26/Evaluaciones/images/resolucion_parcial_1/1761554050863.png",
     "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 2/Clase 25/images/04_ejercicio_3/1765535765824.png",
     "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 2/Clase 25/images/04_ejercicio_3/1765535745122.png",

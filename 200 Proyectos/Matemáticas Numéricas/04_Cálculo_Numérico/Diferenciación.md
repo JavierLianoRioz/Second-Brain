@@ -12,12 +12,12 @@ La diferenciación numérica consiste en estimar la derivada de una función uti
 ## 📝 Desarrollo / Explicación
 
 ### 1. Fórmulas de Diferencia Progresiva y Regresiva
-Utilizan dos puntos y tienen error de orden $O(h)$.
+Utilizan dos puntos y tienen error de orden [O(h)](../01_Preliminares_Error/Notación_Big_O.md).
 - **Progresiva**: $f'(x_0) = \frac{f(x_0+h) - f(x_0)}{h} - \frac{h}{2}f''(\xi)$
 - **Regresiva**: $f'(x_0) = \frac{f(x_0) - f(x_0-h)}{h} + \frac{h}{2}f''(\xi)$
 
 ### 2. Fórmula de Tres Puntos (Diferencia Centrada)
-Es más precisa, con error de orden $O(h^2)$.
+Es más precisa, con error de orden [O(h^2)](../01_Preliminares_Error/Notación_Big_O.md).
 $$f'(x_0) = \frac{f(x_0+h) - f(x_0-h)}{2h} - \frac{h^2}{6}f'''(\xi)$$
 
 ### 3. Derivadas de Segundo Orden

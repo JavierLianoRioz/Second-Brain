@@ -24,7 +24,7 @@ Donde las pendientes intermedias son:
 - $k_4 = h f(t_{i+1}, w_i + k_3)$
 
 ### 3. Error
-El método RK4 tiene un error de truncamiento local de $O(h^5)$ y un error global de $O(h^4)$.
+El método RK4 tiene un error de truncamiento local de [O(h^5)](../01_Preliminares_Error/Notación_Big_O.md) y un error global de [O(h^4)](../01_Preliminares_Error/Notación_Big_O.md).
 
 ## 📊 Pesos de las Pendientes (Mermaid)
 ```mermaid
