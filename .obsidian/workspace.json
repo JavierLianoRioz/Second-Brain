@@ -11,14 +11,10 @@
             "id": "5b6f614486c1cb7e",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "200 Proyectos/Bases de datos/04_Normalizacion/Segunda_Forma_Normal_2FN.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Segunda_Forma_Normal_2FN"
+              "title": "New tab"
             }
           }
         ]
@@ -88,7 +84,6 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "200 Proyectos/Bases de datos/04_Normalizacion/Segunda_Forma_Normal_2FN.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -116,7 +111,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of Segunda_Forma_Normal_2FN"
+              "title": "Graph view"
             }
           }
         ]
@@ -221,7 +216,6 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "200 Proyectos/Bases de datos/04_Normalizacion/Segunda_Forma_Normal_2FN.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -249,7 +243,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of Segunda_Forma_Normal_2FN"
+              "title": "Graph view"
             }
           }
         ]
@@ -271,12 +265,17 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "5b6f614486c1cb7e",
+  "active": "712167e3c33fc024",
   "lastOpenFiles": [
+    "000 INBOX/Clave-Primaria-Atomic.md",
+    "999 Plantillas/Neuro-Concepto.md",
+    "000 INBOX/Ownership-Rust.md",
+    "999 Plantillas/Neuro-Ejercicio.md",
+    "999 Plantillas/MOC-Sesion.md",
+    "200 Proyectos/Bases de datos/04_Normalizacion/Segunda_Forma_Normal_2FN.md",
     "200 Proyectos/Bases de datos/04_Normalizacion/Primera_Forma_Normal_1FN.md",
     "200 Proyectos/Bases de datos/04_Normalizacion/Normalizacion_Objetivos.md",
     "200 Proyectos/Bases de datos/04_Normalizacion/00_MOC_Normalizacion.md",
-    "999 Plantillas/Neuro-Concepto.md",
     "200 Proyectos/Bases de datos/05_Transacciones/Comandos_TCL.md",
     "200 Proyectos/Bases de datos/05_Transacciones/Propiedades_ACID.md",
     "200 Proyectos/Bases de datos/06_Algebra_Relacional/Ejercicio_AR_Interseccion.md",
@@ -290,7 +289,6 @@
     "current_config.json",
     "mcp_config_check.json",
     "update_mcp.ps1",
-    "999 Plantillas/Neuro-Ejercicio.md",
     "200 Proyectos/Bases de datos/07_Optimizacion/Optimizacion_Algebraica.md",
     "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 2/Clase 17/02_selects.md",
     "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 2/Clase 17/00_ddl.md",
@@ -302,10 +300,6 @@
     "200 Proyectos/Bases de datos/06_Algebra_Relacional/Algebra_Relacional_Concepto.md",
     "200 Proyectos/Bases de datos/08_Programacion_BD/00_MOC_Programacion_BD.md",
     "200 Proyectos/Bases de datos/07_Optimizacion/Tablas_Temporales.md",
-    "200 Proyectos/Bases de datos/07_Optimizacion/Query_Optimization.md",
-    "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 2/Clase 17/01_inserts.md",
-    "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 2/Clase 19/03_ejercicio_3fn.md",
-    "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 2/Clase 19/04_ejercicio_4fn.md",
     "500 Biblioteca/BaseDeDatos1-25-26/Evaluaciones/images/resolucion_parcial_1/1761554050863.png",
     "999 Plantillas",
     "mermaid-mcp/Dockerfile",
