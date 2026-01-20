@@ -6,6 +6,14 @@ tags: [eda, data-structure, linear]
 
 Una **Lista Enlazada Simple** es una estructura de datos lineal compuesta por nodos donde cada uno contiene un valor y una referencia (puntero) al siguiente nodo de la secuencia.
 
+Nodo () {
+	Nodo siguiente;
+	ó
+	Nodo anterior;
+}
+
+Nodo -> Nodo -> Nodo -> Nodo
+1 -> 2 -> 3 -> 4
 ## Complejidad Big O
 
 | Operación | Complejidad | Notas |
