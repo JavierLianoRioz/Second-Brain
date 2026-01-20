@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "200 Proyectos/EDA/04_Ficheros/Acceso_Secuencial.md",
+                "file": "200 Proyectos/EDA/04_Ficheros/Acceso_Aleatorio.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Acceso_Secuencial"
+              "title": "Acceso_Aleatorio"
             }
           }
         ]
@@ -88,7 +88,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "200 Proyectos/EDA/04_Ficheros/Acceso_Secuencial.md",
+                "file": "200 Proyectos/EDA/04_Ficheros/Acceso_Aleatorio.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -116,7 +116,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of Acceso_Secuencial"
+              "title": "Graph of Acceso_Aleatorio"
             }
           }
         ]
@@ -228,9 +228,9 @@
   },
   "active": "5b6f614486c1cb7e",
   "lastOpenFiles": [
+    "200 Proyectos/EDA/04_Ficheros/Acceso_Secuencial.md",
     "200 Proyectos/EDA/04_Ficheros/00_MOC_Ficheros.md",
     "200 Proyectos/EDA/04_Ficheros/Acceso_Aleatorio.md",
-    "200 Proyectos/EDA/04_Ficheros/Acceso_Secuencial.md",
     "200 Proyectos/EDA/03_Grafos/Representacion_Grafos.md",
     "200 Proyectos/EDA/03_Grafos/Recorrido_DFS.md",
     "200 Proyectos/EDA/03_Grafos/Recorrido_BFS.md",
