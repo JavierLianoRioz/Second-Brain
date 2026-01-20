@@ -11,30 +11,17 @@
             "id": "5b6f614486c1cb7e",
             "type": "leaf",
             "state": {
-              "type": "pdf",
-              "state": {
-                "file": "500 Biblioteca/Matemáticas/Exámenes/Clave Calificación Parcial 1.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "Clave Calificación Parcial 1"
-            }
-          },
-          {
-            "id": "271e4d0b8a7aab1c",
-            "type": "leaf",
-            "state": {
               "type": "markdown",
               "state": {
-                "file": "200 Proyectos/Matemáticas Numéricas/02_Ecuaciones_Una_Variable/Secante_Posicion_Falsa.md",
-                "mode": "preview",
+                "file": "200 Proyectos/EDA/02_Arboles/Arbol_AVL.md",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Secante_Posicion_Falsa"
+              "title": "Arbol_AVL"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -101,7 +88,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "200 Proyectos/Matemáticas Numéricas/02_Ecuaciones_Una_Variable/Secante_Posicion_Falsa.md",
+                "file": "200 Proyectos/EDA/02_Arboles/Arbol_AVL.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -129,7 +116,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of Secante_Posicion_Falsa"
+              "title": "Graph of Arbol_AVL"
             }
           }
         ]
@@ -234,7 +221,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "200 Proyectos/Matemáticas Numéricas/02_Ecuaciones_Una_Variable/Secante_Posicion_Falsa.md",
+                "file": "200 Proyectos/EDA/02_Arboles/Arbol_AVL.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -262,7 +249,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of Secante_Posicion_Falsa"
+              "title": "Graph of Arbol_AVL"
             }
           }
         ]
@@ -284,53 +271,53 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "712167e3c33fc024",
+  "active": "5b6f614486c1cb7e",
   "lastOpenFiles": [
-    "200 Proyectos/Matemáticas Numéricas/02_Ecuaciones_Una_Variable/Punto_Fijo.md",
-    "200 Proyectos/Matemáticas Numéricas/02_Ecuaciones_Una_Variable/Secante_Posicion_Falsa.md",
-    "200 Proyectos/Matemáticas Numéricas/02_Ecuaciones_Una_Variable/Bisección.md",
-    "200 Proyectos/Matemáticas Numéricas/01_Preliminares_Error/Revisión_Cálculo.md",
-    "200 Proyectos/Matemáticas Numéricas/01_Preliminares_Error/Notación_Big_O.md",
-    "200 Proyectos/Matemáticas Numéricas/Matemáticas Numéricas.md",
-    "200 Proyectos/Matemáticas Numéricas/02_Ecuaciones_Una_Variable/Newton_Raphson.md",
-    "200 Proyectos/Matemáticas Numéricas/01_Preliminares_Error/Errores_Redondeo_Truncamiento.md",
-    "200 Proyectos/Matemáticas Numéricas/01_Preliminares_Error/Aritmética_Punto_Flotante.md",
-    "200 Proyectos/Matemáticas Numéricas/05_EDOs/Runge_Kutta.md",
-    "200 Proyectos/Matemáticas Numéricas/05_EDOs/Taylor.md",
-    "200 Proyectos/Matemáticas Numéricas/05_EDOs/Euler.md",
-    "200 Proyectos/Matemáticas Numéricas/05_EDOs",
-    "200 Proyectos/Matemáticas Numéricas/04_Cálculo_Numérico/Cuadratura_Gaussiana.md",
-    "200 Proyectos/Matemáticas Numéricas/04_Cálculo_Numérico/Integración_Compuesta.md",
-    "200 Proyectos/Matemáticas Numéricas/04_Cálculo_Numérico/Newton_Cotes.md",
-    "200 Proyectos/Matemáticas Numéricas/04_Cálculo_Numérico/Diferenciación.md",
-    "200 Proyectos/Matemáticas Numéricas/04_Cálculo_Numérico",
-    "200 Proyectos/Matemáticas Numéricas/03_Interpolación/Splines.md",
-    "200 Proyectos/Matemáticas Numéricas/03_Interpolación/Hermite.md",
-    "200 Proyectos/Matemáticas Numéricas/03_Interpolación/Diferencias_Divididas.md",
-    "200 Proyectos/Matemáticas Numéricas/03_Interpolación/Lagrange.md",
-    "200 Proyectos/Matemáticas Numéricas/03_Interpolación",
-    "200 Proyectos/Matemáticas Numéricas/02_Ecuaciones_Una_Variable",
+    "200 Proyectos/EDA/02_Arboles/Arbol_Binario.md",
+    "200 Proyectos/EDA/02_Arboles/Arbol_AVL.md",
+    "200 Proyectos/EDA/02_Arboles/00_MOC_Arboles.md",
+    "200 Proyectos/EDA/02_Arboles/Arbol_Binario_Busqueda_BST.md",
+    "Arbol_Binario.md",
+    "200 Proyectos/EDA/01_Listas_Pilas_Colas/Cola_Queue.md",
+    "200 Proyectos/EDA/01_Listas_Pilas_Colas/Pila_Stack.md",
+    "200 Proyectos/EDA/01_Listas_Pilas_Colas/Lista_Enlazada_Doble.md",
+    "200 Proyectos/EDA/01_Listas_Pilas_Colas/Lista_Enlazada_Simple.md",
+    "200 Proyectos/EDA/01_Listas_Pilas_Colas/Lista_Circular.md",
+    "200 Proyectos/EDA/00_Indice.md",
+    "200 Proyectos/EDA/01_Listas_Pilas_Colas/00_MOC_Lineales.md",
     "500 Biblioteca/Matemáticas/Exámenes/Clave Calificación Parcial 1.pdf",
-    "200 Proyectos/Matemáticas Numéricas/000_Template_MN.md",
-    "200 Proyectos/Matemáticas Numéricas/01_Preliminares_Error",
-    "200 Proyectos/Matemáticas Numéricas",
-    "500 Biblioteca/Matemáticas/Presentaciones de Clase/CONF18 - Sistemas de Ecuaciones Diferenciales.pdf",
-    "500 Biblioteca/Matemáticas/Presentaciones de Clase/CONF17 - Métodos de Runge-Kutta.pdf",
-    "500 Biblioteca/Matemáticas/Presentaciones de Clase/CONF15 - Teoría Elemental de Problemas de Valor Inicial.pdf",
-    "000 INBOX/Clave-Primaria-Atomic.md",
-    "999 Plantillas/Neuro-Concepto.md",
-    "000 INBOX/Ownership-Rust.md",
-    "999 Plantillas/Neuro-Ejercicio.md",
-    "999 Plantillas/MOC-Sesion.md",
-    "500 Biblioteca/BaseDeDatos1-25-26/Evaluaciones/images/resolucion_parcial_1/1761554050863.png",
-    "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 2/Clase 25/images/04_ejercicio_3/1765535765824.png",
-    "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 2/Clase 25/images/04_ejercicio_3/1765535745122.png",
-    "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 2/Clase 25/images/03_ejercicio_2/1765537763252.png",
-    "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 2/Clase 25/images/03_ejercicio_2/1765537553113.png",
-    "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 1/Clase 13 (repaso)/images/ejercicios_repaso/1761207385651.png",
-    "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 1/Clase 02/images/05_intro_modelo_relacional/1757671896087.png",
-    "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 1/Clase 02/images/05_intro_modelo_relacional/1757671989194.png",
-    "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 1/Clase 02/images/04_modelo_er_extendido/1757671833615.png",
-    "500 Biblioteca/BaseDeDatos1-25-26/Clases/Parcial 1/Clase 02/images/03_modelo_er_simple/1757671909835.png"
+    "Lista_Circular.md",
+    "200 Proyectos/EDA/03_Grafos/Representacion_Grafos.md",
+    "200 Proyectos/Matemáticas Numéricas/02_Ecuaciones_Una_Variable/Secante_Posicion_Falsa.md",
+    "200 Proyectos/EDA/04_Ficheros/00_MOC_Ficheros.md",
+    "200 Proyectos/EDA/03_Grafos/00_MOC_Grafos.md",
+    "200 Proyectos/EDA/04_Ficheros",
+    "200 Proyectos/EDA/03_Grafos",
+    "200 Proyectos/EDA/02_Arboles",
+    "200 Proyectos/EDA/01_Listas_Pilas_Colas",
+    "200 Proyectos/EDA",
+    "500 Biblioteca/EDA1/temario/003-arboles/ejemplos/AST.md",
+    "500 Biblioteca/EDA1/temario/999-otrosTemas/serialilzacion.md",
+    "500 Biblioteca/EDA1/temario/999-otrosTemas/reivindicandoAMama.md",
+    "500 Biblioteca/EDA1/temario/999-otrosTemas/recursividad.md",
+    "500 Biblioteca/EDA1/temario/999-otrosTemas/README.md",
+    "500 Biblioteca/EDA1/temario/999-otrosTemas/pruebas.md",
+    "500 Biblioteca/EDA1/temario/999-otrosTemas/programacionGenerica.md",
+    "500 Biblioteca/EDA1/temario/999-otrosTemas/acercaDePilas.md",
+    "500 Biblioteca/EDA1/temario/999-otrosTemas/acercaDeListas.md",
+    "500 Biblioteca/EDA1/temario/004-grafos/masGrafos.puml",
+    "500 Biblioteca/EDA1/temario/004-grafos/grafos.puml",
+    "500 Biblioteca/EDA1/temario/004-grafos/grafoExtendido03.puml",
+    "500 Biblioteca/EDA1/temario/004-grafos/grafoExtendido02.puml",
+    "500 Biblioteca/EDA1/images/modelosUML/arboles/ejemplosPower/AST/astUno.svg",
+    "500 Biblioteca/EDA1/images/modelosUML/arboles/ejemplosPower/AST/astTres.svg",
+    "500 Biblioteca/EDA1/images/modelosUML/arboles/ejemplosPower/AST/astDos.svg",
+    "500 Biblioteca/EDA1/images/modelosUML/arboles/ejemplosPower/AST/AST003.svg",
+    "500 Biblioteca/EDA1/images/modelosUML/arboles/ejemplosPower/AST/AST002.svg",
+    "500 Biblioteca/EDA1/images/modelosUML/arboles/ejemplosPower/AST/AST001.svg",
+    "500 Biblioteca/EDA1/images/modelosUML/arboles/tipos/splay.svg",
+    "500 Biblioteca/EDA1/images/modelosUML/arboles/tipos/rojoNegro.svg",
+    "500 Biblioteca/EDA1/images/modelosUML/arboles/tipos/bst.svg",
+    "500 Biblioteca/EDA1/images/modelosUML/arboles/tipos/binarioSimple.svg"
   ]
 }
