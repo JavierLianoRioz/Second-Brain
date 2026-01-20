@@ -5,7 +5,6 @@ status: draft
 
 # Estructura de Datos y Algoritmos (EDA)
 
-Bienvenido a los apuntes de **Estructura de Datos y Algoritmos**. Este proyecto documenta los conceptos fundamentales de la asignatura siguiendo el método **Zettelkasten**.
 
 ## 🗺️ Mapas de Contenido (MOCs)
 
