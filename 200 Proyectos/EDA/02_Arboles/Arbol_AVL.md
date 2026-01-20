@@ -107,12 +107,12 @@ Cuando una inserción o eliminación provoca que $|FE| > 1$, se deben realizar r
 
 Al estar siempre balanceado, el AVL evita el peor caso de $O(n)$ de los BST normales.
 
-| Operación | Complejidad Promedio | Complejidad Peor Caso |
-| :--- | :--- | :--- |
-| **Inserción** | $O(\log n)$ | $O(\log n)$ |
-| **Edición** | $O(\log n)$ | $O(\log n)$ |
-| **Eliminación** | $O(\log n)$ | $O(\log n)$ |
-| **Peek** | $O(\log n)$ | $O(\log n)$ |
+| Operación       | Complejidad Promedio | Complejidad Peor Caso |
+| :-------------- | :------------------- | :-------------------- |
+| **Inserción**   | $O(\log n)$          | $O(\log n)$           |
+| **Edición**     | $O(\log n)$          | $O(\log n)$           |
+| **Eliminación** | $O(\log n)$          | $O(\log n)$           |
+| **Peek**        | $O(\log n)$          | $O(\log n)$           |
 
 ---
 [Regresar al MOC](00_MOC_Arboles.md)

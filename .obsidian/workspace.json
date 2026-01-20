@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "200 Proyectos/EDA/01_Listas_Pilas_Colas/00_MOC_Lineales.md",
-                "mode": "preview",
+                "file": "200 Proyectos/EDA/02_Arboles/Arbol_AVL.md",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "00_MOC_Lineales"
+              "title": "Arbol_AVL"
             }
           }
         ]
@@ -88,7 +88,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "200 Proyectos/EDA/01_Listas_Pilas_Colas/00_MOC_Lineales.md",
+                "file": "200 Proyectos/EDA/02_Arboles/Arbol_AVL.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -116,7 +116,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of 00_MOC_Lineales"
+              "title": "Graph of Arbol_AVL"
             }
           }
         ]
@@ -228,27 +228,27 @@
   },
   "active": "e54cac0d03a1dbcc",
   "lastOpenFiles": [
-    "200 Proyectos/EDA/01_Listas_Pilas_Colas/Lista_Enlazada_Simple.md",
-    "200 Proyectos/EDA/01_Listas_Pilas_Colas/00_MOC_Lineales.md",
-    "200 Proyectos/EDA/01_Listas_Pilas_Colas/Lista_Circular.md",
+    "200 Proyectos/EDA/02_Arboles/Arbol_Binario_Busqueda_BST.md",
+    "200 Proyectos/EDA/02_Arboles/Arbol_Binario.md",
+    "200 Proyectos/EDA/02_Arboles/Arbol_AVL.md",
     "200 Proyectos/EDA/01_Listas_Pilas_Colas/Lista_Enlazada_Doble.md",
+    "200 Proyectos/EDA/01_Listas_Pilas_Colas/Lista_Enlazada_Simple.md",
+    "200 Proyectos/EDA/01_Listas_Pilas_Colas/Lista_Circular.md",
+    "200 Proyectos/EDA/01_Listas_Pilas_Colas/00_MOC_Lineales.md",
+    "200 Proyectos/EDA/01_Listas_Pilas_Colas/Cola_Queue.md",
+    "200 Proyectos/EDA/03_Grafos/Representacion_Grafos.md",
+    "200 Proyectos/EDA/03_Grafos/00_MOC_Grafos.md",
+    "200 Proyectos/EDA/03_Grafos/Recorrido_BFS.md",
+    "200 Proyectos/EDA/02_Arboles/00_MOC_Arboles.md",
     "200 Proyectos/EDA/00_Indice.md",
+    "200 Proyectos/EDA/01_Listas_Pilas_Colas/Pila_Stack.md",
     "200 Proyectos/Matemáticas Numéricas/01_Preliminares_Error/Notación_Big_O.md",
     "200 Proyectos/Matemáticas Numéricas/04_Cálculo_Numérico/Diferenciación.md",
     "200 Proyectos/EDA/04_Ficheros/Acceso_Aleatorio.md",
     "200 Proyectos/EDA/04_Ficheros/00_MOC_Ficheros.md",
     "200 Proyectos/EDA/04_Ficheros/Acceso_Secuencial.md",
-    "200 Proyectos/EDA/03_Grafos/Representacion_Grafos.md",
     "200 Proyectos/EDA/03_Grafos/Recorrido_DFS.md",
-    "200 Proyectos/EDA/03_Grafos/Recorrido_BFS.md",
-    "200 Proyectos/EDA/03_Grafos/00_MOC_Grafos.md",
-    "200 Proyectos/EDA/02_Arboles/Arbol_Binario_Busqueda_BST.md",
-    "200 Proyectos/EDA/02_Arboles/Arbol_AVL.md",
-    "200 Proyectos/EDA/02_Arboles/Arbol_Binario.md",
-    "200 Proyectos/EDA/02_Arboles/00_MOC_Arboles.md",
     "Arbol_Binario.md",
-    "200 Proyectos/EDA/01_Listas_Pilas_Colas/Cola_Queue.md",
-    "200 Proyectos/EDA/01_Listas_Pilas_Colas/Pila_Stack.md",
     "500 Biblioteca/Matemáticas/Exámenes/Clave Calificación Parcial 1.pdf",
     "Lista_Circular.md",
     "200 Proyectos/Matemáticas Numéricas/02_Ecuaciones_Una_Variable/Secante_Posicion_Falsa.md",
