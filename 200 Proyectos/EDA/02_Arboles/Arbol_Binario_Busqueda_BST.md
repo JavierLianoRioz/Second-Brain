@@ -1,7 +1,6 @@
 ---
 tags: [eda, data-structure, non-linear, trees]
 ---
-
 # Árbol Binario de Búsqueda (BST)
 
 Un **BST** es un árbol binario donde para cada nodo, los valores a la izquierda son menores y a la derecha son mayores.
