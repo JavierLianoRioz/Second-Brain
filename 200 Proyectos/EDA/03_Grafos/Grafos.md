@@ -12,7 +12,7 @@ Un **Grafo** es una estructura de datos no lineal compuesta por un conjunto de *
 graph TD
     A[Tipos de Grafos] --> B["Dirigidos (Digrafos)"]
     A --> C[No Dirigidos]
-    A --> D[Pesados (con pesos en aristas)]
+    A --> D["Pesados (con pesos en aristas)"]
     A --> E[Acíclicos (DAGs)]
 ```
 
