@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "200 Proyectos/EDA/03_Grafos/Representacion_Grafos.md",
+                "file": "200 Proyectos/EDA/03_Grafos/Grafos.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Representacion_Grafos"
+              "title": "Grafos"
             }
           }
         ],
@@ -103,7 +103,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "200 Proyectos/EDA/03_Grafos/Representacion_Grafos.md",
+                "file": "200 Proyectos/EDA/03_Grafos/Grafos.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -131,7 +131,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of Representacion_Grafos"
+              "title": "Graph of Grafos"
             }
           }
         ]
@@ -241,8 +241,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "712167e3c33fc024",
+  "active": "efc283c13530ba82",
   "lastOpenFiles": [
+    "200 Proyectos/EDA/03_Grafos/Representacion_Grafos.md",
     "200 Proyectos/EDA/03_Grafos/Grafos.md",
     "200 Proyectos/EDA/03_Grafos/00_MOC_Grafos.md",
     "200 Proyectos/EDA/01_Listas_Pilas_Colas/Lista_Enlazada_Simple.md",
@@ -250,7 +251,6 @@
     "200 Proyectos/EDA/01_Listas_Pilas_Colas/Lista_Enlazada_Doble.md",
     "200 Proyectos/EDA/01_Listas_Pilas_Colas/Lista_Circular.md",
     "200 Proyectos/EDA/02_Arboles/00_MOC_Arboles.md",
-    "200 Proyectos/EDA/03_Grafos/Representacion_Grafos.md",
     "200 Proyectos/EDA/02_Arboles/Arbol_Binario_Busqueda_BST.md",
     "200 Proyectos/EDA/02_Arboles/Arbol_Binario.md",
     "200 Proyectos/EDA/01_Listas_Pilas_Colas/Pila_Stack.md",
