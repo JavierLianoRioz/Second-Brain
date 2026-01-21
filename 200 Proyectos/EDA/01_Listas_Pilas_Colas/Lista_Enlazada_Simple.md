@@ -27,10 +27,9 @@ graph LR
 > La simplicidad de esta estructura permite una implementación ligera, ideal para cuando no se conoce el tamaño total de los datos de antemano.
 
 ```java
-class Nodo() {
+class Nodo {
+    Object dato;
     Nodo siguiente;
-    ó
-    Nodo anterior;
 }
 
 class ListaEnlazada {

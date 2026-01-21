@@ -6,9 +6,10 @@ tags: [moc, eda, graphs]
 Estructuras de red complejas compuestas por vértices y aristas.
 
 ## Fundamentos
-*   [[Representacion_Grafos]]
-*   [[Recorrido_BFS]]
-*   [[Recorrido_DFS]]
+*   [¿Qué es un Grafo?](Grafos.md)
+*   [Representación de Grafos](Representacion_Grafos.md)
+*   [Recorrido BFS (Amplitud)](Recorrido_BFS.md)
+*   [Recorrido DFS (Profundidad)](Recorrido_DFS.md)
 
 ---
 [Volver al Índice](../00_Indice.md)

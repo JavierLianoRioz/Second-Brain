@@ -226,7 +226,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 227.5
+    "width": 226.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -241,8 +241,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "efc283c13530ba82",
+  "active": "712167e3c33fc024",
   "lastOpenFiles": [
+    "200 Proyectos/EDA/03_Grafos/Grafos.md",
     "200 Proyectos/EDA/03_Grafos/00_MOC_Grafos.md",
     "200 Proyectos/EDA/01_Listas_Pilas_Colas/Lista_Enlazada_Simple.md",
     "200 Proyectos/EDA/01_Listas_Pilas_Colas/00_MOC_Lineales.md",
@@ -274,7 +275,6 @@
     "200 Proyectos/EDA",
     "500 Biblioteca/EDA1/temario/003-arboles/ejemplos/AST.md",
     "500 Biblioteca/EDA1/temario/999-otrosTemas/serialilzacion.md",
-    "500 Biblioteca/EDA1/temario/999-otrosTemas/reivindicandoAMama.md",
     "500 Biblioteca/EDA1/temario/004-grafos/masGrafos.puml",
     "500 Biblioteca/EDA1/temario/004-grafos/grafos.puml",
     "500 Biblioteca/EDA1/temario/004-grafos/grafoExtendido03.puml",
