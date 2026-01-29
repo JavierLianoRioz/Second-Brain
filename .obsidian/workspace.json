@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "200 Proyectos/EDA/03_Grafos/Grafos.md",
+                "file": "200 Proyectos/EDA/02_Arboles/Arbol_AVL.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Grafos"
+              "title": "Arbol_AVL"
             }
           }
         ],
@@ -103,7 +103,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "200 Proyectos/EDA/03_Grafos/Grafos.md",
+                "file": "200 Proyectos/EDA/02_Arboles/Arbol_AVL.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -131,7 +131,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of Grafos"
+              "title": "Graph of Arbol_AVL"
             }
           }
         ]
@@ -243,8 +243,8 @@
   },
   "active": "efc283c13530ba82",
   "lastOpenFiles": [
-    "200 Proyectos/EDA/03_Grafos/Representacion_Grafos.md",
     "200 Proyectos/EDA/03_Grafos/Grafos.md",
+    "200 Proyectos/EDA/03_Grafos/Representacion_Grafos.md",
     "200 Proyectos/EDA/03_Grafos/00_MOC_Grafos.md",
     "200 Proyectos/EDA/01_Listas_Pilas_Colas/Lista_Enlazada_Simple.md",
     "200 Proyectos/EDA/01_Listas_Pilas_Colas/00_MOC_Lineales.md",
