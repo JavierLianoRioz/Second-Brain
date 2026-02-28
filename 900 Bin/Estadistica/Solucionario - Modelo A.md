@@ -92,4 +92,4 @@ $$P(S|+) = \frac{P(S \cap +)}{P(+)} = \frac{0.0495}{0.0593} = \mathbf{0.8347 \ (
    - $n = \frac{Z_{1-\alpha/2}^2 \cdot p \cdot q}{d^2} = \frac{1.96^2 \cdot 0.31 \cdot 0.69}{0.03^2} = \frac{3.8416 \cdot 0.2139}{0.0009} \approx \mathbf{913 \text{ pacientes}}$.
 
 ---
-[Volver al Examen](Simulacro%20de%20Examen%20-%20Modelo%20A.md) | [Inicio](Index.md)
+[Volver al Examen](Simulacro%20de%20Examen%20-%20Modelo%20A.md) | [Inicio](900%20Bin/Estadistica/Index.md)

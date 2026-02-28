@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "200 Proyectos/EDA/02_Arboles/Arbol_AVL.md",
+                "file": "200 Proyectos/Bases De Datos 2/01-Fundamentos-NoSQL/NoSQL-Introduction.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Arbol_AVL"
+              "title": "NoSQL-Introduction"
             }
           }
         ],
@@ -103,7 +103,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "200 Proyectos/EDA/02_Arboles/Arbol_AVL.md",
+                "file": "200 Proyectos/Bases De Datos 2/01-Fundamentos-NoSQL/NoSQL-Introduction.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -131,7 +131,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of Arbol_AVL"
+              "title": "Graph of NoSQL-Introduction"
             }
           }
         ]
@@ -243,6 +243,8 @@
   },
   "active": "efc283c13530ba82",
   "lastOpenFiles": [
+    "200 Proyectos/Bases De Datos 2/INDEX.md",
+    "200 Proyectos/EDA/02_Arboles/Arbol_AVL.md",
     "200 Proyectos/EDA/03_Grafos/Grafos.md",
     "200 Proyectos/EDA/03_Grafos/Representacion_Grafos.md",
     "200 Proyectos/EDA/03_Grafos/00_MOC_Grafos.md",
@@ -255,7 +257,6 @@
     "200 Proyectos/EDA/02_Arboles/Arbol_Binario.md",
     "200 Proyectos/EDA/01_Listas_Pilas_Colas/Pila_Stack.md",
     "200 Proyectos/EDA/01_Listas_Pilas_Colas/Cola_Queue.md",
-    "200 Proyectos/EDA/02_Arboles/Arbol_AVL.md",
     "200 Proyectos/EDA/03_Grafos/Recorrido_BFS.md",
     "200 Proyectos/EDA/00_Indice.md",
     "200 Proyectos/Matemáticas Numéricas/01_Preliminares_Error/Notación_Big_O.md",
@@ -274,7 +275,6 @@
     "200 Proyectos/EDA/01_Listas_Pilas_Colas",
     "200 Proyectos/EDA",
     "500 Biblioteca/EDA1/temario/003-arboles/ejemplos/AST.md",
-    "500 Biblioteca/EDA1/temario/999-otrosTemas/serialilzacion.md",
     "500 Biblioteca/EDA1/temario/004-grafos/masGrafos.puml",
     "500 Biblioteca/EDA1/temario/004-grafos/grafos.puml",
     "500 Biblioteca/EDA1/temario/004-grafos/grafoExtendido03.puml",
