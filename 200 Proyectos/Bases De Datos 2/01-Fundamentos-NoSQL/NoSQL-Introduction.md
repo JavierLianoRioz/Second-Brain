@@ -5,7 +5,7 @@ Las bases de datos NoSQL (**Not Only SQL**) surgen como respuesta a las limitaci
 ### ¿Por qué NoSQL?
 
 El modelo relacional tradicional enfrenta dificultades en escenarios de:
-*   **Gran volumen de datos:** Dificultad para escalar horizontalmente (sharding).
+*   **Gran volumen de datos:** Dificultad para escalar horizontalmente ([sharding](../../../001%20Areas/Sharding.md)).
 *   **Velocidad:** Latencia en operaciones complejas con múltiples *joins*.
 *   **Variedad:** Estructuras de datos que cambian frecuentemente o no son uniformes.
 
