@@ -1,39 +1,48 @@
 # Índice Zettelkasten: Bases de Datos II
 
-Bienvenido a la red de notas atómicas de **Bases de Datos II**. Este repositorio está estructurado para facilitar el aprendizaje no lineal y la referencia rápida.
+Bienvenido a la red de notas atómicas de **Bases de Datos II**. Está estructurado para facilitar el aprendizaje no lineal y la referencia rápida.
+
+> **Cómo usar este índice:** Lee las secciones en orden para un aprendizaje lineal, o salta entre notas siguiendo los enlaces al final de cada una para un aprendizaje exploratorio.
 
 ## 📂 01. Fundamentos NoSQL
-*   [Introducción a NoSQL](NoSQL-Introduction.md)
-*   [Teorema CAP](CAP-Theorem.md)
-*   [ACID vs BASE](ACID-vs-BASE.md)
-*   [Tipos de NoSQL](NoSQL-Types-Overview.md)
+*¿Qué es NoSQL y cuándo elegirlo?*
+*   [Introducción a NoSQL](01-Fundamentos-NoSQL/NoSQL-Introduction.md) — Por qué existen, características principales
+*   [Teorema CAP](01-Fundamentos-NoSQL/CAP-Theorem.md) — Consistencia vs Disponibilidad vs Particiones
+*   [ACID vs BASE](01-Fundamentos-NoSQL/ACID-vs-BASE.md) — Dos modelos de garantías transaccionales
+*   [Tipos de NoSQL](01-Fundamentos-NoSQL/NoSQL-Types-Overview.md) — Clave-Valor, Documental, Columnar, Grafos, Vectorial
 
-## 📂 02. MongoDB
-*   [Modelo Documental](MongoDB-Model-Overview.md)
-*   [JSON vs BSON](JSON-vs-BSON.md)
-*   [Operaciones CRUD](MongoDB-CRUD-Basics.md)
-*   [Jerarquía de Datos](MongoDB-Data-Hierarchy.md)
-*   [Operadores de Consulta](MongoDB-Query-Operators.md)
-*   [Diseño de Esquemas (Embedding/Referencing)](MongoDB-Schema-Design-Patterns.md)
-*   [Aggregation Framework](MongoDB-Aggregation-Framework.md)
-*   [Índices y Rendimiento](MongoDB-Indexes.md)
-*   [Modelado Avanzado (Patrones)](MongoDB-Advanced-Modeling.md)
-*   [Antipatrones Comunes](MongoDB-Antipatterns.md)
-*   [Monitoreo y Rendimiento](MongoDB-Monitoring.md)
+## 📂 02. MongoDB — Fundamentos y Consultas
+*Modelo documental, operaciones y rendimiento.*
+*   [Modelo Documental](02-MongoDB/MongoDB-Model-Overview.md) — Documentos, colecciones, esquema flexible
+*   [JSON vs BSON](02-MongoDB/JSON-vs-BSON.md) — Formatos internos y tipos especiales
+*   [Jerarquía de Datos](02-MongoDB/MongoDB-Data-Hierarchy.md) — Cluster → DB → Collection → Document → Field
+*   [Operaciones CRUD](02-MongoDB/MongoDB-CRUD-Basics.md) — insertOne, find, updateOne, deleteMany
+*   [Operadores de Consulta](02-MongoDB/MongoDB-Query-Operators.md) — Comparación, lógicos, arrays
+*   [Diseño de Esquemas](02-MongoDB/MongoDB-Schema-Design-Patterns.md) — Embedding vs Referencing
+*   [Aggregation Framework](02-MongoDB/MongoDB-Aggregation-Framework.md) — Pipeline: match, group, sort, project
+*   [Índices y Rendimiento](02-MongoDB/MongoDB-Indexes.md) — Tipos de índices, explain(), ESR rule
 
-## 📂 03. Seguridad, Validación y Operaciones
-*   [Seguridad: Autenticación y Autorización](MongoDB-Security.md)
-*   [Validación de Esquemas (JSON Schema)](MongoDB-Schema-Validation.md)
-*   [Errores Comunes en Seguridad y Validación](MongoDB-Security-Errors.md)
-*   [Backup y Recuperación](MongoDB-Backup-Recovery.md)
-*   [Observabilidad y Auditoría](MongoDB-Observability.md)
-*   [Buenas Prácticas Operativas](MongoDB-Best-Practices.md)
+## 📂 03. MongoDB — Modelado Avanzado
+*Patrones profesionales, antipatrones y monitoreo.*
+*   [Patrones de Modelado](02-MongoDB/MongoDB-Advanced-Modeling.md) — Subset, Bucket, Extended Ref, Computed, Outlier
+*   [Antipatrones Comunes](02-MongoDB/MongoDB-Antipatterns.md) — Sobre-normalización, arrays sin límite, índices innecesarios
+*   [Monitoreo y Rendimiento](02-MongoDB/MongoDB-Monitoring.md) — explain(), serverStatus, optimización de pipelines
+
+## 📂 04. MongoDB — Seguridad y Operaciones
+*Preparar MongoDB para producción.*
+*   [Seguridad: Autenticación y Autorización](02-MongoDB/MongoDB-Security.md) — SCRAM, usuarios, roles, mínimo privilegio
+*   [Validación de Esquemas](02-MongoDB/MongoDB-Schema-Validation.md) — JSON Schema, strict/moderate, evolución
+*   [Errores Comunes](02-MongoDB/MongoDB-Security-Errors.md) — Checklist pre-producción
+*   [Backup y Recuperación](02-MongoDB/MongoDB-Backup-Recovery.md) — mongodump, mongorestore, estrategias
+*   [Observabilidad y Auditoría](02-MongoDB/MongoDB-Observability.md) — db.stats(), logs, auditoría
+*   [Buenas Prácticas Operativas](02-MongoDB/MongoDB-Best-Practices.md) — Resumen profesional
 
 ## 📝 Ejercicios Prácticos
-*   [Clasificación de Escenarios](Ej-Clasificacion-Escenarios.md)
-*   [CRUD y Modelado](Ej-MongoDB-CRUD-Modelado.md)
-*   [Análisis con Aggregation](Ej-Aggregation-Ventas.md)
-*   [Índices, Transacciones y Monitoreo](Ej-Indices-Transacciones-Monitoreo.md)
+*Ordenados por dificultad progresiva.*
+1.  [Clasificación de Escenarios (SQL vs NoSQL)](Ejercicios/Ej-Clasificacion-Escenarios.md) — 🟢 Conceptual
+2.  [CRUD y Modelado Documental](Ejercicios/Ej-MongoDB-CRUD-Modelado.md) — 🟢 Básico
+3.  [Aggregation Framework](Ejercicios/Ej-Aggregation-Ventas.md) — 🟡 Intermedio
+4.  [Índices, Transacciones y Monitoreo](Ejercicios/Ej-Indices-Transacciones-Monitoreo.md) — 🔴 Avanzado
 
 ---
 *Última actualización: 2026-03-09*
