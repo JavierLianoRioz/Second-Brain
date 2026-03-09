@@ -18,11 +18,22 @@ Bienvenido a la red de notas atómicas de **Bases de Datos II**. Este repositori
 *   [Aggregation Framework](MongoDB-Aggregation-Framework.md)
 *   [Índices y Rendimiento](MongoDB-Indexes.md)
 *   [Modelado Avanzado (Patrones)](MongoDB-Advanced-Modeling.md)
+*   [Antipatrones Comunes](MongoDB-Antipatterns.md)
+*   [Monitoreo y Rendimiento](MongoDB-Monitoring.md)
+
+## 📂 03. Seguridad, Validación y Operaciones
+*   [Seguridad: Autenticación y Autorización](MongoDB-Security.md)
+*   [Validación de Esquemas (JSON Schema)](MongoDB-Schema-Validation.md)
+*   [Errores Comunes en Seguridad y Validación](MongoDB-Security-Errors.md)
+*   [Backup y Recuperación](MongoDB-Backup-Recovery.md)
+*   [Observabilidad y Auditoría](MongoDB-Observability.md)
+*   [Buenas Prácticas Operativas](MongoDB-Best-Practices.md)
 
 ## 📝 Ejercicios Prácticos
 *   [Clasificación de Escenarios](Ej-Clasificacion-Escenarios.md)
 *   [CRUD y Modelado](Ej-MongoDB-CRUD-Modelado.md)
 *   [Análisis con Aggregation](Ej-Aggregation-Ventas.md)
+*   [Índices, Transacciones y Monitoreo](Ej-Indices-Transacciones-Monitoreo.md)
 
 ---
-*Última actualización: 2026-02-28*
+*Última actualización: 2026-03-09*
