@@ -10,6 +10,11 @@ Los operadores permiten realizar filtrados avanzados más allá de la igualdad s
 *   `$in`: El valor está en un arreglo dado.
 
 ```javascript
+// Encuentra documentos donde el campo 'categoría' sea 'Electrónica' o 'Hogar'
+db.productos.find({ categoria: { $in: ["Electrónica", "Hogar"] } })
+```
+
+```javascript
 db.productos.find({ precio: { $gte: 10, $lte: 50 } })
 ```
 
@@ -28,6 +33,22 @@ db.usuarios.find({
 *   `$all`: El arreglo debe contener todos los elementos especificados.
 *   `$elemMatch`: Al menos un elemento del arreglo cumple múltiples criterios.
 *   `$size`: El arreglo tiene un tamaño específico.
+
+##### Ejemplos de uso:
+```javascript
+db.productos.find({ tags: { $all: ["nuevo", "oferta"] } })
+
+db.productos.find({
+  stock: { $elemMatch: { almacen: "Norte", cantidad: { $gt: 10 } } }
+})
+
+db.productos.find({ comentarios: { $size: 3 } })
+```
+
+> [!NOTE]
+> * **`$all`**: Útil cuando el orden no importa pero la presencia de todos los elementos sí.
+> * **`$elemMatch`**: Necesario cuando se consulta un arreglo de objetos y se quiere que un mismo objeto cumpla varias condiciones (evita falsos positivos).
+> * **`$size`**: Solo acepta valores numéricos exactos (no soporta rangos como `$gt`).
 
 ---
 **Enlaces Relacionados:**
