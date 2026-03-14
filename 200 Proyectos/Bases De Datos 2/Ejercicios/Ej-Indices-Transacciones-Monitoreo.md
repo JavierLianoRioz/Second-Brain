@@ -300,8 +300,4 @@ db.currentOp()               // ← operaciones en curso
 | **TTL** | Datos con expiración (sesiones) | ✅ Sí |
 | **Text** | Búsqueda full-text | N/A |
 
----
-**Referenciado desde:**
-*   [Índices y Rendimiento](../02-MongoDB/MongoDB-Indexes.md)
-*   [Monitoreo y Observabilidad](../02-MongoDB/MongoDB-Monitoring.md)
-*   [Modelado Avanzado](../02-MongoDB/MongoDB-Advanced-Modeling.md)
+Este diseño avanzado previene [Antipatrones](../02-MongoDB/02-Design/MongoDB-Antipatterns.md) y asegura la escalabilidad mediante el uso correcto de [Índices](../02-MongoDB/03-Performance/MongoDB-Indexes.md) y el [Monitoreo](../02-MongoDB/03-Performance/MongoDB-Monitoring.md) constante de la infraestructura.

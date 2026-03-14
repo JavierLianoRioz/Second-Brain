@@ -26,11 +26,6 @@ Un documento es un conjunto de pares campo-valor:
 ### Ventajas del Modelo
 1.  **Correspondencia Natural:** Los documentos se mapean casi directamente a objetos en lenguajes de programación.
 2.  **Autocontención:** La información relacionada se suele almacenar junta, evitando *joins*.
-3.  **Jerarquía:** Soporta arreglos y subdocumentos anidados.
+3.  **Jerarquía:** Soporta arreglos y subdocumentos anidados, organizados en la [Jerarquía de Datos](MongoDB-Data-Hierarchy.md).
 
----
-**Enlaces Relacionados:**
-*   [JSON vs BSON](JSON-vs-BSON.md)
-*   [CRUD en MongoDB](MongoDB-CRUD-Basics.md)
-*   [Jerarquía de Datos](MongoDB-Data-Hierarchy.md)
-*   [Ejercicio - Modelado](Ej-MongoDB-CRUD-Modelado.md)
+Toda manipulación de estos documentos se realiza mediante las [operaciones CRUD](MongoDB-CRUD-Basics.md) sobre la base del formato [JSON/BSON](JSON-vs-BSON.md).

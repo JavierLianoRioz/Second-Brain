@@ -13,12 +13,7 @@ El **Teorema CAP** (también conocido como Teorema de Brewer) establece que es i
 En un entorno distribuido, las particiones de red son inevitables. Por tanto, el sistema debe elegir entre:
 
 *   **CP (Consistencia y Tolerancia):** Se bloquea la respuesta hasta que los datos se sincronicen. Se sacrifica disponibilidad.
-*   **AP (Disponibilidad y Tolerancia):** Se responde con los datos locales aunque no estén actualizados. Se sacrifica consistencia inmediata.
+*   **AP (Disponibilidad y Tolerancia):** Se responde con los datos locales aunque no estén actualizados. Se sacrifica consistencia inmediata ([Propiedades BASE](ACID-vs-BASE.md)).
 
 > [!IMPORTANT]
-> No existe un sistema **CA** en redes distribuidas reales, ya que un fallo de red (P) obligaría a sacrificar C o A.
-
----
-**Enlaces Relacionados:**
-*   [Introducción a NoSQL](NoSQL-Introduction.md)
-*   [ACID vs BASE](ACID-vs-BASE.md)
+> No existe un sistema **CA** en redes distribuidas reales, ya que un fallo de red (P) obligaría a sacrificar C o A. El dilema entre consistencia fuerte ([ACID](ACID-vs-BASE.md)) y disponibilidad masiva se explica en la [Introducción a NoSQL](NoSQL-Introduction.md).

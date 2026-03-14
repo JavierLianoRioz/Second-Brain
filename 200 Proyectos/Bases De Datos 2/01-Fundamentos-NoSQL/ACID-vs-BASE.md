@@ -17,9 +17,4 @@ Prioriza la disponibilidad y la escalabilidad sobre la consistencia inmediata.
 
 ---
 ### Ejemplo de Comparación
-En un sistema bancario se prefiere **ACID** para evitar saldos negativos. En una red social (likes) se acepta **BASE** para permitir una respuesta inmediata a millones de usuarios.
-
----
-**Enlaces Relacionados:**
-*   [Teorema CAP](CAP-Theorem.md)
-*   [Introducción a NoSQL](NoSQL-Introduction.md)
+En un sistema bancario se prefiere **ACID** para evitar saldos negativos. En una red social (likes) se acepta **BASE** para permitir una respuesta inmediata a millones de usuarios. Ambos modelos se eligen según las necesidades descritas en la [Introducción a NoSQL](NoSQL-Introduction.md) y las limitaciones del [Teorema CAP](CAP-Theorem.md).

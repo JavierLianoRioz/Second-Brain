@@ -1,20 +1,12 @@
 {
   "collapse-filter": false,
-  "search": "path:\"200 Proyectos/Bases de datos\"  ",
+  "search": "path:\"200 Proyectos/Bases de datos 2\" -Index ",
   "showTags": false,
   "showAttachments": false,
   "hideUnresolved": false,
   "showOrphans": true,
   "collapse-color-groups": false,
-  "colorGroups": [
-    {
-      "query": "path:\"200 Proyectos/Bases de datos/_Archive\"  ",
-      "color": {
-        "a": 1,
-        "rgb": 11657298
-      }
-    }
-  ],
+  "colorGroups": [],
   "collapse-display": false,
   "showArrow": false,
   "textFadeMultiplier": 0,
@@ -25,6 +17,6 @@
   "repelStrength": 15.46875,
   "linkStrength": 1,
   "linkDistance": 112,
-  "scale": 0.18462326225858,
+  "scale": 0.40361623273361985,
   "close": false
 }

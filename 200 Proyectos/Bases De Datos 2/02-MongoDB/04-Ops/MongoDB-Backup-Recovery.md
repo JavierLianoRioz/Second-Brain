@@ -47,8 +47,4 @@ Buenas prácticas:
 > [!CAUTION]
 > Un backup que nunca se ha probado **no garantiza recuperación**.
 
----
-**Enlaces Relacionados:**
-*   [Seguridad (Autenticación/Autorización)](MongoDB-Security.md)
-*   [Observabilidad Operativa](MongoDB-Observability.md)
-*   [Buenas Prácticas Operativas](MongoDB-Best-Practices.md)
+Un proceso de respaldo sólido debe integrarse con una política de [Seguridad](MongoDB-Security.md) coherente y seguir las [Buenas Prácticas Operativas](MongoDB-Best-Practices.md) para garantizar la continuidad del negocio.

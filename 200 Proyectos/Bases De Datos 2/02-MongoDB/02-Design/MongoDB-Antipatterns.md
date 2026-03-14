@@ -37,8 +37,4 @@ Elegir un campo monotónico como `{ fecha: 1 }` genera *hotspots* y baja escalab
 *   Activar sharding sin análisis de carga.
 *   **Optimización sin métricas es especulación.**
 
----
-**Enlaces Relacionados:**
-*   [Modelado Avanzado (Patrones)](MongoDB-Advanced-Modeling.md)
-*   [Índices y Rendimiento](MongoDB-Indexes.md)
-*   [Monitoreo y Observabilidad](MongoDB-Monitoring.md)
+Para evitar estos problemas, es vital aplicar [Patrones de Modelado](MongoDB-Advanced-Modeling.md) adecuados y realizar un [Análisis de Rendimiento](../03-Performance/MongoDB-Indexes.md#análisis-de-rendimiento) constante de la aplicación.

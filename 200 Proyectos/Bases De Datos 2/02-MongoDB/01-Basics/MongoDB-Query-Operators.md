@@ -50,7 +50,4 @@ db.productos.find({ comentarios: { $size: 3 } })
 > * **`$elemMatch`**: Necesario cuando se consulta un arreglo de objetos y se quiere que un mismo objeto cumpla varias condiciones (evita falsos positivos).
 > * **`$size`**: Solo acepta valores numéricos exactos (no soporta rangos como `$gt`).
 
----
-**Enlaces Relacionados:**
-*   [MongoDB CRUD](MongoDB-CRUD-Basics.md)
-*   [Aggregation Framework](MongoDB-Aggregation-Framework.md)
+Estos operadores son fundamentales tanto en las [operaciones CRUD](MongoDB-CRUD-Basics.md) básicas como en la etapa `$match` del [Aggregation Framework](../03-Performance/MongoDB-Aggregation-Framework.md).

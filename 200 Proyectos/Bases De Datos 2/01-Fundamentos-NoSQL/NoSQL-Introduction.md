@@ -14,11 +14,4 @@ El modelo relacional tradicional enfrenta dificultades en escenarios de:
 1.  **Escalabilidad Horizontal:** Diseñadas para distribuirse en clústeres de servidores económicos.
 2.  **Esquema Flexible:** No requieren una definición rígida previa (*schema-less*).
 3.  **Sin Joins:** Priorizan la desnormalización para mejorar el rendimiento de lectura.
-4.  **Propiedades BASE:** En contraste con ACID, buscan disponibilidad y consistencia eventual.
-
----
-**Enlaces Relacionados:**
-*   [Teorema CAP](CAP-Theorem.md)
-*   [Modelo BASE](ACID-vs-BASE.md)
-*   [Tipos de NoSQL](NoSQL-Types-Overview.md)
-*   [Ejercicio - Clasificación](Ej-Clasificacion-Escenarios.md)
+4.  **Propiedades [BASE](ACID-vs-BASE.md):** En contraste con [ACID](ACID-vs-BASE.md), buscan disponibilidad y consistencia eventual en base al [Teorema CAP](CAP-Theorem.md).

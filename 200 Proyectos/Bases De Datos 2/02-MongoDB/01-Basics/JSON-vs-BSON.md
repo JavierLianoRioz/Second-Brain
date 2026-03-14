@@ -17,9 +17,4 @@ MongoDB utiliza internamente **BSON** (*Binary JSON*) para el almacenamiento y l
 *   `Binary Data`: Para almacenar archivos o datos binarios pequeños.
 
 > [!TIP]
-> Al realizar consultas en el shell de MongoDB, el formato que escribes es JSON (o EJSON), pero MongoDB lo convierte a BSON antes de procesarlo.
-
----
-**Enlaces Relacionados:**
-*   [Modelo Documental](MongoDB-Model-Overview.md)
-*   [MongoDB CRUD](MongoDB-CRUD-Basics.md)
+> Al realizar [operaciones CRUD](MongoDB-CRUD-Basics.md) en el shell de MongoDB, el formato que escribes es JSON (o EJSON), pero MongoDB lo convierte a BSON internamente para su procesamiento según el [Modelo Documental](MongoDB-Model-Overview.md).

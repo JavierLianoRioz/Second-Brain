@@ -57,9 +57,4 @@ Para sistemas de alto tráfico, se pre-calculan agregaciones en lugar de recalcu
 ### 5. Patrón Outlier (Casos Excepcionales)
 Los datos excesivos se mueven a una colección aparte o a un documento "desbordado", ideal cuando la mayoría de documentos tienen pocos hijos pero unos pocos tienen miles.
 
----
-**Enlaces Relacionados:**
-*   [Antipatrones Comunes](MongoDB-Antipatterns.md)
-*   [Diseño de Esquemas](MongoDB-Schema-Design-Patterns.md)
-*   [Índices y Rendimiento](MongoDB-Indexes.md)
-*   [Monitoreo y Observabilidad](MongoDB-Monitoring.md)
+La elección de estos patrones ayuda a prevenir [Antipatrones](MongoDB-Antipatterns.md) y se complementa con un correcto [Diseño de Esquemas](MongoDB-Schema-Design-Patterns.md) para optimizar los [Índices](../03-Performance/MongoDB-Indexes.md) y facilitar el [Monitoreo](../03-Performance/MongoDB-Monitoring.md) del sistema.

@@ -140,7 +140,4 @@ $lookup  → Join con otra colección (LEFT JOIN)
 $unwind  → Descomponer array en documentos individuales
 ```
 
----
-**Referenciado desde:**
-*   [Aggregation Framework](../02-MongoDB/MongoDB-Aggregation-Framework.md)
-*   [Operadores de Consulta](../02-MongoDB/MongoDB-Query-Operators.md)
+Este sistema de ventas se basa en el [Modelo Documental](../02-MongoDB/01-Basics/MongoDB-Model-Overview.md) y permite practicar tanto [operaciones CRUD](../02-MongoDB/01-Basics/MongoDB-CRUD-Basics.md) como filtros avanzados con los [Operadores de Consulta](../02-MongoDB/01-Basics/MongoDB-Query-Operators.md).

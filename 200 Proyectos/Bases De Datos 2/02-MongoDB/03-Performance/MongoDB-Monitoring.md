@@ -37,14 +37,4 @@ Regla principal: **reducir volumen lo antes posible**.
 // ✅ Correcto: filtrar antes de agrupar
 [{ $match: ... }, { $group: ... }]
 ```
-Usar `$project` temprano para reducir memoria en `$group`.
-
-> [!TIP]
-> La optimización profesional es iterativa: establecer métricas base → aplicar cambio → medir impacto → revertir si empeora.
-
----
-**Enlaces Relacionados:**
-*   [Índices y Rendimiento](MongoDB-Indexes.md)
-*   [Aggregation Framework](MongoDB-Aggregation-Framework.md)
-*   [Antipatrones Comunes](MongoDB-Antipatterns.md)
-*   [Observabilidad Operativa](MongoDB-Observability.md)
+Usar `$project` temprano para reducir memoria en `$group`. Para un análisis más profundo de la infraestructura, consulta la [Observabilidad Operativa](MongoDB-Observability.md).

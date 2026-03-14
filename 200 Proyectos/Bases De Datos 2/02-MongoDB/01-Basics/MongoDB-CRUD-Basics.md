@@ -37,7 +37,4 @@ db.usuarios.updateMany(
 db.usuarios.deleteMany({ edad: { $lt: 18 } })
 ```
 
----
-**Enlaces Relacionados:**
-*   [Operadores de Consulta](MongoDB-Query-Operators.md)
-*   [Modelo Documental](MongoDB-Model-Overview.md)
+En las operaciones de lectura, puedes usar [Operadores de Consulta](MongoDB-Query-Operators.md) para filtrar datos de forma más precisa. Si necesitas realizar transformaciones complejas en los datos devueltos, utiliza el [Aggregation Framework](../03-Performance/MongoDB-Aggregation-Framework.md).

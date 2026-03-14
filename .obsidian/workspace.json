@@ -4,53 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "d6ee99b6820000e7",
+        "id": "c3204202c4dd81ed",
         "type": "tabs",
         "children": [
           {
-            "id": "18b90a6e5d9085f8",
+            "id": "3789004c64e548d0",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "200 Proyectos/Bases De Datos 2/INDEX.md",
+                "file": "200 Proyectos/Bases De Datos 2/02-MongoDB/01-Basics/JSON-vs-BSON.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "INDEX"
-            }
-          },
-          {
-            "id": "66d38b46334e51a4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "200 Proyectos/Bases De Datos 2/Ejercicios/Ej-Aggregation-Ventas.md",
-                "mode": "preview",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Ej-Aggregation-Ventas"
-            }
-          },
-          {
-            "id": "e4466b58cd00094c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "200 Proyectos/Bases De Datos 2/Ejercicios/Ej-MongoDB-CRUD-Modelado.md",
-                "mode": "preview",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Ej-MongoDB-CRUD-Modelado"
+              "title": "JSON-vs-BSON"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -117,7 +88,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "200 Proyectos/Bases De Datos 2/Ejercicios/Ej-Aggregation-Ventas.md",
+                "file": "200 Proyectos/Bases De Datos 2/02-MongoDB/01-Basics/JSON-vs-BSON.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -145,7 +116,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Gráfico de Ej-Aggregation-Ventas"
+              "title": "Gráfico de JSON-vs-BSON"
             }
           }
         ]
@@ -240,7 +211,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 226.5
+    "width": 258.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -255,44 +226,44 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "66d38b46334e51a4",
+  "active": "3789004c64e548d0",
   "lastOpenFiles": [
+    "200 Proyectos/Bases De Datos 2/02-MongoDB/01-Basics/MongoDB-CRUD-Basics.md",
+    "200 Proyectos/Bases De Datos 2/02-MongoDB/01-Basics/JSON-vs-BSON.md",
     "200 Proyectos/Bases De Datos 2/INDEX.md",
-    "200 Proyectos/Bases De Datos 2/Ejercicios/Ej-MongoDB-CRUD-Modelado.md",
-    "200 Proyectos/Bases De Datos 2/Ejercicios/Ej-Clasificacion-Escenarios.md",
-    "200 Proyectos/Bases De Datos 2/02-MongoDB/MongoDB-Schema-Validation.md",
-    "200 Proyectos/Bases De Datos 2/02-MongoDB/MongoDB-Security.md",
-    "200 Proyectos/Bases De Datos 2/02-MongoDB/MongoDB-Indexes.md",
-    "200 Proyectos/Bases De Datos 2/02-MongoDB/MongoDB-Aggregation-Framework.md",
-    "200 Proyectos/Bases De Datos 2/02-MongoDB/MongoDB-Schema-Design-Patterns.md",
-    "200 Proyectos/Bases De Datos 2/02-MongoDB/MongoDB-Query-Operators.md",
-    "200 Proyectos/Bases De Datos 2/Ejercicios/Ej-Indices-Transacciones-Monitoreo.md",
-    "200 Proyectos/Bases De Datos 2/02-MongoDB/MongoDB-Security-Errors.md",
-    "200 Proyectos/Bases De Datos 2/02-MongoDB/MongoDB-Observability.md",
-    "200 Proyectos/Bases De Datos 2/02-MongoDB/MongoDB-Monitoring.md",
-    "200 Proyectos/Bases De Datos 2/02-MongoDB/MongoDB-Best-Practices.md",
-    "200 Proyectos/Bases De Datos 2/02-MongoDB/MongoDB-Backup-Recovery.md",
-    "200 Proyectos/Bases De Datos 2/02-MongoDB/MongoDB-Antipatterns.md",
-    "200 Proyectos/Bases De Datos 2/02-MongoDB/MongoDB-Model-Overview.md",
-    "200 Proyectos/Bases De Datos 2/02-MongoDB/JSON-vs-BSON.md",
     "200 Proyectos/Bases De Datos 2/01-Fundamentos-NoSQL/NoSQL-Types-Overview.md",
+    "200 Proyectos/Bases De Datos 2/Ejercicios/Ej-Indices-Transacciones-Monitoreo.md",
+    "200 Proyectos/Bases De Datos 2/02-MongoDB/01-Basics/MongoDB-Data-Hierarchy.md",
     "200 Proyectos/Bases De Datos 2/01-Fundamentos-NoSQL/NoSQL-Introduction.md",
-    "200 Proyectos/Bases De Datos 2/01-Fundamentos-NoSQL/ACID-vs-BASE.md",
-    "200 Proyectos/Bases De Datos 2/01-Fundamentos-NoSQL/CAP-Theorem.md",
-    "200 Proyectos/EDA/02_Arboles/Arbol_AVL.md",
-    "001 Areas/Sharding.md",
-    "200 Proyectos/EDA/03_Grafos/Grafos.md",
-    "200 Proyectos/EDA/03_Grafos/Representacion_Grafos.md",
+    "200 Proyectos/Bases De Datos 2/05-GUIA-PRACTICA-EXAMEN.md",
+    "200 Proyectos/Bases De Datos 2/02-MongoDB/01-Basics/MongoDB-Model-Overview.md",
+    "200 Proyectos/Bases De Datos 2/02-MongoDB/04-Ops/MongoDB-Backup-Recovery.md",
+    "200 Proyectos/Bases De Datos 2/02-MongoDB/04-Ops/MongoDB-Security.md",
+    "200 Proyectos/Bases De Datos 2/02-MongoDB/04-Ops/MongoDB-Security-Errors.md",
+    "200 Proyectos/Bases De Datos 2/02-MongoDB/04-Ops/MongoDB-Schema-Validation.md",
+    "200 Proyectos/Bases De Datos 2/02-MongoDB/04-Ops/MongoDB-Best-Practices.md",
+    "200 Proyectos/Bases De Datos 2/02-MongoDB/03-Performance/MongoDB-Observability.md",
+    "200 Proyectos/Bases De Datos 2/02-MongoDB/03-Performance/MongoDB-Monitoring.md",
+    "200 Proyectos/Bases De Datos 2/02-MongoDB/03-Performance/MongoDB-Indexes.md",
+    "200 Proyectos/Bases De Datos 2/02-MongoDB/03-Performance/MongoDB-Aggregation-Framework.md",
+    "200 Proyectos/Bases De Datos 2/02-MongoDB/02-Design/MongoDB-Schema-Design-Patterns.md",
+    "200 Proyectos/Bases De Datos 2/02-MongoDB/02-Design/MongoDB-Antipatterns.md",
+    "200 Proyectos/Bases De Datos 2/02-MongoDB/02-Design/MongoDB-Advanced-Modeling.md",
+    "200 Proyectos/Bases De Datos 2/02-MongoDB/01-Basics/MongoDB-Query-Operators.md",
+    "200 Proyectos/Bases De Datos 2/02-MongoDB/04-Ops",
+    "200 Proyectos/Bases De Datos 2/02-MongoDB/03-Performance",
+    "200 Proyectos/Bases De Datos 2/02-MongoDB/02-Design",
+    "200 Proyectos/Bases De Datos 2/02-MongoDB/01-Basics",
+    "200 Proyectos/Bases De Datos 2/Ejercicios/Ej-Aggregation-Ventas.md",
+    "500 Biblioteca/Bases-De-Datos-2/Clases/Parcial1/2-MONGODB/8-taller-casos-reales/README.md",
+    "500 Biblioteca/Bases-De-Datos-2/Clases/Parcial1/2-MONGODB/8-taller-casos-reales",
+    "500 Biblioteca/Bases-De-Datos-2/Clases/Parcial1/2-MONGODB/7-seguridad-control/README.md",
+    "500 Biblioteca/Bases-De-Datos-2/Clases/Parcial1/2-MONGODB/7-seguridad-control/9-errores-comunes.md",
+    "500 Biblioteca/Bases-De-Datos-2/Clases/Parcial1/2-MONGODB/7-seguridad-control",
     "500 Biblioteca/Matemáticas/Exámenes/Clave Calificación Parcial 1.pdf",
     "200 Proyectos/EDA/04_Ficheros",
     "200 Proyectos/EDA/03_Grafos",
     "200 Proyectos/EDA/02_Arboles",
-    "200 Proyectos/EDA/01_Listas_Pilas_Colas",
-    "200 Proyectos/EDA",
-    "500 Biblioteca/EDA1/temario/004-grafos/masGrafos.puml",
-    "500 Biblioteca/EDA1/temario/004-grafos/grafos.puml",
-    "500 Biblioteca/EDA1/temario/004-grafos/grafoExtendido03.puml",
-    "500 Biblioteca/EDA1/temario/004-grafos/grafoExtendido02.puml",
     "500 Biblioteca/EDA1/images/modelosUML/arboles/ejemplosPower/AST/astUno.svg",
     "500 Biblioteca/EDA1/images/modelosUML/arboles/ejemplosPower/AST/astTres.svg",
     "500 Biblioteca/EDA1/images/modelosUML/arboles/ejemplosPower/AST/astDos.svg",

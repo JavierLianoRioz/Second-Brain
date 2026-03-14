@@ -26,8 +26,4 @@ Permite responder: ¿quién eliminó una colección?, ¿qué usuario modificó d
 > [!TIP]
 > En entornos empresariales, las métricas suelen integrarse con **Prometheus** o **Grafana**, y los logs de auditoría con plataformas de análisis de seguridad.
 
----
-**Enlaces Relacionados:**
-*   [Monitoreo y Rendimiento](MongoDB-Monitoring.md)
-*   [Seguridad (Autenticación/Autorización)](MongoDB-Security.md)
-*   [Buenas Prácticas Operativas](MongoDB-Best-Practices.md)
+La auditoría y el registro de incidentes son componentes clave de la [Seguridad](../04-Ops/MongoDB-Security.md) de la base de datos, permitiendo cumplir con las [Buenas Prácticas Operativas](../04-Ops/MongoDB-Best-Practices.md) y complementar el [Monitoreo de Rendimiento](MongoDB-Monitoring.md).

@@ -83,8 +83,4 @@ Intenta resolver estos sin mirar la solución:
 
 </details>
 
----
-**Referenciado desde:**
-*   [Modelo Documental](../02-MongoDB/MongoDB-Model-Overview.md)
-*   [CRUD en MongoDB](../02-MongoDB/MongoDB-CRUD-Basics.md)
-*   [Diseño de Esquemas](../02-MongoDB/MongoDB-Schema-Design-Patterns.md)
+Este ejercicio práctico demuestra las ventajas del [Modelo Documental](../02-MongoDB/01-Basics/MongoDB-Model-Overview.md) y cómo las [operaciones CRUD](../02-MongoDB/01-Basics/MongoDB-CRUD-Basics.md) se adaptan naturalmente al [Diseño de Esquemas](../02-MongoDB/02-Design/MongoDB-Schema-Design-Patterns.md) flexible.

@@ -52,8 +52,4 @@ db.cursos.updateMany(
 > [!IMPORTANT]
 > No confiar solo en la validación de la aplicación. La validación a nivel de BD es una **segunda línea de defensa**.
 
----
-**Enlaces Relacionados:**
-*   [Seguridad (Autenticación/Autorización)](MongoDB-Security.md)
-*   [Diseño de Esquemas](MongoDB-Schema-Design-Patterns.md)
-*   [Errores Comunes en Seguridad](MongoDB-Security-Errors.md)
+La validación estructural es el complemento necesario al [Diseño de Esquemas](../02-Design/MongoDB-Schema-Design-Patterns.md) para prevenir la corrupción de datos y fortalecer la [Seguridad](MongoDB-Security.md) de la aplicación.

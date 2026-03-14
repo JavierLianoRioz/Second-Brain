@@ -8,12 +8,12 @@ Es el modelo más simple. Almacena pares de claves únicas y valores asociados.
 *   **Ejemplos:** Redis, DynamoDB.
 
 ### 2. Documentales (Document)
-Almacenan datos en documentos (JSON, BSON, XML). Cada documento es autocontenido y puede tener estructura variable.
+Almacenan datos en documentos ([JSON/BSON](../02-MongoDB/01-Basics/JSON-vs-BSON.md), XML). Cada documento es autocontenido y puede tener estructura variable. Es el modelo insignia de [MongoDB](../02-MongoDB/01-Basics/MongoDB-Model-Overview.md).
 *   **Uso:** CMS, catálogos de productos, aplicaciones web.
 *   **Ejemplos:** MongoDB, CouchDB.
 
 ### 3. Columnares (Wide-Column)
-Organizan los datos en familias de columnas en lugar de filas. Optimizadas para lecturas analíticas masivas.
+Organizan los datos en familias de columnas en lugar de filas. Optimizadas para lecturas analíticas masivas sobre grandes volúmenes de [NoSQL](NoSQL-Introduction.md).
 *   **Uso:** Big Data, análisis de logs, series temporales.
 *   **Ejemplos:** Cassandra, HBase.
 
@@ -26,9 +26,3 @@ Representan los datos como nodos y relaciones (aristas). Ideales para analizar c
 Almacenan representaciones matemáticas de datos (embeddings). Permiten búsquedas por similitud semántica.
 *   **Uso:** IA, búsqueda de imágenes, LLMs.
 *   **Ejemplos:** Pinecone, Milvus.
-
----
-**Enlaces Relacionados:**
-*   [Introducción a NoSQL](NoSQL-Introduction.md)
-*   [Modelo Documental](./MongoDB-Model-Overview.md)
-*   [Ejercicio - Clasificación](./Ejercicios/Ej-Clasificacion-Escenarios.md)

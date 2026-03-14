@@ -62,9 +62,4 @@ db.productos.aggregate([
 ```
 
 > [!TIP]
-> El orden de las etapas importa: filtrar con `$match` al principio del pipeline reduce drásticamente la carga de trabajo para las etapas posteriores.
-
----
-**Enlaces Relacionados:**
-*   [Operadores de Consulta](MongoDB-Query-Operators.md)
-*   [Índices y Rendimiento](MongoDB-Indexes.md)
+> El orden de las etapas importa: filtrar con `$match` al principio del pipeline reduce drásticamente la carga de trabajo para las etapas posteriores. Para asegurar que el pipeline sea óptimo, verifica que las primeras etapas aprovechen los [Índices](MongoDB-Indexes.md) y consulta el [Análisis de Rendimiento](MongoDB-Indexes.md#análisis-de-rendimiento).

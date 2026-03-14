@@ -95,17 +95,9 @@ db.usuarios.find({ email: "test@example.com" }).explain("executionStats")
 | **totalKeysExamined** | Debe ser lo más cercano posible a `nReturned`. |
 | **totalDocsExamined** | Si es mucho mayor que `nReturned`, falta optimizar el índice. |
 
----
+## ⚠️ Advertencias Profesionales
 
-## ⚠️ Advertencias Profecionales
-
-1. **Escrituras vs Lecturas**: Los índices aceleran las lecturas pero **ralentizan las escrituras** (cada índice debe actualizarse con cada `insert/update`).
+1. **Escrituras vs Lecturas**: Los índices aceleran las lecturas pero **ralentizan las escrituras** (cada índice debe actualizarse con cada `insert/update` en las [Operaciones CRUD](../01-Basics/MongoDB-CRUD-Basics.md)).
 2. **Memoria RAM**: Los índices deben caber en la RAM (*WiredTiger cache*) para ser efectivos.
-3. **Selectividad**: Indexa campos con valores únicos o muy variados (alta cardinalidad).
-
----
-**Enlaces Relacionados:**
-*   [Operaciones CRUD](MongoDB-CRUD-Basics.md)
-*   [Diseño de Esquemas Avanzado](MongoDB-Advanced-Modeling.md)
-*   [Antipatrones de MongoDB](MongoDB-Antipatterns.md)
+3. **Selectividad**: Indexa campos con valores únicos o muy variados (alta cardinalidad) para evitar [Antipatrones](../02-Design/MongoDB-Antipatterns.md) de diseño.
 

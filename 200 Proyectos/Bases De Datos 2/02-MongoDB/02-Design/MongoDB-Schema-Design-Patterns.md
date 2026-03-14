@@ -15,9 +15,4 @@ Almacena solo un identificador (`_id`) que apunta a un documento en otra colecci
 *   **Uso:** Relaciones N:M o 1:N donde "N" es muy grande (ej. seguidores de una celebridad).
 
 > [!IMPORTANT]
-> **Data that is accessed together should be stored together.** Esta es la regla de oro del modelado documental.
-
----
-**Enlaces Relacionados:**
-*   [Modelo Documental](MongoDB-Model-Overview.md)
-*   [Jerarquía de Datos en MongoDB](MongoDB-Data-Hierarchy.md)
+> **Data that is accessed together should be stored together.** Esta es la regla de oro del [Modelo Documental](../01-Basics/MongoDB-Model-Overview.md). Si no se sigue, se cae en [Antipatrones](MongoDB-Antipatterns.md) de sobre-normalización.

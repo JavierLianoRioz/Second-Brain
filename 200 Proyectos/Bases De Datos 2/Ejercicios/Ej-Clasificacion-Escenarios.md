@@ -52,7 +52,4 @@ Para cada escenario, pregúntate:
 ¿Similitud semántica?            → Vectorial
 ```
 
----
-**Referenciado desde:**
-*   [Introducción a NoSQL](../01-Fundamentos-NoSQL/NoSQL-Introduction.md)
-*   [Tipos de NoSQL](../01-Fundamentos-NoSQL/NoSQL-Types-Overview.md)
+Este ejercicio ayuda a discernir cuándo aplicar NoSQL según la [Introducción a NoSQL](../01-Fundamentos-NoSQL/NoSQL-Introduction.md) y los diferentes [Tipos de NoSQL](../01-Fundamentos-NoSQL/NoSQL-Types-Overview.md) disponibles en el mercado.
