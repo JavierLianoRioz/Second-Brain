@@ -20,8 +20,37 @@
               "icon": "lucide-file",
               "title": "INDEX"
             }
+          },
+          {
+            "id": "66d38b46334e51a4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "200 Proyectos/Bases De Datos 2/Ejercicios/Ej-Aggregation-Ventas.md",
+                "mode": "preview",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Ej-Aggregation-Ventas"
+            }
+          },
+          {
+            "id": "e4466b58cd00094c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "200 Proyectos/Bases De Datos 2/Ejercicios/Ej-MongoDB-CRUD-Modelado.md",
+                "mode": "preview",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Ej-MongoDB-CRUD-Modelado"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -88,7 +117,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "200 Proyectos/Bases De Datos 2/INDEX.md",
+                "file": "200 Proyectos/Bases De Datos 2/Ejercicios/Ej-Aggregation-Ventas.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -116,7 +145,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Gráfico de INDEX"
+              "title": "Gráfico de Ej-Aggregation-Ventas"
             }
           }
         ]
@@ -226,17 +255,19 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "18b90a6e5d9085f8",
+  "active": "66d38b46334e51a4",
   "lastOpenFiles": [
+    "200 Proyectos/Bases De Datos 2/INDEX.md",
+    "200 Proyectos/Bases De Datos 2/Ejercicios/Ej-MongoDB-CRUD-Modelado.md",
+    "200 Proyectos/Bases De Datos 2/Ejercicios/Ej-Clasificacion-Escenarios.md",
+    "200 Proyectos/Bases De Datos 2/02-MongoDB/MongoDB-Schema-Validation.md",
+    "200 Proyectos/Bases De Datos 2/02-MongoDB/MongoDB-Security.md",
     "200 Proyectos/Bases De Datos 2/02-MongoDB/MongoDB-Indexes.md",
     "200 Proyectos/Bases De Datos 2/02-MongoDB/MongoDB-Aggregation-Framework.md",
-    "200 Proyectos/Bases De Datos 2/INDEX.md",
     "200 Proyectos/Bases De Datos 2/02-MongoDB/MongoDB-Schema-Design-Patterns.md",
     "200 Proyectos/Bases De Datos 2/02-MongoDB/MongoDB-Query-Operators.md",
     "200 Proyectos/Bases De Datos 2/Ejercicios/Ej-Indices-Transacciones-Monitoreo.md",
-    "200 Proyectos/Bases De Datos 2/02-MongoDB/MongoDB-Security.md",
     "200 Proyectos/Bases De Datos 2/02-MongoDB/MongoDB-Security-Errors.md",
-    "200 Proyectos/Bases De Datos 2/02-MongoDB/MongoDB-Schema-Validation.md",
     "200 Proyectos/Bases De Datos 2/02-MongoDB/MongoDB-Observability.md",
     "200 Proyectos/Bases De Datos 2/02-MongoDB/MongoDB-Monitoring.md",
     "200 Proyectos/Bases De Datos 2/02-MongoDB/MongoDB-Best-Practices.md",
@@ -252,8 +283,6 @@
     "001 Areas/Sharding.md",
     "200 Proyectos/EDA/03_Grafos/Grafos.md",
     "200 Proyectos/EDA/03_Grafos/Representacion_Grafos.md",
-    "200 Proyectos/EDA/03_Grafos/00_MOC_Grafos.md",
-    "200 Proyectos/EDA/01_Listas_Pilas_Colas/Lista_Enlazada_Simple.md",
     "500 Biblioteca/Matemáticas/Exámenes/Clave Calificación Parcial 1.pdf",
     "200 Proyectos/EDA/04_Ficheros",
     "200 Proyectos/EDA/03_Grafos",
