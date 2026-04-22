@@ -22,4 +22,4 @@ Los datos se distribuyen basándose en una **Shard Key** (clave de partición). 
 
 ---
 **Enlaces Relacionados:**
-*   [Introducción a NoSQL](../200%20Proyectos/Bases%20De%20Datos%202/01-Fundamentos-NoSQL/NoSQL-Introduction.md)
+*   [Introducción a NoSQL](NoSQL-Introduction.md)

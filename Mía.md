@@ -2,4 +2,4 @@ Os presento a Mía, un sistema de notas, apuntes y recuerdos que evoluciona en b
 
 Ahora tengo estos proyectos:
 - [001 Let's Play](200%20Proyectos/Minecraft/001%20Let%27s%20Play.md)
-- [Iris](200%20Proyectos/Iris/Iris.md)
+- [Iris](Iris.md)
