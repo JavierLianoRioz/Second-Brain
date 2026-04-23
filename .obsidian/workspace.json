@@ -226,8 +226,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "815449adfffa8e4f",
+  "active": "712167e3c33fc024",
   "lastOpenFiles": [
+    "mermaid_data/f75cc0c8-1d9d-4be1-95d0-3f7fd2ba8a27/d330dc3a-3f91-4144-a9ad-2d968dca564d.svg",
+    "mermaid_data/f75cc0c8-1d9d-4be1-95d0-3f7fd2ba8a27",
+    "mermaid_data",
+    "mermaid-mcp/Dockerfile",
+    "mermaid-mcp",
     "200 Proyectos/Rexeat/Diccionario.md",
     "200 Proyectos/Rexeat/Modelado de dominio.md",
     "200 Proyectos/Rexeat/Casos de Uso.md",
@@ -259,10 +264,6 @@
     "500 Biblioteca/Bases De Datos 2/02-MongoDB/02-Design",
     "500 Biblioteca/Bases De Datos 2/02-MongoDB/01-Basics",
     "900 Bin/Bases-De-Datos-2/Clases/Parcial1/2-MONGODB/8-taller-casos-reales",
-    "900 Bin/Bases-De-Datos-2/Clases/Parcial1/2-MONGODB/7-seguridad-control",
-    "500 Biblioteca/Matemáticas/Exámenes/Clave Calificación Parcial 1.pdf",
-    "500 Biblioteca/Tecnologías/EDA/04_Ficheros",
-    "500 Biblioteca/Tecnologías/EDA/03_Grafos",
     "500 Biblioteca/EDA1/images/modelosUML/arboles/ejemplosPower/AST/astUno.svg",
     "500 Biblioteca/EDA1/images/modelosUML/arboles/ejemplosPower/AST/astTres.svg",
     "500 Biblioteca/EDA1/images/modelosUML/arboles/ejemplosPower/AST/astDos.svg",
