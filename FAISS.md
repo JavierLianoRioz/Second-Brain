@@ -99,4 +99,8 @@ if score_promedio < 0.3:
 else:
     # Continuar con el procesamiento
     pass
+
+---
+
+Para búsquedas más complejas que requieren filtros por categorías o fechas, consulta las [[Estrategias de Filtrado Vectorial]].
 ```

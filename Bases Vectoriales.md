@@ -10,7 +10,7 @@ En vez de hablar de **tablas** (como en SQL) o **nodos** (como en Grafos), aquí
 El sistema funciona gracias a tres pilares fundamentales:
 1. **[[Embedding]]**: Es la herramienta que convierte nuestros textos e ideas humanas en listas de números (vectores) que la máquina puede entender.
 2. **[[Espacio Vectorial]]**: Es el "mapa" o universo matemático donde se guardan estas listas de números. Los conceptos que significan cosas parecidas acaban muy juntos en este mapa.
-3. **Similitud y Distancia**: Cuando haces una búsqueda, el sistema no compara letras. Simplemente mide la distancia física o el ángulo entre los puntos del mapa. Si dos puntos están muy cerca matemáticamente, es que significan casi lo mismo.
+3. **Similitud y Distancia**: Cuando haces una búsqueda, el sistema no compara letras. Simplemente mide la distancia física o el ángulo entre los puntos del mapa. Si dos puntos están muy cerca matemáticamente, es que significan casi lo mismo. Para casos específicos, se puede calcular esta [[Similitud Manual]] sin usar bases de datos.
 
 ### El Problema de la Escala
 Comparar una búsqueda nueva contra millones de vectores de uno en uno es inviable. Para solucionar esto se usan **Índices Vectoriales** como [[FAISS]]. Su función es organizar el mapa en sectores para encontrar a los "vecinos" más cercanos de forma ultra rápida, aproximando la búsqueda en lugar de calcularlo todo.
