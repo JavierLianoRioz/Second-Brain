@@ -19,7 +19,7 @@ FAISS (en su versión `IndexFlatL2`) devuelve distancias geométricas. Para un h
 Para convertir la distancia $d$ en un score $S$, aplicamos la siguiente lógica:
 $$S = \frac{1}{1 + d}$$
 
-**Por qué esta fórmula:**
+**¿Por qué esta fórmula?**
 1. Si la distancia es **0** (puntos idénticos), el score es **1**.
 2. A medida que la distancia $d$ crece hacia el infinito, el score tiende a **0**.
 3. Nunca obtendremos valores negativos ni resultados fuera del rango [0, 1].
