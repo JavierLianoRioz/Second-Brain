@@ -13,20 +13,20 @@ Esta nota registra la capacidad de los apuntes actuales para resolver el banco d
 | 10 | ✅ | Longitud variable `*1..2`. |
 | 11 | ✅ | MATCH de caminos. |
 | 12-13 | ✅ | Función `length()`. |
-| 14 | ✅ | OPTIONAL MATCH y IS NULL. |
+| 14 | ✅ | OPTIONAL MATCH e IS NULL. |
 | 15 | ✅ | Patrón de puente. |
 | 16-23 | ✅ | Cubierto (id, DISTINCT, filtros). |
-| 24-25 | ❌ | **Falta:** Explicación explícita de funciones de agregación matemáticas como `sum()`. |
+| 24-25 | ✅ | **Actualizado:** Funciones `sum()`, `avg()`, etc. en [[Cypher]]. |
 | 26-30 | ✅ | Cubierto por Cypher avanzado (nodes, relationships). |
 | 31-39 | ✅ | Cubierto. |
 | 40 | ✅ | Predicado `ALL`. |
 | 41-54 | ✅ | Cubierto. |
-| 55 | ❌ | **Falta:** Explicación de la cláusula `UNWIND`. |
-| 56-57 | ❌ | **Falta:** Función `size()` para listas y `collect()`. |
+| 55 | ✅ | **Actualizado:** Cláusula `UNWIND` en [[Cypher Avanzado]]. |
+| 56-57 | ✅ | **Actualizado:** Funciones `size()` y `collect()` en [[Cypher Avanzado]]. |
 | 58-60 | ✅ | Cubierto por División Relacional en avanzado. |
-| 61-62 | ❌ | **Falta:** `UNWIND` (repetido). |
+| 61-62 | ✅ | **Actualizado:** `UNWIND`. |
 | 63-90 | ✅ | Cubierto por lógica de avanzado (id, with, collect). |
-| 91 | ❌ | **Falta:** Cálculo de medias con `avg()` o lógica manual más simple. |
+| 91 | ✅ | **Actualizado:** Cálculo de medias con `avg()` en [[Cypher]]. |
 | 92-100 | ✅ | Cubierto. |
 
 ---
@@ -36,22 +36,22 @@ Esta nota registra la capacidad de los apuntes actuales para resolver el banco d
 | ID | Estado | Observación / Falta |
 |---|---|---|
 | 1-4 | ✅ | Teoría de inserción, ambigüedad y contexto. |
-| 5 | ❌ | **Falta:** Ejemplo de código de cómo acceder al índice `i` en un bucle de resultados. |
+| 5 | ✅ | **Actualizado:** Bucle de procesamiento de resultados en [[FAISS]]. |
 | 6-7 | ✅ | Fenómenos del espacio vectorial. |
 | 8 | ✅ | Matemática del Score. |
 | 9-11 | ✅ | Teoría de especificidad. |
-| 12 | ❌ | **Falta:** Mostrar explícitamente cómo FAISS devuelve la matriz de `distancias`. |
+| 12 | ✅ | **Actualizado:** Acceso a distancias e índices en [[FAISS]]. |
 | 13-17 | ✅ | Cubierto (ambigüedad, contaminación). |
 | 18 | ✅ | Filtrado por umbral (Práctica). |
 | 19-20 | ✅ | Teoría. |
-| 21 | ❌ | **Falta:** Código para `sorted(resultados, key=...)` en Python. |
+| 21 | ✅ | **Actualizado:** Ordenamiento de diccionarios en [[FAISS]]. |
 | 22 | ✅ | Ciclo de vida (Inserción caliente). |
 | 23-33 | ✅ | Cubierto. |
 | 34-36 | ✅ | Estrategias de filtrado (Metadata). |
-| 37 | ❌ | **Falta:** Cómo calcular similitud sin FAISS (producto escalar o similar). |
+| 37 | ✅ | **Actualizado:** [[Similitud Manual]] sin índices. |
 | 38-41 | ✅ | Cubierto. |
 | 42 | ✅ | Persistencia. |
-| 43 | ❌ | **Falta:** Lógica de detección de "Out of Domain" por promedio de scores. |
+| 43 | ✅ | **Actualizado:** Detección de "Out of Domain" en [[FAISS]]. |
 | 44-50 | ✅ | Cubierto (eliminación, sistemas completos). |
 
 ---
