@@ -249,6 +249,7 @@ No todos los caminos valen lo mismo. El análisis puede verse enturbiado por cie
 
 Un problema común al consultar es que el algoritmo pase varias veces por el mismo nodo creando bucles infinitos o redundantes. Es necesario definir rutas que eviten repetir nodos en el camino, garantizando así recorridos lógicos y limpios.
 # **Referencias**
+[[Cypher Avanzado]]
 [Bases-De-Datos-2/Clases/Parcial2/3-Neo4J/2-cypher-basico at main · JavierLianoRioz/Bases-De-Datos-2 · GitHub](https://github.com/JavierLianoRioz/Bases-De-Datos-2/tree/main/Clases/Parcial2/3-Neo4J/2-cypher-basico)
 [Cypher (query language) - Wikipedia](https://en.wikipedia.org/wiki/Cypher_(query_language)?useskin=vector)
 [Neo4j - Wikipedia, la enciclopedia libre](https://es.wikipedia.org/wiki/Neo4j)
