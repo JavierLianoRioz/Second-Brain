@@ -5,3 +5,5 @@ Private/
 .stfolder/
 .tmp.drivedownload/
 .tmp.driveupload/
+*.sync-conflict-*
+index.lock
