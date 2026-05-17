@@ -34,3 +34,9 @@ print(f"La similitud es de: {score:.4f}")
 1. **Validación:** Sirve para comprobar que tu índice FAISS está funcionando correctamente.
 2. **Simplicidad:** Si solo tienes 10 o 20 documentos, es más rápido calcular el coseno uno a uno que inicializar una librería de búsqueda masiva.
 3. **Comprensión:** Te permite ver que la búsqueda semántica es, en el fondo, una simple multiplicación y división de listas de números.
+
+## Distancia Euclidiana vs Similitud del Coseno
+A veces podríamos tener la tentación de calcular la distancia física, en línea recta, entre dos vectores (Distancia Euclidiana). Sin embargo, en el procesamiento de lenguaje natural esto presenta un problema grave: **la magnitud (tamaño) del vector puede distorsionar el significado**.
+
+- **El problema de la Distancia Euclidiana:** Dos vectores que apuntan exactamente a la misma dirección semántica pero que tienen distinto tamaño (por ejemplo, porque una frase repite la misma idea muchas veces, amplificando la magnitud), tendrán una distancia euclidiana más grande y erróneamente parecerán más diferentes.
+- **La solución del Coseno:** La similitud del coseno aísla puramente la **dirección** e ignora la magnitud total del vector. Así, mientras la flecha "apunte" hacia el mismo significado en el espacio vectorial, el sistema comprenderá que ambos conceptos son equivalentes semánticamente, sin dejarse engañar por la longitud del texto o del vector subyacente.

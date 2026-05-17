@@ -26,3 +26,15 @@ Este es el fenómeno más contraintuitivo: **Frases con significados opuestos su
     *   Frase B: "El gato está muerto".
 *   Ambas comparten el 80% de las palabras y el contexto estructural ("El gato está..."). Para el modelo, el contexto es tan similar que los ubica casi en el mismo punto, a pesar de que para un humano la diferencia semántica es total.
 *   **Conclusión:** La búsqueda vectorial es excelente para encontrar el "tema" del que se habla, pero puede ser ciega ante negaciones o cambios críticos de una sola palabra.
+
+## 5. Inestabilidad del Espacio Vectorial
+El comportamiento del sistema no es rígido; depende por completo del diseño y los pesos del [[Embedding]]. Un sistema vectorial es altamente sensible:
+*   **Efecto:** Pequeñas modificaciones en los pesos de un concepto o la adición de una nueva dimensión pueden reorganizar masivamente las distancias. Aumentar exageradamente la magnitud de una palabra hará que domine el espacio, atrayendo resultados que semánticamente no deberían estar tan cerca.
+
+## 6. Colapso del Espacio Vectorial
+Ocurre cuando el modelo de representación fuerza a que dos conceptos diferentes asuman posiciones idénticas o casi idénticas en el mapa (por un mal diseño del embedding o falta de dimensiones diferenciadoras).
+*   **Efecto:** La pérdida de diferenciación destruye la utilidad del sistema. Si "perro" y "gato" colapsan en el mismo punto exacto, el sistema será incapaz de distinguirlos en cualquier consulta compuesta, afectando a todas las combinaciones que los usen.
+
+## 7. Ruido en el Espacio
+Se produce al intentar representar palabras o conceptos desconocidos (fuera del vocabulario del modelo) asignándoles valores por defecto o ruido.
+*   **Efecto:** El ruido evita que el sistema devuelva errores al encontrar palabras nuevas, pero introduce ambigüedad. Un efecto acumulativo de palabras ruidosas en una frase terminará generando similitudes poco informativas y acercando la consulta a regiones irrelevantes del [[Espacio Vectorial]].

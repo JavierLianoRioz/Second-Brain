@@ -143,3 +143,55 @@ RETURN reduce(total = 0, r IN relationships(p) | total + r.km) AS km_totales
 ### Cuándo usarlo vs `sum()`
 - Usa `sum()` para valores que están en **filas separadas** (agregación clásica).
 - Usa `reduce()` para valores que ya están dentro de una **misma lista o Path** (como los que devuelven `nodes(p)` o `relationships(p)`). Es la única forma de "entrar" en una lista y operar con sus elementos sin usar `UNWIND`.
+
+### Profundizando en `reduce()` (Explicación Extendida)
+Para entender `reduce()` de forma más clara, imagínalo como una bola de nieve que va rodando por una colina (la colección). A medida que rueda por cada elemento, la bola (el acumulador) crece o cambia según una regla que tú defines, hasta llegar al final y entregarte el resultado compacto. 
+
+No solo sirve para sumar números. Puedes usarlo para concatenar cadenas de texto o construir estructuras más complejas a partir de un `Path`. Por ejemplo, para construir una ruta separada por flechas:
+```cypher
+MATCH p=(inicio:Localidad)-[:CONECTA_CON*1..4]->(fin:Localidad)
+RETURN reduce(ruta = inicio.nombre, n IN nodes(p)[1..] | ruta + " -> " + n.nombre) AS ruta_completa
+```
+*Lógica:* Partimos con el nombre del primer nodo. Luego recorremos el resto de nodos (`nodes(p)[1..]`) y, en cada paso, concatenamos al texto acumulado una flecha y el nombre del siguiente nodo.
+
+---
+
+## Más Predicados de Colecciones: `ANY`, `NONE` y `SINGLE`
+
+Al igual que `ALL`, estos predicados nos permiten evaluar condiciones sobre colecciones y paths sin tener que desarmarlos con `UNWIND`.
+
+### `ANY` (Al menos uno)
+Devuelve verdadero si **uno o más** elementos de la lista cumplen la condición.
+```cypher
+MATCH p=(a:Persona)-[:AMIGO_DE*1..3]->(b:Persona)
+WHERE ANY(n IN nodes(p) WHERE n.nombre = "Luis")
+RETURN p
+```
+*Uso:* Ideal para encontrar caminos que pasen forzosamente por un nodo específico (un "nodo puente").
+
+### `NONE` (Ninguno)
+Devuelve verdadero solo si **ningún** elemento de la lista cumple la condición.
+```cypher
+MATCH p=(a:Persona)-[:AMIGO_DE*1..3]->(b:Persona)
+WHERE NONE(n IN nodes(p) WHERE n.nombre = "Carlos")
+RETURN p
+```
+*Uso:* Útil para excluir rutas donde intervienen actores que queremos evitar (filtrado de exclusión).
+
+### `SINGLE` (Exactamente uno)
+Devuelve verdadero si **uno y solo un** elemento cumple la condición. 
+```cypher
+MATCH (p:Persona)-[:PARTICIPA_EN]->(pr:Proyecto)
+WITH p, collect(pr) as proyectos
+WHERE SINGLE(x IN proyectos WHERE x.presupuesto > 100000)
+RETURN p.nombre
+```
+
+### Prevención de Ciclos con `SINGLE` y `ALL`
+Una combinación avanzada de estos predicados nos permite encontrar caminos simples (sin bucles donde un nodo se visite más de una vez).
+```cypher
+MATCH p=(a:Persona)-[r:AMIGO_DE*1..4]->(b:Persona)
+WHERE ALL(n IN nodes(p) WHERE SINGLE(x IN nodes(p) WHERE x = n))
+RETURN p
+```
+*Lógica:* Para **todos** (`ALL`) los nodos `n` del camino, debe cumplirse que existe **exactamente un** (`SINGLE`) nodo `x` en todo el camino que sea igual a `n`. Si un nodo aparece dos veces, `SINGLE` será falso para ese nodo, y `ALL` descartará el camino completo. ¡Un filtro anti-ciclos perfecto!

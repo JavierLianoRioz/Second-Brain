@@ -34,3 +34,6 @@ El flujo de trabajo en código (pipeline vectorial) para implementar esto siempr
 2. **Inicialización del Índice**: Creamos un índice usando una herramienta como [[FAISS]]. Le decimos qué método usar para medir distancias (por ejemplo, distancia Euclidiana - `IndexFlatL2`).
 3. **Inserción de Datos**: Añadimos los números generados por el paso 1 a nuestro índice FAISS. *(Ojo: FAISS solo guarda números, la relación "número -> texto original" debes guardarla tú aparte en una lista).*
 4. **Consultas**: Cuando un usuario busca algo, primero pasamos su frase por el **mismo modelo de embedding** del paso 1. Luego, le pedimos a FAISS que busque los `K` vectores más cercanos a esa consulta, devolviéndonos qué tan cerca están (su "score" de relevancia).
+
+> [!TIP] Arquitectura Recomendada
+> Para un diseño robusto y orientado a objetos de este flujo, consulta la [[Implementación del Pipeline Vectorial]].

@@ -19,6 +19,11 @@ A veces surge la duda de si algo debe ser una propiedad o un nodo separado. Por 
 
 - Si solo te importa saber en qué proyecto participa alguien de forma informativa, podría ser una propiedad en la relación.
 - Si necesitas conectar a varias personas de distintas empresas al mismo proyecto y medir el impacto de ese proyecto, el proyecto debe extraerse como un nodo intermedio. Esto añade complejidad, pero da mucha más flexibilidad al modelo.
+
+#### Refactorización e Inconsistencias
+Un grafo no es estático. Con el tiempo y a medida que cambian las necesidades de la aplicación, es habitual encontrar nodos desconectados ("huérfanos") o redundancias que fuerzan a refactorizar el modelo. Por ejemplo:
+- **Inconsistencias lógicas**: Si alguien participa en un proyecto asociado a una empresa pero el sistema indica que no tiene relación formal de trabajar en dicha empresa, el modelo enriquece el descubrimiento permitiendo revelar, mediante cruces (queries), esta disonancia o colaboración "en la sombra".
+- **Relaciones Derivadas**: A veces se opta por añadir nuevos "atajos" en el modelo (ej. conectar a dos personas que trabajan en la misma empresa con `ES_COLEGA_DE`) para que las consultas concurrentes sean mucho más veloces, a expensas de tolerar un ligero nivel intencionado de redundancia estructural.
 ### Análisis de Redes y Descubrimiento
 Un grafo no solo responde preguntas, permite descubrir cosas ocultas y analizar estructuras. Cuando las consultas devuelven Paths (Caminos), dejan de ser simples datos y se convierten en información de red.
 
