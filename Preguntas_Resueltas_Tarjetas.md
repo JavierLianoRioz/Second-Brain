@@ -204,7 +204,10 @@
 > > [!SUCCESS] Solución
 > > **Query:**
 > > ```cypher
-> > MATCH (p:Persona) OPTIONAL MATCH (p)-[:PARTICIPA_EN]->(pr) WHERE pr IS NULL RETURN p.nombre
+> > MATCH (p:Persona)
+> > OPTIONAL MATCH (p)-[:PARTICIPA_EN]->(pr)
+> > WHERE pr IS NULL
+> > RETURN p.nombre
 > > ```
 > > 
 > > **Validación:**
