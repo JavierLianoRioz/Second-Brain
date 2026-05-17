@@ -97,10 +97,9 @@ score_promedio = sum(r['score'] for r in resultados) / len(resultados)
 if score_promedio < 0.3:
     print("La consulta parece estar fuera del dominio de conocimiento.")
 else:
-    # Continuar con el procesamiento
-    pass
+    pass # Continuar con el procesamiento
+```
 
 ---
 
 Para búsquedas más complejas que requieren filtros por categorías o fechas, consulta las [[Estrategias de Filtrado Vectorial]].
-```
