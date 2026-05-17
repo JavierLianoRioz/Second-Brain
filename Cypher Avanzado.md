@@ -116,18 +116,30 @@ RETURN DISTINCT n.nombre
 
 ## Reducciones sobre Colecciones: `reduce()`
 
-La función `reduce()` permite transformar una lista de valores en un único resultado escalar (un número, un booleano o un string) aplicando una operación acumulativa.
+La función `reduce()` es un "destilador". Toma una lista con muchos valores y los procesa uno a uno para obtener un **único resultado final**. Es el equivalente funcional al `fold` o a un bucle `for` con un acumulador externo.
 
-**Sintaxis:** `reduce(acumulador = valor_inicial, variable IN lista | expresion)`
+### Anatomía del acumulador
+**Sintaxis:** `reduce(acumulador = valor_inicial, variable IN lista | expresion_de_actualizacion)`
 
-### Ejemplo: Cálculo de "Peso Total" de un camino
-Imagina que cada relación tiene una propiedad `distancia` y queremos sumar el total del recorrido.
+1.  **`acumulador`**: La "caja" donde guardas el resultado parcial. Debes darle un nombre y un valor inicial (ej. `0` para sumas, `""` para textos).
+2.  **`variable IN lista`**: Define cómo vas a llamar a cada elemento mientras recorres la lista.
+3.  **`| expresion`**: La operación matemática o lógica que actualiza la "caja" en cada paso.
+
+### Ejemplo visual: Sumar pesos de un Path
+Si tenemos un camino con distancias `[10, 5, 20]`:
 
 ```cypher
 MATCH p=(a:Ciudad)-[:RUTA*]->(b:Ciudad)
-RETURN reduce(total_km = 0, r IN relationships(p) | total_km + r.distancia) AS distancia_total
+RETURN reduce(total = 0, r IN relationships(p) | total + r.km) AS km_totales
 ```
-*Paso a paso:*
-1. `total_km` empieza en 0.
-2. Para cada relación `r` en el camino, toma el valor actual de `total_km` y le suma `r.distancia`.
-3. El resultado final es la suma acumulada de todo el trayecto.
+
+**Paso a paso interno:**
+- **Inicio:** `total = 0`.
+- **Vuelta 1:** `total = 0 + 10` → La caja ahora vale `10`.
+- **Vuelta 2:** `total = 10 + 5` → La caja ahora vale `15`.
+- **Vuelta 3:** `total = 15 + 20` → La caja ahora vale `35`.
+- **Resultado:** `35`.
+
+### Cuándo usarlo vs `sum()`
+- Usa `sum()` para valores que están en **filas separadas** (agregación clásica).
+- Usa `reduce()` para valores que ya están dentro de una **misma lista o Path** (como los que devuelven `nodes(p)` o `relationships(p)`). Es la única forma de "entrar" en una lista y operar con sus elementos sin usar `UNWIND`.
