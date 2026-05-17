@@ -138,6 +138,17 @@ RETURN p.nombre, pr.nombre
 
 De esta forma garantizamos que la consulta nos devuelva a **todas** las personas. Las que no estén en ningún proyecto simplemente tendrán un `null` en la columna del proyecto, asegurando que no perdemos información valiosa por nodos "huérfanos".
 
+#### Filtrado por ausencia (`IS NULL`)
+Si queremos encontrar específicamente los nodos que **no** tienen una relación (los que devolvieron `null`), usamos `IS NULL` justo antes del `RETURN`.
+
+```cypher
+MATCH (p:Persona)
+OPTIONAL MATCH (p)-[:PARTICIPA_EN]->(pr:Proyecto)
+WHERE pr IS NULL
+RETURN p.nombre
+```
+*Lógica:* Buscamos a todas las personas que no participan en ningún proyecto. Es la forma más común de detectar "huecos" o nodos aislados en el flujo.
+
 ## Recorridos (Paths) y Distancias
 
 En Cypher no necesitamos hacer joins complejos para conectar datos profundos. Podemos recorrer múltiples niveles del grafo de forma nativa describiendo la ruta completa.
