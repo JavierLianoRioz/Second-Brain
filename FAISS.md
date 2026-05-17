@@ -57,3 +57,46 @@ faiss.write_index(index, "mi_memoria.faiss")
 # Recuperar
 index_recuperado = faiss.read_index("mi_memoria.faiss")
 ```
+
+---
+
+## Post-Procesamiento de Resultados (Python)
+
+FAISS devuelve matrices crudas de distancias e índices. Para que el usuario final reciba algo útil, debemos procesar esos datos.
+
+### 1. Acceso a las Matrices
+Cuando ejecutas `distancias, indices = index.search(vector_query, k)`:
+- `indices[0]`: Es una lista con los IDs de los `k` vecinos más cercanos.
+- `distancias[0]`: Es una lista con las distancias matemáticas exactas asociadas a esos IDs.
+
+### 2. Formateo y Ordenamiento
+Es buena práctica empaquetar los resultados en diccionarios y ordenarlos por el Score de similitud (de mayor a menor).
+
+```python
+resultados = []
+for j, i in enumerate(indices[0]):
+    distancia = distancias[0][j]
+    score = 1 / (1 + distancia)
+    # Suponiendo que 'textos' es tu lista original de frases
+    resultados.append({
+        'id': i,
+        'texto': textos[i],
+        'score': score
+    })
+
+# Ordenar por score descendente
+resultados_ordenados = sorted(resultados, key=lambda x: x['score'], reverse=True)
+```
+
+### 3. Detección de "Fuera de Dominio" (Out of Domain)
+Una búsqueda vectorial **siempre** devuelve resultados (los vecinos más cercanos), incluso si la pregunta no tiene nada que ver con la base de datos. Para evitar respuestas basura, calculamos la relevancia media:
+
+```python
+score_promedio = sum(r['score'] for r in resultados) / len(resultados)
+
+if score_promedio < 0.3:
+    print("La consulta parece estar fuera del dominio de conocimiento.")
+else:
+    # Continuar con el procesamiento
+    pass
+```

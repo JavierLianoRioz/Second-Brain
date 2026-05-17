@@ -80,6 +80,40 @@ RETURN p.nombre
 
 ---
 
+## Manipulación de Listas y Colecciones
+
+Cypher permite trabajar con arrays de forma muy flexible mediante funciones específicas y cláusulas de expansión.
+
+### 1. `collect()`: Agrupar en una lista
+Transforma múltiples filas en una única lista. Es el paso previo habitual para realizar cálculos sobre conjuntos de datos.
+
+```cypher
+MATCH (p:Persona)-[:USA_TECNOLOGIA]->(t:Tecnologia)
+RETURN p.nombre, collect(t.nombre) AS lista_techs
+```
+
+### 2. `size()`: Contar elementos
+Devuelve la cantidad de elementos que tiene una lista.
+
+```cypher
+MATCH (p:Persona)-[:AMIGO_DE]->(a:Persona)
+WITH p, collect(a) AS amigos
+WHERE size(amigos) > 2
+RETURN p.nombre, size(amigos)
+```
+
+### 3. `UNWIND`: Expandir una lista a filas
+Es la operación inversa a `collect()`. Toma una lista y la descompone, creando una fila nueva por cada elemento. Es vital para procesar resultados de funciones como `nodes(p)`.
+
+```cypher
+MATCH p=(a:Persona)-[:AMIGO_DE*]->(b:Persona)
+UNWIND nodes(p) AS n
+RETURN DISTINCT n.nombre
+```
+*Lógica:* Extraemos todos los nodos de un camino y usamos `UNWIND` para poder tratarlos como filas individuales y aplicarles un `DISTINCT`.
+
+---
+
 ## Reducciones sobre Colecciones: `reduce()`
 
 La función `reduce()` permite transformar una lista de valores en un único resultado escalar (un número, un booleano o un string) aplicando una operación acumulativa.
