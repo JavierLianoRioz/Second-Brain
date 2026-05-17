@@ -89,14 +89,19 @@ _Si quieres que sea descendente, solo tienes que añadir_ `DESC` _al final._
 ### GROUP BY
 **¡OJO!** En Cypher **no se escribe** **GROUP BY** explícitamente como haríamos en SQL.
 
-En Neo4j la agrupación es **implícita**. Cuando en tu `RETURN` combinas una propiedad (como el nombre) con una función de agregación (como `count()`), el sistema automáticamente agrupa por esa propiedad.
+En Neo4j la agrupación es **implícita**. Cuando en tu `RETURN` combinas una propiedad (como el nombre) con una función de agregación, el sistema automáticamente agrupa por esa propiedad.
+
+#### Funciones de Agregación Principales
+- `count()`: Cuenta el número de ocurrencias.
+- `sum()`: Suma valores numéricos de una propiedad.
+- `avg()`: Calcula la media aritmética.
+- `min()` / `max()`: Devuelve el valor mínimo o máximo.
 
 ```cypher
-MATCH (p:Persona)-[:TRABAJA_EN]->(e:Empresa) 
-RETURN e.nombre, count(p)
+MATCH (p:Persona)-[r:PARTICIPA_EN]->(pr:Proyecto)
+RETURN pr.nombre, sum(r.horas) as total_horas, avg(r.horas) as media_horas
 ```
-
-Aquí el sistema agrupará por el nombre de la empresa y contará cuántas personas apuntan a ese nodo.
+Aquí el sistema agrupará por el nombre del proyecto y calculará la suma y la media de las horas registradas en las relaciones.
 ### LIMIT
 Como su nombre indica, corta y limita la cantidad de resultados que nos devuelve la consulta. En bases de datos de grafos grandes, no poner límites puede generar resultados enormes. Es ideal si lo combinamos con `ORDER BY` para sacar, por ejemplo, un "Top 3".
 
