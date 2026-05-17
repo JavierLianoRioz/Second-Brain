@@ -7,16 +7,13 @@
 
 **Enunciado:** Agregue al vocabulario los textos 'tigre salvaje asiático' y 'león africano grande'. Luego ejecute una búsqueda usando la query 'felino'. Analice cómo cambian los resultados.
 
-<details>
-<summary><b>Respuesta Esperada / Criterios</b></summary>
+### SOLUCIÓN
 
 **Criterios de Evaluación:**
 - Inserción correcta de textos
 - Reconstrucción válida del índice
 - Uso correcto de búsqueda
 - Interpretación semántica básica
-
-</details>
 
 ---
 
@@ -25,15 +22,12 @@
 
 **Enunciado:** Ejecute búsquedas usando las queries 'vehículo rápido' y 'coche deportivo'. Compare los resultados obtenidos y explique cuál query parece más específica.
 
-<details>
-<summary><b>Respuesta Esperada / Criterios</b></summary>
+### SOLUCIÓN
 
 **Criterios de Evaluación:**
 - Ejecución correcta de búsquedas
 - Comparación de rankings
 - Interpretación contextual
-
-</details>
 
 ---
 
@@ -42,15 +36,12 @@
 
 **Enunciado:** Agregue al vocabulario los textos 'banco de inversión internacional' y 'banco para descansar'. Luego busque la palabra 'banco' y explique los casos de ambigüedad encontrados.
 
-<details>
-<summary><b>Respuesta Esperada / Criterios</b></summary>
+### SOLUCIÓN
 
 **Criterios de Evaluación:**
 - Inserción correcta
 - Detección de ambigüedad
 - Interpretación semántica
-
-</details>
 
 ---
 
@@ -59,15 +50,12 @@
 
 **Enunciado:** Ejecute búsquedas usando 'pizza', 'pizza italiana' y 'pizza italiana tradicional'. Explique cómo cambia el ranking al agregar más contexto.
 
-<details>
-<summary><b>Respuesta Esperada / Criterios</b></summary>
+### SOLUCIÓN
 
 **Criterios de Evaluación:**
 - Comparación correcta
 - Análisis contextual
 - Interpretación del embedding
-
-</details>
 
 ---
 
@@ -81,15 +69,12 @@
 resultados.append({'texto': base[i], 'distancia': distancia, 'score': score})
 ```
 
-<details>
-<summary><b>Respuesta Esperada / Criterios</b></summary>
+### SOLUCIÓN
 
 **Criterios de Evaluación:**
 - Uso correcto del índice
 - Modificación funcional
 - Estructura válida del resultado
-
-</details>
 
 ---
 
@@ -98,15 +83,12 @@ resultados.append({'texto': base[i], 'distancia': distancia, 'score': score})
 
 **Enunciado:** Ejecute búsquedas usando la query 'animal'. Explique por qué algunos resultados parecen menos precisos.
 
-<details>
-<summary><b>Respuesta Esperada / Criterios</b></summary>
+### SOLUCIÓN
 
 **Criterios de Evaluación:**
 - Análisis de resultados
 - Interpretación de ambigüedad
 - Relación con contexto
-
-</details>
 
 ---
 
@@ -115,15 +97,12 @@ resultados.append({'texto': base[i], 'distancia': distancia, 'score': score})
 
 **Enunciado:** Inserte en el vocabulario textos relacionados con astronomía y luego ejecute búsquedas sobre animales. Explique cómo afecta esto al sistema.
 
-<details>
-<summary><b>Respuesta Esperada / Criterios</b></summary>
+### SOLUCIÓN
 
 **Criterios de Evaluación:**
 - Inserción válida
 - Análisis de contaminación semántica
 - Interpretación del ranking
-
-</details>
 
 ---
 
@@ -138,15 +117,12 @@ def calcular_score(distancia):
     # completar
 ```
 
-<details>
-<summary><b>Respuesta Esperada / Criterios</b></summary>
+### SOLUCIÓN
 
 **Criterios de Evaluación:**
 - Implementación correcta
 - Uso válido de distancia
 - Retorno funcional
-
-</details>
 
 ---
 
@@ -155,15 +131,12 @@ def calcular_score(distancia):
 
 **Enunciado:** Compare resultados entre las queries 'tecnología' y 'computadora portátil moderna'. Explique cuál produce resultados más específicos.
 
-<details>
-<summary><b>Respuesta Esperada / Criterios</b></summary>
+### SOLUCIÓN
 
 **Criterios de Evaluación:**
 - Comparación válida
 - Interpretación contextual
 - Relación entre especificidad y embedding
-
-</details>
 
 ---
 
@@ -172,15 +145,12 @@ def calcular_score(distancia):
 
 **Enunciado:** Agregue tres tipos distintos de comida al vocabulario y ejecute búsquedas usando la palabra 'comida'. Explique cómo aparecen agrupaciones semánticas.
 
-<details>
-<summary><b>Respuesta Esperada / Criterios</b></summary>
+### SOLUCIÓN
 
 **Criterios de Evaluación:**
 - Inserción correcta
 - Uso válido de búsquedas
 - Interpretación de similitud
-
-</details>
 
 ---
 
@@ -189,15 +159,12 @@ def calcular_score(distancia):
 
 **Enunciado:** Ejecute búsquedas usando la query 'objeto'. Explique por qué el sistema devuelve resultados débiles o ambiguos.
 
-<details>
-<summary><b>Respuesta Esperada / Criterios</b></summary>
+### SOLUCIÓN
 
 **Criterios de Evaluación:**
 - Interpretación de baja especificidad
 - Relación con embeddings
 - Análisis contextual
-
-</details>
 
 ---
 
@@ -211,15 +178,12 @@ def calcular_score(distancia):
 resultados.append({'texto': base[i], 'score': score})
 ```
 
-<details>
-<summary><b>Respuesta Esperada / Criterios</b></summary>
+### SOLUCIÓN
 
 **Criterios de Evaluación:**
 - Uso correcto de distancia
 - Modificación funcional
 - Resultado válido
-
-</details>
 
 ---
 
@@ -228,15 +192,12 @@ resultados.append({'texto': base[i], 'score': score})
 
 **Enunciado:** Compare búsquedas usando 'ratón' y 'ratón inalámbrico computadora'. Explique diferencias semánticas observadas.
 
-<details>
-<summary><b>Respuesta Esperada / Criterios</b></summary>
+### SOLUCIÓN
 
 **Criterios de Evaluación:**
 - Comparación correcta
 - Análisis de ambigüedad
 - Interpretación contextual
-
-</details>
 
 ---
 
@@ -245,15 +206,12 @@ resultados.append({'texto': base[i], 'score': score})
 
 **Enunciado:** Agregue palabras relacionadas con deportes y luego busque 'vehículo rápido'. Analice si aparecen resultados inesperados.
 
-<details>
-<summary><b>Respuesta Esperada / Criterios</b></summary>
+### SOLUCIÓN
 
 **Criterios de Evaluación:**
 - Inserción correcta
 - Análisis de contaminación
 - Interpretación del ranking
-
-</details>
 
 ---
 
@@ -268,15 +226,12 @@ def generar_query(query):
     # completar
 ```
 
-<details>
-<summary><b>Respuesta Esperada / Criterios</b></summary>
+### SOLUCIÓN
 
 **Criterios de Evaluación:**
 - Uso correcto de embedding
 - Implementación funcional
 - Retorno válido
-
-</details>
 
 ---
 
@@ -285,15 +240,12 @@ def generar_query(query):
 
 **Enunciado:** Ejecute búsquedas usando 'galaxia' y explique por qué aparecen ciertos resultados cercanos aunque no sean exactos.
 
-<details>
-<summary><b>Respuesta Esperada / Criterios</b></summary>
+### SOLUCIÓN
 
 **Criterios de Evaluación:**
 - Interpretación geométrica
 - Relación entre proximidad y significado
 - Análisis semántico
-
-</details>
 
 ---
 
@@ -302,15 +254,12 @@ def generar_query(query):
 
 **Enunciado:** Agregue textos relacionados con videojuegos y luego ejecute búsquedas usando 'tecnología'. Explique el comportamiento del sistema.
 
-<details>
-<summary><b>Respuesta Esperada / Criterios</b></summary>
+### SOLUCIÓN
 
 **Criterios de Evaluación:**
 - Inserción correcta
 - Relación entre dominios
 - Interpretación semántica
-
-</details>
 
 ---
 
@@ -324,15 +273,12 @@ def generar_query(query):
 if r['score'] >= umbral:
 ```
 
-<details>
-<summary><b>Respuesta Esperada / Criterios</b></summary>
+### SOLUCIÓN
 
 **Criterios de Evaluación:**
 - Uso correcto de umbral
 - Filtrado válido
 - Modificación funcional
-
-</details>
 
 ---
 
@@ -341,15 +287,12 @@ if r['score'] >= umbral:
 
 **Enunciado:** Compare resultados entre las queries 'felino' y 'felino salvaje africano'. Explique cómo cambia el contexto.
 
-<details>
-<summary><b>Respuesta Esperada / Criterios</b></summary>
+### SOLUCIÓN
 
 **Criterios de Evaluación:**
 - Comparación contextual
 - Interpretación semántica
 - Análisis de especificidad
-
-</details>
 
 ---
 
@@ -358,15 +301,12 @@ if r['score'] >= umbral:
 
 **Enunciado:** Ejecute búsquedas usando 'computadora'. Explique por qué algunos resultados tecnológicos tienen scores más altos que otros.
 
-<details>
-<summary><b>Respuesta Esperada / Criterios</b></summary>
+### SOLUCIÓN
 
 **Criterios de Evaluación:**
 - Interpretación de score
 - Relación semántica
 - Análisis del ranking
-
-</details>
 
 ---
 
@@ -380,15 +320,12 @@ if r['score'] >= umbral:
 return resultados
 ```
 
-<details>
-<summary><b>Respuesta Esperada / Criterios</b></summary>
+### SOLUCIÓN
 
 **Criterios de Evaluación:**
 - Ordenamiento correcto
 - Uso válido de score
 - No alterar búsqueda FAISS
-
-</details>
 
 ---
 
@@ -403,15 +340,12 @@ def agregar(self, texto):
     # completar
 ```
 
-<details>
-<summary><b>Respuesta Esperada / Criterios</b></summary>
+### SOLUCIÓN
 
 **Criterios de Evaluación:**
 - Inserción dinámica correcta
 - Reconstrucción válida del índice
 - Actualización funcional del sistema
-
-</details>
 
 ---
 
@@ -420,15 +354,12 @@ def agregar(self, texto):
 
 **Enunciado:** Ejecute búsquedas usando las queries 'automóvil', 'coche', 'vehículo' y 'carro'. Compare diferencias de ranking y similitud.
 
-<details>
-<summary><b>Respuesta Esperada / Criterios</b></summary>
+### SOLUCIÓN
 
 **Criterios de Evaluación:**
 - Comparación semántica
 - Interpretación lingüística
 - Análisis contextual
-
-</details>
 
 ---
 
@@ -442,15 +373,12 @@ def agregar(self, texto):
 def buscar_filtrado(query, base, index, umbral=0.3, k=5):
 ```
 
-<details>
-<summary><b>Respuesta Esperada / Criterios</b></summary>
+### SOLUCIÓN
 
 **Criterios de Evaluación:**
 - Uso dinámico de k
 - Filtrado funcional
 - Modificación correcta de parámetros
-
-</details>
 
 ---
 
@@ -459,15 +387,12 @@ def buscar_filtrado(query, base, index, umbral=0.3, k=5):
 
 **Enunciado:** Compare resultados entre una query de una palabra y una frase larga relacionada. Explique cómo cambia el embedding.
 
-<details>
-<summary><b>Respuesta Esperada / Criterios</b></summary>
+### SOLUCIÓN
 
 **Criterios de Evaluación:**
 - Comparación contextual
 - Interpretación de embeddings
 - Relación entre contexto y ranking
-
-</details>
 
 ---
 
@@ -482,15 +407,12 @@ def exportar_resultados(resultados):
     # completar
 ```
 
-<details>
-<summary><b>Respuesta Esperada / Criterios</b></summary>
+### SOLUCIÓN
 
 **Criterios de Evaluación:**
 - Exportación correcta
 - Formato JSON válido
 - Persistencia estructurada
-
-</details>
 
 ---
 
@@ -499,15 +421,12 @@ def exportar_resultados(resultados):
 
 **Enunciado:** Inserte varios textos muy similares y analice cómo cambia el ranking cuando existen múltiples embeddings cercanos.
 
-<details>
-<summary><b>Respuesta Esperada / Criterios</b></summary>
+### SOLUCIÓN
 
 **Criterios de Evaluación:**
 - Inserción válida
 - Interpretación de saturación semántica
 - Análisis de ambigüedad
-
-</details>
 
 ---
 
@@ -516,15 +435,12 @@ def exportar_resultados(resultados):
 
 **Enunciado:** Agregue frases extremadamente largas al vocabulario y compare los resultados contra frases cortas.
 
-<details>
-<summary><b>Respuesta Esperada / Criterios</b></summary>
+### SOLUCIÓN
 
 **Criterios de Evaluación:**
 - Inserción válida
 - Análisis contextual
 - Interpretación de embeddings largos
-
-</details>
 
 ---
 
@@ -538,15 +454,12 @@ def exportar_resultados(resultados):
 score = 1 / (1 + distancia)
 ```
 
-<details>
-<summary><b>Respuesta Esperada / Criterios</b></summary>
+### SOLUCIÓN
 
 **Criterios de Evaluación:**
 - Modificación funcional
 - Comparación de comportamiento
 - Interpretación matemática básica
-
-</details>
 
 ---
 
@@ -555,15 +468,12 @@ score = 1 / (1 + distancia)
 
 **Enunciado:** Compare búsquedas usando 'animal peligroso', 'felino peligroso' y 'felino salvaje africano peligroso'.
 
-<details>
-<summary><b>Respuesta Esperada / Criterios</b></summary>
+### SOLUCIÓN
 
 **Criterios de Evaluación:**
 - Comparación contextual
 - Interpretación de especificidad
 - Análisis semántico
-
-</details>
 
 ---
 
@@ -578,15 +488,12 @@ def registrar_busqueda(query, score):
     # completar
 ```
 
-<details>
-<summary><b>Respuesta Esperada / Criterios</b></summary>
+### SOLUCIÓN
 
 **Criterios de Evaluación:**
 - Logging correcto
 - Persistencia funcional
 - Uso válido de score
-
-</details>
 
 ---
 
@@ -595,15 +502,12 @@ def registrar_busqueda(query, score):
 
 **Enunciado:** Ejecute búsquedas con errores ortográficos intencionales y explique cómo responde el sistema.
 
-<details>
-<summary><b>Respuesta Esperada / Criterios</b></summary>
+### SOLUCIÓN
 
 **Criterios de Evaluación:**
 - Pruebas válidas
 - Análisis de robustez
 - Interpretación de limitaciones
-
-</details>
 
 ---
 
@@ -617,15 +521,12 @@ def registrar_busqueda(query, score):
 for j, i in enumerate(indices[0]):
 ```
 
-<details>
-<summary><b>Respuesta Esperada / Criterios</b></summary>
+### SOLUCIÓN
 
 **Criterios de Evaluación:**
 - Filtrado correcto
 - Uso válido de score
 - No romper la búsqueda
-
-</details>
 
 ---
 
@@ -640,15 +541,12 @@ def buscar_categoria(query, categoria):
     # completar
 ```
 
-<details>
-<summary><b>Respuesta Esperada / Criterios</b></summary>
+### SOLUCIÓN
 
 **Criterios de Evaluación:**
 - Filtrado correcto por categoría
 - Separación de dominios
 - Implementación funcional
-
-</details>
 
 ---
 
@@ -657,15 +555,12 @@ def buscar_categoria(query, categoria):
 
 **Enunciado:** Compare resultados usando IndexFlatL2 e IndexFlatIP. Explique diferencias observadas.
 
-<details>
-<summary><b>Respuesta Esperada / Criterios</b></summary>
+### SOLUCIÓN
 
 **Criterios de Evaluación:**
 - Cambio correcto de índice
 - Comparación válida
 - Interpretación geométrica
-
-</details>
 
 ---
 
@@ -674,15 +569,12 @@ def buscar_categoria(query, categoria):
 
 **Enunciado:** Agregue textos de múltiples dominios como política, cocina y videojuegos. Analice contaminación semántica.
 
-<details>
-<summary><b>Respuesta Esperada / Criterios</b></summary>
+### SOLUCIÓN
 
 **Criterios de Evaluación:**
 - Inserción válida
 - Análisis de contaminación
 - Interpretación contextual
-
-</details>
 
 ---
 
@@ -697,15 +589,12 @@ def similitud(texto1, texto2):
     # completar
 ```
 
-<details>
-<summary><b>Respuesta Esperada / Criterios</b></summary>
+### SOLUCIÓN
 
 **Criterios de Evaluación:**
 - Uso correcto de embeddings
 - Cálculo válido de similitud
 - Interpretación funcional
-
-</details>
 
 ---
 
@@ -714,15 +603,12 @@ def similitud(texto1, texto2):
 
 **Enunciado:** Analice casos donde scores altos producen resultados incorrectos o inesperados.
 
-<details>
-<summary><b>Respuesta Esperada / Criterios</b></summary>
+### SOLUCIÓN
 
 **Criterios de Evaluación:**
 - Identificación de anomalías
 - Interpretación geométrica
 - Análisis de limitaciones
-
-</details>
 
 ---
 
@@ -736,15 +622,12 @@ def similitud(texto1, texto2):
 resultados.append({'texto': base[i]})
 ```
 
-<details>
-<summary><b>Respuesta Esperada / Criterios</b></summary>
+### SOLUCIÓN
 
 **Criterios de Evaluación:**
 - Integración correcta de categorías
 - Modificación funcional
 - Resultados estructurados
-
-</details>
 
 ---
 
@@ -753,15 +636,12 @@ resultados.append({'texto': base[i]})
 
 **Enunciado:** Compare el comportamiento del sistema usando bases pequeñas especializadas frente a bases grandes mezcladas.
 
-<details>
-<summary><b>Respuesta Esperada / Criterios</b></summary>
+### SOLUCIÓN
 
 **Criterios de Evaluación:**
 - Comparación válida
 - Análisis de especialización
 - Interpretación de ruido semántico
-
-</details>
 
 ---
 
@@ -776,16 +656,13 @@ def buscar_multidominio(query):
     # completar
 ```
 
-<details>
-<summary><b>Respuesta Esperada / Criterios</b></summary>
+### SOLUCIÓN
 
 **Criterios de Evaluación:**
 - Agrupación correcta por categoría
 - Filtrado válido
 - Uso correcto de score
 - Estructura funcional
-
-</details>
 
 ---
 
@@ -799,15 +676,12 @@ def buscar_multidominio(query):
 faiss.write_index(index, 'indice.faiss')
 ```
 
-<details>
-<summary><b>Respuesta Esperada / Criterios</b></summary>
+### SOLUCIÓN
 
 **Criterios de Evaluación:**
 - Persistencia funcional
 - Carga correcta del índice
 - Reutilización válida del sistema
-
-</details>
 
 ---
 
@@ -822,15 +696,12 @@ def detectar_fuera_dominio(query):
     # completar
 ```
 
-<details>
-<summary><b>Respuesta Esperada / Criterios</b></summary>
+### SOLUCIÓN
 
 **Criterios de Evaluación:**
 - Uso correcto de score
 - Detección funcional
 - Interpretación de umbrales
-
-</details>
 
 ---
 
@@ -845,15 +716,12 @@ def eliminar(texto):
     # completar
 ```
 
-<details>
-<summary><b>Respuesta Esperada / Criterios</b></summary>
+### SOLUCIÓN
 
 **Criterios de Evaluación:**
 - Eliminación correcta
 - Reconstrucción válida
 - Consistencia del índice
-
-</details>
 
 ---
 
@@ -862,15 +730,12 @@ def eliminar(texto):
 
 **Enunciado:** Analice por qué dos textos semánticamente distintos pueden terminar geométricamente cercanos dentro del espacio vectorial.
 
-<details>
-<summary><b>Respuesta Esperada / Criterios</b></summary>
+### SOLUCIÓN
 
 **Criterios de Evaluación:**
 - Interpretación geométrica
 - Comprensión de embeddings
 - Análisis de limitaciones semánticas
-
-</details>
 
 ---
 
@@ -884,15 +749,12 @@ def eliminar(texto):
 historial = []
 ```
 
-<details>
-<summary><b>Respuesta Esperada / Criterios</b></summary>
+### SOLUCIÓN
 
 **Criterios de Evaluación:**
 - Uso correcto de historial
 - Recomendación funcional
 - Aplicación de similitud semántica
-
-</details>
 
 ---
 
@@ -906,15 +768,12 @@ historial = []
 def buscar_filtrado(query, base, index, umbral=0.3, k=5):
 ```
 
-<details>
-<summary><b>Respuesta Esperada / Criterios</b></summary>
+### SOLUCIÓN
 
 **Criterios de Evaluación:**
 - Cálculo dinámico correcto
 - Uso válido de promedio
 - Filtrado funcional
-
-</details>
 
 ---
 
@@ -929,15 +788,12 @@ def comparar_queries(queries):
     # completar
 ```
 
-<details>
-<summary><b>Respuesta Esperada / Criterios</b></summary>
+### SOLUCIÓN
 
 **Criterios de Evaluación:**
 - Procesamiento múltiple
 - Agregación correcta
 - Interpretación de relevancia
-
-</details>
 
 ---
 
@@ -946,15 +802,12 @@ def comparar_queries(queries):
 
 **Enunciado:** Compare el comportamiento del sistema usando textos extremadamente cortos frente a descripciones largas y detalladas.
 
-<details>
-<summary><b>Respuesta Esperada / Criterios</b></summary>
+### SOLUCIÓN
 
 **Criterios de Evaluación:**
 - Comparación contextual
 - Interpretación de embeddings
 - Análisis de recuperación semántica
-
-</details>
 
 ---
 
@@ -969,8 +822,7 @@ class BuscadorSemantico:
     # extender sistema
 ```
 
-<details>
-<summary><b>Respuesta Esperada / Criterios</b></summary>
+### SOLUCIÓN
 
 **Criterios de Evaluación:**
 - Integración completa
@@ -978,8 +830,6 @@ class BuscadorSemantico:
 - Persistencia funcional
 - Logging válido
 - Análisis crítico del sistema
-
-</details>
 
 ---
 
