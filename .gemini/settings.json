@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "vault-crew": {
+      "command": "/Users/midas/Documents/Second Brain/.agents/crew/.venv/bin/python3",
+      "args": [
+        "/Users/midas/Documents/Second Brain/.agents/crew/mcp_server.py"
+      ]
+    }
+  }
+}

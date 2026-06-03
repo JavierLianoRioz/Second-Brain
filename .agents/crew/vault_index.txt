@@ -1,0 +1,48 @@
+Acoplamiento.md
+Bases de datos 2.md
+Bases de Grafos.md
+Bases Vectoriales.md
+Búsqueda Semántica.md
+Casos de Uso.md
+Cohesión.md
+Complejidad del Software.md
+Croacia.md
+Cypher Avanzado.md
+Cypher.md
+Detallar Casos de Uso.md
+Disciplina de Requisitos.md
+Diseño Modular.md
+Diseño por Contrato.md
+Drawing 2026-05-18 14.28.36.excalidraw.md
+Drawing 2026-05-19 15.08.33.excalidraw.md
+Drawing 2026-05-20 15.06.42.excalidraw.md
+Drawing 2026-05-25 13.34.30.excalidraw.md
+Drawing 2026-05-28 17.21.34.excalidraw.md
+Elementos Primitivos.md
+Embedding.md
+Encontrar Actores y CdU.md
+Espacio Vectorial.md
+Estrategias de Clasificación.md
+Estrategias de Filtrado Vectorial.md
+Estructurar Modelo de CdU.md
+FAISS.md
+Fenómenos del Espacio Vectorial.md
+GEMINI.md
+Generación Aumentada por Recuperación.md
+Implementación del Pipeline Vectorial.md
+Ingeniería de Software.md
+Legibilidad.md
+Lenguajes.md
+Mía.md
+Modelo del Dominio.md
+MongoDB.md
+Preguntas_Resueltas_Tarjetas.md
+Principios de Diseño OO.md
+Priorizar Casos de Uso.md
+Prototipar Casos de Uso.md
+Rational Unified Process.md
+Similitud Manual.md
+Universidad.md
+Viaje tren Sáhara Occidental.md
+Video -hace un año-.md
+Video Idea -más-.md
