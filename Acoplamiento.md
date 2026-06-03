@@ -21,11 +21,14 @@ Podemos clasificar el acoplamiento según su naturaleza y la dirección de la de
 ### ¿Qué dimensiones definen la fuerza de una conexión?
 El acoplamiento no es solo "usar otra clase"; tiene matices técnicos que determinan qué tan difícil será cambiar esa relación:
 
-1.  **Visibilidad**: ¿Es la relación exclusiva (Privada) o compartida (Pública)? Una conexión pública es más peligrosa porque otros pueden interferir.
-2.  **Temporalidad**: ¿Cuánto dura la relación?
-    - *Efímera:* Solo durante un método (Uso).
-    - *Persistente:* Durante toda la vida del objeto (Composición/Asociación).
-3.  **Versatilidad**: ¿Es la relación con una instancia específica o con una interfaz? Depender de una interfaz (Alta Versatilidad) reduce el acoplamiento drásticamente.
+1.  **Visibilidad**: ¿Es la relación exclusiva (Privada) o compartida (Pública)?
+2.  **Temporalidad**:
+    - *Efímera:* Limitada a una operación específica (Uso).
+    - *Persistente:* Durante toda la vida del objeto (Composición).
+3.  **Versatilidad**: Capacidad de intercambiar colaboradores. Baja versatilidad implica dependencia de clase concreta; alta versatilidad implica dependencia de interfaz.
+
+### DELTA
+- Refinadas dimensiones con términos técnicos específicos (Efímera vs Persistente).
 
 **La regla de oro:** Minimiza la visibilidad, acorta la temporalidad y maximiza la versatilidad.
 

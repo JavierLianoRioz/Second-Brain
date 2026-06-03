@@ -2,17 +2,35 @@
 
 escribir_nota_task:
   description: >
-    Siguiendo tu protocolo definido en {escritor_definition}, crea una nota 
-    técnica sobre {tema} usando el historial {chat_history}. 
+    Utilizando el Grafo de Ideas ({grafo_ideas}) y los Gaps detectados ({informacion_extraida}), 
+    genera los parches necesarios para la bóveda. Cruza con {vault_index}.
+    SI LA NOTA EXISTE: Devuelve solo un bloque ### DELTA siguiendo el protocolo {escritor_definition}.
+    SI NO EXISTE: Devuelve la nota completa.
     Aplica {style_guide_content} y evita errores de {memory_content}.
   expected_output: >
-    Markdown puro listo para el vault.
+    Bloques DELTA para notas existentes o Markdown completo para nuevas.
   agent: escritor_apuntes
 
 revisar_nota_task:
   description: >
-    Siguiendo tu protocolo definido en {revisor_definition}, analiza la nota 
-    generada frente a {style_guide_content} y emite el feedback.
+    Analiza si los Deltas generados cumplen con el formato estricto y si 
+    realmente aportan valor nuevo frente a {style_guide_content}.
   expected_output: >
     Bullet point para la memoria o PERFECTO.
   agent: revisor_calidad
+
+extraccion_datos_task:
+  description: >
+    Filtra {fuente_datos} buscando únicamente "Gaps" (información que NO 
+    esté en {vault_index}). No resumas lo que ya existe. Sigue {analista_definition}.
+  expected_output: >
+    Lista de información técnica incremental (Gaps).
+  agent: analista_repositorios
+
+mapeo_conceptual_task:
+  description: >
+    Organiza los Gaps detectados en un Grafo de Ideas que muestre cómo 
+    se integran en la estructura actual de la bóveda ({vault_index}).
+  expected_output: >
+    Grafo de integración (Mermaid).
+  agent: arquitecto_conocimiento

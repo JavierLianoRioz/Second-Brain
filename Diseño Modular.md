@@ -16,8 +16,16 @@ Un buen diseño modular se basa en equilibrar tres métricas fundamentales que d
 1.  **[[Cohesión]]**: Mide qué tan fuerte están relacionadas las responsabilidades dentro de un solo módulo. Buscamos que un módulo haga "una sola cosa y la haga bien" (Cohesión Funcional).
 2.  **[[Acoplamiento]]**: Mide el grado de interdependencia entre módulos. Buscamos minimizar las dependencias para que un cambio en una pieza no rompa el resto del sistema.
 3.  **Tamaño Adecuado**: Los componentes deben respetar los límites cognitivos humanos para ser comprensibles.
-    - **Regra 7±2**: La memoria de trabajo humana solo puede retener unos 7 elementos simultáneamente. Un método con más de 10-20 líneas o una clase con más de 20 métodos suelen ser inmanejables.
-    - **Complejidad Ciclomática**: Mide el número de caminos independientes en el código. Un valor >10 en un método indica un alto riesgo de errores y dificultad de prueba.
+    - **Regla 7±2 (Miller)**: La memoria de trabajo humana solo puede retener unos 7 elementos simultáneamente.
+    - **Cotas Dimensionales Óptimas:**
+        - **Clase:** Máximo 5 atributos, 20-25 métodos, y 200-500 líneas de código (LOC).
+        - **Método:** Máximo 2-3 parámetros, 15-25 líneas de código, y máximo 3 niveles de anidación.
+        - **Paquete:** Máximo 12-20 clases para mantener la cohesión.
+    - **Complejidad Ciclomática (McCabe)**: Mide el número de caminos independientes en el código (`CC = Condiciones + Salidas`). Un valor 1-10 es simple; >15 compromete la testabilidad.
+
+### DELTA
+- Añadidas cotas dimensionales específicas (Clase, Método, Paquete).
+- Refinada definición de Complejidad Ciclomática con fórmula de McCabe.
 
 ### ¿Qué herramientas conceptuales protegen la integridad de nuestro diseño?
 Para lograr una modularidad efectiva, nos apoyamos en dos conceptos clave que actúan como fronteras:

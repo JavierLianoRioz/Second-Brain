@@ -24,6 +24,20 @@ Para gestionar esta complejidad, la ingeniería de software se apoya en cuatro p
 3.  **Modularidad**: Descomposición de un sistema en piezas poco acopladas y muy cohesivas. Permite entender y refinar partes del sistema de forma independiente (*divide et impera*).
 4.  **Jerarquía**: Ordenamiento de las abstracciones, ya sea por clasificación (herencia) o por composición.
 
+### Jerarquización de Sistemas Complejos
+Fundamentación teórica para estructurar el software en niveles:
+- **Propiedades de una Jerarquía Sana:**
+    - **Acíclica:** Sin dependencias mutuas entre componentes.
+    - **Direccional:** Flujo de dependencia vertical constante hacia capas inferiores.
+    - **Estable:** El núcleo (niveles inferiores) debe cambiar con menos frecuencia que la periferia.
+- **Enfoques de Diseño:**
+    - **Top-Down:** Descomposición desde el problema global (eficaz con dominio claro).
+    - **Bottom-Up:** Desarrollo de componentes base reutilizables que se integran progresivamente.
+
+### DELTA
+- Añadidas propiedades de jerarquización sana (Acíclica, Direccional, Estable).
+- Incorporados enfoques Top-Down y Bottom-Up.
+
 **La regla de oro:** ==El principal enemigo de la fiabilidad y la calidad del software es la complejidad. Todo aquello que no sea necesario dar a conocer, **no se debe dar a conocer**.==
 
 ---
@@ -31,7 +45,7 @@ Para gestionar esta complejidad, la ingeniería de software se apoya en cuatro p
 ## ¿Cómo podemos dimensionar el reto al que nos enfrentamos?
 Para entender la magnitud de lo que construimos, resulta útil comparar un proyecto de software mediano con hitos de la creación humana en otros ámbitos —como la literatura clásica—.
 
-### ¿Es el software más complejo que la literatura clásica?
+### ¿Es el software más complejo que la literatura clásica? (Métrica Quijotesca)
 
 | Métrica | Don Quijote | Proyecto Software (Mediano) |
 | :--- | :--- | :--- |
@@ -46,3 +60,4 @@ Para entender la magnitud de lo que construimos, resulta útil comparar un proye
 ## Referencias
 1. **Mmasias**. *idsw2: Temario de la asignatura de Ingeniería de Software II*. [GitHub Repository](https://github.com/mmasias/idsw2) y en copia local: [[500 Biblioteca/idsw2/temario/00-introduccion/software.md|Software y Complejidad]].
 ario de la asignatura de Ingeniería de Software II*. [GitHub Repository](https://github.com/mmasias/idsw2) y en copia local: [[500 Biblioteca/idsw2/temario/00-introduccion/software.md|Software y Complejidad]].
+ [[500 Biblioteca/idsw2/temario/00-introduccion/software.md|Software y Complejidad]].

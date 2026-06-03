@@ -23,6 +23,25 @@ La decisión entre herencia y composición marca la diferencia entre un sistema 
 
 ### Herencia vs. Composición: ¿Cuándo usar cada una?
 
+- **Heurística #2Think (Composición sobre Herencia)**: La herencia fija el comportamiento en tiempo de compilación (estático). La composición permite extraer la variabilidad a interfaces (Patrón Strategy) y cambiar colaboradores en **tiempo de ejecución** (Runtime).
+
+**Diferenciación Práctica en Implementación:**
+- **Uso vs. Asociación**: El **Uso** es la relación más débil; la referencia es *efímera* (parámetro o variable local en un método) y **no** se almacena como atributo de clase.
+- **Composición vs. Agregación**: 
+  - **Composición (Exclusiva)**: El ciclo de vida está ligado. Se implanta instanciando el componente *dentro* del **constructor**.
+  - **Agregación (Compartida)**: El ciclo de vida es independiente. Se implanta *inyectando* la dependencia desde el exterior (Constructor inyectado o Setter).
+
+### Antipatrón: Descomposición Funcional
+
+Ocurre al transicionar de programación estructurada a OO sin cambiar la mentalidad.
+- **Clases-Verbo:** Convertir cada función en una clase (ej. `CalcularPrecio`, `ValidarDatos`).
+- **Síntomas:** Clases con un único método (`ejecutar()`), sin estado, que actúan como meros contenedores de lógica procedural (clases anémicas).
+- **Impacto:** Degrada la [[Cohesión]] y anula las ventajas del polimorfismo.
+
+### DELTA
+- Añadida heurística #2Think vinculada a variabilidad en Runtime.
+- Incorporado Antipatrón de Descomposición Funcional (Clases-Verbo).
+
 - **Herencia (Es-un)**: Ideal para jerarquías de clasificación puras donde el comportamiento se comparte y extiende de forma natural.
     - *Ejemplo:* Una jerarquía `Shape` -> `Circle`, `Rectangle`. Todos son formas y comparten `getArea()`. La herencia simplifica la reutilización.
 - **Composición (Tiene-un)**: Preferible cuando queremos combinar comportamientos de forma dinámica y evitar la explosión de clases.

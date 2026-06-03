@@ -24,3 +24,5 @@ Este archivo almacena información estructural, reglas internas y aprendizajes q
 
 ---
 *Este documento se actualiza tras cada hito relevante para mejorar el desempeño futuro.*
+
+- [AUTO-CORRECCIÓN] Eliminar los backticks (\`) alrededor de los Wikilinks. Has generado enlaces conceptuales envueltos en formato de código (ej. \`[[Ingeniería de Software]]\`), lo cual interfiere con la lectura natural y el renderizado nativo en Obsidian. Los enlaces deben escribirse de forma limpia en el texto: [[Ingeniería de Software]]. Los backticks deben reservarse exclusivamente para nombres de propiedades, variables o comandos, tal y como indica la regla de código in-line.

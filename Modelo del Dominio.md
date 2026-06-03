@@ -22,6 +22,11 @@ El MdD actúa como un puente entre dos mundos que a menudo hablan idiomas distin
 - **No son clases de software**: No pienses en métodos, tipos de datos específicos (ej. `ArrayList`) o patrones de diseño.
 - **Es independiente del entorno**: No importa si vas a usar SQL, NoSQL o Grafos; el dominio permanece inalterado.
 
+### El Lenguaje Ubicuo y la No-Contaminación
+El objetivo principal del Modelo del Dominio no es diagramar, sino **"Hablar como el cliente"** (Lenguaje Ubicuo). El equipo técnico debe adoptar la terminología exacta del negocio (economía, logística, etc.) en el código (clases, métodos, variables). 
+
+Se debe evitar estrictamente la **contaminación técnica** en esta capa; no deben existir conceptos de bases de datos, UI o frameworks mezclados con la lógica pura de negocio. 
+
 **La regla de oro:** Modelas para entender el negocio, no para diseñar el código.
 
 ---

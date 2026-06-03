@@ -46,5 +46,15 @@ La evaluación para el final (late-game) se aleja de la teoría pura para centra
 
 ---
 
+
+---
+
+### ### DELTA: Evolución de la Consistencia y Transacciones
+
+El paradigma NoSQL ha convergido hacia capacidades transaccionales que antes eran exclusivas del modelo relacional:
+
+- **Transacciones ACID en Documental**: MongoDB (v4.0+) permite transacciones multi-documento, rompiendo el mito de la inconsistencia eventual. Esto permite usar modelos documentales en casos de uso críticos (Banca, Seguros).
+- **Causal Consistency**: La capacidad de garantizar el orden causal en sistemas distribuidos permite que las bases de datos NoSQL cumplan con las garantías de "Read-your-own-writes" incluso en clústeres globales.
+
 ## Referencias
 1. Temario oficial de la asignatura Bases de Datos 2.

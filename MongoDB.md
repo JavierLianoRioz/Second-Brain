@@ -149,6 +149,55 @@ db.sensores.find({ zona: "planta" }).explain("executionStats")
 Para volúmenes masivos, MongoDB distribuye datos mediante una **Shard Key**. Una buena clave debe tener **alta cardinalidad** (muchos valores distintos) y evitar el crecimiento monótono para no colapsar un único nodo.
 
 
+
+---
+
+### ### DELTA: Capacidades Avanzadas y MongoDB 8.0
+
+#### 1. Consistencia Total: Transacciones ACID Multi-documento
+MongoDB ha superado la limitación de atomicidad a nivel de documento único.
+- **Transacciones de Sesión**: Mediante `session.startTransaction()`, es posible ejecutar operaciones ACID que involucren múltiples documentos, colecciones o incluso bases de datos dentro de un cluster. Vital para sistemas financieros.
+- **Causal Consistency**: Garantiza que el orden de las operaciones sea coherente en nodos secundarios, permitiendo lecturas "monotónicas" sin riesgo de datos obsoletos en arquitecturas distribuidas.
+
+#### 2. Aggregation Framework: Operadores de Control y v8
+Nuevas etapas transforman el motor en una herramienta analítica de alto nivel:
+- **`$lookup`**: Realiza *Left Outer Joins* con otras colecciones, permitiendo unificar datos sin desnormalización extrema.
+- **`$graphLookup`**: Ejecuta búsquedas recursivas sobre colecciones (ej. organigramas o redes de amigos), resolviendo problemas de grafos ligeros dentro de un modelo documental.
+- **`$facet`**: Permite lanzar múltiples pipelines de agregación en paralelo sobre el mismo set de datos de entrada (ej: filtros de precio y marca simultáneos en e-commerce).
+- **Estadística v8**: Incorporación de los operadores `$median` y `$percentile` para cálculos directos sin necesidad de post-procesamiento en la aplicación.
+
+#### 3. Seguridad de "Late-Game": Cifrado y Privacidad
+- **Queryable Encryption (v8)**: Permite realizar búsquedas de rango (`$gt`, `$lt`) sobre datos **totalmente cifrados**. El servidor nunca ve la clave, garantizando el cumplimiento de normativas como GDPR o Fintech.
+- **Field Level Encryption (FLE)**: Cifrado granular de campos sensibles (DNI, tarjetas) antes de que el dato salga de la aplicación hacia la base de datos.
+
+#### 4. Optimización de Arquitectura (v8)
+- **Block Processing**: MongoDB 8.0 procesa registros por bloques en lugar de uno a uno, optimizando el uso de las cachés L1/L2 de la CPU y reduciendo drásticamente el overhead.
+- **Priorización de Cargas**: Capacidad de etiquetar transacciones (ej: "Critical_Payment") para que el motor les asigne prioridad sobre tareas de fondo o reportes pesados durante picos de tráfico.
+
+---
+
+### ### DELTA: Capacidades Avanzadas y MongoDB 8.0
+
+#### 1. Consistencia Total: Transacciones ACID Multi-documento
+MongoDB ha superado la limitación de atomicidad a nivel de documento único.
+- **Transacciones de Sesión**: Mediante `session.startTransaction()`, es posible ejecutar operaciones ACID que involucren múltiples documentos, colecciones o incluso bases de datos dentro de un cluster. Vital para sistemas financieros.
+- **Causal Consistency**: Garantiza que el orden de las operaciones sea coherente en nodos secundarios, permitiendo lecturas "monotónicas" sin riesgo de datos obsoletos en arquitecturas distribuidas.
+
+#### 2. Aggregation Framework: Operadores de Control y v8
+Nuevas etapas transforman el motor en una herramienta analítica de alto nivel:
+- **`$lookup`**: Realiza *Left Outer Joins* con otras colecciones, permitiendo unificar datos sin desnormalización extrema.
+- **`$graphLookup`**: Ejecuta búsquedas recursivas sobre colecciones (ej. organigramas o redes de amigos), resolviendo problemas de grafos ligeros dentro de un modelo documental.
+- **`$facet`**: Permite lanzar múltiples pipelines de agregación en paralelo sobre el mismo set de datos de entrada (ej: filtros de precio y marca simultáneos en e-commerce).
+- **Estadística v8**: Incorporación de los operadores `$median` y `$percentile` para cálculos directos sin necesidad de post-procesamiento en la aplicación.
+
+#### 3. Seguridad de "Late-Game": Cifrado y Privacidad
+- **Queryable Encryption (v8)**: Permite realizar búsquedas de rango (`$gt`, `$lt`) sobre datos **totalmente cifrados**. El servidor nunca ve la clave, garantizando el cumplimiento de normativas como GDPR o Fintech.
+- **Field Level Encryption (FLE)**: Cifrado granular de campos sensibles (DNI, tarjetas) antes de que el dato salga de la aplicación hacia la base de datos.
+
+#### 4. Optimización de Arquitectura (v8)
+- **Block Processing**: MongoDB 8.0 procesa registros por bloques en lugar de uno a uno, optimizando el uso de las cachés L1/L2 de la CPU y reduciendo drásticamente el overhead.
+- **Priorización de Cargas**: Capacidad de etiquetar transacciones (ej: "Critical_Payment") para que el motor les asigne prioridad sobre tareas de fondo o reportes pesados durante picos de tráfico.
+
 ## Referencias
 1. [[Bases de datos 2]]
 2. [[Cypher|Neo4j]] — Comparativa de modelos (Documental vs Grafos).

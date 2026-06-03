@@ -35,5 +35,20 @@ El flujo de trabajo en código (pipeline vectorial) para implementar esto siempr
 3. **Inserción de Datos**: Añadimos los números generados por el paso 1 a nuestro índice FAISS. *(Ojo: FAISS solo guarda números, la relación "número -> texto original" debes guardarla tú aparte en una lista).*
 4. **Consultas**: Cuando un usuario busca algo, primero pasamos su frase por el **mismo modelo de embedding** del paso 1. Luego, le pedimos a FAISS que busque los `K` vectores más cercanos a esa consulta, devolviéndonos qué tan cerca están (su "score" de relevancia).
 
+---
+
+### ### DELTA: Convergencia con Grafos
+
+La frontera entre grafos y vectores se difumina con el uso de **Node Embeddings** (vía GDS en Neo4j).
+- **Integración Técnica**: La posición y conectividad de un nodo en el grafo se traduce en una coordenada matemática (vector).
+- **Valor Agregado**: Permite realizar búsquedas por similitud semántica que tienen en cuenta no solo el contenido del nodo, sino también su **contexto estructural** en la red.
+
+> [!TIP] Arquitectura Recomendada
+
+
+La frontera entre grafos y vectores se difumina con el uso de **Node Embeddings** (vía GDS en Neo4j).
+- **Integración Técnica**: La posición y conectividad de un nodo en el grafo se traduce en una coordenada matemática (vector).
+- **Valor Agregado**: Permite realizar búsquedas por similitud semántica que tienen en cuenta no solo el contenido del nodo, sino también su **contexto estructural** en la red.
+
 > [!TIP] Arquitectura Recomendada
 > Para un diseño robusto y orientado a objetos de este flujo, consulta la [[Implementación del Pipeline Vectorial]].

@@ -6,7 +6,7 @@
 
 ## Comando de Ejecución
 ```bash
-source .agents/crew/.venv/bin/activate && python3 .agents/crew/main.py "{tema}" "{chat_history}"
+source .agents/crew/.venv/bin/activate && python3 .agents/crew/main.py "{tema}" "{chat_history}" "{fuente_datos}"
 ```
 
 ## Lógica de Procesamiento

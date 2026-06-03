@@ -21,7 +21,11 @@ Existen distintos niveles de cohesión, ordenados de mejor (más deseable) a peo
 1.  **Funcional (Ideal)**: El módulo realiza una única tarea bien definida.
 2.  **Secuencial**: La salida de una parte sirve de entrada para otra —un flujo de datos puro—.
 3.  **Comunicacional**: Todas las partes operan sobre el mismo conjunto de datos (ej. validar stock, calcular total y aplicar descuentos sobre el mismo objeto Pedido).
-4.  **Procedimental**: Las partes se ejecutan en un orden específico pero operan sobre datos diferentes y pertenecen a responsabilidades distintas.
+4.  **Procedimental**: Las partes se ejecutan en un orden específico pero pertenecen a responsabilidades distintas. Aquí suele caer el **Antipatrón de Descomposición Funcional** (clases-verbo) detectado en [[Principios de Diseño OO]].
+ Aquí suele caer el **Antipatrón de Descomposición Funcional** (clases-verbo).
+
+### DELTA
+- Vinculado el Antipatrón de Descomposición Funcional con el nivel de Cohesión Procedural.
 5.  **Temporal**: Actividades agrupadas solo porque ocurren al mismo tiempo (ej. una clase `inicializarSistema`).
 6.  **Lógica**: Realiza funciones parecidas pero seleccionadas por un parámetro de control (ej. un `switch` gigante que hace cosas distintas según un `String tipo`).
 7.  **Coincidencial (Evitar)**: No hay relación real entre las partes; es un cajón de sastre (ej. clase `Utilidades` con `enviarEmail` y `calcularImpuesto`).

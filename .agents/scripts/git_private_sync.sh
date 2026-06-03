@@ -37,7 +37,9 @@ mv "$TEMP_FILE" "$GITIGNORE"
 
 # Opcional: Remover de la caché de git si ya estaban trackeados
 if [ -n "$PRIVATE_FILES" ]; then
-    echo "$PRIVATE_FILES" | xargs git rm --cached 2>/dev/null
+    echo "$PRIVATE_FILES" | while read -r file; do
+        git rm --cached "$file" 2>/dev/null
+    done
 fi
 
 echo "Sincronización de privacidad completada."

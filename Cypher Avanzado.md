@@ -112,6 +112,33 @@ RETURN DISTINCT n.nombre
 ```
 *Lógica:* Extraemos todos los nodos de un camino y usamos `UNWIND` para poder tratarlos como filas individuales y aplicarles un `DISTINCT`.
 
+### ### DELTA: Modularidad y Paralelismo en Neo4j 5.x
+
+#### 1. Subconsultas Correlacionadas (`CALL { ... }`)
+Permite anidar lógica de consulta donde cada fila del flujo principal dispara una subconsulta independiente. Es la base de la programación funcional en Cypher.
+```cypher
+MATCH (p:Persona)
+CALL {
+  WITH p
+  MATCH (p)-[:TRABAJA_EN]->(e:Empresa)
+  RETURN e.nombre AS empresa
+  LIMIT 1
+}
+RETURN p.nombre, empresa
+```
+
+#### 2. Gestión de Escritura Masiva (`CALL ... IN TRANSACTIONS`)
+Mecanismo de *batching* nativo para procesar millones de cambios (ej. cargas de CSV o refactorizaciones de nodos) sin saturar la memoria RAM.
+```cypher
+LOAD CSV FROM 'file:///datos.csv' AS row
+CALL {
+  CREATE (:Nodo {id: row[0]})
+} IN TRANSACTIONS OF 1000 ROWS
+```
+
+#### 3. Ejecución Paralela (`CALL ... IN CONCURRENT TRANSACTIONS`)
+Permite aprovechar todos los núcleos de la CPU ejecutando subconsultas en paralelo, reduciendo drásticamente el tiempo de ejecución en tareas de escritura pesada.
+
 ---
 
 ## Reducciones sobre Colecciones: `reduce()`
@@ -194,4 +221,30 @@ MATCH p=(a:Persona)-[r:AMIGO_DE*1..4]->(b:Persona)
 WHERE ALL(n IN nodes(p) WHERE SINGLE(x IN nodes(p) WHERE x = n))
 RETURN p
 ```
-*Lógica:* Para **todos** (`ALL`) los nodos `n` del camino, debe cumplirse que existe **exactamente un** (`SINGLE`) nodo `x` en todo el camino que sea igual a `n`. Si un nodo aparece dos veces, `SINGLE` será falso para ese nodo, y `ALL` descartará el camino completo. ¡Un filtro anti-ciclos perfecto!
+
+### ### DELTA: Modularidad y Paralelismo en Neo4j 5.x
+
+#### 1. Subconsultas Correlacionadas (`CALL { ... }`)
+Permite anidar lógica de consulta donde cada fila del flujo principal dispara una subconsulta independiente. Es la base de la programación funcional en Cypher.
+```cypher
+MATCH (p:Persona)
+CALL {
+  WITH p
+  MATCH (p)-[:TRABAJA_EN]->(e:Empresa)
+  RETURN e.nombre AS empresa
+  LIMIT 1
+}
+RETURN p.nombre, empresa
+```
+
+#### 2. Gestión de Escritura Masiva (`CALL ... IN TRANSACTIONS`)
+Mecanismo de *batching* nativo para procesar millones de cambios (ej. cargas de CSV o refactorizaciones de nodos) sin saturar la memoria RAM.
+```cypher
+LOAD CSV FROM 'file:///datos.csv' AS row
+CALL {
+  CREATE (:Nodo {id: row[0]})
+} IN TRANSACTIONS OF 1000 ROWS
+```
+
+#### 3. Ejecución Paralela (`CALL ... IN CONCURRENT TRANSACTIONS`)
+Permite aprovechar todos los núcleos de la CPU ejecutando subconsultas en paralelo, reduciendo drásticamente el tiempo de ejecución en tareas de escritura pesada.

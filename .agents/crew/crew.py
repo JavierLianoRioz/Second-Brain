@@ -15,6 +15,28 @@ class VaultCrew():
         self.llm = GeminiCLILLM(model="gemini-1.5-flash")
 
     @agent
+    def analista_repositorios(self) -> Agent:
+        agent_config = self.agents_config['analista_repositorios'].copy()
+        return Agent(
+            role=agent_config['role'],
+            goal=agent_config['goal'],
+            backstory=agent_config['backstory'],
+            llm=self.llm,
+            verbose=True
+        )
+
+    @agent
+    def arquitecto_conocimiento(self) -> Agent:
+        agent_config = self.agents_config['arquitecto_conocimiento'].copy()
+        return Agent(
+            role=agent_config['role'],
+            goal=agent_config['goal'],
+            backstory=agent_config['backstory'],
+            llm=self.llm,
+            verbose=True
+        )
+
+    @agent
     def escritor_apuntes(self) -> Agent:
         agent_config = self.agents_config['escritor_apuntes'].copy()
         return Agent(
@@ -34,6 +56,18 @@ class VaultCrew():
             backstory=agent_config['backstory'],
             llm=self.llm,
             verbose=True
+        )
+
+    @task
+    def extraccion_datos_task(self) -> Task:
+        return Task(
+            config=self.tasks_config['extraccion_datos_task'],
+        )
+
+    @task
+    def mapeo_conceptual_task(self) -> Task:
+        return Task(
+            config=self.tasks_config['mapeo_conceptual_task'],
         )
 
     @task
