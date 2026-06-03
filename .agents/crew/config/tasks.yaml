@@ -1,0 +1,18 @@
+# .agents/crew/config/tasks.yaml
+
+escribir_nota_task:
+  description: >
+    Siguiendo tu protocolo definido en {escritor_definition}, crea una nota 
+    técnica sobre {tema} usando el historial {chat_history}. 
+    Aplica {style_guide_content} y evita errores de {memory_content}.
+  expected_output: >
+    Markdown puro listo para el vault.
+  agent: escritor_apuntes
+
+revisar_nota_task:
+  description: >
+    Siguiendo tu protocolo definido en {revisor_definition}, analiza la nota 
+    generada frente a {style_guide_content} y emite el feedback.
+  expected_output: >
+    Bullet point para la memoria o PERFECTO.
+  agent: revisor_calidad

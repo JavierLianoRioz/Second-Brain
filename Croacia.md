@@ -1,0 +1,3 @@
+Comprar:
+- Periodico 🗞️ 
+- Imán nevera🧲

@@ -1,0 +1,36 @@
+# [SECRETS]
+.agents/crew/adc.json
+.env
+
+# [LIBS & VENV]
+500 Biblioteca/
+**/venv/
+**/.venv/
+node_modules/
+
+# [SYSTEM]
+.git/
+.stfolder/
+.stignore
+.DS_Store
+.localized
+.ttxfolder
+.trash/
+900 Bin/
+.obsidian/
+.tmp.driveupload/
+.tmp.drivedownload/
+
+# [SYNCTHING]
+*.sync-conflict-*
+
+# [INDEX]
+index.lock
+
+### PRIVATE-FILES-START ###
+Video Idea -más-.md
+Video -hace un año-.md
+Private/Diario/2026-05-17.md
+Private/Diario/2026-05-16.md
+Private/Diario/2026-05-15.md
+### PRIVATE-FILES-END ###
