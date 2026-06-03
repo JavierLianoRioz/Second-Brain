@@ -75,6 +75,20 @@ Para implementar RUP de forma efectiva, debemos entender sus componentes operati
 - **Rol**: Define el comportamiento y responsabilidades de una persona o equipo.
 - **Disciplina**: Organiza las actividades de forma temática (ej. Disciplina de Requisitos, Disciplina de Diseño).
 
+#### Matriz de Responsabilidades (Roles Clave)
+- **Analista de sistemas:** Lidera la **[[Disciplina de Requisitos]]**.
+- **Especificador de CdU / Diseñador de Interfaces:** Participan en la definición funcional.
+- **Arquitecto:** Único rol con presencia crítica en Requisitos, Análisis, Diseño e Implementación.
+- **Ingeniero de Componentes:** Presente en Diseño, Análisis, Implementación y Pruebas.
+
+#### Perfil Cuantitativo de las Fases (Esfuerzo vs Tiempo)
+| Fase | Duración (%) | Esfuerzo (%) | Objetivo Crítico |
+| :--- | :---: | :---: | :--- |
+| **Inicio** | 10 | 5 | Viabilidad y Riesgos |
+| **Elaboración** | 30 | 20 | Línea Base Arquitectónica |
+| **Construcción** | 50 | 65 | Completitud Operativa |
+| **Transición** | 10 | 10 | Entrega y Ajuste Final |
+
 ### ¿De qué manera organizamos las distintas áreas de trabajo?
 
 | Técnicas                     | De Soporte              |

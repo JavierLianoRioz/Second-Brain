@@ -106,7 +106,7 @@ Para búsquedas más complejas que requieren filtros por categorías o fechas, c
 
 ---
 
-### ### DELTA: Geometría de Similitud (L2 vs IP)
+## Geometría de Similitud (L2 vs IP)
 
 La elección del índice en FAISS determina el comportamiento geométrico de la búsqueda y la interpretación de los resultados:
 

@@ -22,6 +22,12 @@ Tiene un doble propósito dependiendo de a quién afecte:
 - **Para el equipo técnico**: Define los límites del sistema y da a los desarrolladores una comprensión profunda de las necesidades. Es la base ineludible para el análisis, el diseño y la implementación.
 - **Para gestión (DevOps/PM)**: Provee la base para planificar cada iteración y estimar costes y tiempos de forma realista.
 
+#### Racionalización por Stakeholder (Interrogatorio Analítico)
+La captura de requisitos sirve a tres propósitos distintos:
+- **Cliente:** Define el orden de preguntas y valida si la solución resuelve el problema de negocio.
+- **Jefe de Proyecto:** Justifica la producción de código y la asignación de recursos y personal.
+- **Equipo Directivo:** Emplea los requisitos para evaluar el grado de satisfacción mensual y justificar la inversión económica.
+
 **La regla de oro:** Si no hay acuerdo en los requisitos, no hay éxito en el proyecto.
 
 ---

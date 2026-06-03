@@ -36,22 +36,15 @@ En lenguajes como Java, utilizamos mecanismos distintos según la naturaleza del
 - **Localización del Fallo**: El error salta exactamente donde se viola el contrato, no "varias llamadas después".
 - **Documentación Viva**: Los contratos actúan como documentación técnica que no se desactualiza.
 - **Elimina Redundancia**: Si el contrato garantiza que un dato no es nulo, no hace falta volver a comprobarlo dentro del método.
-**La regla de oro:** "Hable con sus amigos, no con extraños", pero asegúrese de que sus amigos cumplan su palabra (contrato).
 
-## Violaciones del Contrato en la Herencia
-Un diseño por contrato sólido exige coherencia en la jerarquía (LSP):
-- **Herencia por Limitación:** La subclase restringe el contrato de la base (ej. lanza `UnsupportedOperationException`). Es una violación crítica que rompe el polimorfismo.
-- **Referencia:** Ver [[Taxonomía de la Herencia]] para casos de uso correcto e incorrecto.
+**La regla de oro:** "Hable con sus amigos, no con extraños", pero asegúrese de que sus amigos cumplan su palabra (contrato).
 
 ---
 
 ## Violaciones del Contrato en la Herencia
 Un diseño por contrato sólido exige coherencia en la jerarquía (LSP):
 - **Herencia por Limitación:** La subclase restringe el contrato de la base (ej. lanza `UnsupportedOperationException`). Es una violación crítica que rompe el polimorfismo.
-- **Referencia:** Ver [[Taxonomía de la Herencia]] para casos de uso correcto e incorrecto.
-
-### DELTA
-- Añadida sección sobre violaciones de contrato en la herencia (Herencia por Limitación).
+- **Referencia:** Ver [[Taxonomía de la Herencia]] para casos de uso correcto e incorrecto.
 
 ---
 

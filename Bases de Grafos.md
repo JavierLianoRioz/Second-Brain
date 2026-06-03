@@ -35,11 +35,12 @@ El análisis de grafos permite extraer información estructural que el modelo do
 2.  **Intermediación (*Betweenness*)**: Nodos puente que conectan comunidades. Su eliminación fragmenta la red.
 3.  **Distancia y Resiliencia**: La longitud del camino (*path*) define la fuerza del vínculo. Múltiples caminos entre dos nodos indican redundancia y estabilidad en la red.
 
+
 ---
 
-### ### DELTA: Analítica Avanzada (GDS) y Alternativas
+## Analítica Avanzada (GDS) y Alternativas
 
-#### 1. Graph Data Science (GDS): Del OLTP al OLAP
+### 1. Graph Data Science (GDS): Del OLTP al OLAP
 Las bases de grafos no solo sirven para transacciones simples, sino para analítica compleja en memoria:
 - **Proyecciones de Grafo**: Creación de subgrafos virtuales en RAM para ejecutar algoritmos sin impactar el rendimiento de la base de datos principal.
 - **Algoritmos de Centralidad y Comunidad**:
@@ -47,20 +48,12 @@ Las bases de grafos no solo sirven para transacciones simples, sino para analít
     - **Louvain**: Detecta clústeres o comunidades ocultas en la red mediante la optimización de la modularidad.
 - **Node Embeddings**: Uso de `gds.node2vec` para transformar la estructura del grafo en vectores numéricos, permitiendo usar la topología de la red en modelos de Machine Learning.
 
-#### 2. El Puente Documental: `$graphLookup` (MongoDB)
+### 2. El Puente Documental: `$graphLookup` (MongoDB)
 Como alternativa "ligera" a un motor nativo de grafos, MongoDB permite búsquedas recursivas mediante `$graphLookup`. Es ideal para jerarquías simples (ej. árboles de categorías o dependencias de software) donde no se requiere la potencia analítica de GDS pero sí navegar relaciones multinivel.
 
 ---
 
 ## Referencias
-
----
-
-### ### DELTA: Analítica Avanzada (GDS) y Alternativas
-
-#### 1. Graph Data Science (GDS): Del OLTP al OLAP
-Las bases de grafos no solo sirven para transacciones simples, sino para analítica compleja en memoria:
-- **Proyecciones de Grafo**: Creación de subgrafos virtuales en RAM para ejecutar algoritmos sin impactar el rendimiento de la base de datos principal.
 - **Algoritmos de Centralidad y Comunidad**:
     - **PageRank**: Mide la importancia de un nodo basándose en la calidad y cantidad de sus conexiones.
     - **Louvain**: Detecta clústeres o comunidades ocultas en la red mediante la optimización de la modularidad.

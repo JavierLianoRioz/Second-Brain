@@ -27,8 +27,6 @@ El acoplamiento no es solo "usar otra clase"; tiene matices técnicos que determ
     - *Persistente:* Durante toda la vida del objeto (Composición).
 3.  **Versatilidad**: Capacidad de intercambiar colaboradores. Baja versatilidad implica dependencia de clase concreta; alta versatilidad implica dependencia de interfaz.
 
-### DELTA
-- Refinadas dimensiones con términos técnicos específicos (Efímera vs Persistente).
 
 **La regla de oro:** Minimiza la visibilidad, acorta la temporalidad y maximiza la versatilidad.
 
@@ -42,6 +40,9 @@ Para combatir el acoplamiento, aplicamos la **Ley de Demeter (LoD)** —también
 4.  Objetos creados dentro del propio método.
 
 **¡OJO!** Evita las "cadenas de trenes" del tipo `pedido.getCliente().getDireccion().getCalle()`. Esto crea una dependencia frágil con toda la estructura de navegación de los objetos.
+
+**Solución Técnica: Métodos de Delegación**
+En lugar de navegar por la estructura del colaborador, solicita la información directamente al "amigo cercano". La clase `Pedido` debería tener un método `getCalleCliente()` que encapsule la navegación interna, ocultando la estructura de `Cliente` y `Direccion`.
 
 #### Code Smells de Acoplamiento
 - **Intimidad Inapropiada**: Cuando una clase usa excesivamente los detalles internos de otra clase.

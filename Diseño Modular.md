@@ -17,15 +17,25 @@ Un buen diseño modular se basa en equilibrar tres métricas fundamentales que d
 2.  **[[Acoplamiento]]**: Mide el grado de interdependencia entre módulos. Buscamos minimizar las dependencias para que un cambio en una pieza no rompa el resto del sistema.
 3.  **Tamaño Adecuado**: Los componentes deben respetar los límites cognitivos humanos para ser comprensibles.
     - **Regla 7±2 (Miller)**: La memoria de trabajo humana solo puede retener unos 7 elementos simultáneamente.
+    - **Ley de Proximidad (Gestalt)**: La lógica relacionada debe mantenerse cercana físicamente para no sobrecargar la memoria de trabajo.
     - **Cotas Dimensionales Óptimas:**
         - **Clase:** Máximo 5 atributos, 20-25 métodos, y 200-500 líneas de código (LOC).
-        - **Método:** Máximo 2-3 parámetros, 15-25 líneas de código, y máximo 3 niveles de anidación.
+        - **Método:** Máximo 2-3 parámetros (solución: **Objetos de Configuración**), 15-25 líneas de código, y máximo 3 niveles de anidación.
         - **Paquete:** Máximo 12-20 clases para mantener la cohesión.
-    - **Complejidad Ciclomática (McCabe)**: Mide el número de caminos independientes en el código (`CC = Condiciones + Salidas`). Un valor 1-10 es simple; >15 compromete la testabilidad.
+    - **Complejidad Ciclomática (McCabe)**: Mide el número de caminos independientes en el código (`CC = Condiciones + Salidas`). 1-10 (Simple), 11-20 (Complejo), >20 (Refactorizar urgentemente).
 
-### DELTA
-- Añadidas cotas dimensionales específicas (Clase, Método, Paquete).
-- Refinada definición de Complejidad Ciclomática con fórmula de McCabe.
+#### Dimensiones de la Ineficacia Arquitectónica
+- **Ineficacia (Plazo):** El tiempo de entrega se dispara.
+- **Ineficiencia (Coste):** El consumo de recursos excede el valor.
+- **Inefectividad (Ámbito):** El sistema no cumple con el objetivo de negocio.
+
+#### Cuadrante de Mantenibilidad
+Identificación de síntomas según la incapacidad del sistema:
+- **Viscoso:** Difícil de entender (Estructura desorganizada).
+- **Rígido:** Difícil de modificar (Cambios en cascada).
+- **Inmóvil:** Difícil de reutilizar (Alto acoplamiento).
+- **Frágil:** Difícil de probar (Efectos secundarios inesperados).
+
 
 ### ¿Qué herramientas conceptuales protegen la integridad de nuestro diseño?
 Para lograr una modularidad efectiva, nos apoyamos en dos conceptos clave que actúan como fronteras:

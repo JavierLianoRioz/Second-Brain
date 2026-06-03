@@ -41,7 +41,17 @@ Cada nota es un mundo independiente que se interconecta con otros mediante conce
     - **Prohibición de Resaltado:** El agente tiene completamente prohibido utilizar `====` para hacer highlight en markdown. Está completamente reservado para el editor humano para poder destacar manualmente por el usuario los temarios que le parecen más importantes. Nunca deberás eliminar y/o añadir highlights.
 - **Código:**
     - **In-line:** Usa backticks (\` \`) para nombres de propiedades, variables o comandos.
-    - **Bloques:** Usa bloques de código con el lenguaje especificado (ej. \` \` \`cypher) y añade comentarios breves.
+    - **Bloques:** Usa bloques de código con el lenguaje especificado (ej. ` ```cypher `) y añade comentarios breves.
+    - **Norma de Sintaxis:** Es obligatorio preceder los ejemplos prácticos con una definición modular y jerárquica usando la etiqueta **SINTAXIS:**.
+        - **Descomposición Jerárquica:** No limites la sintaxis a una sola línea. Desglosa el comando desde su llamada principal hasta sus componentes internos.
+        - **Formato Requerido:**
+            ```javascript
+            // SINTAXIS: <llamada_principal>(<contenedor_de_pasos>)
+            // <CONTENEDOR>: Normalmente se divide en: [<paso_A>, <paso_B>, <paso_C>]
+            // <PASO_A>: { <definicion_del_paso_A> }
+            // <PASO_B>: { <definicion_del_paso_B> }
+            ```
+
 - **Callouts (Obsidian):** Utilízalos con moderación para resaltar información crítica (NOTE, IMPORTANT, WARNING, INFO, TIP).
 - **Matemáticas y Lógica:** Usa LaTeX ($$...$$ o $...$) para fórmulas y estructuras de lista para desglosar sintaxis.
 

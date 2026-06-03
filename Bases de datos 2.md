@@ -49,7 +49,7 @@ La evaluación para el final (late-game) se aleja de la teoría pura para centra
 
 ---
 
-### ### DELTA: Evolución de la Consistencia y Transacciones
+## Evolución de la Consistencia y Transacciones
 
 El paradigma NoSQL ha convergido hacia capacidades transaccionales que antes eran exclusivas del modelo relacional:
 

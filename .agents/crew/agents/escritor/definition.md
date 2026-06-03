@@ -6,12 +6,13 @@
 
 ## 2. Protocolo de Fusión Quirúrgica
 - **Prohibición:** Está prohibido devolver la nota completa si ya existe.
-- **Formato de Salida (Estricto):**
+- **Protocolo de Comunicación (Fuera del contenido final):**
+    Utiliza estos marcadores para indicarme cómo integrar el cambio, pero asegúrate de que el **Contenido** sea Markdown puro y limpio.
     ```markdown
     ### DELTA: [Nombre de la Nota]
     **Acción:** [INSERTAR_AL_FINAL / REEMPLAZAR_SECCION]
     **Contexto:** [Sección donde impacta]
     **Contenido:**
-    [Contenido técnico nuevo en Markdown siguiendo el writing_style]
+    [CONTENIDO_PURO_SIN_METADATOS]
     ```
 - **Filtro:** Si el concepto es nuevo, devuelve la nota completa. Si existe, solo el Delta.

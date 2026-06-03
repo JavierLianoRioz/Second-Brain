@@ -9,7 +9,7 @@ Para lograr esto, la búsqueda semántica convierte las palabras en números (ve
 
 ---
 
-### ### DELTA: Robustez y Calibración del Pipeline
+## Robustez y Calibración del Pipeline
 
 #### 1. Umbrales Dinámicos Adaptativos
 Para evitar el ruido de respuestas irrelevantes, se implementan thresholds basados en el **score promedio** de los resultados devueltos por la query, permitiendo que el sistema se adapte a la densidad del espacio vectorial en tiempo de ejecución.

@@ -37,7 +37,7 @@ El flujo de trabajo en código (pipeline vectorial) para implementar esto siempr
 
 ---
 
-### ### DELTA: Convergencia con Grafos
+## Convergencia con Grafos
 
 La frontera entre grafos y vectores se difumina con el uso de **Node Embeddings** (vía GDS en Neo4j).
 - **Integración Técnica**: La posición y conectividad de un nodo en el grafo se traduce en una coordenada matemática (vector).
