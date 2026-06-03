@@ -103,3 +103,17 @@ else:
 ---
 
 Para búsquedas más complejas que requieren filtros por categorías o fechas, consulta las [[Estrategias de Filtrado Vectorial]].
+
+---
+
+### ### DELTA: Geometría de Similitud (L2 vs IP)
+
+La elección del índice en FAISS determina el comportamiento geométrico de la búsqueda y la interpretación de los resultados:
+
+| Índice | Métrica | Interpretación | Caso de Uso |
+| :--- | :--- | :--- | :--- |
+| `IndexFlatL2` | Distancia Euclídea | Distancia física "línea recta" entre puntos. | Cuando la magnitud del vector (frecuencia, intensidad) es clave. |
+| `IndexFlatIP` | Producto Escalar | Proyección y alineación angular. | Cuando se requiere **Similitud Coseno** (vectores normalizados). |
+
+> [!TIP] Normalización
+> Para tareas de NLP (Embeddings de texto), es estándar normalizar los vectores a longitud 1. En este estado, el Producto Escalar de `IndexFlatIP` equivale matemáticamente a la Similitud Coseno, ignorando la longitud del texto y priorizando el significado semántico.
