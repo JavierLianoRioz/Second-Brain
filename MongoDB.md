@@ -2,100 +2,115 @@
 materia: Bases de Datos 2
 ---
 
-# MongoDB: Guía Práctica de Ejecución
+# MongoDB: Guía Maestra de Ejecución
 
-Manual técnico enfocado en la descomposición jerárquica de comandos y patrones de ejecución para MongoDB.
+Manual de "Fricción Cero" diseñado para dominar la sintaxis técnica y evitar los errores más comunes en papel.
 
 ---
 
-## 1. Consultas y Proyección (`find`)
+## ¿Cómo localizamos información con precisión? (`find`)
 
-Recupera documentos basados en un criterio y filtra las claves de salida.
+El comando `find` es la herramienta de lectura base. Se descompone en dos bloques de llaves obligatorios.
 
-```js
-// SINTAXIS: db.coleccion.find(<filtro>, <proyeccion>)
-// FILTRO:     { <campo>: <valor> } o { <campo>: { $operador: <valor> } }
-// PROYECCION: { <campo>: 1 (mostrar) o 0 (ocultar) }
-
-// Ejemplo: Mostrar solo nombre y profesor de cursos 'avanzado'
-db.cursos.find(
-  { nivel: "avanzado" },
-  { nombre: 1, profesor: 1, _id: 0 }
-)
+```javascript
+// EL ESQUELETO: db.coleccion.find( {filtros}, {proyección} )
+//   ├─ filtros:    Criterios de búsqueda (WHERE en SQL).
+//   └─ proyección: Qué campos mostrar (1) u ocultar (0).
 ```
 
+### ¿Cómo usamos los operadores de comparación?
+Para filtrar por rangos, el operador debe ir **dentro** del valor del campo:
+- `{ edad: { $gt: 25 } }` — Mayores de 25.
+- `{ edad: { $lte: 18 } }` — Menores o iguales a 18.
+- `{ ciudad: { $in: ["Madrid", "BCN"] } }` — Que estén en esa lista.
+
 ---
 
-## 2. Mutación Atómica (`updateOne`)
+## ¿Cómo modificamos documentos sin destruirlos? (`updateOne`)
 
-Modifica partes de un documento existente sin reescribirlo por completo.
+Actualizar requiere precisión para no sobrescribir el documento completo.
 
-```js
-// SINTAXIS: db.coleccion.updateOne(<filtro>, <modificadores>, <opciones>)
-// FILTRO:        { <campo>: <valor> }
-// MODIFICADORES: { <$operador>: { <campo>: <nuevo_valor> } }
-// OPCIONES:      { upsert: true } (Crea si no existe)
-
-// Ejemplo: Incrementar créditos y crear si no existe
-db.cursos.updateOne(
-  { nombre: "Arquitectura" },
-  { $inc: { creditos: 1 } },
-  { upsert: true }
-)
+```javascript
+// EL ESQUELETO: db.coleccion.updateOne( {filtro}, { $operador: { cambios } } )
 ```
 
+### ¿Cuáles son los operadores de mutación vitales?
+- **`$set`**: Cambia o añade un valor. `{ $set: { estado: "activo" } }`.
+- **`$inc`**: Suma o resta valores numéricos. `{ $inc: { puntos: 5 } }`.
+- **`$push`**: Añade un elemento a un array. `{ $push: { etiquetas: "nuevo" } }`.
+
 ---
 
-## 3. Aggregation Framework (Pipeline)
+## ¿Cómo procesamos datos en masa? (`aggregate`)
 
-Procesamiento de datos mediante una secuencia de etapas jerárquicas contenidas en un array.
+El `aggregate` es una cinta transportadora. El error más común es olvidar que **siempre va dentro de un array `[ ]`**.
 
-```js
-// SINTAXIS: db.coleccion.aggregate(<array_de_pasos>)
-// ARRAY:     Se divide normalmente en: [FILTRO, AGRUPAR, ORDENAR]
-// FILTRO:    { $match: { <filtro_estilo_find> } }
-// AGRUPAR:   { $group: { _id: "$<campo_grupo>", <alias>: { <$acumulador>: "$<campo_valor>" } } }
-// ORDENAR:   { $sort:  { <alias>: 1 (ASC) o -1 (DESC) } }
+```javascript
+// EL ESQUELETO: db.coleccion.aggregate([ {etapa1}, {etapa2} ])
+//   ├─ [ ]: Indica que es una lista de pasos secuenciales.
+//   └─ { $: }: Cada paso debe empezar por un operador de etapa ($match, $group...).
+```
 
-// Ejemplo: Temperatura promedio por zona en sensores de 'planta'
-db.sensores.aggregate([
-  { $match: { zona: "planta" } },
-  { $group: { _id: "$zona", avgTemp: { $avg: "$temperatura" } } }
+### La regla de oro del `$group`
+Es la etapa más compleja. Requiere un `_id` obligatorio para definir la "agrupación".
+```javascript
+{ 
+  $group: { 
+    _id: "$campo_agrupador", 
+    resultado: { $operador: "$campo_a_calcular" } 
+  } 
+}
+```
+### Casos de Uso Comunes del Pipeline
+
+#### 1. Filtrar, Agrupar y Sumar
+Calcula cuánto se ha vendido en total solo en la categoría "Tecnologia".
+```javascript
+db.ventas.aggregate([
+  { $match: { categoria: "Tecnologia" } }, // 1. Filtramos
+  { $group: { _id: "$categoria", total: { $sum: "$monto" } } } // 2. Sumamos
+])
+```
+
+#### 2. Agrupar, Ordenar y Limitar
+Encuentra las 3 categorías que más ingresos han generado.
+```javascript
+db.ventas.aggregate([
+  { $group: { _id: "$categoria", total: { $sum: "$monto" } } },
+  { $sort: { total: -1 } }, // -1 para orden Descendente (mayor a menor)
+  { $limit: 3 }             // Nos quedamos con el Top 3
+])
+```
+
+#### 3. El uso del `$project` (Limpieza visual)
+Calcula el promedio y cambia el nombre del campo de salida.
+```javascript
+db.ventas.aggregate([
+  { $group: { _id: "$categoria", media: { $avg: "$monto" } } },
+  { 
+    $project: { 
+      _id: 0,                 // Ocultamos el ID original
+      nombre_cat: "$_id",     // Renombramos el _id a nombre_cat
+      promedio_ventas: "$media" 
+    } 
+  }
 ])
 ```
 
 ---
 
-## 4. Diagnóstico de Rendimiento (`explain`)
+## ¿Cómo analizamos el rendimiento? (`explain`)
 
-Herramienta para auditar la eficiencia de las consultas.
-
-```js
-// SINTAXIS: db.coleccion.find(<filtro>).explain("<modo>")
-// MODO: "executionStats" (Para ver tiempos y uso de índices)
-
-// Ejemplo: Diagnóstico de consulta por zona
-db.sensores.find({ zona: "planta" }).explain("executionStats")
+Indispensable para saber si la consulta es eficiente.
+```javascript
+db.coleccion.find({ ... }).explain("executionStats")
 ```
-
-| Métrica | Diagnóstico | Significado |
-| :--- | :--- | :--- |
-| **`IXSCAN`** | **ÓPTIMO** | Uso de índice detectado. |
-| **`COLLSCAN`** | **ERROR** | Lectura total de la colección (Faltan índices). |
-| **`totalKeysExamined: 0`** | **ERROR** | Confirmación de que no se ha usado ningún índice. |
+- **`COLLSCAN`**: Error de diseño. Escanea toda la colección (lento).
+- **`IXSCAN`**: Éxito. Está usando un índice (rápido).
 
 ---
 
-## 5. Patrones Avanzados (Cheat Sheet)
-
-| Operación | Descomposición Estructural (SINTAXIS) |
-| :--- | :--- |
-| **Join ($lookup)** | `{ $lookup: { from: "<col>", localField: "a", foreignField: "b", as: "c" } }` |
-| **Recursividad** | `{ $graphLookup: { from: "<col>", startWith: "$a", connectFromField: "a", ... } }` |
-| **Índice Compuesto** | `db.coleccion.createIndex({ <campo1>: 1, <campo2>: -1 })` |
-
----
-
-## Referencias Prácticas
-- [[Simulacro_Examen_MongoDB|Simulacro de Examen Práctico]]
-- [[Bases de datos 2]]
+## Referencias
+1. [[Cypher]] — Guía de Grafos.
+2. [[Simulacro_Examen_BD2]] — Práctica real.
+3. [[Bases de datos 2]] — Índice de asignatura.

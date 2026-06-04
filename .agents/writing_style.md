@@ -21,14 +21,15 @@ Cada nota es un mundo independiente que se interconecta con otros mediante conce
 
 1.  **Título Principal (#):** El nombre del concepto o tecnología. **¡OJO!** No utilices emojis en los títulos ni en los encabezados.
 2.  **Enfoque Conceptual:** Evita crear "índices" o "MOCs" puros. Cada nota debe explicar el concepto de forma narrativa y profunda, utilizando enlaces naturales para saltar a otros conceptos relacionados.
-3.  **Títulos Narrativos (##):** Sustituye los encabezados genéricos (ej. "Teoría", "Práctica") por preguntas directas que guíen la narrativa y cuya respuesta sea el contenido del apartado. Esto mantiene al lector enganchado en el flujo de ideas.
-4.  **Dinámica de Continuidad (Claroscuro):** Para dar fluidez, utiliza una estructura de **Problema -> Solución -> Nuevo Problema -> Nueva Solución**. El objetivo es mostrar cómo una solución técnica resuelve un problema pero a menudo introduce nuevos retos que requieren más herramientas.
-5.  **No Duplicidad:** Nunca dupliques información. Si un detalle ya está desarrollado en otra nota, utilízala mediante [[Wikilinks]] contextuales.
-6.  **Frontmatter (Metadatos):** Todas las notas deben incluir metadatos en YAML para facilitar la organización. **¡OJO!** No utilices el campo `tags` ni el campo `autor`. En su lugar, utiliza únicamente:
-    - `materia`: El nombre de la asignatura (ej. Ingeniería de Software).
-7.  **Introducción:** Una o dos frases breves que definan el tema o el cambio de paradigma que supone.
-8.  **Separadores:** Usa `---` para dividir bloques lógicos.
-9.  **Referencias:** No uses pies de página de "última modificación". Las referencias deben ser académicas, utilizando una lista numerada (1. ...) al final de la nota bajo el encabezado "## Referencias".
+3. Títulos Narrativos (##): Sustituye los encabezados genéricos (ej. "Teoría", "Práctica") por preguntas directas que guíen la narrativa y cuya respuesta sea el contenido del apartado. Esto mantiene al lector enganchado en el flujo de ideas y reduce la carga cognitiva.
+4. Dinámica de Continuidad (Claroscuro): Para dar fluidez, utiliza una estructura de Problema -> Solución -> Nuevo Problema -> Nueva Solución.
+5. El Método Esqueleto: Es obligatorio preceder los ejemplos complejos con un mapa visual simplificado.
+   ```javascript
+   // EL ESQUELETO: db.coleccion.metodo( {filtro}, {opciones} )
+   ```
+6. No Duplicidad: Nunca dupliques información.
+7. Frontmatter (Metadatos): Todas las notas deben incluir metadatos en YAML. Materia es obligatorio.
+8. Introducción: Una o dos frases breves que definan el tema.
 
 ## 3. Formato y Elementos Visuales
 - **Signos de Puntuación:**
@@ -42,15 +43,15 @@ Cada nota es un mundo independiente que se interconecta con otros mediante conce
 - **Código:**
     - **In-line:** Usa backticks (\` \`) para nombres de propiedades, variables o comandos.
     - **Bloques:** Usa bloques de código con el lenguaje especificado (ej. ` ```cypher `) y añade comentarios breves.
-    - **Norma de Sintaxis:** Es obligatorio preceder los ejemplos prácticos con una definición modular y jerárquica usando la etiqueta **SINTAXIS:**.
-        - **Descomposición Jerárquica:** No limites la sintaxis a una sola línea. Desglosa el comando desde su llamada principal hasta sus componentes internos.
-        - **Formato Requerido:**
-            ```javascript
-            // SINTAXIS: <llamada_principal>(<contenedor_de_pasos>)
-            // <CONTENEDOR>: Normalmente se divide en: [<paso_A>, <paso_B>, <paso_C>]
-            // <PASO_A>: { <definicion_del_paso_A> }
-            // <PASO_B>: { <definicion_del_paso_B> }
-            ```
+    - **Norma de Sintaxis (Método Esqueleto):** Es obligatorio preceder los ejemplos con un mapa visual simplificado del comando, evitando el exceso de corchetes y símbolos técnicos.
+        1. **El Esqueleto:** Muestra la estructura base en una o dos líneas limpias.
+        2. **La Leyenda:** Explica qué es cada pieza en lenguaje humano justo debajo.
+        3. **Formato:**
+           ```javascript
+           // SINTAXIS: comando( [etapa1, etapa2] )
+           //   ├─ etapa1: El filtro inicial ($match).
+           //   └─ etapa2: La acción principal ($group).
+           ```
 
 - **Callouts (Obsidian):** Utilízalos con moderación para resaltar información crítica (NOTE, IMPORTANT, WARNING, INFO, TIP).
 - **Matemáticas y Lógica:** Usa LaTeX ($$...$$ o $...$) para fórmulas y estructuras de lista para desglosar sintaxis.

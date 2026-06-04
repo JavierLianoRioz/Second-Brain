@@ -5,7 +5,7 @@ Este archivo almacena información estructural, reglas internas y aprendizajes q
 ## 1. Estructura de la Bóveda (Vault Structure)
 - **Raíz:** Notas conceptuales y de aprendizaje (ej. Ingeniería de Software).
 - **.agents/**: Guías de estilo, protocolos operativos y archivos de memoria del sistema.
-- **500 Biblioteca/**: Copias locales de recursos externos (repositorios clonados, PDFs).
+- **500 Biblioteca/**: Copias locales de recursos externos (repositorios clonados, PDFs). **¡OJO!** Está estrictamente prohibido generar o guardar contenido propio (apuntes, simulacros, resúmenes) en esta carpeta.
 
 ## 2. Organización Interna del Agente
 - **Filosofía:** Red conceptual orgánica, sin jerarquías rígidas.
@@ -21,6 +21,7 @@ Este archivo almacena información estructural, reglas internas y aprendizajes q
 - [2026-05-30] Implementación de la raya (—) como estándar para incisos discursivos.
 - [2026-06-02] **[AUTO-CORRECCIÓN DE SESGO]:** Erradicación de la "adjetivación pedagógica" y metáforas poéticas. Transición a una arquitectura de "Fricción Cero": priorizar la trazabilidad genética de los conceptos, concisión extrema y eliminación de ruido para minimizar la carga cognitiva.
 - [2026-06-03] **[CONTENIDO]:** Se reconoce que la bóveda contiene material personal (videos, diario) además de apuntes académicos. El metadato `materia` solo debe aplicarse a notas de estudio, no a archivos personales o de gestión.
+- [2026-06-04] **[ESTRUCTURA]:** Corrección crítica. El agente reconoció el error de contaminar `500 Biblioteca/` con contenido propio. Se ha reforzado la regla de inmutabilidad de esta carpeta para preservar la integridad de los recursos externos.
 
 ---
 *Este documento se actualiza tras cada hito relevante para mejorar el desempeño futuro.*

@@ -2,74 +2,95 @@
 materia: Bases de Datos 2
 ---
 
-# Cypher: Lenguaje de Consulta de Grafos
+# Cypher: Guía Maestra de Grafos (Neo4j)
 
-Cypher es un lenguaje declarativo basado en la **correspondencia de patrones** (*pattern matching*). Su sintaxis ASCII-art visualiza los nodos `()` y las relaciones `[]` para describir recorridos de forma intuitiva pero técnicamente rigurosa.
+Manual unificado que cubre desde la navegación básica hasta el análisis avanzado de caminos y procesamiento de listas.
 
 ---
 
-## 1. Mutación de la Red
+## ¿Cómo dibujamos y buscamos patrones? (`MATCH` y `CREATE`)
 
-### Creación e Integridad (`CREATE` vs `MERGE`)
-- **`CREATE`**: Inserta nuevos elementos sin verificar preexistencia. Riesgo de duplicidad.
-- **`MERGE`**: Operación atómica de "Buscar o Crear". Garantiza la unicidad de nodos y relaciones.
+Cypher se basa en el "Arte ASCII" para representar los datos.
 
 ```cypher
-// Crea o actualiza la relación entre nodos existentes
-MATCH (a:Persona {nombre: "Carlos"}), (b:Persona {nombre: "Luis"})
-MERGE (a)-[r:AMIGO_DE]->(b)
-SET r.desde = 2024
+// EL ESQUELETO: (nodo:Etiqueta {propiedad: "valor"})-[relacion:TIPO]->(objetivo)
+//   ├─ ( ): Representa un Nodo.
+//   ├─ [ ]: Representa una Relación.
+//   └─ ->: Indica la dirección obligatoria.
+```
+
+### ¿Cómo creamos datos sin duplicar? (`MERGE`)
+`MERGE` busca el patrón; si no existe, lo crea. Es la forma más segura de insertar.
+```cypher
+MATCH (p:Persona {nombre: "Ana"})
+MERGE (p)-[:USA_TECNOLOGIA]->(:Tecnologia {nombre: "Neo4j"})
 ```
 
 ---
 
-## 2. Consulta y Transformación
+## ¿Cómo filtramos y transformamos resultados? (`WHERE` y `WITH`)
 
-### Selección de Patrones (`MATCH`)
-Define la estructura que debe localizar el motor.
-- **Búsqueda Directa**: `MATCH (p:Persona {ciudad: "Madrid"})`
-- **Opcionales (`OPTIONAL MATCH`)**: Equivalente al `LEFT JOIN`. Devuelve `null` si la relación no existe, evitando que el nodo principal desaparezca del resultado.
-
-### Pasos Intermedios (`WITH`)
-Actúa como una barrera de flujo. Permite realizar cálculos, filtrar y pasar solo las variables necesarias a la siguiente etapa de la consulta.
-- **¡OJO!**: Las variables no declaradas en `WITH` se pierden para el resto de la ejecución.
-
----
-
-## 3. Análisis de Caminos (*Paths*)
-
-Cypher permite consultar la red en profundidad sin definir joins infinitos.
-
-### Longitud Variable
-Busca conexiones indirectas definiendo el rango de saltos:
+### El poder del `WITH` (La barrera de cálculo)
+`WITH` permite hacer una pausa para calcular algo (como un `count`) y usar ese resultado en el resto de la consulta.
+**¡OJO!** — `WITH` borra todas las variables que no menciones explícitamente.
 ```cypher
-MATCH p=(a:Persona)-[:AMIGO_DE*1..3]->(b:Persona)
-RETURN p, length(p) AS distancia
-```
-- **Riesgo**: Los recorridos sin límite (*n) pueden causar una explosión combinatoria y colapsar la memoria.
-
----
-
-## 4. Agregación Implícita
-
-En Cypher no existe el `GROUP BY`. La agrupación es automática al combinar propiedades con funciones de agregación (`count`, `sum`, `avg`).
-
-```cypher
-MATCH (p:Persona)-[r:TRABAJA_EN]->(e:Empresa)
-RETURN e.nombre, count(p) AS total_empleados
+MATCH (p:Persona)-[:TRABAJA_EN]->(e:Empresa)
+WITH e, count(p) AS total
+WHERE total > 5
+RETURN e.nombre, total
 ```
 
 ---
 
-## Errores Críticos de Diseño (Antipatrones)
+## ¿Cómo navegamos por la red? (`Paths` y Longitud)
 
-1.  **Saturación de Propiedades**: Meter como atributo lo que debería ser un nodo. Impide el recorrido del grafo.
-2.  **Nodos Huérfanos**: Entidades sin relaciones que no aportan valor estructural.
-3.  **Filtro sin Alias**: Intentar usar una propiedad de relación sin haberle asignado una variable (ej. `[r:TIPO]`).
+Para buscar conexiones indirectas (amigos de amigos) usamos el asterisco `*`.
+
+```cypher
+// SINTAXIS: -[:TIPO*min..max]->
+//   └─ *1..3: Distancia de entre 1 y 3 saltos.
+
+// Ejemplo: Amigos de mis amigos (distancia exacta 2)
+MATCH (yo:Persona {nombre: "Ana"})-[:AMIGO_DE*2..2]->(conocido:Persona)
+RETURN conocido.nombre
+```
+
+---
+
+## ¿Cómo realizamos análisis avanzado sobre caminos?
+
+Cuando guardamos un camino en una variable (`p = (...)`), podemos aplicar funciones Pro.
+
+### Filtros sobre colecciones (`ALL`, `ANY`, `NONE`)
+Verifica si los elementos de un camino cumplen una condición.
+```cypher
+MATCH p = (a:Persona)-[:AMIGO_DE*1..5]->(b:Persona)
+WHERE ALL(r IN relationships(p) WHERE r.intensidad > 5)
+RETURN p
+```
+
+### Manipulación de listas y `reduce`
+- **`nodes(p)`**: Devuelve la lista de todos los nodos del camino.
+- **`relationships(p)`**: Devuelve la lista de todas las relaciones.
+- **`reduce`**: Compacta una lista en un valor único (como sumar distancias).
+  ```cypher
+  RETURN reduce(total = 0, r IN relationships(p) | total + r.horas) AS total_horas
+  ```
+
+---
+
+## Checklist de Supervivencia en el Examen
+
+| Problema | Solución Cypher |
+| :--- | :--- |
+| **Duplicados** | Usa `RETURN DISTINCT`. |
+| **Pares Inversos** | Usa `WHERE id(a) < id(b)` para evitar ver (A-B) y (B-A). |
+| **Relaciones Opcionales** | Usa `OPTIONAL MATCH` para no perder resultados si la relación no existe. |
+| **Propiedades de Relación** | Asigna un alias: `-[r:REL]->` para acceder a `r.propiedad`. |
 
 ---
 
 ## Referencias
-1. [[Bases de Grafos]]
-2. [[Cypher Avanzado]]
-3. Documentación oficial de Neo4j (Cypher Manual).
+1. [[MongoDB]] — Guía de Documentos.
+2. [[Simulacro_Examen_BD2]] — Práctica real.
+3. [[Bases de datos 2]] — Índice de asignatura.
